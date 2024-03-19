@@ -1,8 +1,10 @@
 # Energieportal Winterthur
 
+Das Energieportal der Stadt Winterthur
+
 Important Links:
 
-- [Prod Environment](https://sfgbasel-website-prod.os4.drei.io/)
+- TODO: Add link to Stage Environment
 - [Confluence](https://dreipol.atlassian.net/wiki/spaces/WI/pages/1150484481/WIN-23-06+Winergie+Projektsetup)
 - [Jira Board](https://dreipol.atlassian.net/jira/software/c/projects/WIN2306/boards/53)
 - [Figma Designs](https://www.figma.com/file/LTnxaRaa7oUmf1qpYMqgSd/%5BWIN-23-06%5D-Winergie)
