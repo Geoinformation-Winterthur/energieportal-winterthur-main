@@ -1,0 +1,20 @@
+$screen-sm-min: 481px;
+$screen-md-min: 1025px;
+
+@mixin tablet-up {
+    @media (min-width: #{$screen-sm-min}) {
+        @content;
+    }
+}
+
+@mixin desktop-up {
+    @media (min-width: #{$screen-md-min}) {
+        @content;
+    }
+}
+
+@mixin print {
+    @media print {
+        @content;
+    }
+}

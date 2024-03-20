@@ -1,7 +1,22 @@
+import "@/styles/globals.scss";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 
-const inter = Inter({ subsets: ["latin"] });
+const NewsGothic = localFont({
+  src: [
+    {
+      path: "../../public/fonts/NewsGothic-SemiBold.woff2",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/NewsGothic-Regular.woff2",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+  variable: "--font-news-gothic",
+});
 
 export const metadata: Metadata = {
   title: "Energieportal Winterthur",
@@ -14,8 +29,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="de">
-      <body className={inter.className}>{children}</body>
+    <html lang="de-CH">
+      <body className={NewsGothic.className}>{children}</body>
     </html>
   );
 }

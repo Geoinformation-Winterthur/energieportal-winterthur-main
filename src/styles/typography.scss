@@ -1,0 +1,86 @@
+// min screen 375px, max screen 1440px
+
+@mixin typo-headline-1 {
+    font-size: clamp(3rem, 2.6479rem + 1.5023vw, 4rem);
+    line-height: 110%;
+    font-weight: 600;
+    letter-spacing: 0.24px;
+}
+
+h1,
+.headline-1 {
+    @include typo-headline-1();
+}
+
+@mixin typo-headline-2 {
+    font-size: clamp(2rem, 1.6479rem + 1.5023vw, 3rem);
+    line-height: 110%;
+    font-weight: 600;
+    letter-spacing: clamp(0.01rem, 0.0082rem + 0.0075vw, 0.015rem);
+}
+
+h2,
+.headline-2 {
+    @include typo-headline-2();
+}
+
+@mixin typo-headline-3 {
+    font-size: clamp(1.5rem, 1.3239rem + 0.7512vw, 2rem);
+    line-height: 110%;
+    font-weight: 600;
+    letter-spacing: clamp(0.0075rem, 0.0066rem + 0.0038vw, 0.01rem);
+}
+
+h3,
+.headline-3 {
+    @include typo-headline-3();
+}
+
+@mixin typo-headline-4 {
+    font-size: clamp(1.25rem, 1.162rem + 0.3756vw, 1.5rem);
+    line-height: 110%;
+    font-weight: 600;
+    letter-spacing: clamp(0.00625rem, 0.0058rem + 0.0019vw, 0.0075rem);
+}
+
+h4,
+.headline-4 {
+    @include typo-headline-4();
+}
+
+@mixin typo-headline-5 {
+    font-size: clamp(1.125rem, 1.081rem + 0.1878vw, 1.25rem);
+    line-height: 110%;
+    font-weight: 600;
+    letter-spacing: clamp(0.005625rem, 0.0054rem + 0.0009vw, 0.00625rem);
+}
+
+h5,
+.headline-5 {
+    @include typo-headline-5();
+}
+
+@mixin typo-lead {
+    font-size: clamp(1.25rem, 1.162rem + 0.3756vw, 1.5rem);
+    line-height: 130%;
+    font-weight: 400;
+    letter-spacing: clamp(0.00625rem, 0.0058rem + 0.0019vw, 0.0075rem);
+}
+
+@mixin typo-body {
+    font-size: clamp(1.125rem, 1.081rem + 0.1878vw, 1.25rem);
+    line-height: 130%;
+    font-weight: 400;
+    letter-spacing: clamp(0.005625rem, 0.0054rem + 0.0009vw, 0.00625rem);
+}
+
+p {
+    @include typo-body();
+}
+
+@mixin typo-body-small {
+    font-size: clamp(1rem, 0.956rem + 0.1878vw, 1.125rem);
+    line-height: 130%;
+    font-weight: 400;
+    letter-spacing: clamp(0.005rem, 0.0048rem + 0.0009vw, 0.005625rem);
+}
