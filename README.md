@@ -4,7 +4,7 @@ Das Energieportal der Stadt Winterthur
 
 Important Links:
 
-- TODO: Add link to Stage Environment
+- [Prod Environment](https://energieportal-winterthur.vercel.app/)
 - [Confluence](https://dreipol.atlassian.net/wiki/spaces/WI/pages/1150484481/WIN-23-06+Winergie+Projektsetup)
 - [Jira Board](https://dreipol.atlassian.net/jira/software/c/projects/WIN2306/boards/53)
 - [Figma Designs](https://www.figma.com/file/LTnxaRaa7oUmf1qpYMqgSd/%5BWIN-23-06%5D-Winergie)
@@ -45,3 +45,11 @@ npm run start
 ### Linter & Prettier
 
 The scripts for linting and prettifying are executed automatically as part of the pre-commit hook.
+
+## Deployment
+
+### Vercel
+
+Find the project on [Vercel](https://vercel.com/dreipol/energieportal-winterthur).
+
+To update your Production Deployment, push to the "main" branch.
