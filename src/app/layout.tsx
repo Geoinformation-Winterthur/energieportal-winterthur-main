@@ -1,3 +1,4 @@
+import { Header } from "@/components/common/header/header";
 import "@/styles/globals.scss";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
@@ -30,7 +31,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="de-CH">
-      <body className={NewsGothic.className}>{children}</body>
+      <body className={NewsGothic.className}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
