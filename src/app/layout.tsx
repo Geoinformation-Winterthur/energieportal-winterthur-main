@@ -3,7 +3,7 @@ import "@/styles/globals.scss";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 
-const NewsGothic = localFont({
+export const NewsGothic = localFont({
   src: [
     {
       path: "../../public/fonts/NewsGothic-SemiBold.woff2",
