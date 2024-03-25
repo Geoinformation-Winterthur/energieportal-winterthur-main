@@ -1,0 +1,35 @@
+@import "../../../styles/breakpoints.scss";
+@import "../../../styles/typography.scss";
+
+.header {
+  padding: var(--spacing-8);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-8);
+}
+
+.header__topline {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: var(--spacing-4);
+  height: var(--spacing-11);
+}
+
+.header__red-strip {
+  position: absolute;
+  left: 0;
+  width: var(--spacing-1);
+  height: var(--spacing-11);
+  background-color: var(--color-brand-red);
+}
+
+.header__title {
+  @include typo-headline-2();
+
+  display: none;
+
+  @include tablet-up {
+    display: block;
+  }
+}

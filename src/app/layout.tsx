@@ -1,5 +1,5 @@
-import { Header } from "@/components/common/header/header";
-import "@/styles/globals.scss";
+import { Header } from "../components/common/header/header";
+import "../styles/globals.scss";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 

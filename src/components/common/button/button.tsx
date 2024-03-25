@@ -1,4 +1,4 @@
-import { Icon, IconType } from "@/components/common/icon/icon";
+import { Icon, IconType } from "../icon/icon";
 import styles from "./button.module.scss";
 
 interface ButtonProps {

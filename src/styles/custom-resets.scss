@@ -12,8 +12,8 @@ h2,
 h3,
 h4,
 h5,
-h6,
-p {
+h6 {
+  color: var(--color-headline-primary);
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -22,7 +22,9 @@ p {
   font-size: clamp(1.125rem, 1.081rem + 0.1878vw, 1.25rem);
   line-height: 130%;
   font-weight: 400;
-  letter-spacing: clamp(0.005625rem, 0.0054rem + 0.0009vw, 0.00625rem);
+  letter-spacing: 0.00625rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 ol,
