@@ -32,3 +32,36 @@
   height: var(--spacing-4);
   background-color: var(--color-text-primary);
 }
+
+.navigation__item--active a {
+  color: var(--color-links);
+}
+
+.navigation-panel {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-8);
+  padding: 140px var(--spacing-16);
+  height: 100%;
+  width: 100%;
+  background-color: var(--color-footer-text);
+  left: 0;
+  top: 0;
+  transition: all 0.2s ease-out;
+
+  a {
+    @include typo-headline-4();
+  }
+}
+
+.navigation--open {
+  z-index: 1;
+  opacity: 1;
+  left: 0;
+}
+
+.navigation--closed {
+  opacity: 0;
+  left: 5%;
+}

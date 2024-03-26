@@ -8,6 +8,17 @@ const nextConfig = {
     });
     return config;
   },
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/online-beratung',
+        permanent: true,
+      },
+    ]
+  },
 };
+
+
 
 export default nextConfig;

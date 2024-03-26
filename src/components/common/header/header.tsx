@@ -1,10 +1,11 @@
 "use client"
-import { useWindowSize } from "../../../hooks/useWindowSize";
+import Link from "next/link";
 import { useTranslation } from "../../../../i18n";
+import { useWindowSize } from "../../../hooks/useWindowSize";
 import { Icon } from "../icon/icon";
 import { Logo } from "../logo/logo";
-import styles from "./header.module.scss";
 import { Navigation } from "../navigation/navigation";
+import styles from "./header.module.scss";
 
 export const Header = () => {
   const { t } = useTranslation();
@@ -12,12 +13,14 @@ export const Header = () => {
 
   return (
     <header className={styles["header"]}>
-      <div className={styles["header__topline"]}>
-        <div className={styles["header__red-strip"]}></div>
-        <p>{t('general.header.domain')}</p>
-        {isMobile ? <Icon icon="burger" size={24} /> : <Logo type="full" width={260} />}
+      <div className={styles["header__content"]}>
+        <div className={styles["header__topline"]}>
+          <div className={styles["header__red-strip"]}></div>
+          <p>{t('general.header.domain')}</p>
+          {!isMobile && <Logo type="full" width={260} />}
+        </div>
+        <Link href="/"><h1 className={styles["header__title"]}>{t('general.header.title')}</h1></Link>
       </div>
-      <h1 className={styles["header__title"]}>{t('general.header.title')}</h1>
       <Navigation />
     </header>
   );
