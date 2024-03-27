@@ -1,0 +1,24 @@
+@import "../../../styles/typography.scss";
+
+.button {
+  @include typo-button();
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+  width: max-content;
+  color: var(--color-white);
+  background-color: var(--color-brand-red);
+  padding: var(--spacing-5) var(--spacing-6);
+  transition: background-color 0.2s ease-out;
+
+  &:focus,
+  &:hover,
+  &:active {
+    background-color: var(--color-black);
+  }
+
+  &--disabled {
+    pointer-events: none;
+    opacity: 0.4;
+  }
+}

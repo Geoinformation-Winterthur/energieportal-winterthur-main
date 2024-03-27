@@ -1,0 +1,21 @@
+@import "./typography.scss";
+
+a {
+  @include typo-body();
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  color: var(--color-links);
+  text-decoration: none;
+  transition: color 0.2s ease-out;
+
+  svg {
+    color: var(--color-links);
+  }
+
+  &:focus,
+  &:hover,
+  &:active {
+    color: var(--color-black);
+  }
+}

@@ -1,0 +1,25 @@
+.icon {
+  display: inline-flex;
+}
+
+.icon-button {
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  padding: var(--spacing-4);
+  border-radius: 50%;
+  transition: background-color 0.2s ease-out;
+
+  &:focus,
+  &:hover,
+  &:active {
+    background-color: var(--color-footer-text);
+  }
+
+  &--disabled {
+    pointer-events: none;
+    opacity: 0.4;
+  }
+}
