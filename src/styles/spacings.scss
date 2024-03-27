@@ -12,8 +12,10 @@ $spacing-11: $base-spacing * 11; // 44px
 $spacing-12: $base-spacing * 12; // 48px
 $spacing-14: $base-spacing * 14; // 56px
 $spacing-16: $base-spacing * 16; // 64px
+$spacing-20: $base-spacing * 20; // 80px
 $spacing-24: $base-spacing * 24; // 96px
 $spacing-31: $base-spacing * 31; // 124px
+$spacing-36: $base-spacing * 36; // 144px
 
 $max-width: 1536px;
 
@@ -31,7 +33,9 @@ $max-width: 1536px;
   --spacing-12: #{$spacing-12};
   --spacing-14: #{$spacing-14};
   --spacing-16: #{$spacing-16};
+  --spacing-20: #{$spacing-20};
   --spacing-24: #{$spacing-24};
   --spacing-31: #{$spacing-31};
+  --spacing-36: #{$spacing-36};
   --max-width: #{$max-width};
 }

@@ -2,7 +2,6 @@
 import Link from "next/link";
 import { useTranslation } from "../../../../i18n";
 import { useWindowSize } from "../../../hooks/useWindowSize";
-import { Icon } from "../icon/icon";
 import { Logo } from "../logo/logo";
 import { Navigation } from "../navigation/navigation";
 import styles from "./header.module.scss";

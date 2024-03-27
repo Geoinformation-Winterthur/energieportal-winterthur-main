@@ -2,7 +2,7 @@
 @import "../../../styles/typography.scss";
 
 .header {
-  padding: var(--spacing-9) var(--spacing-5);
+  padding: var(--spacing-9) var(--spacing-5) var(--spacing-5);
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -10,7 +10,7 @@
 
   @include tablet-up {
     flex-direction: column;
-    padding: var(--spacing-8);
+    padding: var(--spacing-8) var(--spacing-8) 0;
   }
 }
 
