@@ -49,7 +49,6 @@ export const Navigation = ({ }) => {
     <>
       {isOpen ? <Icon icon="close" size={24} onButtonClick={toggleNavMenu} /> : <Icon icon="burger" size={24} onButtonClick={toggleNavMenu} />}
       <ul className={`${styles["navigation-panel"]} ${isOpen ? styles["navigation--open"] : styles["navigation--closed"]}`}>
-
         {items.map((item) => (
           <li className={`${styles["navigation__item"]} ${item.slug === activeItem ? styles["navigation__item--active"] : ""}`} key={item.slug}>
             <Link href={item.slug} onClick={() => setActiveItem(item.slug)}>{item.title}</Link>
