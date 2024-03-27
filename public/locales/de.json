@@ -4,6 +4,11 @@
     "general.header.domain": "energieportal.winterthur.ch",
     "general.navigation.online_consulting": "Online-Beratung",
     "general.navigation.our_consulting_service": "Unser Beratungsangebot",
-    "general.navigation.contact": "Kontakt"
+    "general.navigation.contact": "Kontakt",
+    "general.footer.copyright": "Stadt Winterthur 2023",
+    "general.footer.privacy": "Datenschutz",
+    "general.footer.privacy_link": "https://stadt.winterthur.ch/datenschutz",
+    "general.footer.legal": "Impressum",
+    "general.footer.legal_link": "https://stadt.winterthur.ch/impressum"
   }
 }
