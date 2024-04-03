@@ -1,0 +1,43 @@
+@import "../../../styles/breakpoints.scss";
+@import "../../../styles/typography.scss";
+
+.intro {
+  padding: var(--spacing-10) var(--spacing-5);
+
+  @include tablet-up {
+    padding: var(--spacing-24) var(--spacing-20) var(--spacing-36);
+  }
+
+}
+
+.intro__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+
+  @include tablet-up {
+    width: calc((8 / 12) * 100%);
+    margin-left: calc((1 / 12) * 100%);
+  }
+}
+
+.intro__title {
+  @include typo-headline-1();
+}
+
+.intro__lead {
+  @include typo-lead();
+}
+
+.intro--light {
+  background-color: var(--color-brand-green-light);
+}
+
+.intro--dark {
+  background-color: var(--color-brand-green-dark);
+
+  & .intro__title,
+  & .intro__lead {
+    color: var(--color-white);
+  }
+}

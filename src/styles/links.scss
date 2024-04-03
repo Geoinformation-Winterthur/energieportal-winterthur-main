@@ -7,17 +7,39 @@ a {
   gap: var(--spacing-2);
   color: var(--color-links);
   text-decoration: none;
+  width: max-content;
   transition: color 0.2s ease-out;
 
   svg {
     color: var(--color-links);
+    transition: transform 0.2s ease;
   }
 
   &:focus,
   &:hover,
   &:active {
     color: var(--color-black);
+
+    svg {
+      animation: animate 0.3s ease-in-out forwards;
+    }
+  }
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(0);
   }
 
+  50% {
+    transform: translateX(20px);
+  }
 
+  55% {
+    transform: translateX(-20px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }

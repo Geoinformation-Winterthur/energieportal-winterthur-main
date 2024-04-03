@@ -1,5 +1,5 @@
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect y="3.5" width="24" height="3" fill="currentColor" />
-    <rect y="10.5" width="24" height="3" fill="currentColor" />
-    <rect y="17.5" width="24" height="3" fill="currentColor" />
+  <rect y="3.5" width="24" height="3" fill="#ff1900" />
+  <rect y="10.5" width="24" height="3" fill="#ff1900" />
+  <rect y="17.5" width="24" height="3" fill="#ff1900" />
 </svg>

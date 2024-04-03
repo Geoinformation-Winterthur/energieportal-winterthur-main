@@ -1,0 +1,37 @@
+@import "../../../styles/breakpoints.scss";
+
+.side-by-side {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.side-by-side__content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-20);
+  padding: var(--spacing-10) var(--spacing-5);
+
+  @include tablet-up {
+    gap: var(--spacing-26);
+    width: calc((10 / 12) * 100%);
+    padding: var(--spacing-24) var(--spacing-20);
+  }
+}
+
+.side-by-side__left,
+.side-by-side__right {
+  width: 100%;
+
+  @include tablet-up {
+    width: calc(50% - var(--spacing-13));
+  }
+}
+
+.side-by-side__left {
+  @include tablet-up {
+    position: sticky;
+    align-self: flex-start; // important for sticky behavior
+    top: var(--spacing-24);
+  }
+}

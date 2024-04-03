@@ -30,9 +30,10 @@ export type IconType =
 interface IconProps {
   icon: IconType;
   size?: number;
+  onButtonClick?: () => void;
 }
 
-export const Icon = ({ icon, size }: IconProps) => {
+export const Icon = ({ icon, size = 20, onButtonClick }: IconProps) => {
   const iconMap = {
     "arrow-down": <ArrowDown width={size} height={size} />,
     "arrow-right": <ArrowRight width={size} height={size} />,
@@ -47,6 +48,15 @@ export const Icon = ({ icon, size }: IconProps) => {
     search: <Search width={size} height={size} />,
     send: <Send width={size} height={size} />,
   };
+
+  if (onButtonClick) {
+    return (
+      <button className={styles["icon-button"]} onClick={onButtonClick}>
+        {iconMap[icon]}
+      </button>
+    )
+  }
+
   return (
     <span className={styles["icon"]}>
       {iconMap[icon]}

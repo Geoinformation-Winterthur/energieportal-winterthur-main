@@ -1,18 +1,26 @@
-import { Button } from "../button/button";
-import { Icon } from "../icon/icon";
+"use client"
+import Link from "next/link";
+import { useTranslation } from "../../../../i18n";
+import { useWindowSize } from "../../../hooks/useWindowSize";
 import { Logo } from "../logo/logo";
+import { Navigation } from "../navigation/navigation";
 import styles from "./header.module.scss";
 
-interface HeaderProps { }
-
-export const Header = ({ }: HeaderProps) => {
+export const Header = () => {
+  const { t } = useTranslation();
+  const { isMobile } = useWindowSize();
 
   return (
     <header className={styles["header"]}>
-      <Logo type="full" width={260} />
-      <Button icon="send">Beratung starten</Button>
-      <h1>Energieportal Winterthur</h1>
-      <a href="">Link <Icon icon="send" size={18} /></a>
+      <div className={styles["header__content"]}>
+        <div className={styles["header__topline"]}>
+          <div className={styles["header__red-strip"]}></div>
+          <p>{t('general.header.domain')}</p>
+          {!isMobile && <Logo type="full" width={260} />}
+        </div>
+        <Link href="/"><h1 className={styles["header__title"]}>{t('general.header.title')}</h1></Link>
+      </div>
+      <Navigation />
     </header>
   );
 };
