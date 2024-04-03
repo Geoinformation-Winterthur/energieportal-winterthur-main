@@ -1,0 +1,28 @@
+@import "../../../styles/breakpoints.scss";
+@import "../../../styles/typography.scss";
+
+.contact__title {
+  @include typo-headline-3();
+
+  margin-bottom: var(--spacing-3);
+
+  @include tablet-up {
+    margin-bottom: var(--spacing-4);
+  }
+}
+
+.contact__description {
+  @include typo-body();
+
+  margin-bottom: var(--spacing-6);
+
+  @include tablet-up {
+    margin-bottom: var(--spacing-8);
+  }
+}
+
+.contact__links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
