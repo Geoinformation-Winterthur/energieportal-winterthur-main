@@ -1,0 +1,24 @@
+@import "../../../styles/breakpoints.scss";
+@import "../../../styles/typography.scss";
+
+.section {
+  margin-bottom: var(--spacing-10);
+
+  @include tablet-up {
+    margin-bottom: var(--spacing-20);
+  }
+}
+
+.section__title {
+  @include typo-headline-2();
+
+  margin-bottom: var(--spacing-3);
+
+  @include tablet-up {
+    margin-bottom: var(--spacing-4);
+  }
+}
+
+.section__description {
+  @include typo-lead();
+}

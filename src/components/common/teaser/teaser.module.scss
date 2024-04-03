@@ -1,0 +1,48 @@
+@import "../../../styles/breakpoints.scss";
+@import "../../../styles/typography.scss";
+
+.teaser {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+
+  @include tablet-up {
+    gap: var(--spacing-8);
+  }
+
+}
+
+.teaser:not(:last-of-type) {
+  margin-bottom: var(--spacing-10);
+
+  @include tablet-up {
+    margin-bottom: var(--spacing-17);
+  }
+}
+
+.teaser__image {
+  position: relative;
+  aspect-ratio: 1/1;
+  width: 100%;
+  height: auto;
+}
+
+.teaser__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+
+  @include tablet-up {
+    padding: 0 5%;
+    gap: var(--spacing-4);
+  }
+}
+
+.teaser__title {
+  @include typo-headline-3();
+}
+
+.teaser__description {
+  @include typo-body();
+}
