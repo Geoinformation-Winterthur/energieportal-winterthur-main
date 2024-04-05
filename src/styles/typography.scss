@@ -82,3 +82,10 @@
   font-weight: 400;
   letter-spacing: 0.03125rem;
 }
+
+@mixin typo-copyright {
+  font-size: clamp(0.5625rem, 0.4745rem + 0.3756vw, 0.8125rem);
+  line-height: 130%;
+  font-weight: 400;
+  letter-spacing: 0.005625rem;
+}
