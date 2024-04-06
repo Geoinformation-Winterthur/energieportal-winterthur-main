@@ -1,6 +1,6 @@
 import { Intro } from "@/components/common/intro/intro";
 import { useTranslation } from "../../../i18n";
-import { SideBySide } from "@/components/common/side-by-side/side-by-side";
+import { TwoCols } from "@/components/common/layout/two-cols/two-cols";
 import { Teaser } from "@/components/common/teaser/teaser";
 import { Section } from "@/components/common/section/section";
 import { Contact } from "@/components/common/contact/contact";
@@ -25,7 +25,7 @@ export default function OnlineConsulting() {
   return (
     <main>
       <Intro title={t("online_consulting.intro.title")} lead={t("online_consulting.intro.lead")} variant="light" />
-      <SideBySide contentLeft={leftContent()} contentRight={rightContent()}></SideBySide>
+      <TwoCols contentLeft={leftContent()} contentRight={rightContent()}></TwoCols>
     </main>
   );
 }

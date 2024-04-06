@@ -1,11 +1,11 @@
 "use client"
 import Link from "next/link";
-import { useTranslation } from "react-i18next";
-import styles from "./navigation.module.scss"
-import { Fragment, useEffect, useState } from "react";
-import { Icon } from "../icon/icon";
-import { useWindowSize } from "../../../hooks/useWindowSize";
 import { usePathname } from "next/navigation";
+import { Fragment, useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
+import { useWindowSize } from "../../../hooks/useWindowSize";
+import { Icon } from "../icon/icon";
+import styles from "./navigation.module.scss";
 
 export const Navigation = ({ }) => {
   const { t } = useTranslation();
@@ -14,10 +14,10 @@ export const Navigation = ({ }) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const { isMobile } = useWindowSize();
 
-
   useEffect(() => {
-    setActiveItem(pathname)
-  }, [pathname])
+    setActiveItem(pathname);
+    document.body.classList.toggle("no-scroll", isOpen);
+  }, [pathname, isOpen])
 
 
   const items = [
@@ -44,7 +44,7 @@ export const Navigation = ({ }) => {
       {items.map((item, i) => (
         <Fragment key={i}>
           <li className={`${styles["navigation__item"]} ${item.slug === activeItem ? styles["navigation__item--active"] : ""}`}>
-            <Link href={item.slug}>{item.title}</Link>
+            <Link href={item.slug} className="link--primary">{item.title}</Link>
           </li>
           {
             i < items.length - 1 && <div className={styles["navigation__divider"]} />
@@ -58,9 +58,10 @@ export const Navigation = ({ }) => {
     <>
       {isOpen ? <Icon icon="close" size={24} onButtonClick={toggleNavMenu} /> : <Icon icon="burger" size={24} onButtonClick={toggleNavMenu} />}
       <ul className={`${styles["navigation-panel"]} ${isOpen ? styles["navigation--open"] : styles["navigation--closed"]}`}>
+        <Link href="/" onClick={toggleNavMenu} className={`${styles["navigation__domain"]} link--primary`}>{t('general.header.domain')}</Link>
         {items.map((item) => (
-          <li className={`${styles["navigation__item"]} ${item.slug === activeItem ? styles["navigation__item--active"] : ""}`} key={item.slug}>
-            <Link href={item.slug}>{item.title}</Link>
+          <li className={styles["navigation-panel__items"]} key={item.slug}>
+            <Link href={item.slug} onClick={() => setIsOpen(false)}>{item.title}</Link>
           </li>
         ))}
       </ul>
@@ -68,7 +69,7 @@ export const Navigation = ({ }) => {
   )
 
   return (
-    <nav className={`${styles["navigation"]}`}>
+    <nav className={styles["navigation"]}>
       {isMobile ? navOnMobile() : navOnDesktop()}
     </nav>
   );

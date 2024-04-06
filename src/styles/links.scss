@@ -26,6 +26,16 @@ a {
   }
 }
 
+a.link--primary {
+  color: var(--color-text-primary);
+
+  &:focus,
+  &:hover,
+  &:active {
+    color: var(--color-links);
+  }
+}
+
 @keyframes animate {
   0% {
     transform: translateX(0);
