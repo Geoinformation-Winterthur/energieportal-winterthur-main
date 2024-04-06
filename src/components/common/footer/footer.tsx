@@ -1,4 +1,5 @@
 
+import Link from "next/link";
 import { useTranslation } from "../../../../i18n";
 import styles from "./footer.module.scss";
 
@@ -12,7 +13,7 @@ export const Footer = () => {
       <div className={styles["footer__links"]}>
         <a href={pathToFiles + t("general.footer.privacy_link")} className={styles["footer__link"]} target="_blank">{t("general.footer.privacy")}</a>
         <div className={styles["footer__divider"]} />
-        <a href={pathToFiles + t("general.footer.legal_link")} className={styles["footer__link"]} target="_blank">{t("general.footer.legal")}</a>
+        <Link href={t("general.footer.legal_link")} className={styles["footer__link"]}>{t("general.footer.legal")}</Link>
         <div className={styles["footer__divider"]} />
         <a href={pathToFiles + t("general.footer.terms_of_use_link")} className={styles["footer__link"]} target="_blank">{t("general.footer.terms_of_use")}</a>
       </div>

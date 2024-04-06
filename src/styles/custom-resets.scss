@@ -18,7 +18,8 @@ h6 {
   margin-bottom: 0;
 }
 
-p {
+p,
+address {
   font-size: clamp(1.125rem, 1.081rem + 0.1878vw, 1.25rem);
   line-height: 130%;
   font-weight: 400;

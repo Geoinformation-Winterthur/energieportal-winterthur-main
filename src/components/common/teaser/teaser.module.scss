@@ -13,14 +13,6 @@
   }
 }
 
-.teaser:not(:last-of-type) {
-  margin-bottom: var(--spacing-14);
-
-  @include tablet-up {
-    margin-bottom: var(--spacing-17);
-  }
-}
-
 .teaser__image {
   align-self: center;
   position: relative;

@@ -9,7 +9,7 @@
     "general.footer.privacy": "Datenschutz",
     "general.footer.privacy_link": "Datenschutzerklaerung.pdf",
     "general.footer.legal": "Impressum",
-    "general.footer.legal_link": "Impressum.pdf",
+    "general.footer.legal_link": "/impressum",
     "general.footer.terms_of_use": "Nutzungsbedingungen",
     "general.footer.terms_of_use_link": "Nutzungsbedingungen.pdf",
     "online_consulting.intro.title": "Willkommen beim städtischen Energieportal.",
@@ -33,6 +33,7 @@
     "contact.box.phone": "052 256 00 00",
     "contact.box.mail": "neueemail@win.ch ",
     "contact.box.link": "Zum Kontaktformular",
-    "contact.box.link_target": "/kontakt"
+    "contact.box.link_target": "/kontakt",
+    "impressum.title": "Impressum"
   }
 }

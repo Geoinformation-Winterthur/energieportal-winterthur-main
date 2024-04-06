@@ -1,8 +1,8 @@
 import { Footer } from "@/components/common/footer/footer";
-import { Header } from "../components/common/header/header";
-import "../styles/globals.scss";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Header } from "../components/common/header/header";
+import "../styles/globals.scss";
 
 export const NewsGothic = localFont({
   src: [
