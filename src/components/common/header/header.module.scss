@@ -30,6 +30,7 @@
   align-items: baseline;
   gap: var(--spacing-4);
 
+
   @include tablet-up {
     height: var(--spacing-11);
   }
@@ -42,9 +43,20 @@
   width: var(--spacing-1);
   height: var(--spacing-11);
   background-color: var(--color-brand-red);
+  z-index: 2;
 
   @include tablet-up {
     top: var(--spacing-9);
+  }
+}
+
+.header__domain {
+  position: absolute;
+  top: var(--spacing-16);
+
+  @include tablet-up {
+    top: 0;
+    position: relative;
   }
 }
 

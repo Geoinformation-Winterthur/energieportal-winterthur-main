@@ -2,21 +2,21 @@
 @import "../../../styles/typography.scss";
 
 .section {
-  margin-bottom: var(--spacing-10);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
 
   @include tablet-up {
-    margin-bottom: var(--spacing-20);
+    gap: var(--spacing-4);
+  }
+
+  a {
+    display: inline-flex;
   }
 }
 
 .section__title {
   @include typo-headline-2();
-
-  margin-bottom: var(--spacing-3);
-
-  @include tablet-up {
-    margin-bottom: var(--spacing-4);
-  }
 }
 
 .section__description {
