@@ -33,7 +33,6 @@
     "contact.box.phone": "052 256 00 00",
     "contact.box.mail": "neueemail@win.ch ",
     "contact.box.link": "Zum Kontaktformular",
-    "contact.box.link_target": "/kontakt",
-    "impressum.title": "Impressum"
+    "contact.box.link_target": "/kontakt"
   }
 }

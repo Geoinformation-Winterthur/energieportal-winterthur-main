@@ -4,6 +4,8 @@ import { TwoCols } from "@/components/common/layout/two-cols/two-cols";
 import { Teaser } from "@/components/common/teaser/teaser";
 import { Section } from "@/components/common/section/section";
 import { Contact } from "@/components/common/contact/contact";
+import { AddressSearchBar } from "@/components/features/address-search-bar/address-search-bar";
+import { FullWidth } from "@/components/common/layout/full-width/full-width";
 
 export default function OnlineConsulting() {
 
@@ -25,6 +27,9 @@ export default function OnlineConsulting() {
   return (
     <main>
       <Intro title={t("online_consulting.intro.title")} lead={t("online_consulting.intro.lead")} variant="light" />
+      <FullWidth noPaddingY>
+        <AddressSearchBar variant="dark" />
+      </FullWidth>
       <TwoCols contentLeft={leftContent()} contentRight={rightContent()}></TwoCols>
     </main>
   );

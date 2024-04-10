@@ -4,11 +4,14 @@
   @include typo-button();
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: var(--spacing-3);
-  width: max-content;
+  width: 100%;
+  min-width: max-content;
+  height: var(--spacing-14);
   color: var(--color-white);
   background-color: var(--color-brand-red);
-  padding: var(--spacing-5) var(--spacing-6);
+  padding: 0 var(--spacing-4);
   transition: background-color 0.2s ease-out;
 
   &:focus,
