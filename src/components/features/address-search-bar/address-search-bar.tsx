@@ -1,10 +1,9 @@
 "use client"
 import { Button } from "@/components/common/button/button";
-import { Input } from "@/components/form/input/input";
-import { ChangeEvent, useState } from "react";
-import styles from "./address-search-bar.module.scss";
-import { debounce } from "@/utils/debounce";
 import { Icon } from "@/components/common/icon/icon";
+import { Autocomplete } from '@mui/material';
+import { useState } from "react";
+import styles from "./address-search-bar.module.scss";
 
 interface AddressSearchBarProps {
   title?: string;
@@ -17,35 +16,39 @@ export const AddressSearchBar = ({ title, lead, variant }: AddressSearchBarProps
   const [searchResults, setSearchResults] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
-  const getAddresses = async () => {
-    const response = await fetch(`https://stadtplantest.winterthur.ch/energieportal-service/Address?search=${searchString}`);
+  const getAddresses = async (value: string) => {
+    setSearchString(value);
+    if (value.length < 3) {
+      setSearchResults([])
+      return;
+    };
+    setIsLoading(true)
+    const response = await fetch(`https://stadtplantest.winterthur.ch/energieportal-service/Address?search=${value}`);
     const data = await response.json();
+    setSearchResults(data);
+    setIsLoading(false);
     return data;
   }
 
-  const performSearch = async () => {
-    setIsLoading(true);
-    const results = await getAddresses();
-    setSearchResults(results);
-    setIsLoading(false);
-  };
+  // const performSearch = async () => {
+  //   setIsLoading(true);
+  //   const results = await getAddresses();
+  //   setSearchResults(results);
+  //   setIsLoading(false);
+  // };
 
-  const handleOnChange = async (e: ChangeEvent<HTMLInputElement>) => {
-    setSearchString(e?.target?.value ?? "");
-    if (e?.target?.value?.length < 3) {
-      setSearchResults([]);
-      return;
-    };
-    debounce(performSearch(), 200);
-  }
+  // const handleOnChange = async (e: ChangeEvent<HTMLInputElement>) => {
+  //   setSearchString(e?.target?.value ?? "");
+  //   if (e?.target?.value?.length < 3) {
+  //     setSearchResults([]);
+  //     return;
+  //   };
+  //   debounce(performSearch(), 200);
+  // }
 
-  const handleOnBlur = () => {
-    setSearchResults([]);
-  }
 
-  const handleResultClick = (result: string) => {
-    setSearchString(result);
-    setSearchResults([]);
+  const handleSubmit = (value: string) => {
+    alert(`Diese Adresse wurde übermittelt: ${value}`)
   }
 
   return (
@@ -54,33 +57,29 @@ export const AddressSearchBar = ({ title, lead, variant }: AddressSearchBarProps
         <h2 className={styles["address-search-bar__title"]}>{title}</h2>
         <p className={styles["address-search-bar__lead"]}>{lead}</p>
       </div>
-      <div className={styles["address-search-bar__input"]}>
-        <div className={styles["address-search-bar__icon"]}>
-          <Icon icon={`${isLoading ? "loading" : "search"}`} />
-        </div>
-        <Input
-          name="address"
-          type="text"
-          placeholder="Strasse und Hausnummer eingeben"
+      <div className={styles["address-search-bar__form"]}>
+        <Autocomplete
+          fullWidth
+          onInputChange={(e, value) => getAddresses(value)}
           value={searchString}
-          onChange={handleOnChange}
-          onBlur={handleOnBlur}
+          onBlur={() => setSearchResults([])}
+          disablePortal
+          options={searchResults.slice(0, 40)}
+          noOptionsText={searchString.length < 3 ? "Bitte mind. 3 Zeichen eingeben" : "Keine Ergebnisse"}
+          filterOptions={(x) => x}
+          renderInput={(params) => (
+            <div ref={params.InputProps.ref} className={styles["address-search-bar__input-wrapper"]}>
+              <div className={styles["address-search-bar__icon"]}>
+                <Icon icon={`${isLoading ? "loading" : "search"}`} />
+              </div>
+              <input type="text" {...params.inputProps} placeholder="Strasse und Hausnummer eingeben"></input>
+            </div>
+
+          )}
         />
-        {searchResults.length > 1 && (
-          <ul className={styles["address-search-bar__search-results"]}>
-            {searchResults.slice(0, 40).map((result, i) => (
-              <li className={styles["address-search-bar__search-result"]} key={i} onMouseDown={() => handleResultClick(result)}>{result}</li>
-            ))}
-          </ul>
-        )}
-        {searchResults.length <= 1 && searchString.length > 0 && (
-          <div className={styles["address-search-bar__no-results"]}>
-            Keine Ergebnisse
-          </div>
-        )}
-      </div>
-      <div className={styles["address-search-bar__button"]}>
-        <Button icon="arrow-right">Jetzt starten</Button>
+        <div className={styles["address-search-bar__button"]}>
+          <Button icon="arrow-right" onClick={() => handleSubmit(searchString)}>Jetzt starten</Button>
+        </div>
       </div>
     </div >
   )

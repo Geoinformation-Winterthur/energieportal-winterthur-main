@@ -1,0 +1,8 @@
+@import "./typography.scss";
+
+.MuiPaper-root {
+  @include typo-body-small();
+
+  font-family: var(--font-news-gothic);
+  border-radius: 0;
+}
