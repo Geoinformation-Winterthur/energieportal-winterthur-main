@@ -9,8 +9,13 @@
 
   @include tablet-up {
     gap: var(--spacing-20);
-    width: calc((10 / 12) * 100%);
+    max-width: calc((10 / 12) * var(--max-width));
     padding: var(--spacing-24) var(--spacing-20);
     margin: auto;
   }
+}
+
+.full-width.full-width--no-padding-y {
+  padding-top: 0;
+  padding-bottom: 0;
 }
