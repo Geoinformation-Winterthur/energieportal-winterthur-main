@@ -36,7 +36,7 @@ export const AddressSearchBar = ({ title, lead, variant }: AddressSearchBarProps
       setSearchResults([]);
       return;
     };
-    debounce(performSearch(), 400);
+    debounce(performSearch(), 200);
   }
 
   const handleOnBlur = () => {
@@ -51,8 +51,8 @@ export const AddressSearchBar = ({ title, lead, variant }: AddressSearchBarProps
   return (
     <div className={`${styles["address-search-bar"]} ${styles[`address-search-bar--${variant}`]}`}>
       <div className={styles["address-search-bar__content"]}>
-        <h2 className={styles["address-search-bar__title"]}>Ihr Gebäude in Winterthur</h2>
-        <p className={styles["address-search-bar__lead"]}>Geben Sie für eine digitale Energieberatung Ihre Adresse ein.</p>
+        <h2 className={styles["address-search-bar__title"]}>{title}</h2>
+        <p className={styles["address-search-bar__lead"]}>{lead}</p>
       </div>
       <div className={styles["address-search-bar__input"]}>
         <div className={styles["address-search-bar__icon"]}>
@@ -68,12 +68,12 @@ export const AddressSearchBar = ({ title, lead, variant }: AddressSearchBarProps
         />
         {searchResults.length > 1 && (
           <ul className={styles["address-search-bar__search-results"]}>
-            {searchResults.slice(0, 8).map((result, i) => (
+            {searchResults.slice(0, 40).map((result, i) => (
               <li className={styles["address-search-bar__search-result"]} key={i} onMouseDown={() => handleResultClick(result)}>{result}</li>
             ))}
           </ul>
         )}
-        {searchResults.length === 1 && searchString.length > 0 && (
+        {searchResults.length <= 1 && searchString.length > 0 && (
           <div className={styles["address-search-bar__no-results"]}>
             Keine Ergebnisse
           </div>

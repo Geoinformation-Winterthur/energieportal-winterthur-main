@@ -50,7 +50,7 @@
 
   input {
     position: relative;
-    padding-left: var(--spacing-10);
+    padding-left: var(--spacing-11);
     height: var(--spacing-14);
   }
 }
@@ -71,6 +71,8 @@
   position: absolute;
   top: 50%;
   left: var(--spacing-3);
+  display: flex;
+  align-items: center;
   transform: translateY(-50%);
   color: var(--color-brand-red);
   z-index: 2;
