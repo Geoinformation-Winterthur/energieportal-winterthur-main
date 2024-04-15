@@ -1,6 +1,7 @@
 "use client"
 import { Button } from "@/components/common/button/button";
 import { Icon } from "@/components/common/icon/icon";
+import { debounce } from "@/utils/debounce";
 import { Autocomplete } from '@mui/material';
 import { useState } from "react";
 import styles from "./address-search-bar.module.scss";
@@ -16,35 +17,27 @@ export const AddressSearchBar = ({ title, lead, variant }: AddressSearchBarProps
   const [searchResults, setSearchResults] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
-  const getAddresses = async (value: string) => {
+  const getAddresses = async () => {
+    const response = await fetch(`https://stadtplantest.winterthur.ch/energieportal-service/Address?search=${searchString}`);
+    const data = await response.json();
+    return data;
+  }
+
+  const performSearch = async () => {
+    setIsLoading(true);
+    const results = await getAddresses();
+    setSearchResults(results);
+    setIsLoading(false);
+  };
+
+  const handleOnChange = async (value: string) => {
     setSearchString(value);
     if (value.length < 3) {
       setSearchResults([])
       return;
     };
-    setIsLoading(true)
-    const response = await fetch(`https://stadtplantest.winterthur.ch/energieportal-service/Address?search=${value}`);
-    const data = await response.json();
-    setSearchResults(data);
-    setIsLoading(false);
-    return data;
+    debounce(performSearch(), 200);
   }
-
-  // const performSearch = async () => {
-  //   setIsLoading(true);
-  //   const results = await getAddresses();
-  //   setSearchResults(results);
-  //   setIsLoading(false);
-  // };
-
-  // const handleOnChange = async (e: ChangeEvent<HTMLInputElement>) => {
-  //   setSearchString(e?.target?.value ?? "");
-  //   if (e?.target?.value?.length < 3) {
-  //     setSearchResults([]);
-  //     return;
-  //   };
-  //   debounce(performSearch(), 200);
-  // }
 
 
   const handleSubmit = (value: string) => {
@@ -60,7 +53,7 @@ export const AddressSearchBar = ({ title, lead, variant }: AddressSearchBarProps
       <div className={styles["address-search-bar__form"]}>
         <Autocomplete
           fullWidth
-          onInputChange={(e, value) => getAddresses(value)}
+          onInputChange={(e, value) => handleOnChange(value)}
           value={searchString}
           onBlur={() => setSearchResults([])}
           disablePortal
@@ -74,7 +67,6 @@ export const AddressSearchBar = ({ title, lead, variant }: AddressSearchBarProps
               </div>
               <input type="text" {...params.inputProps} placeholder="Strasse und Hausnummer eingeben"></input>
             </div>
-
           )}
         />
         <div className={styles["address-search-bar__button"]}>
