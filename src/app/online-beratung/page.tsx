@@ -7,7 +7,7 @@ import { Section } from "@/components/common/section/section";
 import { Teaser } from "@/components/common/teaser/teaser";
 import { AddressSearchBar } from "@/components/features/address-search-bar/address-search-bar";
 import { useSearchParams } from "next/navigation";
-import { Suspense, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "../../../i18n";
 
 export default function OnlineConsulting() {
@@ -61,9 +61,7 @@ export default function OnlineConsulting() {
 
   return (
     <main>
-      <Suspense>
-        {hasAddress ? renderMyProperty() : renderWelcomeScreen()}
-      </Suspense>
+      {hasAddress ? renderMyProperty() : renderWelcomeScreen()}
     </main>
   );
 }
