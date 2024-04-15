@@ -15,7 +15,7 @@ export const Header = () => {
       <div className={styles["header__content"]}>
         <div className={styles["header__topline"]}>
           <div className={styles["header__red-strip"]} />
-          <Link href="/" className={`${styles["header__domain"]} link--primary`}>{t('general.header.domain')}</Link>
+          <Link href="/" className={`${styles["header__domain"]} link-primary`}>{t('general.header.domain')}</Link>
           {!isMobile && <Logo type="full" width={260} />}
         </div>
         <Link href="/"><h1 className={styles["header__title"]}>{t('general.header.title')}</h1></Link>

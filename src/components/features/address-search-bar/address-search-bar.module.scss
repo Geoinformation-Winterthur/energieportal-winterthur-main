@@ -1,0 +1,91 @@
+@import "../../../styles/breakpoints.scss";
+@import "../../../styles/typography.scss";
+
+.address-search-bar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+  padding: var(--spacing-8) var(--spacing-4);
+  margin-top: -145px; // half of the components size
+  margin-bottom: var(--spacing-10);
+
+  @include tablet-up {
+    flex-direction: row;
+    align-items: center;
+    padding: var(--spacing-10);
+    margin-top: -84px; // half of the components size
+    margin-bottom: 0;
+  }
+}
+
+.address-search-bar--dark {
+  background-color: var(--color-brand-green-dark);
+}
+
+.address-search-bar--light {
+  background-color: var(--color-brand-green-light);
+}
+
+.address-search-bar__title {
+  @include typo-headline-3();
+
+  margin-bottom: var(--spacing-2);
+
+  @include tablet-up {
+    margin-bottom: 0;
+  }
+}
+
+.address-search-bar__title,
+.address-search-bar__lead {
+  color: var(--color-white);
+}
+
+.address-search-bar__form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+  width: 100%;
+
+  @include tablet-up {
+    flex-direction: row;
+    width: 80%;
+  }
+}
+
+.address-search-bar__input-wrapper {
+  position: relative;
+  height: var(--spacing-14);
+
+  input {
+    @include typo-body();
+
+    padding: var(--spacing-3);
+    padding-left: var(--spacing-11);
+    border: 0;
+    width: 100%;
+    height: 100%;
+
+    &::placeholder {
+      color: var(--color-text-primary);
+      opacity: 0.5;
+    }
+
+    &:focus {
+      outline: none;
+      border-bottom: 3px solid var(--color-text-primary);
+      padding-bottom: 6px;
+      transition: all 0.14s ease-out;
+    }
+  }
+}
+
+.address-search-bar__icon {
+  position: absolute;
+  top: 50%;
+  left: var(--spacing-3);
+  display: flex;
+  align-items: center;
+  transform: translateY(-50%);
+  color: var(--color-brand-red);
+}

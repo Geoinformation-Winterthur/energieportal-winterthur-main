@@ -17,7 +17,8 @@ a {
 
   &:focus,
   &:hover,
-  &:active {
+  &:active,
+  &--active {
     color: var(--color-black);
 
     svg {
@@ -26,12 +27,13 @@ a {
   }
 }
 
-a.link--primary {
+a.link-primary {
   color: var(--color-text-primary);
 
   &:focus,
   &:hover,
-  &:active {
+  &:active,
+  &--active {
     color: var(--color-links);
   }
 }

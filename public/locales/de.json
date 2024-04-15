@@ -34,6 +34,7 @@
     "contact.box.mail": "neueemail@win.ch ",
     "contact.box.link": "Zum Kontaktformular",
     "contact.box.link_target": "/kontakt",
-    "impressum.title": "Impressum"
+    "address.search_bar.title": "Ihr Gebäude in Winterthur",
+    "address.search_bar.text": "Geben Sie für eine digitale Energieberatung Ihre Adresse ein."
   }
 }
