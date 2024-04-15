@@ -66,7 +66,7 @@ export const AddressSearchBar = ({ title, lead, variant = "dark" }: AddressSearc
   };
 
   const handleClearClick = () => {
-    router.push(pathname, { scroll: false });
+    router.replace(pathname, { scroll: false });
     setSubmittedAddress(null);
     setSearchString("");
     setSearchResults([]);
@@ -103,7 +103,7 @@ export const AddressSearchBar = ({ title, lead, variant = "dark" }: AddressSearc
           )}
         />
         <div className={styles["address-search-bar__button"]}>
-          <Button icon="arrow-right" onClick={() => handleSubmitClick(searchString)}>Jetzt starten</Button>
+          <Button icon="arrow-right" onClick={() => handleSubmitClick(searchString)}>{submittedAddress ? "Adresse ändern" : "Jetzt starten"}</Button>
         </div>
       </div>
     </div >
