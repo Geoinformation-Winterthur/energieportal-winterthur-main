@@ -6,6 +6,7 @@ import { Section } from "@/components/common/section/section";
 import { Teaser } from "@/components/common/teaser/teaser";
 import { AddressSearchBar } from "@/components/features/address-search-bar/address-search-bar";
 import { useTranslation } from "../../../i18n";
+import { Suspense } from "react";
 
 export default function OnlineConsulting() {
 
@@ -49,8 +50,10 @@ export default function OnlineConsulting() {
 
   return (
     <main>
-      {welcomeScreen()}
-      {/* {myProperty()} */}
+      <Suspense>
+        {welcomeScreen()}
+        {/* {myProperty()} */}
+      </Suspense>
     </main>
   );
 }
