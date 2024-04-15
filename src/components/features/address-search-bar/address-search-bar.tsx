@@ -3,9 +3,9 @@ import { Button } from "@/components/common/button/button";
 import { Icon } from "@/components/common/icon/icon";
 import { debounce } from "@/utils/debounce";
 import { Autocomplete } from '@mui/material';
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
 import styles from "./address-search-bar.module.scss";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 interface AddressSearchBarProps {
   title?: string;
@@ -85,7 +85,7 @@ export const AddressSearchBar = ({ title, lead, variant = "dark" }: AddressSearc
           value={searchString}
           onBlur={() => setSearchResults([])}
           disablePortal
-          options={searchResults.slice(0, 40)}
+          options={searchResults.slice(0, 40).sort()}
           noOptionsText={searchString.length < 3 ? "Bitte mind. 3 Zeichen eingeben" : "Keine Ergebnisse"}
           filterOptions={(x) => x}
           renderInput={(params) => (
