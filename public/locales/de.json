@@ -35,6 +35,7 @@
     "contact.box.link": "Zum Kontaktformular",
     "contact.box.link_target": "/kontakt",
     "address.search_bar.title": "Ihr Gebäude in Winterthur",
-    "address.search_bar.text": "Geben Sie für eine digitale Energieberatung Ihre Adresse ein."
+    "address.search_bar.text": "Geben Sie für eine digitale Energieberatung Ihre Adresse ein.",
+    "my_property.title": "Meine Liegenschaft"
   }
 }

@@ -1,11 +1,11 @@
-import { Intro } from "@/components/common/intro/intro";
-import { useTranslation } from "../../../i18n";
-import { TwoCols } from "@/components/common/layout/two-cols/two-cols";
-import { Teaser } from "@/components/common/teaser/teaser";
-import { Section } from "@/components/common/section/section";
 import { Contact } from "@/components/common/contact/contact";
-import { AddressSearchBar } from "@/components/features/address-search-bar/address-search-bar";
+import { Intro } from "@/components/common/intro/intro";
 import { FullWidth } from "@/components/common/layout/full-width/full-width";
+import { TwoCols } from "@/components/common/layout/two-cols/two-cols";
+import { Section } from "@/components/common/section/section";
+import { Teaser } from "@/components/common/teaser/teaser";
+import { AddressSearchBar } from "@/components/features/address-search-bar/address-search-bar";
+import { useTranslation } from "../../../i18n";
 
 export default function OnlineConsulting() {
 
@@ -24,13 +24,33 @@ export default function OnlineConsulting() {
     </>
   )
 
+  const myProperty = () => {
+    return (
+      <>
+        <Intro title={t("my_property.title")} variant="dark" />
+        <FullWidth noPaddingY>
+          <AddressSearchBar variant="light" />
+        </FullWidth>
+      </>
+    )
+  }
+
+  const welcomeScreen = () => {
+    return (
+      <>
+        <Intro title={t("online_consulting.intro.title")} lead={t("online_consulting.intro.lead")} variant="light" />
+        <FullWidth noPaddingY>
+          <AddressSearchBar variant="dark" title={t("address.search_bar.title")} lead={t("address.search_bar.text")} />
+        </FullWidth>
+        <TwoCols contentLeft={leftContent()} contentRight={rightContent()}></TwoCols>
+      </>
+    )
+  }
+
   return (
     <main>
-      <Intro title={t("online_consulting.intro.title")} lead={t("online_consulting.intro.lead")} variant="light" />
-      <FullWidth noPaddingY>
-        <AddressSearchBar variant="dark" title={t("address.search_bar.title")} lead={t("address.search_bar.text")} />
-      </FullWidth>
-      <TwoCols contentLeft={leftContent()} contentRight={rightContent()}></TwoCols>
+      {welcomeScreen()}
+      {/* {myProperty()} */}
     </main>
   );
 }
