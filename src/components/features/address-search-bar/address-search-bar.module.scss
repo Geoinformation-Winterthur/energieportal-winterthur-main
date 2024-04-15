@@ -20,6 +20,12 @@
 
 .address-search-bar--dark {
   background-color: var(--color-brand-green-dark);
+
+  & .address-search-bar__form {
+    @include tablet-up {
+      width: 80%;
+    }
+  }
 }
 
 .address-search-bar--light {
@@ -49,7 +55,6 @@
 
   @include tablet-up {
     flex-direction: row;
-    width: 80%;
   }
 }
 
@@ -77,15 +82,29 @@
       padding-bottom: 6px;
       transition: all 0.14s ease-out;
     }
+
+  }
+
+  &.address-search-bar__input--filled {
+    input::placeholder {
+      opacity: 1;
+    }
   }
 }
 
 .address-search-bar__icon {
   position: absolute;
   top: 50%;
-  left: var(--spacing-3);
   display: flex;
   align-items: center;
   transform: translateY(-50%);
   color: var(--color-brand-red);
+
+  &--search {
+    left: var(--spacing-3);
+  }
+
+  &--clear {
+    right: var(--spacing-3);
+  }
 }
