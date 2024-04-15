@@ -26,9 +26,6 @@ export default function Impressum() {
           <p>Bei der Erstellung des Energieportals wurde die Stadt Winterthur durch dreipol GmbH unterstützt.</p>
           <address>
             dreipol GmbH <br />
-            Departement Bau und Mobilität <br />
-            Amt für Baubewilligungen <br />
-            Energie und Technik <br />
             Langstrasse 94 <br />
             8004 Zürich <br />
           </address>
