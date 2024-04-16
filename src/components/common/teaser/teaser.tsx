@@ -27,7 +27,7 @@ export const Teaser = ({ title, description, image, image_credits, link, link_ta
       <div className={styles["teaser__content"]}>
         <h3 className={styles["teaser__title"]}>{title}</h3>
         <p className={styles["teaser__description"]}>{description}</p>
-        {link_target.startsWith("/pdf" || "https") ? <a href={link_target} target="_blank">{link} <Icon icon="link" /></a> : <Link href={link_target}>{link} <Icon icon="arrow-right" /> </Link>}
+        {link_target.startsWith("/") ? <Link href={link_target}>{link} <Icon icon="arrow-right" /></Link> : <a href={link_target} target="_blank">{link} <Icon icon="link" /></a>}
       </div>
     </div>
   )
