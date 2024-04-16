@@ -82,7 +82,6 @@ export const AddressSearchBar = ({ title, lead, variant = "dark" }: AddressSearc
         <Autocomplete
           fullWidth
           onInputChange={(e, value) => handleOnChange(value)}
-          value={searchString}
           onBlur={() => setSearchResults([])}
           disablePortal
           options={searchResults.slice(0, 40).sort()}
