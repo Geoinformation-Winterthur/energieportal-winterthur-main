@@ -1,3 +1,4 @@
+'use client'
 import { Contact } from "@/components/common/contact/contact";
 import { Intro } from "@/components/common/intro/intro";
 import { FullWidth } from "@/components/common/layout/full-width/full-width";
@@ -5,12 +6,22 @@ import { TwoCols } from "@/components/common/layout/two-cols/two-cols";
 import { Section } from "@/components/common/section/section";
 import { Teaser } from "@/components/common/teaser/teaser";
 import { AddressSearchBar } from "@/components/features/address-search-bar/address-search-bar";
+import { useSearchParams } from "next/navigation";
+import { useEffect, useState } from "react";
 import { useTranslation } from "../../../i18n";
-import { Suspense } from "react";
 
 export default function OnlineConsulting() {
-
   const { t } = useTranslation();
+  const [hasAddress, setHasAddress] = useState(false);
+  const searchParams = useSearchParams();
+
+  useEffect(() => {
+    if (searchParams.get("address")) {
+      setHasAddress(searchParams.has("address"));
+    }
+  }, [searchParams])
+
+
 
   const rightContent = () => (
     <>
@@ -25,7 +36,7 @@ export default function OnlineConsulting() {
     </>
   )
 
-  const myProperty = () => {
+  const renderMyProperty = () => {
     return (
       <>
         <Intro title={t("my_property.title")} variant="dark" />
@@ -36,7 +47,7 @@ export default function OnlineConsulting() {
     )
   }
 
-  const welcomeScreen = () => {
+  const renderWelcomeScreen = () => {
     return (
       <>
         <Intro title={t("online_consulting.intro.title")} lead={t("online_consulting.intro.lead")} variant="light" />
@@ -50,10 +61,7 @@ export default function OnlineConsulting() {
 
   return (
     <main>
-      <Suspense>
-        {welcomeScreen()}
-        {/* {myProperty()} */}
-      </Suspense>
+      {hasAddress ? renderMyProperty() : renderWelcomeScreen()}
     </main>
   );
 }

@@ -17,13 +17,13 @@
     "online_consulting.teaser_1_title": "Energieberatung",
     "online_consulting.teaser_1_description": "Entdecken Sie das Beratungsangebot der städtischen Energieberatung.",
     "online_consulting.teaser_1_image": "energieberatung.png",
-    "online_consulting.teaser_1_image_credits": "Stadt Winterthur",
+    "online_consulting.teaser_1_image_credits": "Bildquelle: Stadt Winterthur",
     "online_consulting.teaser_1_link": "Beratungsangebot ansehen",
     "online_consulting.teaser_1_link_target": "/unser-beratungsangebot",
     "online_consulting.teaser_2_title": "Stadtplan Winterthur",
     "online_consulting.teaser_2_description": "Im Stadtplan von Winterthur finden Sie den aktuellen kommunalen Energieplan.",
     "online_consulting.teaser_2_image": "stadtplan_winterthur.png",
-    "online_consulting.teaser_2_image_credits": "Maps Winterthur",
+    "online_consulting.teaser_2_image_credits": "Bildquelle: Maps Winterthur",
     "online_consulting.teaser_2_link": "Zur Energieplankarte",
     "online_consulting.teaser_2_link_target": "https://stadtplan.winterthur.ch/?topic=KommunalerEnergieplan",
     "online_consulting.section_title": "Wir unterstützen Sie gerne",
@@ -38,6 +38,11 @@
     "contact.box.link_target": "/kontakt",
     "address.search_bar.title": "Ihr Gebäude in Winterthur",
     "address.search_bar.text": "Geben Sie für eine digitale Energieberatung Ihre Adresse ein.",
+    "address.search_bar.input_placeholder": "Strasse und Hausnummer eingeben",
+    "address.search_bar.input_help": "Bitte mind. 3 Zeichen eingeben",
+    "address.search_bar.input_no_results": "Keine Ergebnisse",
+    "address.search_bar.submit": "Jetzt starten",
+    "address.search_bar.edit": "Adresse ändern",
     "my_property.title": "Meine Liegenschaft"
   }
 }

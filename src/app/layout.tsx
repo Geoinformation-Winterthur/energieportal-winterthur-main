@@ -1,6 +1,7 @@
 import { Footer } from "@/components/common/footer/footer";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Suspense } from "react";
 import { Header } from "../components/common/header/header";
 import "../styles/globals.scss";
 
@@ -33,9 +34,11 @@ export default function RootLayout({
   return (
     <html lang="de-CH">
       <body className={NewsGothic.className}>
-        <Header />
-        {children}
-        <Footer />
+        <Suspense>
+          <Header />
+          {children}
+          <Footer />
+        </Suspense>
       </body>
     </html>
   );
