@@ -9,6 +9,7 @@ import { AddressSearchBar } from "@/components/features/address-search-bar/addre
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useTranslation } from "../../../i18n";
+import { MyPropertyPage } from "@/templates/my-propery/my-property";
 
 export default function OnlineConsulting() {
   const { t } = useTranslation();
@@ -20,8 +21,6 @@ export default function OnlineConsulting() {
       setHasAddress(searchParams.has("address"));
     }
   }, [searchParams])
-
-
 
   const rightContent = () => (
     <>
@@ -35,17 +34,6 @@ export default function OnlineConsulting() {
       <Contact />
     </>
   )
-
-  const renderMyProperty = () => {
-    return (
-      <>
-        <Intro title={t("my_property.title")} variant="dark" />
-        <FullWidth noPaddingY>
-          <AddressSearchBar variant="light" />
-        </FullWidth>
-      </>
-    )
-  }
 
   const renderWelcomeScreen = () => {
     return (
@@ -61,7 +49,7 @@ export default function OnlineConsulting() {
 
   return (
     <main>
-      {hasAddress ? renderMyProperty() : renderWelcomeScreen()}
+      {hasAddress ? <MyPropertyPage /> : renderWelcomeScreen()}
     </main>
   );
 }
