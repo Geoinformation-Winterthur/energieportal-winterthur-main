@@ -2,6 +2,7 @@ import { Button } from '@/components/common/button/button';
 import { Icon } from '@/components/common/icon/icon';
 import { debounce } from '@/utils/debounce';
 import { Autocomplete as MuiAutocomplete } from '@mui/material';
+import clsx from 'clsx';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { useCallback, useEffect, useState } from 'react';
 import { useTranslation } from '../../../../i18n';
@@ -78,13 +79,13 @@ export const Autocomplete = () => {
         noOptionsText={searchString.length < 3 ? t("address.search_bar.input_help") : t("address.search_bar.input_no_results")}
         filterOptions={(x) => x}
         renderInput={(params) => (
-          <div ref={params.InputProps.ref} className={`${styles["autocomplete__input-wrapper"]} ${submittedAddress ? styles["autocomplete__input--filled"] : ""} }`}>
-            <div className={`${styles["autocomplete__icon"]} ${styles["autocomplete__icon--search"]}`}>
-              <Icon icon={`${isLoading ? "loading" : "search"}`} />
+          <div ref={params.InputProps.ref} className={clsx(styles["autocomplete__input-wrapper"], submittedAddress ? styles["autocomplete__input--filled"] : "")}>
+            <div className={clsx(styles["autocomplete__icon"], styles["autocomplete__icon--search"])}>
+              <Icon icon={isLoading ? "loading" : "search"} />
             </div>
-            <input className="autocomplete__input" type="text" {...params.inputProps} placeholder={submittedAddress ?? t("address.search_bar.input_placeholder")} />
+            <input type="text" {...params.inputProps} placeholder={submittedAddress ?? t("address.search_bar.input_placeholder")} />
             {submittedAddress &&
-              <div className={`${styles["autocomplete__icon"]} ${styles["autocomplete__icon--clear"]}`}>
+              <div className={clsx(styles["autocomplete__icon"], styles["autocomplete__icon--clear"])}>
                 <Icon icon="close" onButtonClick={handleClearClick} />
               </div>
             }

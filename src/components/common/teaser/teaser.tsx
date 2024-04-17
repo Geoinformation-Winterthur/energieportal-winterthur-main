@@ -17,7 +17,7 @@ export const Teaser = ({ title, description, image, image_credits, link, link_ta
   const pathToImages = "/images/"
 
   return (
-    <div className={`${styles["teaser"]}`}>
+    <div className={styles["teaser"]}>
       <div className={styles["teaser__image"]}>
         <div className={styles["teaser__image-background"]}>
           {image_credits && <p className={styles["teaser__image-copyright"]}>{image_credits}</p>}

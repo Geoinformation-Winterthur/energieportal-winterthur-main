@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import styles from "./full-width.module.scss";
 
 interface FullWidthProps {
@@ -8,7 +9,7 @@ interface FullWidthProps {
 export const FullWidth = ({ children, noPaddingY }: FullWidthProps) => {
 
   return (
-    <div className={`${styles["full-width"]} ${noPaddingY ? styles["full-width--no-padding-y"] : ""}`}>
+    <div className={clsx(styles["full-width"], noPaddingY ? styles["full-width--no-padding-y"] : "")}>
       {children}
     </div>
   )

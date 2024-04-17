@@ -30,6 +30,10 @@
 
 .address-search-bar--light {
   background-color: var(--color-brand-green-light);
+
+  & .address-search-bar__form {
+    width: 100%;
+  }
 }
 
 .address-search-bar__title {

@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import styles from "./input.module.scss";
 
 interface InputProps {
@@ -25,10 +26,7 @@ export const Input = ({
 }: InputProps) => {
   return (
     <div
-      className={`
-        ${styles["input"]}
-        ${error ? styles["input--error"] : ""}
-      `}
+      className={clsx(styles["input"], error ? styles["input--error"] : "")}
     >
       <label className={styles["input__label"]} htmlFor={name}>
         {label}

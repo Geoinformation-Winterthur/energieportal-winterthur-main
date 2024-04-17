@@ -1,7 +1,6 @@
 import { Autocomplete } from "@/components/form/autocomplete/autocomplete";
 import styles from "./address-search-bar.module.scss";
 
-
 interface AddressSearchBarProps {
   title?: string;
   lead?: string;
