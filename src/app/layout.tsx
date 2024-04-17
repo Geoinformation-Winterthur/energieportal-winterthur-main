@@ -1,9 +1,9 @@
 import { Footer } from "@/components/common/footer/footer";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Suspense } from "react";
 import { Header } from "../components/common/header/header";
 import "../styles/globals.scss";
-import { Suspense } from "react";
 
 export const NewsGothic = localFont({
   src: [
