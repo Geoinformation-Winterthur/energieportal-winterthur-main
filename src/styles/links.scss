@@ -19,7 +19,7 @@ a {
   &:hover,
   &:active,
   &--active {
-    color: var(--color-black);
+    color: var(--color-text-primary);
 
     svg {
       animation: animate 0.3s ease-in-out forwards;

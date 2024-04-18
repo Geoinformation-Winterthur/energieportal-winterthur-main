@@ -1,50 +1,26 @@
 import { Intro } from "@/components/common/intro/intro"
 import { FullWidth } from "@/components/common/layout/full-width/full-width"
+import { Section } from "@/components/common/section/section"
 import { AddressSearchBar } from "@/components/features/address-search-bar/address-search-bar"
-import { t } from "i18next"
-import { useSearchParams } from "next/navigation"
-import { useEffect, useState } from "react"
+import { PropertyFacts } from "@/components/features/property-facts/property-facts"
+import { useTranslation } from "../../../i18n"
 
 export const MyPropertyPage = () => {
-  const [currentAddress, setCurrentAddress] = useState<string | null>(null);
-  const searchParams = useSearchParams();
-
-  useEffect(() => {
-    if (searchParams.get("address")) {
-      setCurrentAddress(searchParams.get("address") ?? "");
-    }
-  }, [searchParams])
-
-  useEffect(() => {
-    async function propertyWrapper() {
-      const response = await getPropertyInfos();
-    }
-    if (currentAddress) {
-      propertyWrapper();
-    }
-  }, [currentAddress])
-
-
-  const getEgid = async () => {
-    if (currentAddress) {
-      const response = await fetch(`https://stadtplantest.winterthur.ch/energieportal-service/Egid?address=${currentAddress}`);
-      const data = await response.json();
-      return data;
-    }
-  }
-
-  const getPropertyInfos = async () => {
-    const response = await fetch(`https://api3.geo.admin.ch/rest/services/api/MapServer/find?layer=ch.bfs.gebaeude_wohnungs_register&searchText=${await getEgid()}&searchField=egid&returnGeometry=false&contains=false`);
-    const data = await response.json();
-    return data;
-  }
+  const { t } = useTranslation();
 
   return (
     <>
       <Intro title={t("my_property.title")} variant="dark" />
       <FullWidth noPaddingY>
         <AddressSearchBar variant="light" />
-      </FullWidth>
+        <Section title={t("my_property.co2_emissions_title")}>
+          <p className="typo-lead">{t("my_property.co2_emissions_lead_pre")}
+            <a href={t("my_property.co2_emissions_link_target")} target="_blank">{t("my_property.co2_emissions_link")}</a>
+            {t("my_property.co2_emissions_lead_post")}
+          </p>
+        </Section>
+        <PropertyFacts />
+      </FullWidth >
     </>
   )
 }
