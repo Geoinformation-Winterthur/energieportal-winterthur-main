@@ -43,6 +43,20 @@
     "address.search_bar.input_no_results": "Keine Ergebnisse",
     "address.search_bar.submit": "Jetzt starten",
     "address.search_bar.edit": "Adresse ändern",
-    "my_property.title": "Meine Liegenschaft"
+    "my_property.title": "Meine Liegenschaft",
+    "my_property.co2_emissions_title": "CO₂-Ausstoss Ihres Gebäudes",
+    "my_property.co2_emissions_lead_pre": "Hier erhalten Sie eine grobe Schätzung der jährlichen CO₂-Emissionen Ihres Gebäudes und erfahren, ob es hinsichtlich der Winterthurer Klimaziele ",
+    "my_property.co2_emissions_link": "(Netto-Null Tonnen CO₂ bis 2040)",
+    "my_property.co2_emissions_link_target": "https://stadt.winterthur.ch/themen/leben-in-winterthur/energie-umwelt-natur/klimaschutz",
+    "my_property.co2_emissions_lead_post": " auf Kurs ist.",
+    "my_property.property_facts_title": "Gebäudeinformation",
+    "my_property.property_facts_category": "Gebäudekategorie",
+    "my_property.property_facts_year": "Baujahr",
+    "my_property.property_facts_area": "Gebäudefläche",
+    "my_property.property_facts_floors": "Anzahl Geschosse",
+    "my_property.property_facts_apartments": "Anzahl Wohnungen",
+    "my_property.property_facts_heating": "Wärmeerzeuger Heizung",
+    "my_property.property_facts_heat_source": "Wärmequelle",
+    "my_property.property_facts_not_available": "Keine Angabe"
   }
 }
