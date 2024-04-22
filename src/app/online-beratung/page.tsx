@@ -12,20 +12,20 @@ export default function OnlineConsulting() {
 
   const { t } = useTranslation();
 
-  const rightContent = () => (
+  const RightContent = () => (
     <>
       <Teaser title={t("online_consulting.teaser_1_title")} description={t("online_consulting.teaser_1_description")} image={t("online_consulting.teaser_1_image")} image_credits={t("online_consulting.teaser_1_image_credits")} link={t("online_consulting.teaser_1_link")} link_target={t("online_consulting.teaser_1_link_target")} />
       <Teaser title={t("online_consulting.teaser_2_title")} description={t("online_consulting.teaser_2_description")} image={t("online_consulting.teaser_2_image")} image_credits={t("online_consulting.teaser_2_image_credits")} link={t("online_consulting.teaser_2_link")} link_target={t("online_consulting.teaser_2_link_target")} />
     </>
   )
-  const leftContent = () => (
+  const LeftContent = () => (
     <>
       <Section title={t("online_consulting.section_title")} description={t("online_consulting.section_description")} />
       <Contact />
     </>
   )
 
-  const myProperty = () => {
+  const MyProperty = () => {
     return (
       <>
         <Intro title={t("my_property.title")} variant="dark" />
@@ -36,14 +36,14 @@ export default function OnlineConsulting() {
     )
   }
 
-  const welcomeScreen = () => {
+  const WelcomeScreen = () => {
     return (
       <>
         <Intro title={t("online_consulting.intro.title")} lead={t("online_consulting.intro.lead")} variant="light" />
         <FullWidth noPaddingY>
           <AddressSearchBar variant="dark" title={t("address.search_bar.title")} lead={t("address.search_bar.text")} />
         </FullWidth>
-        <TwoCols contentLeft={leftContent()} contentRight={rightContent()}></TwoCols>
+        <TwoCols contentLeft={<LeftContent/>} contentRight={<RightContent/>}></TwoCols>
       </>
     )
   }
@@ -51,8 +51,7 @@ export default function OnlineConsulting() {
   return (
     <main>
       <Suspense>
-        {welcomeScreen()}
-        {/* {myProperty()} */}
+        <WelcomeScreen/>
       </Suspense>
     </main>
   );

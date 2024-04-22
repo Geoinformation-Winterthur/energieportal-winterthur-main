@@ -1,0 +1,19 @@
+.tab {
+    display: flex;
+    padding: var(--spacing-4);
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 100%;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 110%;
+    height: 84px;
+    width: 100%;
+    background: var(--color-brand-green-light-50);
+
+    &.tab--active {
+        background: var(--color-brand-green-light);
+        padding-bottom: calc(var(--spacing-4) + var(--spacing-1-5));
+        height: 90px;
+    }
+}
