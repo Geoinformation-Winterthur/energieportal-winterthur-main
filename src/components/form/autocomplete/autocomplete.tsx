@@ -59,7 +59,7 @@ export const Autocomplete = () => {
   }
 
   const handleSubmitClick = (value: string) => {
-    router.push(pathname + "?" + createQueryString("address", value));
+    router.push(pathname + "?" + createQueryString("address", value), { scroll: false });
     setSubmittedAddress(value);
   };
 

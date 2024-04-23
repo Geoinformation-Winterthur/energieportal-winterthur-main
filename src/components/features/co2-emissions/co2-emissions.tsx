@@ -1,3 +1,4 @@
+import { Icon } from "@/components/common/icon/icon";
 import { getCo2EmissionData } from "@/utils/get-co2-emission";
 import { getPropertyFacts } from "@/utils/get-property-facts";
 import clsx from "clsx";
@@ -14,6 +15,7 @@ export const Co2Emissions = () => {
   const searchParams = useSearchParams();
   const [currentAddress, setCurrentAddress] = useState<string | null>(null);
   const [co2EmissionValue, setCo2EmissionValue] = useState<string | null>(null);
+  const [isLoading, setIsLoading] = useState(false)
   const isVeryHigh = co2EmissionValue === "> 25";
   const isHigh = co2EmissionValue === "20 - 25";
   const isRatherHigh = co2EmissionValue === "15 - 20";
@@ -29,21 +31,22 @@ export const Co2Emissions = () => {
 
   useEffect(() => {
     async function propertyWrapper() {
+      setIsLoading(true);
       const propertyData = await getPropertyFacts(currentAddress || "");
       const currentEgid = propertyData.results[0].attributes.egid;
       const eCoordinate = propertyData.results[0].attributes.gkode;
       const nCoordinate = propertyData.results[0].attributes.gkodn;
       const co2EmissionData = await getCo2EmissionData(eCoordinate, nCoordinate);
 
-
       if (co2EmissionData.results.length) {
         const co2Emission = co2EmissionData.results.find((result: { id: string; properties: { co2_range: string } }) => {
           return String(result.id) === currentEgid;
         });
-        setCo2EmissionValue(co2Emission.properties.co2_range)
+        co2Emission ? setCo2EmissionValue(co2Emission.properties.co2_range) : setCo2EmissionValue(null);
       } else {
         setCo2EmissionValue(null);
       }
+      setIsLoading(false);
     }
 
     if (currentAddress) {
@@ -65,8 +68,9 @@ export const Co2Emissions = () => {
         <a href={t("my_property.co2_emissions_link_target")} target="_blank">{t("my_property.co2_emissions_link")}</a>
         {t("my_property.co2_emissions_lead_post")}
       </p>
-      {!co2EmissionValue && <Co2EmissionDescription text={t("my_property.co2_emissions.result.no_result")} />}
-      {co2EmissionValue &&
+      {isLoading && <div className={styles["co2-emissions__loading"]}><Icon icon="loading" size={40} /></div>}
+      {!co2EmissionValue && !isLoading && <Co2EmissionDescription text={t("my_property.co2_emissions.result.no_result")} />}
+      {co2EmissionValue && !isLoading &&
         <>
           <ul className={styles["co2-emissions__scale"]}>
             <li className={clsx(

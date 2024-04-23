@@ -156,3 +156,9 @@
     margin-top: var(--spacing-4);
   }
 }
+
+.co2-emissions__loading {
+  display: flex;
+  justify-content: center;
+  color: var(--color-brand-red);
+}
