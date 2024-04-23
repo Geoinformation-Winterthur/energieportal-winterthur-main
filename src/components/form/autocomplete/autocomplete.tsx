@@ -36,26 +36,26 @@ export const Autocomplete = () => {
     }
   }, [searchParams])
 
-  const getAddresses = async () => {
-    const response = await fetch(`https://stadtplantest.winterthur.ch/energieportal-service/Address?search=${searchString}`);
+  const getAddresses = async (value: string) => {
+    const response = await fetch(`https://stadtplantest.winterthur.ch/energieportal-service/Address?search=${value}`);
     const data = await response.json();
     return data;
   }
 
-  const performSearch = async () => {
+  const performSearch = async (value: string) => {
     setIsLoading(true);
-    const results = await getAddresses();
+    const results = await getAddresses(value);
     setSearchResults(results);
     setIsLoading(false);
   };
 
   const handleOnChange = async (value: string) => {
-    setSearchString(value);
+    setSearchString(() => value);
     if (value.length < 3) {
-      setSearchResults([])
+      setSearchResults([]);
       return;
     };
-    debounce(performSearch(), 200);
+    debounce(performSearch(value), 200);
   }
 
   const handleSubmitClick = (value: string) => {
@@ -64,8 +64,6 @@ export const Autocomplete = () => {
   };
 
   const handleClearClick = () => {
-    router.replace(pathname, { scroll: false });
-    setSubmittedAddress(null);
     setSearchString("");
     setSearchResults([]);
   }

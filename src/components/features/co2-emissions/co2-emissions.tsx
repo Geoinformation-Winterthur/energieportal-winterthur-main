@@ -35,10 +35,14 @@ export const Co2Emissions = () => {
       const nCoordinate = propertyData.results[0].attributes.gkodn;
       const co2EmissionData = await getCo2EmissionData(eCoordinate, nCoordinate);
 
-      if (co2EmissionData) {
-        co2EmissionData.results.find((result: { id: string; properties: { co2_range: string } }) => {
-          String(result.id) === currentEgid && setCo2EmissionValue(result.properties.co2_range);
+
+      if (co2EmissionData.results.length) {
+        const co2Emission = co2EmissionData.results.find((result: { id: string; properties: { co2_range: string } }) => {
+          return String(result.id) === currentEgid;
         });
+        setCo2EmissionValue(co2Emission.properties.co2_range)
+      } else {
+        setCo2EmissionValue(null);
       }
     }
 

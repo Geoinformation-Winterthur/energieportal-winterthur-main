@@ -17,9 +17,7 @@ export default function OnlineConsulting() {
   const searchParams = useSearchParams();
 
   useEffect(() => {
-    if (searchParams.get("address")) {
-      setHasAddress(searchParams.has("address"));
-    }
+    setHasAddress(searchParams.has("address"));
   }, [searchParams])
 
   const rightContent = () => (
