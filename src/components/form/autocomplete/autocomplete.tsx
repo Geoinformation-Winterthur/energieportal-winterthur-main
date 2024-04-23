@@ -6,6 +6,7 @@ import clsx from 'clsx';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { useCallback, useEffect, useState } from 'react';
 import { useTranslation } from '../../../../i18n';
+import "../../../styles/popper.scss";
 import styles from "./autocomplete.module.scss";
 
 export const Autocomplete = () => {

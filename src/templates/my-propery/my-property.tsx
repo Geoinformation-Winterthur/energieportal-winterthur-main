@@ -1,7 +1,7 @@
 import { Intro } from "@/components/common/intro/intro"
 import { FullWidth } from "@/components/common/layout/full-width/full-width"
-import { Section } from "@/components/common/section/section"
 import { AddressSearchBar } from "@/components/features/address-search-bar/address-search-bar"
+import { Co2Emissions } from "@/components/features/co2-emissions/co2-emissions"
 import { PropertyFacts } from "@/components/features/property-facts/property-facts"
 import { useTranslation } from "../../../i18n"
 
@@ -13,12 +13,7 @@ export const MyPropertyPage = () => {
       <Intro title={t("my_property.title")} variant="dark" />
       <FullWidth noPaddingY>
         <AddressSearchBar variant="light" />
-        <Section title={t("my_property.co2_emissions_title")}>
-          <p className="typo-lead">{t("my_property.co2_emissions_lead_pre")}
-            <a href={t("my_property.co2_emissions_link_target")} target="_blank">{t("my_property.co2_emissions_link")}</a>
-            {t("my_property.co2_emissions_lead_post")}
-          </p>
-        </Section>
+        <Co2Emissions />
         <PropertyFacts />
       </FullWidth >
     </>

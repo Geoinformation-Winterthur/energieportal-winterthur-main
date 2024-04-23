@@ -1,3 +1,4 @@
+import { getPropertyFacts } from "@/utils/get-property-facts";
 import { getPropertyCategory } from "@/utils/property-facts/get-property-category";
 import { getPropertyHeatSource } from "@/utils/property-facts/get-property-heat-source";
 import { getPropertyHeatingType } from "@/utils/property-facts/get-property-heating-type";
@@ -27,30 +28,16 @@ export const PropertyFacts = () => {
   }, [searchParams])
 
   useEffect(() => {
-    const getEgid = async () => {
-      if (currentAddress) {
-        const response = await fetch(`https://stadtplantest.winterthur.ch/energieportal-service/Egid?address=${currentAddress}`);
-        const data = await response.json();
-        return data;
-      }
-    }
-
-    const getPropertyInfos = async () => {
-      const response = await fetch(`https://api3.geo.admin.ch/rest/services/api/MapServer/find?layer=ch.bfs.gebaeude_wohnungs_register&searchText=${await getEgid()}&searchField=egid&returnGeometry=false&contains=false`);
-      const data = await response.json();
-      return data;
-    }
-
     async function propertyWrapper() {
-      const propertyData = await getPropertyInfos();
+      const propertyData = await getPropertyFacts(currentAddress || "");
       const propertyAttributes = propertyData.results[0].attributes;
       setCategory(getPropertyCategory(propertyAttributes?.gkat) || isNotAvailableMessage);
       setYear(propertyAttributes?.gbauj || isNotAvailableMessage);
       setArea(propertyAttributes?.garea && propertyAttributes?.garea + " m²" || isNotAvailableMessage);
       setFloors(propertyAttributes?.gastw || isNotAvailableMessage);
       setApartments(propertyAttributes?.ganzwhg || isNotAvailableMessage);
-      setHeating(getPropertyHeatingType(propertyAttributes?.gwaerzh1) || getPropertyHeatingType(propertyAttributes?.gwaerzh2) || isNotAvailableMessage);
-      setHeatSource(getPropertyHeatSource(propertyAttributes?.genh1) || getPropertyHeatSource(propertyAttributes?.genh2) || isNotAvailableMessage);
+      setHeating(getPropertyHeatingType(propertyAttributes?.gwaerzh1) || isNotAvailableMessage);
+      setHeatSource(getPropertyHeatSource(propertyAttributes?.genh1) || isNotAvailableMessage);
     }
 
     if (currentAddress) {
