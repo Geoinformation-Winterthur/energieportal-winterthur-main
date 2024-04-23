@@ -1,7 +1,7 @@
 import { Button } from '@/components/common/button/button';
 import { Icon } from '@/components/common/icon/icon';
 import { debounce } from '@/utils/debounce';
-import { Autocomplete as MuiAutocomplete } from '@mui/material';
+import { AutocompleteInputChangeReason, Autocomplete as MuiAutocomplete } from '@mui/material';
 import clsx from 'clsx';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { useCallback, useEffect, useState } from 'react';
@@ -14,6 +14,7 @@ export const Autocomplete = () => {
   const [searchResults, setSearchResults] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [submittedAddress, setSubmittedAddress] = useState<string | null>(null);
+  const [open, setOpen] = useState(false);
   const { t } = useTranslation();
 
   const router = useRouter();
@@ -49,12 +50,14 @@ export const Autocomplete = () => {
     setIsLoading(false);
   };
 
-  const handleOnChange = async (value: string) => {
+  const handleOnChange = async (value: string, reason: AutocompleteInputChangeReason) => {
     setSearchString(() => value);
-    if (value.length < 3) {
+    if (value.length < 3 || reason === "reset") {
       setSearchResults([]);
+      setOpen(false)
       return;
     };
+    setOpen(true)
     debounce(performSearch(value), 200);
   }
 
@@ -68,13 +71,19 @@ export const Autocomplete = () => {
     setSearchResults([]);
   }
 
+  const handleOnBlur = () => {
+    setSearchResults([]);
+    setOpen(false);
+  }
+
   return (
     <div className={styles["autocomplete"]}>
       <MuiAutocomplete
         fullWidth
         value={searchString}
-        onInputChange={(e, value) => handleOnChange(value)}
-        onBlur={() => setSearchResults([])}
+        open={open}
+        onInputChange={(_, value, reason) => handleOnChange(value, reason)}
+        onBlur={handleOnBlur}
         disablePortal
         options={searchResults.slice(0, 40).sort()}
         noOptionsText={searchString.length < 3 ? t("address.search_bar.input_help") : t("address.search_bar.input_no_results")}
