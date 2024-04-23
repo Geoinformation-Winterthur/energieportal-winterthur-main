@@ -81,6 +81,7 @@
     "my_property.property_facts_floors": "Anzahl Geschosse",
     "my_property.property_facts_apartments": "Anzahl Wohnungen",
     "my_property.property_facts_heating": "Wärmeerzeuger Heizung",
-    "my_property.property_facts_heat_source": "Wärmequelle"
+    "my_property.property_facts_heat_source": "Wärmequelle",
+    "my_property.property_facts_not_available": "Keine Angabe"
   }
 }
