@@ -32,6 +32,7 @@ export const Autocomplete = () => {
   useEffect(() => {
     if (searchParams.get("address")) {
       setSubmittedAddress(searchParams.get("address") ?? null);
+      setSearchString(searchParams.get("address") ?? "")
     }
   }, [searchParams])
 
@@ -73,6 +74,7 @@ export const Autocomplete = () => {
     <div className={styles["autocomplete"]}>
       <MuiAutocomplete
         fullWidth
+        value={searchString}
         onInputChange={(e, value) => handleOnChange(value)}
         onBlur={() => setSearchResults([])}
         disablePortal
@@ -84,7 +86,7 @@ export const Autocomplete = () => {
             <div className={clsx(styles["autocomplete__icon"], styles["autocomplete__icon--search"])}>
               <Icon icon={isLoading ? "loading" : "search"} />
             </div>
-            <input type="text" {...params.inputProps} placeholder={submittedAddress ?? t("address.search_bar.input_placeholder")} />
+            <input type="text" {...params.inputProps} placeholder={t("address.search_bar.input_placeholder")} />
             {submittedAddress &&
               <div className={clsx(styles["autocomplete__icon"], styles["autocomplete__icon--clear"])}>
                 <Icon icon="close" onButtonClick={handleClearClick} />
