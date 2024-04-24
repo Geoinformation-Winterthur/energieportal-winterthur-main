@@ -82,6 +82,14 @@
     "my_property.property_facts_apartments": "Anzahl Wohnungen",
     "my_property.property_facts_heating": "Wärmeerzeuger Heizung",
     "my_property.property_facts_heat_source": "Wärmequelle",
-    "my_property.property_facts_not_available": "Keine Angabe"
+    "my_property.property_facts_not_available": "Keine Angabe",
+    "my_property.property_facts.accordion_summary": "Woher stammen die Daten zum CO₂-Ausstoss und zum Gebäude?",
+    "my_property.property_facts.accordion_detail_1": "Die Angaben zum CO₂-Ausstoss sind eine Schätzung des",
+    "my_property.property_facts.accordion_link_1": "Bundesamtes für Umwelt (BAFU)",
+    "my_property.property_facts.accordion_link_target_1": "https://www.bafu.admin.ch/bafu/de/home/themen/klima/fachinformationen/verminderungsmassnahmen/gebaeude/co2-rechner-gebaeude.html",
+    "my_property.property_facts.accordion_detail_2": "und sind nicht verbindlich. Für die Berechnung werden die öffentlich zugänglichen Daten aus dem",
+    "my_property.property_facts.accordion_link_2": "eidgenössischen Gebäude- und Wohnungsregister (GWR)",
+    "my_property.property_facts.accordion_link_target_2": "https://www.housing-stat.ch/de/index.html",
+    "my_property.property_facts.accordion_detail_3": "des Bundesamtes für Statistik beigezogen. Diese Daten sind nicht immer aktuell und beinhalten keine ausreichenden Informationen zu Gebäudesanierungen."
   }
 }

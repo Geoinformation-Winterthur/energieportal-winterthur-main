@@ -37,7 +37,7 @@ export default function OnlineConsulting() {
     return (
       <>
         <Intro title={t("online_consulting.intro.title")} lead={t("online_consulting.intro.lead")} variant="light" />
-        <FullWidth noPaddingY>
+        <FullWidth noPaddingTop noPaddingBottom>
           <AddressSearchBar variant="dark" title={t("address.search_bar.title")} lead={t("address.search_bar.text")} />
         </FullWidth>
         <TwoCols contentLeft={leftContent()} contentRight={rightContent()}></TwoCols>
