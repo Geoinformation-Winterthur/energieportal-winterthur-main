@@ -4,6 +4,7 @@ import { AddressSearchBar } from "@/components/features/address-search-bar/addre
 import { Co2Emissions } from "@/components/features/co2-emissions/co2-emissions"
 import { PropertyFacts } from "@/components/features/property-facts/property-facts"
 import { useTranslation } from "../../../i18n"
+import { PropertyFactsAccordion } from "./property-facts-accordion"
 
 export const MyPropertyPage = () => {
   const { t } = useTranslation();
@@ -11,10 +12,11 @@ export const MyPropertyPage = () => {
   return (
     <>
       <Intro title={t("my_property.title")} variant="dark" />
-      <FullWidth noPaddingY>
+      <FullWidth noPaddingTop>
         <AddressSearchBar variant="light" />
         <Co2Emissions />
         <PropertyFacts />
+        <PropertyFactsAccordion />
       </FullWidth >
     </>
   )

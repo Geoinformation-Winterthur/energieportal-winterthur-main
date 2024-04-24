@@ -1,4 +1,5 @@
 "use client";
+import clsx from "clsx";
 import ArrowDown from "./assets/arrow-down.svg";
 import ArrowRight from "./assets/arrow-right.svg";
 import Burger from "./assets/burger.svg";
@@ -32,10 +33,11 @@ export type IconType =
 interface IconProps {
   icon: IconType;
   size?: number;
+  color?: "red" | "dark";
   onButtonClick?: () => void;
 }
 
-export const Icon = ({ icon, size = 20, onButtonClick }: IconProps) => {
+export const Icon = ({ icon, size = 20, color, onButtonClick }: IconProps) => {
   const iconMap = {
     "arrow-down": <ArrowDown width={size} height={size} />,
     "arrow-right": <ArrowRight width={size} height={size} />,
@@ -54,14 +56,14 @@ export const Icon = ({ icon, size = 20, onButtonClick }: IconProps) => {
 
   if (onButtonClick) {
     return (
-      <button className={styles["icon-button"]} onClick={onButtonClick}>
+      <button className={clsx(styles["icon-button"], styles[`icon--${color}`])} onClick={onButtonClick}>
         {iconMap[icon]}
       </button>
     )
   }
 
   return (
-    <span className={styles["icon"]}>
+    <span className={clsx(styles["icon"], styles[`icon--${color}`])}>
       {iconMap[icon]}
     </span>
   );

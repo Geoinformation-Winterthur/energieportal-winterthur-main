@@ -1,10 +1,6 @@
 @import "../../../styles/breakpoints.scss";
 @import "../../../styles/typography.scss";
 
-.property-facts {
-  margin-bottom: var(--spacing-10);
-}
-
 .property-facts__title {
   @include typo-headline-3();
 
