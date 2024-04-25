@@ -1,0 +1,17 @@
+.heating-recommendations {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-brand-green-light);
+}
+
+.heating-recommendations_inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-31);
+  max-width: var(--max-width);
+  padding: var(--spacing-20);
+}

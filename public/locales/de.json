@@ -90,6 +90,103 @@
     "my_property.property_facts.accordion_detail_2": "und sind nicht verbindlich. Für die Berechnung werden die öffentlich zugänglichen Daten aus dem",
     "my_property.property_facts.accordion_link_2": "eidgenössischen Gebäude- und Wohnungsregister (GWR)",
     "my_property.property_facts.accordion_link_target_2": "https://www.housing-stat.ch/de/index.html",
-    "my_property.property_facts.accordion_detail_3": "des Bundesamtes für Statistik beigezogen. Diese Daten sind nicht immer aktuell und beinhalten keine ausreichenden Informationen zu Gebäudesanierungen."
+    "my_property.property_facts.accordion_detail_3": "des Bundesamtes für Statistik beigezogen. Diese Daten sind nicht immer aktuell und beinhalten keine ausreichenden Informationen zu Gebäudesanierungen.",
+    "my_property.our_recommendations.title": "Unsere Empfehlung",
+    "my_property.our_recommendations.lead": "Vergleichen Sie verschiedene Heizlösungen, prüfen Sie, ob Ihr Dach für eine Solaranlage geeignet ist und erhalten Sie Tipps zur energetischen Sanierung.",
+    "my_property.heating_recommendations.title": "Heizlösungen in Ihrem Quartier",
+    "my_property.heating_recommendations.lead": "Nachfolgend finden Sie einen Überblick über mögliche Heizlösungen in Ihrem Quartier und unsere Empfehlung. Für eine detaillierte Prüfung der örtlichen Gegebenheiten wenden Sie sich bitte an ausgewiesene Fachpersonen.",
+    "my_property.heating_recommendations.flag": "Empfehlung für Ihr Quartier",
+    "my_property.heating_recommendations.pros": "Vorteile",
+    "my_property.heating_recommendations.cons": "Nachteile",
+    "my_property.heating_recommendations.button": "Mehr erfahren",
+    "my_property.heating_recommendations.groundwater.title": "Grundwasser-Wärmepumpe",
+    "my_property.heating_recommendations.groundwater": {
+      "pros": [
+        "ca. 80 % der Wärme stammt «kostenlos» aus dem Grundwasser",
+        "sehr geringer Strombedarf und somit tiefe Energiekosten",
+        "Raumkühlung im Sommer möglich",
+        "geringe Kosten für Wartung und Unterhalt"
+      ],
+      "cons": [
+        "meist nur als Verbundlösung möglich",
+        "höhere Investitionskosten",
+        "hydrogeologisches Gutachten und Probebohrung erforderlich"
+      ]
+    },
+    "my_property.heating_recommendations.geothermal.title": "Erdsonden-Wärmepumpe",
+    "my_property.heating_recommendations.geothermal": {
+      "pros": [
+        "ca. 75 % der Wärme stammt «kostenlos» aus dem Erdreich",
+        "geringer Strombedarf und somit tiefe Energiekosten",
+        "Raumkühlung im Sommer möglich",
+        "Heizungsanlage braucht fast keinen Platz",
+        "geringe Kosten für Wartung und Unterhalt"
+      ],
+      "cons": [
+        "Bohrung der Erdsonden je nach Grundstücksituation aufwändig",
+        "höhere Investitionskosten"
+      ]
+    },
+    "my_property.heating_recommendations.airwater.title": "Luft-Wasser-Wärmepumpe",
+    "my_property.heating_recommendations.airwater": {
+      "pros": [
+        "ca. 65 % der Wärme stammt «kostenlos» aus der Umgebungsluft",
+        "geringer Strombedarf und somit tiefe Energiekosten",
+        "Aufstellung der Wärmepumpe ist drinnen und draussen möglich",
+        "geringe Kosten für Wartung und Unterhalt"
+      ],
+      "cons": [
+        "bei Altbau mit grossen Heizkörpern oder einer Fussbodenheizung",
+        "Beurteilung der Lärmsituation erforderlich"
+      ]
+    },
+    "my_property.heating_recommendations.pellet.title": "Pelletheizung",
+    "my_property.heating_recommendations.pellet": {
+      "title": "Pelletheizung",
+      "pros": [
+        "auch für den Altbau geeignet",
+        "für Mehrfamilienhäuser mit hoher Heizleistung geeignet",
+        "Pellets sind ein Recyclingprodukt aus der Holzindustrie",
+        "Holz ist ein nachwachsender Rohstoff"
+      ],
+      "cons": [
+        "Pelletlagerraum und Kamin erforderlich",
+        "Ausstoss von Luftschadstoffen",
+        "höhere Kosten für Wartung und Unterhalt"
+      ]
+    },
+    "my_property.heating_recommendations.districtheating_p.title": "Bestehende Wärmenetze",
+    "my_property.heating_recommendations.districtheating_p": {
+      "status": "Status des Netzes:",
+      "pros": [
+        "auch für den Altbau geeignet",
+        "für Mehrfamilienhäuser mit hoher Heizleistung geeignet",
+        "lokal produzierte Heizenergie aus Kehricht oder Holzschnitzel",
+        "geringe Kosten für Wartung und Unterhalt"
+      ],
+      "cons": [
+        "teurer bei kleiner Heizleistung",
+        "Spitzenabdeckung mit Erdgas"
+      ]
+    },
+    "my_property.heating_recommendations.districtheating.title": "Vorgesehene Wärmenetze",
+    "my_property.heating_recommendations.districtheating": {
+      "status": "Status des Netzes:",
+      "pros": [
+        "auch für den Altbau geeignet",
+        "für Mehrfamilienhäuser mit hoher Heizleistung geeignet",
+        "lokal produzierte Heizenergie aus Kehricht oder Holzschnitzel",
+        "geringe Kosten für Wartung und Unterhalt"
+      ],
+      "cons": [
+        "teurer bei kleiner Heizleistung",
+        "Übergangslösung nötig, wenn die Heizung ausfällt, bevor das Wärmenetz gebaut ist"
+      ]
+    },
+    "my_property.heating_recommendations.accordion_summary": "Warum wird mir dieses Heizungssystem empfohlen?",
+    "my_property.heating_recommendations.accordion_detail_1": "Die Empfehlung dient als erste Orientierungshilfe und basiert auf Informationen aus dem",
+    "my_property.heating_recommendations.accordion_link_1": "kommunalen Energieplan",
+    "my_property.heating_recommendations.accordion_link_target_1": "https://stadtplan.winterthur.ch/?topic=KommunalerEnergieplan",
+    "my_property.heating_recommendations.accordion_detail_2": ". Der kommunale Energieplan dient als Instrument zur Koordination der Wärmeversorgung der Stadt und zeigt auf, welche erneuerbaren Energieträger in den jeweiligen Gebieten geeignet sind. Dabei werden Faktoren wie z.B. die vorhandene Wärmenetze oder die Bohrerlaubnis für Erdsonden berücksichtigt."
   }
 }
