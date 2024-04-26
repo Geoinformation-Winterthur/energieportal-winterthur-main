@@ -42,7 +42,7 @@
 }
 
 .heating-tile__title {
-  @include typo-lead();
+  @include typo-headline-4();
 
   max-width: 50%;
 }
@@ -72,6 +72,7 @@
 
 .heating-tile__list-title {
   @include typo-headline-5();
+
   margin-bottom: var(--spacing-2);
 }
 
