@@ -5,6 +5,7 @@ import { Co2Emissions } from "@/components/features/co2-emissions/co2-emissions"
 import { PropertyFacts } from "@/components/features/property-facts/property-facts"
 import { useTranslation } from "../../../i18n"
 import { PropertyFactsAccordion } from "./property-facts-accordion"
+import { HeatingRecommendations } from "../heating-recommandations/heating-recommandations"
 
 export const MyPropertyPage = () => {
   const { t } = useTranslation();
@@ -18,6 +19,7 @@ export const MyPropertyPage = () => {
         <PropertyFacts />
         <PropertyFactsAccordion />
       </FullWidth >
+      <HeatingRecommendations />
     </>
   )
 }
