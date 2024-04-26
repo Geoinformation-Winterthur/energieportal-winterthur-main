@@ -80,7 +80,7 @@ export const HeatingTiles = () => {
       {isLoading ? <Icon icon="loading" /> : ""}
       {isMobile ?
         <Slider>
-          {sortHeatingsByRecommendation().map(heating => <SliderSlide>{renderHeating(heating)}</SliderSlide>)}
+          {sortHeatingsByRecommendation().map(heating => <SliderSlide key={heating.code}>{renderHeating(heating)}</SliderSlide>)}
         </Slider>
         :
         <div className={styles["heating-tiles__content"]}>
