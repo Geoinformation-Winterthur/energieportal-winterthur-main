@@ -30,17 +30,10 @@ address {
 
 ol,
 ul {
+  list-style-type: none;
   margin: 0;
   padding: 0;
   counter-reset: li;
-}
-
-ol {
-  list-style-type: none;
-}
-
-ul {
-  list-style-type: square;
 }
 
 input,
