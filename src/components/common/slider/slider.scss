@@ -1,0 +1,40 @@
+swiper-slide {
+  align-self: flex-end;
+}
+
+.swiper__buttons {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-6);
+  margin: var(--spacing-6) 0;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacing-3);
+  color: var(--color-brand-red);
+}
+
+.swiper-button-disabled {
+  color: var(--color-tabs-inactive);
+}
+
+.swiper-pagination-bullets {
+  display: flex;
+  gap: var(--spacing-2);
+  align-items: center;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--color-white);
+
+  &.swiper-pagination-bullet-active {
+    background-color: var(--color-brand-red);
+  }
+}

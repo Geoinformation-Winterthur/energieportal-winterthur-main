@@ -1,14 +1,20 @@
+import clsx from 'clsx';
 import styles from "./full-width.module.scss";
 
 interface FullWidthProps {
   children?: React.ReactNode;
-  noPaddingY?: boolean;
+  noPaddingTop?: boolean;
+  noPaddingBottom?: boolean;
 }
 
-export const FullWidth = ({ children, noPaddingY }: FullWidthProps) => {
+export const FullWidth = ({ children, noPaddingTop, noPaddingBottom }: FullWidthProps) => {
 
   return (
-    <div className={`${styles["full-width"]} ${noPaddingY ? styles["full-width--no-padding-y"] : ""}`}>
+    <div className={clsx(
+      styles["full-width"],
+      noPaddingTop ? styles["full-width--no-padding-top"] : "",
+      noPaddingBottom ? styles["full-width--no-padding-bottom"] : ""
+    )}>
       {children}
     </div>
   )

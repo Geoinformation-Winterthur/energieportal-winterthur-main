@@ -30,6 +30,10 @@
 
 .address-search-bar--light {
   background-color: var(--color-brand-green-light);
+
+  & .address-search-bar__form {
+    width: 100%;
+  }
 }
 
 .address-search-bar__title {
@@ -45,66 +49,4 @@
 .address-search-bar__title,
 .address-search-bar__lead {
   color: var(--color-white);
-}
-
-.address-search-bar__form {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-4);
-  width: 100%;
-
-  @include tablet-up {
-    flex-direction: row;
-  }
-}
-
-.address-search-bar__input-wrapper {
-  position: relative;
-  height: var(--spacing-14);
-
-  input {
-    @include typo-body();
-
-    padding: var(--spacing-3);
-    padding-left: var(--spacing-11);
-    border: 0;
-    width: 100%;
-    height: 100%;
-
-    &::placeholder {
-      color: var(--color-text-primary);
-      opacity: 0.5;
-    }
-
-    &:focus {
-      outline: none;
-      border-bottom: 3px solid var(--color-text-primary);
-      padding-bottom: 6px;
-      transition: all 0.14s ease-out;
-    }
-
-  }
-
-  &.address-search-bar__input--filled {
-    input::placeholder {
-      opacity: 1;
-    }
-  }
-}
-
-.address-search-bar__icon {
-  position: absolute;
-  top: 50%;
-  display: flex;
-  align-items: center;
-  transform: translateY(-50%);
-  color: var(--color-brand-red);
-
-  &--search {
-    left: var(--spacing-3);
-  }
-
-  &--clear {
-    right: var(--spacing-3);
-  }
 }

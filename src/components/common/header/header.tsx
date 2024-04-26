@@ -1,10 +1,12 @@
 "use client"
+import clsx from 'clsx';
 import Link from "next/link";
 import { useTranslation } from "../../../../i18n";
 import { useWindowSize } from "../../../hooks/useWindowSize";
 import { Logo } from "../logo/logo";
 import { Navigation } from "../navigation/navigation";
 import styles from "./header.module.scss";
+
 
 export const Header = () => {
   const { t } = useTranslation();
@@ -15,7 +17,7 @@ export const Header = () => {
       <div className={styles["header__content"]}>
         <div className={styles["header__topline"]}>
           <div className={styles["header__red-strip"]} />
-          <Link href="/" className={`${styles["header__domain"]} link-primary`}>{t('general.header.domain')}</Link>
+          <Link href="/" className={clsx(styles["header__domain"], "link-primary")}>{t('general.header.domain')}</Link>
           {!isMobile && <Logo type="full" width={260} />}
         </div>
         <Link href="/"><h1 className={styles["header__title"]}>{t('general.header.title')}</h1></Link>

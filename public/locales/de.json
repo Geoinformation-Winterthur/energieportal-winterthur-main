@@ -5,7 +5,7 @@
     "general.navigation.online_consulting": "Online-Beratung",
     "general.navigation.our_consulting_service": "Unser Beratungsangebot",
     "general.navigation.contact": "Kontakt",
-    "general.footer.copyright": "Stadt Winterthur 2023",
+    "general.footer.copyright": "Stadt Winterthur 2024",
     "general.footer.privacy": "Datenschutz",
     "general.footer.privacy_link": "Datenschutzerklaerung.pdf",
     "general.footer.legal": "Impressum",
@@ -17,15 +17,15 @@
     "online_consulting.teaser_1_title": "Energieberatung",
     "online_consulting.teaser_1_description": "Entdecken Sie das Beratungsangebot der städtischen Energieberatung.",
     "online_consulting.teaser_1_image": "energieberatung.png",
-    "online_consulting.teaser_1_image_credits": "Stadt Winterthur",
+    "online_consulting.teaser_1_image_credits": "Bildquelle: Stadt Winterthur",
     "online_consulting.teaser_1_link": "Beratungsangebot ansehen",
     "online_consulting.teaser_1_link_target": "/unser-beratungsangebot",
     "online_consulting.teaser_2_title": "Stadtplan Winterthur",
     "online_consulting.teaser_2_description": "Im Stadtplan von Winterthur finden Sie den aktuellen kommunalen Energieplan.",
     "online_consulting.teaser_2_image": "stadtplan_winterthur.png",
-    "online_consulting.teaser_2_image_credits": "Maps Winterthur",
+    "online_consulting.teaser_2_image_credits": "Bildquelle: Maps Winterthur",
     "online_consulting.teaser_2_link": "Zur Energieplankarte",
-    "online_consulting.teaser_2_link_target": "/pdf/Kommunaler_Energieplan_Winterthur.pdf",
+    "online_consulting.teaser_2_link_target": "https://stadtplan.winterthur.ch/?topic=KommunalerEnergieplan",
     "online_consulting.section_title": "Wir unterstützen Sie gerne",
     "online_consulting.section_description": "Sie haben die Möglichkeit, sich auf dem Energieportal Winterthur digital beraten zu lassen. Bitte geben Sie dazu oben Ihre Adresse ein. Falls Sie eine persönliche Beratung bevorzugen oder weitere Fragen haben, kontaktieren Sie uns gerne für eine Energieberatung.",
     "contact.box.title": "Kontakt",
@@ -38,6 +38,207 @@
     "contact.box.link_target": "/kontakt",
     "address.search_bar.title": "Ihr Gebäude in Winterthur",
     "address.search_bar.text": "Geben Sie für eine digitale Energieberatung Ihre Adresse ein.",
-    "my_property.title": "Meine Liegenschaft"
+    "address.search_bar.input_placeholder": "Strasse und Hausnummer eingeben",
+    "address.search_bar.input_help": "Bitte mind. 3 Zeichen eingeben",
+    "address.search_bar.input_no_results": "Keine Ergebnisse",
+    "address.search_bar.submit": "Jetzt starten",
+    "address.search_bar.edit": "Adresse ändern",
+    "my_property.title": "Meine Liegenschaft",
+    "my_property.co2_emissions_title": "CO₂-Ausstoss Ihres Gebäudes",
+    "my_property.co2_emissions_lead_pre": "Hier erhalten Sie eine grobe Schätzung der jährlichen CO₂-Emissionen Ihres Gebäudes und erfahren, ob es hinsichtlich der Winterthurer Klimaziele ",
+    "my_property.co2_emissions_link": "(Netto-Null Tonnen CO₂ bis 2040)",
+    "my_property.co2_emissions_link_target": "https://stadt.winterthur.ch/themen/leben-in-winterthur/energie-umwelt-natur/klimaschutz",
+    "my_property.co2_emissions_lead_post": " auf Kurs ist.",
+    "my_property.co2_emissions.scale_value.very_high": "sehr hoch",
+    "my_property.co2_emissions.scale_value.high": "hoch",
+    "my_property.co2_emissions.scale_value.rather_high": "eher hoch",
+    "my_property.co2_emissions.scale_value.moderate": "mittel",
+    "my_property.co2_emissions.scale_value.low": "gering",
+    "my_property.co2_emissions.scale_value.very_low": "sehr gering",
+    "my_property.co2_emissions.result.very_high_1": "Nicht auf Kurs für Netto-Null.",
+    "my_property.co2_emissions.result.very_high_2": "Das Gebäude stösst über 25 kg CO₂-Emissionen pro m² beheizte Fläche pro Jahr aus.",
+    "my_property.co2_emissions.result.very_high_3": "Die CO₂-Emissionen sind sehr hoch. Um diese zu senken, ersetzen Sie Ihre Heizung durch eine erneuerbare Heizlösung. Prüfen Sie, ob Sie Ihr Gebäude zusätzlich energetisch sanieren können. Mehr Infos dazu finden Sie unten in der Empfehlung.",
+    "my_property.co2_emissions.result.high_1": "Nicht auf Kurs für Netto-Null.",
+    "my_property.co2_emissions.result.high_2": "Das Gebäude stösst zwischen 20 bis 25 kg CO₂-Emissionen pro m² beheizte Fläche pro Jahr aus. ",
+    "my_property.co2_emissions.result.high_3": "Die CO₂-Emissionen sind hoch. Um diese zu senken, ersetzen Sie Ihre Heizung durch eine erneuerbare Heizlösung. Prüfen Sie, ob Sie Ihr Gebäude zusätzlich energetisch sanieren können. Mehr Infos dazu finden Sie unten in der Empfehlung.",
+    "my_property.co2_emissions.result.rather_high_1": "Optimierungen empfohlen.",
+    "my_property.co2_emissions.result.rather_high_2": "Das Gebäude stösst zwischen 15 bis 20 kg CO₂-Emissionen pro m² beheizte Fläche pro Jahr aus.",
+    "my_property.co2_emissions.result.rather_high_3": "Die CO₂-Emissionen sind eher hoch. Um diese zu senken, ersetzen Sie Ihre Heizung durch eine erneuerbare Heizlösung. Prüfen Sie, ob Sie Ihr Gebäude zusätzlich energetisch sanieren können. Mehr Infos dazu finden Sie unten in der Empfehlung.",
+    "my_property.co2_emissions.result.moderate_1": "Optimierungen empfohlen.",
+    "my_property.co2_emissions.result.moderate_2": "Das Gebäude stösst zwischen 10 – 15 kg CO₂-Emissionen pro m² beheizte Fläche pro Jahr aus.",
+    "my_property.co2_emissions.result.moderate_3": "Die CO₂-Emissionen sind durchschnittlich. Um diese weiter zu senken, ersetzen Sie Ihre Heizung durch eine erneuerbare Heizlösung. Prüfen Sie, ob Sie Ihr Gebäude zusätzlich energetisch sanieren können. Mehr Infos dazu finden Sie unten in der Empfehlung.",
+    "my_property.co2_emissions.result.low_1": "Auf Kurs für Netto-Null.",
+    "my_property.co2_emissions.result.low_2": "Das Gebäude stösst zwischen 5 bis 10 kg CO₂-Emissionen pro m² beheizte Fläche pro Jahr aus.",
+    "my_property.co2_emissions.result.low_3": "Die CO₂-Emissionen sind gering. Ihr Gebäude hat bereits eine erneuerbare Heizlösung oder ist an der Fernwärme oder einem Quartierswärmeverbund angeschlossen.",
+    "my_property.co2_emissions.result.very_low_1": "Auf Kurs für Netto-Null.",
+    "my_property.co2_emissions.result.very_low_2": "Das Gebäude stösst zwischen 0 bis 5 kg CO₂-Emissionen pro m² beheizte Fläche pro Jahr aus.",
+    "my_property.co2_emissions.result.very_low_3": "Die CO₂-Emissionen sind sehr gering. Ihr Gebäude hat bereits eine erneuerbare Heizlösung oder ist an der Fernwärme oder einem Quartierswärmeverbund angeschlossen.",
+    "my_property.co2_emissions.result.no_result": "Es liegen aktuell noch keine Informationen über die CO₂-Emissionen vor.",
+    "my_property.property_facts_title": "Gebäudeinformation",
+    "my_property.property_facts_category": "Gebäudekategorie",
+    "my_property.property_facts_year": "Baujahr",
+    "my_property.property_facts_area": "Gebäudefläche",
+    "my_property.property_facts_floors": "Anzahl Geschosse",
+    "my_property.property_facts_apartments": "Anzahl Wohnungen",
+    "my_property.property_facts_heating": "Wärmeerzeuger Heizung",
+    "my_property.property_facts_heat_source": "Wärmequelle",
+    "my_property.property_facts_not_available": "Keine Angabe",
+    "my_property.property_facts.accordion_summary": "Woher stammen die Daten zum CO₂-Ausstoss und zum Gebäude?",
+    "my_property.property_facts.accordion_detail_1": "Die Angaben zum CO₂-Ausstoss sind eine Schätzung des",
+    "my_property.property_facts.accordion_link_1": "Bundesamtes für Umwelt (BAFU)",
+    "my_property.property_facts.accordion_link_target_1": "https://www.bafu.admin.ch/bafu/de/home/themen/klima/fachinformationen/verminderungsmassnahmen/gebaeude/co2-rechner-gebaeude.html",
+    "my_property.property_facts.accordion_detail_2": "und sind nicht verbindlich. Für die Berechnung werden die öffentlich zugänglichen Daten aus dem",
+    "my_property.property_facts.accordion_link_2": "eidgenössischen Gebäude- und Wohnungsregister (GWR)",
+    "my_property.property_facts.accordion_link_target_2": "https://www.housing-stat.ch/de/index.html",
+    "my_property.property_facts.accordion_detail_3": "des Bundesamtes für Statistik beigezogen. Diese Daten sind nicht immer aktuell und beinhalten keine ausreichenden Informationen zu Gebäudesanierungen.",
+    "my_property.our_recommendations.title": "Unsere Empfehlung",
+    "my_property.our_recommendations.lead": "Vergleichen Sie verschiedene Heizlösungen, prüfen Sie, ob Ihr Dach für eine Solaranlage geeignet ist und erhalten Sie Tipps zur energetischen Sanierung.",
+    "my_property.heating_recommendations.title": "Heizlösungen in Ihrem Quartier",
+    "my_property.heating_recommendations.lead": "Nachfolgend finden Sie einen Überblick über mögliche Heizlösungen in Ihrem Quartier und unsere Empfehlung. Für eine detaillierte Prüfung der örtlichen Gegebenheiten wenden Sie sich bitte an ausgewiesene Fachpersonen.",
+    "my_property.heating_recommendations.flag": "Empfehlung für Ihr Quartier",
+    "my_property.heating_recommendations.state": "Status des Netzes:",
+    "my_property.heating_recommendations.pros": "Vorteile",
+    "my_property.heating_recommendations.cons": "Nachteile",
+    "my_property.heating_recommendations.button": "Mehr erfahren",
+    "my_property.heating_recommendations.groundwater.title": "Grundwasser-Wärmepumpe",
+    "my_property.heating_recommendations.groundwater": {
+      "pros": [
+        "ca. 80 % der Wärme stammt «kostenlos» aus dem Grundwasser",
+        "sehr geringer Strombedarf und somit tiefe Energiekosten",
+        "Raumkühlung im Sommer möglich",
+        "geringe Kosten für Wartung und Unterhalt"
+      ],
+      "cons": [
+        "meist nur als Verbundlösung möglich",
+        "höhere Investitionskosten",
+        "hydrogeologisches Gutachten und Probebohrung erforderlich"
+      ]
+    },
+    "my_property.heating_recommendations.geothermal.title": "Erdsonden-Wärmepumpe",
+    "my_property.heating_recommendations.geothermal": {
+      "pros": [
+        "ca. 75 % der Wärme stammt «kostenlos» aus dem Erdreich",
+        "geringer Strombedarf und somit tiefe Energiekosten",
+        "Raumkühlung im Sommer möglich",
+        "Heizungsanlage braucht fast keinen Platz",
+        "geringe Kosten für Wartung und Unterhalt"
+      ],
+      "cons": [
+        "Bohrung der Erdsonden je nach Grundstücksituation aufwändig",
+        "höhere Investitionskosten"
+      ]
+    },
+    "my_property.heating_recommendations.airwater.title": "Luft-Wasser-Wärmepumpe",
+    "my_property.heating_recommendations.airwater": {
+      "pros": [
+        "ca. 65 % der Wärme stammt «kostenlos» aus der Umgebungsluft",
+        "geringer Strombedarf und somit tiefe Energiekosten",
+        "Aufstellung der Wärmepumpe ist drinnen und draussen möglich",
+        "geringe Kosten für Wartung und Unterhalt"
+      ],
+      "cons": [
+        "bei Altbau mit grossen Heizkörpern oder einer Fussbodenheizung",
+        "Beurteilung der Lärmsituation erforderlich"
+      ]
+    },
+    "my_property.heating_recommendations.pellet.title": "Pelletheizung",
+    "my_property.heating_recommendations.pellet": {
+      "title": "Pelletheizung",
+      "pros": [
+        "auch für den Altbau geeignet",
+        "für Mehrfamilienhäuser mit hoher Heizleistung geeignet",
+        "Pellets sind ein Recyclingprodukt aus der Holzindustrie",
+        "Holz ist ein nachwachsender Rohstoff"
+      ],
+      "cons": [
+        "Pelletlagerraum und Kamin erforderlich",
+        "Ausstoss von Luftschadstoffen",
+        "höhere Kosten für Wartung und Unterhalt"
+      ]
+    },
+    "my_property.heating_recommendations.districtheating_p.title": "Bestehende Wärmenetze",
+    "my_property.heating_recommendations.districtheating.title": "Vorgesehene Wärmenetze",
+    "my_property.heating_recommendations.districtheating": {
+      "pros": [
+        "auch für den Altbau geeignet",
+        "für Mehrfamilienhäuser mit hoher Heizleistung geeignet",
+        "lokal produzierte Heizenergie aus Kehricht oder Holzschnitzel",
+        "geringe Kosten für Wartung und Unterhalt"
+      ],
+      "cons": [
+        "teurer bei kleiner Heizleistung",
+        "Übergangslösung nötig, wenn die Heizung ausfällt, bevor das Wärmenetz gebaut ist"
+      ]
+    },
+    "my_property.heating_recommendations.accordion_summary": "Warum wird mir dieses Heizungssystem empfohlen?",
+    "my_property.heating_recommendations.accordion_detail_1": "Die Empfehlung dient als erste Orientierungshilfe und basiert auf Informationen aus dem",
+    "my_property.heating_recommendations.accordion_link_1": "kommunalen Energieplan",
+    "my_property.heating_recommendations.accordion_link_target_1": "https://stadtplan.winterthur.ch/?topic=KommunalerEnergieplan",
+    "my_property.heating_recommendations.accordion_detail_2": ". Der kommunale Energieplan dient als Instrument zur Koordination der Wärmeversorgung der Stadt und zeigt auf, welche erneuerbaren Energieträger in den jeweiligen Gebieten geeignet sind. Dabei werden Faktoren wie z.B. die vorhandene Wärmenetze oder die Bohrerlaubnis für Erdsonden berücksichtigt.",
+    "my_property.districtheating.P1": {
+      "label": "Verdichtung",
+      "description": "Verdichtung: Sie können Ihre Liegenschaft an die Fernwärme anschliessen. Informieren Sie sich über das weitere Vorgehen bei Stadtwerk Winterthur Kundenberatung Wärme unter 052 267 16 29 oder stadtwerk.waerme@win.ch."
+    },
+    "my_property.districtheating.P2": {
+      "label": "Verdichtung",
+      "description": "Verdichtung: Sie können Ihre Liegenschaft an die Fernwärme anschliessen. Informieren Sie sich über das weitere Vorgehen bei Stadtwerk Winterthur Kundenberatung Wärme unter 052 267 16 29 oder stadtwerk.waerme@win.ch."
+    },
+    "my_property.districtheating.P7": {
+      "label": "Verdichtung",
+      "description": "Verdichtung: Sie können Ihre Liegenschaft an die Fernwärme anschliessen. Informieren Sie sich über das weitere Vorgehen bei Stadtwerk Winterthur Kundenberatung Wärme unter 052 267 16 29 oder stadtwerk.waerme@win.ch."
+    },
+    "my_property.districtheating.P9": {
+      "label": "Verdichtung",
+      "description": "Verdichtung: Sie können Ihre Liegenschaft an die Fernwärme anschliessen. Informieren Sie sich über das weitere Vorgehen bei Stadtwerk Winterthur Kundenberatung Wärme unter 052 267 16 29 oder stadtwerk.waerme@win.ch."
+    },
+    "my_property.districtheating.P12": {
+      "label": "Verdichtung",
+      "description": "Verdichtung: Sie können Ihre Liegenschaft an die Fernwärme anschliessen. Informieren Sie sich über das weitere Vorgehen bei Stadtwerk Winterthur Kundenberatung Wärme unter 052 267 16 29 oder stadtwerk.waerme@win.ch."
+    },
+    "my_property.districtheating.P13": {
+      "label": "Verdichtung",
+      "description": "Verdichtung: Sie können Ihre Liegenschaft an die Fernwärme anschliessen. Informieren Sie sich über das weitere Vorgehen bei Stadtwerk Winterthur Kundenberatung Wärme unter 052 267 16 29 oder stadtwerk.waerme@win.ch."
+    },
+    "my_property.districtheating.P14": {
+      "label": "Verdichtung",
+      "description": "Verdichtung: Sie können Ihre Liegenschaft an die Fernwärme anschliessen. Informieren Sie sich über das weitere Vorgehen bei Stadtwerk Winterthur Kundenberatung Wärme unter 052 267 16 29 oder stadtwerk.waerme@win.ch."
+    },
+    "my_property.districtheating.P15": {
+      "label": "Verdichtung",
+      "description": "Verdichtung: Sie können Ihre Liegenschaft an die Fernwärme anschliessen. Informieren Sie sich über das weitere Vorgehen bei Stadtwerk Winterthur Kundenberatung Wärme unter 052 267 16 29 oder stadtwerk.waerme@win.ch."
+    },
+    "my_property.districtheating.V3": {
+      "label": "in Prüfung",
+      "description": "in Prüfung: Die technische und wirtschaftliche Machbarkeit des Wärmenetzes in Ihrem Quartier wird derzeit geprüft. Die Resultate der Machbarkeitsstudie liegen im 3. Quartal 2024 vor und das weitere Vorgehen wird geplant."
+    },
+    "my_property.districtheating.V4": {
+      "label": "in Planung",
+      "description": "in Planung: Ein Teil des Wärmenetzes in Ihrem Quartier ist derzeit im Bau. Die Planung des Ausbaus dieses Wärmenetzes dauert von Juli 2024 bis Ende 2025. Ist die Wirtschaftlichkeit für den Ausbau gegeben, wird das gesamte Gebiet «Neuwiesen» voraussichtlich ab 2026 erschlossen. Bei Fragen wenden Sie sich an Stadtwerk Winterthur Kundenberatung Wärme unter 052 267 16 29 oder stadtwerk.waerme@win.ch."
+    },
+    "my_property.districtheating.V5": {
+      "label": "in Prüfung",
+      "description": "in Prüfung: Die technische und wirtschaftliche Machbarkeit des Wärmenetzes in Ihrem Quartier wird derzeit geprüft. Die Resultate der Machbarkeitsstudie liegen im 3. Quartal 2024 vor und das weitere Vorgehen wird geplant."
+    },
+    "my_property.districtheating.V8": {
+      "label": "in Prüfung",
+      "description": "in Prüfung: Die technische und wirtschaftliche Machbarkeit des Wärmenetzes in Ihrem Quartier wird derzeit geprüft. Die Resultate der Machbarkeitsstudie liegen im 3. Quartal 2024 vor und das weitere Vorgehen wird geplant."
+    },
+    "my_property.districtheating.V10": {
+      "label": "in Prüfung",
+      "description": "in Prüfung: Die technische und wirtschaftliche Machbarkeit des Wärmenetzes in Ihrem Quartier wird derzeit geprüft. Die Resultate der Machbarkeitsstudie liegen im 3. Quartal 2024 vor und das weitere Vorgehen wird geplant."
+    },
+    "my_property.districtheating.V16": {},
+    "my_property.districtheating.V17": {
+      "label": "in Prüfung",
+      "description": "in Prüfung: Die technische und wirtschaftliche Machbarkeit des Wärmenetzes in Ihrem Quartier wird derzeit geprüft. Die Resultate der Machbarkeitsstudie liegen im 3. Quartal 2024 vor und das weitere Vorgehen wird geplant."
+    },
+    "my_property.districtheating.V18": {
+      "label": "in Prüfung",
+      "description": "in Prüfung: Die technische und wirtschaftliche Machbarkeit des Wärmenetzes in Ihrem Quartier wird derzeit geprüft. Die Resultate der Machbarkeitsstudie liegen im 3. Quartal 2024 vor und das weitere Vorgehen wird geplant."
+    },
+    "my_property.districtheating.V19": {
+      "label": "in Prüfung",
+      "description": "in Prüfung: Die technische und wirtschaftliche Machbarkeit des Wärmenetzes in Ihrem Quartier wird derzeit geprüft. Die Resultate der Machbarkeitsstudie liegen im 3. Quartal 2024 vor und das weitere Vorgehen wird geplant."
+    }
   }
 }
