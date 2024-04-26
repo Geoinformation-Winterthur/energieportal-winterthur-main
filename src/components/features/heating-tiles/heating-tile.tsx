@@ -3,17 +3,26 @@ import { Icon, IconType } from "@/components/common/icon/icon";
 import clsx from "clsx";
 import { useTranslation } from "../../../../i18n";
 import styles from "./heating-tile.module.scss";
+import { EnergyPlanArea } from "@/types/energy-plan-area";
 
 interface HeatingTileProps {
   title: string;
-  icon: IconType;
+  code: IconType;
   pros?: string[];
   cons?: string[];
   isRecommendation?: boolean;
+  energyPlan?: EnergyPlanArea;
 }
 
-export const HeatingTile = ({ title, icon, pros, cons, isRecommendation }: HeatingTileProps) => {
+export const HeatingTile = ({ title, code, pros, cons, isRecommendation, energyPlan }: HeatingTileProps) => {
   const { t } = useTranslation();
+
+  const EnergyPlanStatus = () => (
+    <div className={styles["heating-tile__status"]}>
+      <h5 className={styles["heating-tile__status-label"]}>{t("my_property.heating_recommendations.state")}</h5>
+      <button className={styles["heating-tile__status-btn"]}>{t(`my_property.districtheating.${energyPlan}.label`)}</button>
+    </div>
+  )
 
   return (
     <div className={clsx(styles["heating-tile"], isRecommendation && styles["heating-tile--is-recommendation"])}>
@@ -22,9 +31,10 @@ export const HeatingTile = ({ title, icon, pros, cons, isRecommendation }: Heati
         <div className={styles["heating-tile__content"]}>
           <div className={styles["heating-tile__header"]}>
             <h4 className={styles["heating-tile__title"]}>{title}</h4>
-            <Icon icon={icon} size={56} />
+            <Icon icon={code} size={56} />
           </div>
           <div className={styles["heating-tile__lists"]}>
+            {code === "districtheating" && energyPlan && <EnergyPlanStatus />}
             <div>
               <h5 className={styles["heating-tile__list-title"]}>{t("my_property.heating_recommendations.pros")}</h5>
               <ul className={styles["heating-tile__list"]}>

@@ -96,6 +96,7 @@
     "my_property.heating_recommendations.title": "Heizlösungen in Ihrem Quartier",
     "my_property.heating_recommendations.lead": "Nachfolgend finden Sie einen Überblick über mögliche Heizlösungen in Ihrem Quartier und unsere Empfehlung. Für eine detaillierte Prüfung der örtlichen Gegebenheiten wenden Sie sich bitte an ausgewiesene Fachpersonen.",
     "my_property.heating_recommendations.flag": "Empfehlung für Ihr Quartier",
+    "my_property.heating_recommendations.state": "Status des Netzes:",
     "my_property.heating_recommendations.pros": "Vorteile",
     "my_property.heating_recommendations.cons": "Nachteile",
     "my_property.heating_recommendations.button": "Mehr erfahren",
@@ -156,22 +157,8 @@
       ]
     },
     "my_property.heating_recommendations.districtheating_p.title": "Bestehende Wärmenetze",
-    "my_property.heating_recommendations.districtheating_p": {
-      "status": "Status des Netzes:",
-      "pros": [
-        "auch für den Altbau geeignet",
-        "für Mehrfamilienhäuser mit hoher Heizleistung geeignet",
-        "lokal produzierte Heizenergie aus Kehricht oder Holzschnitzel",
-        "geringe Kosten für Wartung und Unterhalt"
-      ],
-      "cons": [
-        "teurer bei kleiner Heizleistung",
-        "Spitzenabdeckung mit Erdgas"
-      ]
-    },
     "my_property.heating_recommendations.districtheating.title": "Vorgesehene Wärmenetze",
     "my_property.heating_recommendations.districtheating": {
-      "status": "Status des Netzes:",
       "pros": [
         "auch für den Altbau geeignet",
         "für Mehrfamilienhäuser mit hoher Heizleistung geeignet",
@@ -187,6 +174,71 @@
     "my_property.heating_recommendations.accordion_detail_1": "Die Empfehlung dient als erste Orientierungshilfe und basiert auf Informationen aus dem",
     "my_property.heating_recommendations.accordion_link_1": "kommunalen Energieplan",
     "my_property.heating_recommendations.accordion_link_target_1": "https://stadtplan.winterthur.ch/?topic=KommunalerEnergieplan",
-    "my_property.heating_recommendations.accordion_detail_2": ". Der kommunale Energieplan dient als Instrument zur Koordination der Wärmeversorgung der Stadt und zeigt auf, welche erneuerbaren Energieträger in den jeweiligen Gebieten geeignet sind. Dabei werden Faktoren wie z.B. die vorhandene Wärmenetze oder die Bohrerlaubnis für Erdsonden berücksichtigt."
+    "my_property.heating_recommendations.accordion_detail_2": ". Der kommunale Energieplan dient als Instrument zur Koordination der Wärmeversorgung der Stadt und zeigt auf, welche erneuerbaren Energieträger in den jeweiligen Gebieten geeignet sind. Dabei werden Faktoren wie z.B. die vorhandene Wärmenetze oder die Bohrerlaubnis für Erdsonden berücksichtigt.",
+    "my_property.districtheating.P1": {
+      "label": "Verdichtung",
+      "description": "Verdichtung: Sie können Ihre Liegenschaft an die Fernwärme anschliessen. Informieren Sie sich über das weitere Vorgehen bei Stadtwerk Winterthur Kundenberatung Wärme unter 052 267 16 29 oder stadtwerk.waerme@win.ch."
+    },
+    "my_property.districtheating.P2": {
+      "label": "Verdichtung",
+      "description": "Verdichtung: Sie können Ihre Liegenschaft an die Fernwärme anschliessen. Informieren Sie sich über das weitere Vorgehen bei Stadtwerk Winterthur Kundenberatung Wärme unter 052 267 16 29 oder stadtwerk.waerme@win.ch."
+    },
+    "my_property.districtheating.P7": {
+      "label": "Verdichtung",
+      "description": "Verdichtung: Sie können Ihre Liegenschaft an die Fernwärme anschliessen. Informieren Sie sich über das weitere Vorgehen bei Stadtwerk Winterthur Kundenberatung Wärme unter 052 267 16 29 oder stadtwerk.waerme@win.ch."
+    },
+    "my_property.districtheating.P9": {
+      "label": "Verdichtung",
+      "description": "Verdichtung: Sie können Ihre Liegenschaft an die Fernwärme anschliessen. Informieren Sie sich über das weitere Vorgehen bei Stadtwerk Winterthur Kundenberatung Wärme unter 052 267 16 29 oder stadtwerk.waerme@win.ch."
+    },
+    "my_property.districtheating.P12": {
+      "label": "Verdichtung",
+      "description": "Verdichtung: Sie können Ihre Liegenschaft an die Fernwärme anschliessen. Informieren Sie sich über das weitere Vorgehen bei Stadtwerk Winterthur Kundenberatung Wärme unter 052 267 16 29 oder stadtwerk.waerme@win.ch."
+    },
+    "my_property.districtheating.P13": {
+      "label": "Verdichtung",
+      "description": "Verdichtung: Sie können Ihre Liegenschaft an die Fernwärme anschliessen. Informieren Sie sich über das weitere Vorgehen bei Stadtwerk Winterthur Kundenberatung Wärme unter 052 267 16 29 oder stadtwerk.waerme@win.ch."
+    },
+    "my_property.districtheating.P14": {
+      "label": "Verdichtung",
+      "description": "Verdichtung: Sie können Ihre Liegenschaft an die Fernwärme anschliessen. Informieren Sie sich über das weitere Vorgehen bei Stadtwerk Winterthur Kundenberatung Wärme unter 052 267 16 29 oder stadtwerk.waerme@win.ch."
+    },
+    "my_property.districtheating.P15": {
+      "label": "Verdichtung",
+      "description": "Verdichtung: Sie können Ihre Liegenschaft an die Fernwärme anschliessen. Informieren Sie sich über das weitere Vorgehen bei Stadtwerk Winterthur Kundenberatung Wärme unter 052 267 16 29 oder stadtwerk.waerme@win.ch."
+    },
+    "my_property.districtheating.V3": {
+      "label": "in Prüfung",
+      "description": "in Prüfung: Die technische und wirtschaftliche Machbarkeit des Wärmenetzes in Ihrem Quartier wird derzeit geprüft. Die Resultate der Machbarkeitsstudie liegen im 3. Quartal 2024 vor und das weitere Vorgehen wird geplant."
+    },
+    "my_property.districtheating.V4": {
+      "label": "in Planung",
+      "description": "in Planung: Ein Teil des Wärmenetzes in Ihrem Quartier ist derzeit im Bau. Die Planung des Ausbaus dieses Wärmenetzes dauert von Juli 2024 bis Ende 2025. Ist die Wirtschaftlichkeit für den Ausbau gegeben, wird das gesamte Gebiet «Neuwiesen» voraussichtlich ab 2026 erschlossen. Bei Fragen wenden Sie sich an Stadtwerk Winterthur Kundenberatung Wärme unter 052 267 16 29 oder stadtwerk.waerme@win.ch."
+    },
+    "my_property.districtheating.V5": {
+      "label": "in Prüfung",
+      "description": "in Prüfung: Die technische und wirtschaftliche Machbarkeit des Wärmenetzes in Ihrem Quartier wird derzeit geprüft. Die Resultate der Machbarkeitsstudie liegen im 3. Quartal 2024 vor und das weitere Vorgehen wird geplant."
+    },
+    "my_property.districtheating.V8": {
+      "label": "in Prüfung",
+      "description": "in Prüfung: Die technische und wirtschaftliche Machbarkeit des Wärmenetzes in Ihrem Quartier wird derzeit geprüft. Die Resultate der Machbarkeitsstudie liegen im 3. Quartal 2024 vor und das weitere Vorgehen wird geplant."
+    },
+    "my_property.districtheating.V10": {
+      "label": "in Prüfung",
+      "description": "in Prüfung: Die technische und wirtschaftliche Machbarkeit des Wärmenetzes in Ihrem Quartier wird derzeit geprüft. Die Resultate der Machbarkeitsstudie liegen im 3. Quartal 2024 vor und das weitere Vorgehen wird geplant."
+    },
+    "my_property.districtheating.V16": {},
+    "my_property.districtheating.V17": {
+      "label": "in Prüfung",
+      "description": "in Prüfung: Die technische und wirtschaftliche Machbarkeit des Wärmenetzes in Ihrem Quartier wird derzeit geprüft. Die Resultate der Machbarkeitsstudie liegen im 3. Quartal 2024 vor und das weitere Vorgehen wird geplant."
+    },
+    "my_property.districtheating.V18": {
+      "label": "in Prüfung",
+      "description": "in Prüfung: Die technische und wirtschaftliche Machbarkeit des Wärmenetzes in Ihrem Quartier wird derzeit geprüft. Die Resultate der Machbarkeitsstudie liegen im 3. Quartal 2024 vor und das weitere Vorgehen wird geplant."
+    },
+    "my_property.districtheating.V19": {
+      "label": "in Prüfung",
+      "description": "in Prüfung: Die technische und wirtschaftliche Machbarkeit des Wärmenetzes in Ihrem Quartier wird derzeit geprüft. Die Resultate der Machbarkeitsstudie liegen im 3. Quartal 2024 vor und das weitere Vorgehen wird geplant."
+    }
   }
 }

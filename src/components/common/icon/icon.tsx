@@ -1,6 +1,7 @@
 "use client";
 import clsx from "clsx";
 import Airwater from "./assets/airwater.svg";
+import ArrowLeft from "./assets/arrow-left.svg";
 import ArrowDown from "./assets/arrow-down.svg";
 import ArrowRight from "./assets/arrow-right.svg";
 import Burger from "./assets/burger.svg";
@@ -22,13 +23,14 @@ import styles from "./icon.module.scss";
 
 export type IconType =
   "airwater"
-  | "arrow-right"
   | "arrow-down"
+  | "arrow-left"
+  | "arrow-right"
   | "burger"
   | "chevron-down"
   | "chevron-up"
   | "close"
-  | "district-heating"
+  | "districtheating"
   | "geothermal"
   | "groundwater"
   | "info"
@@ -51,12 +53,13 @@ export const Icon = ({ icon, size = 20, color, onButtonClick }: IconProps) => {
   const iconMap = {
     airwater: <Airwater width={size} height={size} />,
     "arrow-down": <ArrowDown width={size} height={size} />,
+    "arrow-left": <ArrowLeft width={size} height={size} />,
     "arrow-right": <ArrowRight width={size} height={size} />,
     burger: <Burger width={size} height={size} />,
     "chevron-down": <ChevronDown width={size} height={size} />,
     "chevron-up": <ChevronUp width={size} height={size} />,
     close: <Close width={size} height={size} />,
-    "district-heating": <DistrictHeating width={size} height={size} />,
+    districtheating: <DistrictHeating width={size} height={size} />,
     geothermal: <Geothermal width={size} height={size} />,
     groundwater: <Groundwater width={size} height={size} />,
     info: <Info width={size} height={size} />,
