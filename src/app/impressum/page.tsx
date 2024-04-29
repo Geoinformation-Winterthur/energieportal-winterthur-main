@@ -19,8 +19,8 @@ export default function Impressum() {
             Pionierstrasse 7 <br />
             8403 Winterthur <br />
           </address>
-          <a href="tel:+41522675533"><Icon icon="phone" /> +41 52 267 55 33</a>
-          <a href="mailto:energiefachstelle@win.ch"><Icon icon="mail" /> energiefachstelle@win.ch</a>
+          <a href="tel:+41522675533"><Icon icon="phone" />+41 52 267 55 33</a>
+          <a href="mailto:energieportal@win.ch"><Icon icon="mail" />energieportal@win.ch</a>
         </Section>
         <Section title="Realisierungspartner">
           <p>Bei der Erstellung des Energieportals wurde die Stadt Winterthur durch dreipol GmbH unterstützt.</p>
@@ -29,8 +29,9 @@ export default function Impressum() {
             Langstrasse 94 <br />
             8004 Zürich <br />
           </address>
-          <a href="tel:+41433220644"><Icon icon="phone" /> +41 43 322 06 44</a>
-          <a href="mailto:hello@dreipol.ch"><Icon icon="mail" /> hello@dreipol.ch</a>
+          <a href="tel:+41433220644"><Icon icon="phone" />+41 43 322 06 44</a>
+          <a href="mailto:hello@dreipol.ch"><Icon icon="mail" />hello@dreipol.ch</a>
+          <a href="https://www.dreipol.ch" target="_blank">dreipol.ch<Icon icon="link" /></a>
         </Section>
         <Section title="Datenschutz">
           <p>Wir haben die Datenschutzerklärung sowohl am Schweizer Datenschutzgesetz als auch an der Europäischen Datenschutz-Grundverordnung (nachfolgend EU DSGVO) ausgerichtet. Ob und inwieweit die EU DSGVO anwendbar ist, hängt einer Einzelfall Beurteilung ab. Den Umgang mit der Erhebung, Verarbeitung und Löschung von Daten, sowie Ihrer Rechte betreffend dem Datenschutz können Sie der <a href="/pdf/Datenschutzerklaerung.pdf">Datenschutzerklärung</a> entnehmen.</p>
