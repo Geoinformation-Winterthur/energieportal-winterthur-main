@@ -1,3 +1,4 @@
+'use client'
 import { Contact } from "@/components/common/contact/contact";
 import { Intro } from "@/components/common/intro/intro";
 import { FullWidth } from "@/components/common/layout/full-width/full-width";
@@ -5,12 +6,20 @@ import { TwoCols } from "@/components/common/layout/two-cols/two-cols";
 import { Section } from "@/components/common/section/section";
 import { Teaser } from "@/components/common/teaser/teaser";
 import { AddressSearchBar } from "@/components/features/address-search-bar/address-search-bar";
+import { useSearchParams } from "next/navigation";
+import { useEffect, useState } from "react";
 import { useTranslation } from "../../../i18n";
-import { Suspense } from "react";
+import { MyPropertyPage } from "@/templates/my-propery/my-property";
 
 export default function OnlineConsulting() {
-
   const { t } = useTranslation();
+  const [hasAddress, setHasAddress] = useState(false);
+  const searchParams = useSearchParams();
+
+  useEffect(() => {
+    setHasAddress(searchParams.has("address"));
+  }, [searchParams])
+
 
   const RightContent = () => (
     <>
@@ -25,34 +34,21 @@ export default function OnlineConsulting() {
     </>
   )
 
-  const MyProperty = () => {
-    return (
-      <>
-        <Intro title={t("my_property.title")} variant="dark" />
-        <FullWidth noPaddingY>
-          <AddressSearchBar variant="light" />
-        </FullWidth>
-      </>
-    )
-  }
-
-  const WelcomeScreen = () => {
+  const renderWelcomeScreen = () => {
     return (
       <>
         <Intro title={t("online_consulting.intro.title")} lead={t("online_consulting.intro.lead")} variant="light" />
-        <FullWidth noPaddingY>
+        <FullWidth noPaddingTop noPaddingBottom>
           <AddressSearchBar variant="dark" title={t("address.search_bar.title")} lead={t("address.search_bar.text")} />
         </FullWidth>
-        <TwoCols contentLeft={<LeftContent/>} contentRight={<RightContent/>}></TwoCols>
+        <TwoCols contentLeft={<LeftContent />} contentRight={<RightContent />}></TwoCols>
       </>
     )
   }
 
   return (
     <main>
-      <Suspense>
-        <WelcomeScreen/>
-      </Suspense>
+      {hasAddress ? <MyPropertyPage /> : renderWelcomeScreen()}
     </main>
   );
 }

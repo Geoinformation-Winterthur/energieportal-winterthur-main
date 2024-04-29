@@ -1,6 +1,6 @@
+import clsx from 'clsx';
 import { Icon, IconType } from "../icon/icon";
 import styles from "./button.module.scss";
-
 interface ButtonProps {
   children?: React.ReactNode | string;
   icon?: IconType;
@@ -19,10 +19,7 @@ export const Button = ({
   if (href) {
     return (
       <a
-        className={`
-		${styles["button"]}
-		${disabled ? styles["button--disabled"] : ""}
-	  `}
+        className={clsx(styles["button"], disabled ? styles["button--disabled"] : "")}
         href={href}
       >
         {children}
@@ -32,10 +29,7 @@ export const Button = ({
   }
   return (
     <button
-      className={`
-		${styles["button"]}
-		${disabled ? styles["button--disabled"] : ""}
-	`}
+      className={clsx(styles["button"], disabled ? styles["button--disabled"] : "")}
       onClick={onClick}
     >
       {children}

@@ -5,7 +5,6 @@ export const useWindowSize = () => {
   const [height, setHeight] = useState(0);
   const [width, setWidth] = useState(0);
   const isMobile = width < 834;
-  const isTablet = !isMobile && width < 1100;
 
   const handleWindowResize = () => {
     setWidth(window.innerWidth);
@@ -22,5 +21,5 @@ export const useWindowSize = () => {
       );
   }, []);
 
-  return { width, height, isMobile, isTablet };
+  return { width, height, isMobile };
 };

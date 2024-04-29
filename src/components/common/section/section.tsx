@@ -11,7 +11,7 @@ export const Section = ({ title, description, children }: SectionProps) => {
   return (
     <div className={styles["section"]}>
       <h2 className={styles["section__title"]}>{title}</h2>
-      <p className={styles["section__description"]}>{description}</p>
+      {description && <p className={styles["section__description"]}>{description}</p>}
       {children}
     </div>
   )
