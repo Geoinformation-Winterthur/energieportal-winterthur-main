@@ -6,20 +6,28 @@ import { PropertyFacts } from "@/components/features/property-facts/property-fac
 import { useTranslation } from "../../../i18n"
 import { PropertyFactsAccordion } from "./property-facts-accordion"
 import { HeatingRecommendations } from "../heating-recommandations/heating-recommandations"
+import { PropertyImage } from "@/components/features/property-image/property-image"
+import styles from "./my-property.module.scss"
 
 export const MyPropertyPage = () => {
   const { t } = useTranslation();
 
   return (
-    <>
+    <div className={styles["my-property"]}>
       <Intro title={t("my_property.title")} variant="dark" />
       <FullWidth noPaddingTop>
         <AddressSearchBar variant="light" />
         <Co2Emissions />
-        <PropertyFacts />
+        <div className={styles["my-property__property-facts"]}>
+          <h3 className={styles["property-facts__title"]}>{t("my_property.property_facts_title")}</h3>
+          <div className={styles["my-property__wrapper"]}>
+            <PropertyFacts />
+            <PropertyImage />
+          </div>
+        </div>
         <PropertyFactsAccordion />
       </FullWidth >
       <HeatingRecommendations />
-    </>
+    </div>
   )
 }

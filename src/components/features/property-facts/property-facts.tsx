@@ -47,7 +47,6 @@ export const PropertyFacts = () => {
 
   return (
     <div className={styles["property-facts"]}>
-      <h3 className={styles["property-facts__title"]}>{t("my_property.property_facts_title")}</h3>
       <table className={styles["property-facts__table"]}>
         <tbody>
           <tr className={styles["property-facts__table-row"]}>

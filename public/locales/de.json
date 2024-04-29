@@ -1,7 +1,7 @@
 {
   "translation": {
     "general.header.title": "Energieportal Winterthur",
-    "general.header.domain": "energieportal.winterthur.ch",
+    "general.header.domain": "stadt.winterthur.ch/energieportal",
     "general.navigation.online_consulting": "Online-Beratung",
     "general.navigation.our_consulting_service": "Unser Beratungsangebot",
     "general.navigation.contact": "Kontakt",
@@ -83,6 +83,11 @@
     "my_property.property_facts_heating": "Wärmeerzeuger Heizung",
     "my_property.property_facts_heat_source": "Wärmequelle",
     "my_property.property_facts_not_available": "Keine Angabe",
+    "my_property.property_update_info_1": "Sind Ihre Angaben falsch?",
+    "my_property.property_update_info_link": "Hier",
+    "my_property.property_update_info_link_target": "/kontakt",
+    "my_property.property_update_info_2": "melden",
+    "my_property.property_image_alt": "Gebäude von oben",
     "my_property.property_facts.accordion_summary": "Woher stammen die Daten zum CO₂-Ausstoss und zum Gebäude?",
     "my_property.property_facts.accordion_detail_1": "Die Angaben zum CO₂-Ausstoss sind eine Schätzung des",
     "my_property.property_facts.accordion_link_1": "Bundesamtes für Umwelt (BAFU)",
