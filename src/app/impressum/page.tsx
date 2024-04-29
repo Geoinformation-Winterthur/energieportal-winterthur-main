@@ -34,10 +34,10 @@ export default function Impressum() {
           <a href="https://www.dreipol.ch" target="_blank">dreipol.ch<Icon icon="link" /></a>
         </Section>
         <Section title="Datenschutz">
-          <p>Wir haben die Datenschutzerklärung sowohl am Schweizer Datenschutzgesetz als auch an der Europäischen Datenschutz-Grundverordnung (nachfolgend EU DSGVO) ausgerichtet. Ob und inwieweit die EU DSGVO anwendbar ist, hängt einer Einzelfall Beurteilung ab. Den Umgang mit der Erhebung, Verarbeitung und Löschung von Daten, sowie Ihrer Rechte betreffend dem Datenschutz können Sie der <a href="/pdf/Datenschutzerklaerung.pdf">Datenschutzerklärung</a> entnehmen.</p>
+          <p>Wir haben die Datenschutzerklärung sowohl am Schweizer Datenschutzgesetz als auch an der Europäischen Datenschutz-Grundverordnung (nachfolgend EU DSGVO) ausgerichtet. Ob und inwieweit die EU DSGVO anwendbar ist, hängt einer Einzelfall Beurteilung ab. Den Umgang mit der Erhebung, Verarbeitung und Löschung von Daten, sowie Ihrer Rechte betreffend dem Datenschutz können Sie der <a href="/pdf/Datenschutzerklaerung.pdf" target="_blank">Datenschutzerklärung</a> entnehmen.</p>
         </Section>
         <Section title="Nutzungsbedingungen">
-          <p>Den Nutzungsgegenstand und Umgang mit der Applikation und deren Geodaten können Sie aus den <a href="/pdf/Nutzungsbedingungen.pdf">Nutzungsbedingungen</a> entnehmen.</p>
+          <p>Den Nutzungsgegenstand und Umgang mit der Applikation und deren Geodaten können Sie aus den <a href="/pdf/Nutzungsbedingungen.pdf" target="_blank">Nutzungsbedingungen</a> entnehmen.</p>
         </Section>
       </FullWidth>
     </main>
