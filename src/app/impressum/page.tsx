@@ -1,6 +1,6 @@
 import { Icon } from "@/components/common/icon/icon";
 import { Intro } from "@/components/common/intro/intro";
-import { FullWidth } from "@/components/common/layout/full-width/full-width";
+import { OneCol } from "@/components/common/layout/one-col/one-col";
 import { Section } from "@/components/common/section/section";
 
 export default function Impressum() {
@@ -8,7 +8,7 @@ export default function Impressum() {
   return (
     <main>
       <Intro title="Impressum" variant="dark" />
-      <FullWidth>
+      <OneCol>
         <Section title="Kontakt und Verantwortung">
           <p>Verantwortlich für den Inhalt ist die Abteilung Energie und Technik der Stadt Winterthur.</p>
           <address>
@@ -39,7 +39,7 @@ export default function Impressum() {
         <Section title="Nutzungsbedingungen">
           <p>Den Nutzungsgegenstand und Umgang mit der Applikation und deren Geodaten können Sie aus den <a href="/pdf/Nutzungsbedingungen.pdf" target="_blank">Nutzungsbedingungen</a> entnehmen.</p>
         </Section>
-      </FullWidth>
+      </OneCol>
     </main>
   );
 }
