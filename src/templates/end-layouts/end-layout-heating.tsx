@@ -1,8 +1,8 @@
-import { TwoCols } from "@/components/common/layout/two-cols/two-cols"
-import { useTranslation } from "../../../../i18n"
+import { Contact } from "@/components/common/contact/contact";
+import { TwoCols } from "@/components/common/layout/two-cols/two-cols";
 import { Section } from "@/components/common/section/section";
 import { Teaser } from "@/components/common/teaser/teaser";
-import { Contact } from "@/components/common/contact/contact";
+import { useTranslation } from "../../../i18n";
 
 
 export const EndLayOutHeating = () => {
