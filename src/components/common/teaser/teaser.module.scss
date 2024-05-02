@@ -11,6 +11,14 @@
     gap: var(--spacing-8);
     width: 100%;
   }
+
+  &.teaser--as-row {
+
+    @include tablet-up {
+      flex-direction: row-reverse;
+      gap: var(--spacing-26);
+    }
+  }
 }
 
 .teaser__image {
@@ -76,4 +84,8 @@
 
 .teaser__description {
   @include typo-body();
+}
+
+.teaser__subtitle {
+  @include typo-headline-4();
 }
