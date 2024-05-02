@@ -1,5 +1,5 @@
 import { Intro } from "@/components/common/intro/intro"
-import { FullWidth } from "@/components/common/layout/full-width/full-width"
+import { OneCol } from "@/components/common/layout/one-col/one-col"
 import { AddressSearchBar } from "@/components/features/address-search-bar/address-search-bar"
 import { Co2Emissions } from "@/components/features/co2-emissions/co2-emissions"
 import { PropertyFacts } from "@/components/features/property-facts/property-facts"
@@ -15,7 +15,7 @@ export const MyPropertyPage = () => {
   return (
     <div className={styles["my-property"]}>
       <Intro title={t("my_property.title")} variant="dark" />
-      <FullWidth noPaddingTop>
+      <OneCol noPaddingTop>
         <AddressSearchBar variant="light" />
         <Co2Emissions />
         <div className={styles["my-property__property-facts"]}>
@@ -26,7 +26,7 @@ export const MyPropertyPage = () => {
           </div>
         </div>
         <PropertyFactsAccordion />
-      </FullWidth >
+      </OneCol >
       <HeatingRecommendations />
     </div>
   )

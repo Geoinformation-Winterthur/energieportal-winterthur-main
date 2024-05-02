@@ -1,0 +1,51 @@
+@import "../../../styles/breakpoints.scss";
+@import "../../../styles/typography.scss";
+
+.service-tile {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+  justify-content: space-between;
+  background-color: var(--color-white);
+  padding: var(--spacing-8);
+  min-height: 690px;
+
+  @include tablet-up {
+    min-height: 790px;
+  }
+}
+
+.service-tile__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-4);
+}
+
+.service-tile__title {
+  @include typo-headline-3();
+}
+
+.service-tile__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.service-tile__table-row {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.service-tile__table-row-head {
+  @include typo-headline-5();
+
+  text-align: left;
+}
+
+.service-tile__table-row-data {
+  @include typo-body();
+}
+
+.service-tile__table-row-head,
+.service-tile__table-row-data {
+  padding: var(--spacing-2);
+}
