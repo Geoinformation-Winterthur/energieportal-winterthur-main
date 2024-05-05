@@ -1,6 +1,14 @@
+@import "../../../../styles/breakpoints.scss";
+
 .tab-panel {
     width: 100%;
-    padding: var(--spacing-20);
-    padding-bottom: var(--spacing-9);
+    padding: var(--spacing-5);
+    padding-top: var(--spacing-10);
+    padding-bottom: var(--spacing-6);
     background: var(--color-brand-green-light);
+
+    @include tablet-up {
+        padding: var(--spacing-20);
+        padding-bottom: var(--spacing-9);
+    }
 }

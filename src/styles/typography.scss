@@ -83,6 +83,13 @@
   letter-spacing: 0.03125rem;
 }
 
+@mixin typo-tab {
+  font-size: clamp(1.375rem, 1.081rem + 0.1878vw, 1.75rem);
+  line-height: 100%;
+  font-weight: 400;
+  letter-spacing: 0.020625rem;
+}
+
 @mixin typo-copyright {
   font-size: clamp(0.5625rem, 0.4745rem + 0.3756vw, 0.8125rem);
   line-height: 130%;

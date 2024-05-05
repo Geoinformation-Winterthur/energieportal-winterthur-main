@@ -22,7 +22,7 @@ export default function Tab({ label, value }: TabProps) {
                 id={`${tabs.name}-tab-${value}`}
                 aria-controls={`${tabs.name}-panel-${value}`}
                 role="tab">
-            {label}
+            <span className={styles['tab__inner']}>{label}</span>
         </button>
     )
 }

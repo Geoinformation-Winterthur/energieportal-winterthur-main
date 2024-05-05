@@ -19,8 +19,8 @@ export const Default: Story = {
     render: () => (
         <Tabs initialValue={'0'} name={'test-tabs'}>
             <TabList>
-                <TabItem label='test 1' value={'0'}></TabItem>
-                <TabItem label='test 2' value={'1'}></TabItem>
+                <TabItem label='test 1 2 3 vier' value={'0'}></TabItem>
+                <TabItem label='test 2 testete' value={'1'}></TabItem>
                 <TabItem label='test 3' value={'2'}></TabItem>
             </TabList>
             <TabPanel value={'0'}>
