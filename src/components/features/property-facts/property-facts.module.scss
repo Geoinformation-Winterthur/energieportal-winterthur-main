@@ -1,0 +1,26 @@
+@import "../../../styles/breakpoints.scss";
+@import "../../../styles/typography.scss";
+
+.property-facts__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.property-facts__table-row {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.property-facts__table-row-head {
+  @include typo-headline-5();
+
+  text-align: left;
+}
+
+.property-facts__table-row-data {
+  @include typo-body();
+}
+
+.property-facts__table-row-head,
+.property-facts__table-row-data {
+  padding: var(--spacing-2);
+}

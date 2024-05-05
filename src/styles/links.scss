@@ -2,7 +2,7 @@
 
 a {
   @include typo-body();
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: var(--spacing-2);
   color: var(--color-links);
@@ -19,7 +19,7 @@ a {
   &:hover,
   &:active,
   &--active {
-    color: var(--color-black);
+    color: var(--color-text-primary);
 
     svg {
       animation: animate 0.3s ease-in-out forwards;

@@ -1,4 +1,5 @@
 "use client"
+import clsx from 'clsx';
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Fragment, useEffect, useState } from "react";
@@ -44,7 +45,7 @@ export const Navigation = ({ }) => {
       {items.map((item, i) => (
         <Fragment key={i}>
           <li>
-            <Link href={item.slug} className={`link-primary ${item.slug === activeItem ? "link-primary--active" : ""}`}>{item.title}</Link>
+            <Link href={item.slug} className={clsx("link-primary", item.slug === activeItem ? "link-primary--active" : "")}>{item.title}</Link>
           </li>
           {
             i < items.length - 1 && <div className={styles["navigation__divider"]} />
@@ -57,8 +58,8 @@ export const Navigation = ({ }) => {
   const navOnMobile = () => (
     <>
       {isOpen ? <Icon icon="close" size={24} onButtonClick={toggleNavMenu} /> : <Icon icon="burger" size={24} onButtonClick={toggleNavMenu} />}
-      <ul className={`${styles["navigation-panel"]} ${isOpen ? styles["navigation--open"] : styles["navigation--closed"]}`}>
-        <Link href="/" onClick={toggleNavMenu} className={`${styles["navigation__domain"]} link-primary`}>{t('general.header.domain')}</Link>
+      <ul className={clsx(styles["navigation-panel"], isOpen ? styles["navigation--open"] : styles["navigation--closed"])}>
+        <Link href="/" onClick={toggleNavMenu} className={clsx(styles["navigation__domain"], "link-primary")}>{t('general.header.domain')}</Link>
         {items.map((item) => (
           <li className={styles["navigation-panel__items"]} key={item.slug}>
             <Link href={item.slug} onClick={() => setIsOpen(false)}>{item.title}</Link>
