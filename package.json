@@ -21,6 +21,7 @@
     "@dreipol/t3-ui": "^5.18.0",
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
+    "@mui/base": "^5.0.0-beta.40",
     "@mui/material": "^5.15.15",
     "clsx": "^2.1.0",
     "i18next": "^23.10.1",

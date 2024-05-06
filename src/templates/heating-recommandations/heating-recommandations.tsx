@@ -13,7 +13,7 @@ export const HeatingRecommendations = () => {
       <HeatingTiles />
       <Accordion summary={t("my_property.heating_recommendations.accordion_summary")}>
         <AccordionDetails>
-          {t("my_property.heating_recommendations.accordion_detail_1")} <a href={t("my_property.heating_recommendations.accordion_link_target_1")} target="_blank">{t("my_property.heating_recommendations.accordion_link_1")}</a> {t("my_property.heating_recommendations.accordion_detail_2")}
+          {t("my_property.heating_recommendations.accordion_detail_1")} <a href={t("my_property.heating_recommendations.accordion_link_target_1")} target="_blank">{t("my_property.heating_recommendations.accordion_link_1")}</a>{t("my_property.heating_recommendations.accordion_detail_2")}
         </AccordionDetails>
       </Accordion>
     </FullWidth>

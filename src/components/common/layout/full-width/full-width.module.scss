@@ -2,7 +2,7 @@
 @import "../../../../styles/typography.scss";
 
 .full-width {
-  padding: var(--spacing-10) var(--spacing-6);
+  padding: var(--spacing-10) var(--spacing-5);
   background-color: var(--color-brand-green-light);
 
   @include tablet-up {

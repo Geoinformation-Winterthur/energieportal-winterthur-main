@@ -6,10 +6,12 @@ import { TwoCols } from "@/components/common/layout/two-cols/two-cols";
 import { Section } from "@/components/common/section/section";
 import { Teaser } from "@/components/common/teaser/teaser";
 import { AddressSearchBar } from "@/components/features/address-search-bar/address-search-bar";
-import { MyPropertyPage } from "@/templates/my-propery/my-property";
+import { MyPropertyPage } from "@/templates/my-property/my-property";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useTranslation } from "../../../i18n";
+import { FullWidth } from "@/components/common/layout/full-width/full-width";
+import { EfficiencyCalculator } from "@/components/features/efficiency-calculator/efficiency-calculator";
 
 export default function OnlineConsulting() {
   const { t } = useTranslation();
@@ -42,6 +44,9 @@ export default function OnlineConsulting() {
           <AddressSearchBar variant="dark" title={t("address.search_bar.title")} lead={t("address.search_bar.text")} />
         </OneCol>
         <TwoCols contentLeft={<LeftContent />} contentRight={<RightContent />}></TwoCols>
+        <FullWidth>
+          <EfficiencyCalculator />
+        </FullWidth>
       </>
     )
   }

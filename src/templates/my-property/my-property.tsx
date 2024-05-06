@@ -8,6 +8,7 @@ import { PropertyFactsAccordion } from "./property-facts-accordion"
 import { HeatingRecommendations } from "../heating-recommandations/heating-recommandations"
 import { PropertyImage } from "@/components/features/property-image/property-image"
 import styles from "./my-property.module.scss"
+import Link from "next/link"
 
 export const MyPropertyPage = () => {
   const { t } = useTranslation();
@@ -22,7 +23,10 @@ export const MyPropertyPage = () => {
           <h3 className={styles["property-facts__title"]}>{t("my_property.property_facts_title")}</h3>
           <div className={styles["my-property__wrapper"]}>
             <PropertyFacts />
-            <PropertyImage />
+            <div>
+              <PropertyImage />
+              <p className={styles["my-property__update-info"]}>{t("my_property.property_update_info_1")} <Link href={t("my_property.property_update_info_link_target")}>{t("my_property.property_update_info_link")}</Link> {t("my_property.property_update_info_2")}</p>
+            </div>
           </div>
         </div>
         <PropertyFactsAccordion />

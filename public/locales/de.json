@@ -446,6 +446,36 @@
     "my_property.heating_teaser_2_link_target": "https://www.energiefranken.ch",
     "my_property.heating_section_title": "Wie viel kostet ein erneuerbares Heizsystem? ",
     "my_property.heating_section_description": "Bei der Wahl des Heizsystems sind die Investitionskosten, die Energiekosten sowie die Kosten für Wartung und Unterhalt über die gesamte Lebensdauer zu berücksichtigen. Der Heizkostenrechner bietet eine schnelle Übersicht. Für eine vertiefte Betrachtung der individuellen Kosten und Förderbeiträge empfehlen wir eine Energieberatung.",
+    "my_property.refurbishment_efficiency_calculator.title": "Effizienz Ihrer Gebäudehülle",
+    "my_property.refurbishment_efficiency_calculator.lead": "Hier können Sie die Effizienz Ihrer Gebäudehülle freiwillig berechnen. Geben Sie dazu Ihren Energieverbrauch und die beheizte Fläche inklusive der Wände ein. Die Daten werden nicht gespeichert.",
+    "my_property.refurbishment_efficiency_calculator.form_title_1": "Gebäude",
+    "my_property.refurbishment_efficiency_calculator.form_title_2": "Durchschnittlicher Energieverbrauch",
+    "my_property.refurbishment_efficiency_calculator.form_title_3": "Warmwasseraufbereitung",
+    "my_property.refurbishment_efficiency_calculator.form_submit": "Ergebnis berechnen",
+    "my_property.refurbishment_efficiency_calculator.result_title": "Ergebnis",
+    "my_property.refurbishment_efficiency_calculator.result": "kWh/m² pro Jahr",
+    "my_property.refurbishment_efficiency_calculator.result_box": "Empfehlung für Ihr Gebäude",
+    "my_property.refurbishment_efficiency_calculator.result.bad": {
+      "title": "Schlecht gedämmt:",
+      "text": "Die Gebäudehülle ist nicht oder schlecht gedämmt. Eine energetische Sanierung wird dringend empfohlen."
+    },
+    "my_property.refurbishment_efficiency_calculator.result.moderate": {
+      "title": "Mässig gedämmt:",
+      "text": "Die Gebäudehülle ist nur mässig gedämmt. Eine energetische Sanierung wird empfohlen, um die benötigte Heizwärme zu senken."
+    },
+    "my_property.refurbishment_efficiency_calculator.result.good": {
+      "title": "Gut gedämmt:",
+      "text": "Die Dämmung der Gebäudehülle ist auf einem guten Niveau. Es können weitere Optimierungen vorgenommen werden, um die benötigte Heizwärme weiter zu senken."
+    },
+    "my_property.refurbishment_efficiency_calculator.result.very_good": {
+      "title": "Sehr gut gedämmt:",
+      "text": "Durch die ausgezeichnete Dämmung benötigen Sie nur sehr wenig Heizwärme."
+    },
+    "my_property.refurbishment_efficiency_calculator.result_subtext": "Zum Vergleich: Ein Neubau benötigt etwa 50 kWh/m² pro Jahr. Das sind 5 Liter Heizöl pro m² Energiebezugsfläche.",
+    "my_property.refurbishment_efficiency_calculator.summary_1": "Was ist die Energiebezugsfläche?",
+    "my_property.refurbishment_efficiency_calculator.detail_1": "Die Energiebezugsfläche ist die Summe aller beheizten oder klimatisierten Flächen inklusive der Wände. Die Fläche des beheizten Dachgeschosses wird dabei erst ab einem Meter Höhe mitgerechnet. Trocknungs- oder Waschräume werden nicht dazugezählt.",
+    "my_property.refurbishment_efficiency_calculator.summary_2": "Woher erhalte ich meinen durchschnittlichen Energieverbrauch pro Jahr?",
+    "my_property.refurbishment_efficiency_calculator.detail_2": "Entnehmen Sie den Heizölverbrauch Ihrer Heizung aus dem Tankbuch. Bei einer Gasheizung oder einer Wärmepumpe kann der Gasverbrauch respektive der Stromverbrauch aus der Abrechnung von Stadtwerke Winterthur entnommen werden.",
     "my_property.refurbishment_faq.summary_1": "Warum lohnt sich eine energetische Sanierung meiner Liegenschaft?",
     "my_property.refurbishment_faq.detail_1": "Wer einen Altbau saniert, statt ihn abzureissen, leistet bereits einen wichtigen Beitrag zum Klimaschutz. Die Dämmung der Gebäudehülle reduziert die Heizkosten und steigern zusätzlich den Wohnkomfort im Winter wie auch im Sommer. Energiesparmassnahmen steigern den Wert Ihres Gebäudes, sie können in der Steuerrechnung abgezogen werden.",
     "my_property.refurbishment_faq.summary_2": "Kann ein denkmalgeschütztes Gebäude energetisch saniert werden?",

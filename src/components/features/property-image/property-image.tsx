@@ -2,7 +2,6 @@ import { Icon } from "@/components/common/icon/icon";
 import { getPropertyFacts } from "@/utils/get-property-facts";
 import { getPropertyImage } from "@/utils/get-property-image";
 import Image from "next/image";
-import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useTranslation } from "../../../../i18n";
@@ -56,7 +55,6 @@ export const PropertyImage = () => {
   return (
     <div className={styles["property-image"]}>
       {isLoading ? <Icon icon="loading" color="red" /> : <Image className={styles["property-image__img"]} src={imgSrc} alt={t("my_property.property_image_alt")} fill />}
-      <p>{t("my_property.property_update_info_1")} <Link href={t("my_property.property_update_info_link_target")}>{t("my_property.property_update_info_link")}</Link> {t("my_property.property_update_info_2")}</p>
     </div>
   )
 }
