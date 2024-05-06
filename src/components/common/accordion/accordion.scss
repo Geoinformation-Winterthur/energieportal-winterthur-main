@@ -1,11 +1,16 @@
 @import "../../../styles/typography.scss";
 
 .accordion {
+  border-top: 1px solid var(--color-border);
+
   .MuiPaper-root.MuiPaper-root {
     box-shadow: none;
-    border-top: 1px solid var(--color-border);
+  }
+
+  &:last-child {
     border-bottom: 1px solid var(--color-border);
   }
+
 
   .MuiAccordionSummary-content.MuiAccordionSummary-content {
     @include typo-headline-5();
@@ -13,5 +18,7 @@
 
   .MuiAccordionDetails-root.MuiAccordionDetails-root {
     @include typo-body();
+
+    padding-top: 0;
   }
 }

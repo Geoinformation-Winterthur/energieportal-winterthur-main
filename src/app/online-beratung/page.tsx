@@ -1,15 +1,15 @@
 'use client'
 import { Contact } from "@/components/common/contact/contact";
 import { Intro } from "@/components/common/intro/intro";
-import { FullWidth } from "@/components/common/layout/full-width/full-width";
+import { OneCol } from "@/components/common/layout/one-col/one-col";
 import { TwoCols } from "@/components/common/layout/two-cols/two-cols";
 import { Section } from "@/components/common/section/section";
 import { Teaser } from "@/components/common/teaser/teaser";
 import { AddressSearchBar } from "@/components/features/address-search-bar/address-search-bar";
+import { MyPropertyPage } from "@/templates/my-propery/my-property";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useTranslation } from "../../../i18n";
-import { MyPropertyPage } from "@/templates/my-propery/my-property";
 
 export default function OnlineConsulting() {
   const { t } = useTranslation();
@@ -38,9 +38,9 @@ export default function OnlineConsulting() {
     return (
       <>
         <Intro title={t("online_consulting.intro.title")} lead={t("online_consulting.intro.lead")} variant="light" />
-        <FullWidth noPaddingTop noPaddingBottom>
+        <OneCol noPaddingTop noPaddingBottom>
           <AddressSearchBar variant="dark" title={t("address.search_bar.title")} lead={t("address.search_bar.text")} />
-        </FullWidth>
+        </OneCol>
         <TwoCols contentLeft={<LeftContent />} contentRight={<RightContent />}></TwoCols>
       </>
     )
