@@ -1,14 +1,21 @@
 import { Intro } from "@/components/common/intro/intro"
+import { FullWidth } from "@/components/common/layout/full-width/full-width"
 import { OneCol } from "@/components/common/layout/one-col/one-col"
+import TabList from "@/components/common/tabs/tab-list/tab-list"
+import TabPanel from "@/components/common/tabs/tab-panel/tab-panel"
+import Tab from "@/components/common/tabs/tab/tab"
+import Tabs from "@/components/common/tabs/tabs"
 import { AddressSearchBar } from "@/components/features/address-search-bar/address-search-bar"
 import { Co2Emissions } from "@/components/features/co2-emissions/co2-emissions"
+import { EfficiencyCalculator } from "@/components/features/efficiency-calculator/efficiency-calculator"
+import { EndLayOut } from "@/components/features/end-layout/end-layout"
 import { PropertyFacts } from "@/components/features/property-facts/property-facts"
-import { useTranslation } from "../../../i18n"
-import { PropertyFactsAccordion } from "./property-facts-accordion"
-import { HeatingRecommendations } from "../heating-recommandations/heating-recommandations"
 import { PropertyImage } from "@/components/features/property-image/property-image"
-import styles from "./my-property.module.scss"
 import Link from "next/link"
+import { useTranslation } from "../../../i18n"
+import { HeatingRecommendations } from "../heating-recommandations/heating-recommandations"
+import styles from "./my-property.module.scss"
+import { PropertyFactsAccordion } from "./property-facts-accordion"
 
 export const MyPropertyPage = () => {
   const { t } = useTranslation();
@@ -30,8 +37,25 @@ export const MyPropertyPage = () => {
           </div>
         </div>
         <PropertyFactsAccordion />
-      </OneCol >
-      <HeatingRecommendations />
+      </OneCol>
+      <Tabs initialValue={'0'} name={'tabs'}>
+        <TabList>
+          <Tab label='Heizung' value={'0'}></Tab>
+          <Tab label='Sanierung' value={'1'}></Tab>
+        </TabList>
+        <TabPanel value={'0'}>
+          <FullWidth>
+            <HeatingRecommendations />
+          </FullWidth>
+          <EndLayOut type="heating" />
+        </TabPanel>
+        <TabPanel value={'1'}>
+          <FullWidth>
+            <EfficiencyCalculator />
+          </FullWidth>
+          <EndLayOut type="refurbishment" />
+        </TabPanel>
+      </Tabs>
     </div>
   )
 }

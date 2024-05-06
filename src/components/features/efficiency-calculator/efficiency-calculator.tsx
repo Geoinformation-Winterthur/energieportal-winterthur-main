@@ -1,5 +1,6 @@
 import { Accordion } from "@/components/common/accordion/accordion";
 import { AccordionDetails } from "@mui/material";
+import { useState } from "react";
 import { useTranslation } from "../../../../i18n";
 import { EfficiencyCalculatorForm } from "./efficiency-calculator-form";
 import { EfficiencyCalculatorResult } from "./efficiency-calculator-result";
@@ -7,6 +8,8 @@ import styles from "./efficiency-calculator.module.scss";
 
 export const EfficiencyCalculator = () => {
   const { t } = useTranslation();
+  const [value, setValue] = useState("");
+  const [code, setCode] = useState("");
 
   return (
     <div className={styles["efficiency-calculator"]}>
@@ -16,7 +19,7 @@ export const EfficiencyCalculator = () => {
       </div>
       <div className={styles["efficiency-calculator__content"]}>
         <EfficiencyCalculatorForm />
-        <EfficiencyCalculatorResult value="150" code="moderate" />
+        {value && code && <EfficiencyCalculatorResult value={value} code={code} />}
       </div>
       <div>
         <Accordion summary={t("my_property.refurbishment_efficiency_calculator.summary_1")}>

@@ -31,10 +31,8 @@ export const EfficiencyCalculatorForm = () => {
   const hasRequiredErrors =
     requiredFields.some((field) => field === null || field === "");
 
-
-
   return (
-    <form className={styles["efficiency-calculator-form"]}>
+    <div className={styles["efficiency-calculator-form"]}>
       <div>
         <h5 className={styles["efficiency-calculator-form__title"]}>{t("my_property.refurbishment_efficiency_calculator.form_title_1")}</h5>
         <div className={styles["efficiency-calculator-form__full"]}>
@@ -82,6 +80,6 @@ export const EfficiencyCalculatorForm = () => {
       <div className={styles["efficiency-calculator-form__button"]}>
         <Button disabled={hasRequiredErrors}>{t("my_property.refurbishment_efficiency_calculator.form_submit")}<Icon icon="arrow-right" /></Button>
       </div>
-    </form>
+    </div>
   )
 }

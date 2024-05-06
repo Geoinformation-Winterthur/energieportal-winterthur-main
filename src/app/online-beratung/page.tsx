@@ -10,8 +10,6 @@ import { MyPropertyPage } from "@/templates/my-property/my-property";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useTranslation } from "../../../i18n";
-import { FullWidth } from "@/components/common/layout/full-width/full-width";
-import { EfficiencyCalculator } from "@/components/features/efficiency-calculator/efficiency-calculator";
 
 export default function OnlineConsulting() {
   const { t } = useTranslation();
@@ -44,9 +42,6 @@ export default function OnlineConsulting() {
           <AddressSearchBar variant="dark" title={t("address.search_bar.title")} lead={t("address.search_bar.text")} />
         </OneCol>
         <TwoCols contentLeft={<LeftContent />} contentRight={<RightContent />}></TwoCols>
-        <FullWidth>
-          <EfficiencyCalculator />
-        </FullWidth>
       </>
     )
   }
