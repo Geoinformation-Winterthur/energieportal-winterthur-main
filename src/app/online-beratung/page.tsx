@@ -6,7 +6,7 @@ import { TwoCols } from "@/components/common/layout/two-cols/two-cols";
 import { Section } from "@/components/common/section/section";
 import { Teaser } from "@/components/common/teaser/teaser";
 import { AddressSearchBar } from "@/components/features/address-search-bar/address-search-bar";
-import { MyPropertyPage } from "@/templates/my-propery/my-property";
+import { MyPropertyPage } from "@/templates/my-property/my-property";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useTranslation } from "../../../i18n";
