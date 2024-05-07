@@ -10,5 +10,9 @@ export const heatingConstructionYearOptions = [
   {
     value: "Ab 2000",
     label: "Ab 2000"
+  },
+  {
+    value: "",
+    label: "Keine Angabe"
   }
 ];
