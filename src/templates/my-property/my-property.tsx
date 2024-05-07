@@ -1,6 +1,7 @@
 import { Intro } from "@/components/common/intro/intro"
 import { FullWidth } from "@/components/common/layout/full-width/full-width"
 import { OneCol } from "@/components/common/layout/one-col/one-col"
+import { Section } from "@/components/common/section/section"
 import TabList from "@/components/common/tabs/tab-list/tab-list"
 import TabPanel from "@/components/common/tabs/tab-panel/tab-panel"
 import Tab from "@/components/common/tabs/tab/tab"
@@ -37,6 +38,9 @@ export const MyPropertyPage = () => {
           </div>
         </div>
         <PropertyFactsAccordion />
+      </OneCol>
+      <OneCol noPaddingTop paddingBottomSmall>
+        <Section title={t("my_property.our_recommendations.title")} description={t("my_property.our_recommendations.lead")} />
       </OneCol>
       <Tabs initialValue={'0'} name={'tabs'}>
         <TabList>
