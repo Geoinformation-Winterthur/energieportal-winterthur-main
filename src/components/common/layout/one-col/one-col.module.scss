@@ -1,0 +1,24 @@
+@import "../../../../styles/breakpoints.scss";
+@import "../../../../styles/typography.scss";
+
+.one-col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-10);
+  padding: var(--spacing-10) var(--spacing-5) var(--spacing-20);
+
+  @include tablet-up {
+    gap: var(--spacing-20);
+    max-width: calc((10 / 12) * var(--max-width));
+    padding: var(--spacing-24) var(--spacing-20);
+    margin: auto;
+  }
+}
+
+.one-col.one-col--no-padding-top {
+  padding-top: 0;
+}
+
+.one-col.one-col--no-padding-bottom {
+  padding-bottom: 0;
+}

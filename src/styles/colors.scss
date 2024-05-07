@@ -8,6 +8,7 @@ $color-grey-medium: #bec0c2;
 $color-grey-light: #ececea;
 $color-green-dark: #1e666e;
 $color-green-light: #e6eeef;
+$color-green-light-50: rgba(230, 238, 239, 0.50);
 
 // signal colors
 $color-signal-red: #ec1700;
@@ -36,6 +37,7 @@ $color-scale-red-dark: #9b1200;
   --color-tabs-inactive: #{$color-grey};
   --color-brand-green-dark: #{$color-green-dark};
   --color-brand-green-light: #{$color-green-light};
+  --color-brand-green-light-50: #{$color-green-light-50};
   --color-signal-red: #{$color-scale-red};
   --color-signal-orange: #{$color-scale-orange};
   --color-signal-green: #{$color-scale-green};

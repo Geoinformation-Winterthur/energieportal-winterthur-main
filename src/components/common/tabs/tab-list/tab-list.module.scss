@@ -1,0 +1,10 @@
+@import "../../../../styles/breakpoints.scss";
+
+.tab-list {
+    display: flex;
+    gap: var(--spacing-0-75);
+
+    @include tablet-up {
+        gap: var(--spacing-1-5);
+    }
+}

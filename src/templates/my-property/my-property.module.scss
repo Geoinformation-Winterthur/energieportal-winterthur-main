@@ -1,0 +1,23 @@
+@import "../../styles/breakpoints.scss";
+@import "../../styles/typography.scss";
+
+.property-facts__title {
+  @include typo-headline-3();
+
+  margin-bottom: var(--spacing-6);
+}
+
+.my-property__wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: var(--spacing-8);
+
+  @include tablet-up {
+    display: grid;
+    grid-template-columns: 70% 30%;
+  }
+}
+
+.my-property__update-info {
+  margin-top: var(--spacing-4);
+}

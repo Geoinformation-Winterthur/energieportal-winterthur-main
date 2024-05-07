@@ -1,7 +1,7 @@
 import type { Preview } from "@storybook/react";
 import "../src/styles/globals.scss";
+import { NewsGothic } from "../src/styles/local-fonts";
 import React from "react";
-import { NewsGothic } from "../src/app/layout";
 
 const preview: Preview = {
   parameters: {

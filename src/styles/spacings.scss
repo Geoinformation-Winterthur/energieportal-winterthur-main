@@ -1,5 +1,7 @@
 $base-spacing: 4px;
+$spacing-0-75: $base-spacing * 0.75; // 4px
 $spacing-1: $base-spacing; // 4px
+$spacing-1-5: $base-spacing * 1.5; // 4px
 $spacing-2: $base-spacing * 2; // 8px
 $spacing-3: $base-spacing * 3; // 12px
 $spacing-4: $base-spacing * 4; // 16px
@@ -23,7 +25,9 @@ $spacing-36: $base-spacing * 36; // 144px
 $max-width: 1536px;
 
 :root {
+  --spacing-0-75: #{$spacing-0-75};
   --spacing-1: #{$spacing-1};
+  --spacing-1-5: #{$spacing-1-5};
   --spacing-2: #{$spacing-2};
   --spacing-3: #{$spacing-3};
   --spacing-4: #{$spacing-4};

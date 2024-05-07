@@ -1,0 +1,12 @@
+<svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="72" height="72" fill="white"/>
+<path d="M52 56H20V27H31L33.5 30.5L36 34H52V56Z" fill="#E6EEEF"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M30 43H26V41H30V43Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M30 37H26V35H30V37Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M30 49H26V47H30V49Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M38 49H34V47H38V49Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M46 49H42V47H46V49Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M38 43H34V41H38V43Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M46 43H42V41H46V43Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M26 26H31.5146L34.3137 29.9188L36 32.2795V26V24V21H26V26ZM38 24V14H36V19H26V14H24V19H21V21H24V26H19V55H13V57H19H53H59V55H53V33H47V26H50V24H47V18H45V24H38ZM38 26V33H45V26H38ZM38 35H36H35.4854L30.4854 28H21V55H51V35H47H45H38Z" fill="black"/>
+</svg>
