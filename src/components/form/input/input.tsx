@@ -1,5 +1,6 @@
 import clsx from 'clsx';
 import styles from "./input.module.scss";
+import { KeyboardEventHandler } from 'react';
 
 interface InputProps {
   type?: string;
@@ -8,9 +9,10 @@ interface InputProps {
   name?: string;
   value?: string;
   autofocus?: boolean;
+  error?: boolean;
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
   onBlur?: (e: React.FocusEvent<HTMLInputElement>) => void;
-  error?: string;
+  onKeyDown?: KeyboardEventHandler<HTMLInputElement> | undefined;
 }
 
 export const Input = ({
@@ -20,9 +22,10 @@ export const Input = ({
   name,
   value,
   autofocus,
+  error,
   onChange,
   onBlur,
-  error,
+  onKeyDown
 }: InputProps) => {
   return (
     <div
@@ -40,8 +43,8 @@ export const Input = ({
         onBlur={onBlur}
         placeholder={placeholder}
         autoFocus={autofocus}
+        onKeyDown={onKeyDown}
       />
-      {error && <p className={styles["input__error"]}>{error}</p>}
     </div>
   );
 };

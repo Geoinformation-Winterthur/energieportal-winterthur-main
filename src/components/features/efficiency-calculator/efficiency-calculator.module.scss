@@ -55,14 +55,22 @@
 
 .efficiency-calculator-form__50-50 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: var(--spacing-4);
+
+  @include tablet-up {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .efficiency-calculator-form__70-30 {
   display: grid;
-  grid-template-columns: 1fr calc(70% - var(--spacing-2));
+  grid-template-columns: 1fr;
   gap: var(--spacing-4);
+
+  @include tablet-up {
+    grid-template-columns: 1fr calc(70% - var(--spacing-2));
+  }
 }
 
 .efficiency-calculator-form__full,
@@ -72,9 +80,12 @@
 }
 
 .efficiency-calculator-form__button {
-  width: calc(50% - var(--spacing-2));
-  align-self: flex-end;
   margin-bottom: var(--spacing-8);
+
+  @include tablet-up {
+    width: calc(50% - var(--spacing-2));
+    align-self: flex-end;
+  }
 }
 
 .efficiency-calculator-result__result {

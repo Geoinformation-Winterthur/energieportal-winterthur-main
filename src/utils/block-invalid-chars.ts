@@ -1,0 +1,1 @@
+export const blockInvalidChars = (e: React.KeyboardEvent<HTMLInputElement>) => ['e', 'E', '+', '-', '.', ','].includes(e.key) && e.preventDefault();
