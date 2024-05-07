@@ -6,5 +6,9 @@ export const hotWaterViaHeaterOptions = [
   {
     value: "true",
     label: "Ja"
+  },
+  {
+    value: "",
+    label: "Keine Angabe"
   }
 ]

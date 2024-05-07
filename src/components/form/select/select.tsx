@@ -36,10 +36,10 @@ export const Select = ({ label, options, onChange }: SelectProps) => {
     <div className="select">
       <label className='select__label' htmlFor="select">{label}</label>
       <MuiSelect
-        onChange={onChange}
         placeholder="Bitte auswählen"
         id="select-button"
         name="select"
+        onChange={onChange}
         slots={{
           root: Button,
         }}
@@ -48,7 +48,6 @@ export const Select = ({ label, options, onChange }: SelectProps) => {
         }}>
         {options.map(option => <MuiOption value={option.value} key={option.value} >{option.label}</MuiOption>)}
       </MuiSelect>
-
     </div>
   )
 }

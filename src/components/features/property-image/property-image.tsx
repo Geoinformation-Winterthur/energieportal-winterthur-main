@@ -54,7 +54,7 @@ export const PropertyImage = () => {
 
   return (
     <div className={styles["property-image"]}>
-      {isLoading ? <Icon icon="loading" color="red" /> : <Image className={styles["property-image__img"]} src={imgSrc} alt={t("my_property.property_image_alt")} fill />}
+      {isLoading || !imgSrc ? <Icon icon="loading" color="red" /> : <Image className={styles["property-image__img"]} src={imgSrc} alt={t("my_property.property_image_alt")} fill />}
     </div>
   )
 }
