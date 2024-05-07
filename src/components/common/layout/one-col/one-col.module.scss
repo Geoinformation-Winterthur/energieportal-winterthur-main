@@ -22,3 +22,11 @@
 .one-col.one-col--no-padding-bottom {
   padding-bottom: 0;
 }
+
+.one-col.one-col--padding-bottom-small {
+  padding-bottom: var(--spacing-6);
+
+  @include tablet-up {
+    padding-bottom: var(--spacing-10);
+  }
+}

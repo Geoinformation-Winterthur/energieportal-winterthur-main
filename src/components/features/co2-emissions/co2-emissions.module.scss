@@ -2,7 +2,7 @@
 @import "../../../styles/typography.scss";
 
 .co2-emissions__title {
-  @include typo-headline-3();
+  @include typo-headline-2();
 
   margin-bottom: var(--spacing-2);
 
