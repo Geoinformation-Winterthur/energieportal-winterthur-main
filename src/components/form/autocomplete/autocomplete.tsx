@@ -12,6 +12,7 @@ import styles from "./autocomplete.module.scss";
 
 export const Autocomplete = () => {
   const [searchString, setSearchString] = useState<string | null>(null);
+  const [selectedValue, setSelectedValue] = useState<string | null>(null);
   const [searchResults, setSearchResults] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [submittedAddress, setSubmittedAddress] = useState<string | null>(null);
@@ -34,7 +35,7 @@ export const Autocomplete = () => {
   useEffect(() => {
     if (searchParams.get("address")) {
       setSubmittedAddress(searchParams.get("address") ?? null);
-      setSearchString(searchParams.get("address") ?? "")
+      setSelectedValue(searchParams.get("address") ?? "")
     }
   }, [searchParams])
 
@@ -51,7 +52,7 @@ export const Autocomplete = () => {
     setIsLoading(false);
   };
 
-  const handleOnChange = async (value: string, reason: AutocompleteInputChangeReason) => {
+  const handleOnInputChange = async (value: string, reason: AutocompleteInputChangeReason) => {
     setSearchString(() => value);
     if (value.length < 3 || reason === "reset") {
       setSearchResults([]);
@@ -60,6 +61,15 @@ export const Autocomplete = () => {
     };
     setOpen(true)
     debounce(performSearch(value), 200);
+  }
+
+  const handleOnChange = async (value: string, reason: string) => {
+    if (reason === "selectOption") {
+      setSelectedValue(value);
+      setSearchResults([]);
+      setOpen(false)
+      return;
+    };
   }
 
   const handleSubmitClick = (value: string) => {
@@ -80,10 +90,11 @@ export const Autocomplete = () => {
   return (
     <div className={styles["autocomplete"]}>
       <MuiAutocomplete
-        fullWidth
-        value={searchString}
         open={open}
-        onInputChange={(_, value, reason) => handleOnChange(value, reason)}
+        inputValue={searchString ?? ""}
+        value={selectedValue}
+        onChange={(_, value, reason) => handleOnChange(value ?? "", reason)}
+        onInputChange={(_, value, reason) => handleOnInputChange(value, reason)}
         onBlur={handleOnBlur}
         disablePortal
         options={searchResults.slice(0, 40).sort(sortOptions)}
@@ -105,8 +116,8 @@ export const Autocomplete = () => {
       />
       <div className={styles["autocomplete__button"]}>
         {submittedAddress
-          ? <Button disabled={!searchString} onClick={() => handleSubmitClick(searchString ?? "")}>{t("address.search_bar.edit")}</Button>
-          : <Button disabled={!searchString} icon="arrow-right" onClick={() => handleSubmitClick(searchString ?? "")}>{t("address.search_bar.submit")}</Button>}
+          ? <Button disabled={!selectedValue || !searchString} onClick={() => handleSubmitClick(searchString ?? "")}>{t("address.search_bar.edit")}</Button>
+          : <Button disabled={!selectedValue || !searchString} icon="arrow-right" onClick={() => handleSubmitClick(searchString ?? "")}>{t("address.search_bar.submit")}</Button>}
       </div>
     </div>
   )
