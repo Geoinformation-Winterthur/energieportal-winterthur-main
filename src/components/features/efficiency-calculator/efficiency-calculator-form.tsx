@@ -47,14 +47,14 @@ export const EfficiencyCalculatorForm = ({ handleSubmit }: EfficiencyCalculatorF
         <h5 className={styles["efficiency-calculator-form__title"]}>{t("my_property.refurbishment_efficiency_calculator.form_title_1")}</h5>
         <div className={styles["efficiency-calculator-form__full"]}>
           <Select
-            label="Gebäudeart"
+            label="Gebäudeart (Pflichtfeld)"
             options={buildingTypeOptions}
             onChange={(_, value) => setBuildingType(value ?? "")}
           />
         </div>
         <div className={styles["efficiency-calculator-form__50-50"]}>
           <Input
-            label="Energiebezugsfläche in m² *"
+            label="Energiebezugsfläche in m² (Pflichtfeld)"
             type="number"
             placeholder="1234"
             name="usableBuildingArea"
@@ -75,7 +75,7 @@ export const EfficiencyCalculatorForm = ({ handleSubmit }: EfficiencyCalculatorF
         <h5 className={styles["efficiency-calculator-form__title"]}>{t("my_property.refurbishment_efficiency_calculator.form_title_2")}</h5>
         <div className={styles["efficiency-calculator-form__70-30"]}>
           <Input
-            label="Energieverbrauch pro Jahr *"
+            label="Energieverbrauch pro Jahr (Pflichtfeld)"
             type="number"
             placeholder="1234"
             name="powerConsumption"
@@ -86,7 +86,7 @@ export const EfficiencyCalculatorForm = ({ handleSubmit }: EfficiencyCalculatorF
             onKeyDown={(e) => blockInvalidChars(e)}
           />
           <Select
-            label="Einheit des Energieverbrauchs *"
+            label="Einheit des Energieverbrauchs (Pflichtfeld)"
             options={unitOptions}
             onChange={(_, value) => setUnit(value ?? "")}
           />
