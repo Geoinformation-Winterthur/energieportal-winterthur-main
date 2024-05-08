@@ -21,7 +21,7 @@ export const Co2Emissions = () => {
   const isRatherHigh = co2EmissionValue === "15 - 20";
   const isModerate = co2EmissionValue === "10 - 15";
   const isLow = co2EmissionValue === "5 - 10";
-  const isVeryLow = co2EmissionValue === "0" || co2EmissionValue === "5 - 10";
+  const isVeryLow = co2EmissionValue === "0";
 
   useEffect(() => {
     if (searchParams.get("address")) {
