@@ -589,7 +589,7 @@
     "contact.form.label.callback": "Bitte um Rückruf",
     "contact.form.label.message": "Ihr Anliegen (Pflichtfeld)",
     "contact.form.label.send": "Anfrage senden",
-    "contact.form.placeholder.address": "Pionierstrasse 7",
+    "contact.form.placeholder.address": "Musterstrasse 1",
     "contact.form.placeholder.firstname": "Max",
     "contact.form.placeholder.lastname": "Muster",
     "contact.form.placeholder.email": "max.muster@email.ch",

@@ -9,11 +9,11 @@ import { useTranslation } from "../../../../i18n";
 import styles from "./contact-form.module.scss";
 import { Autocomplete } from "@/components/form/autocomplete/autocomplete";
 
-interface ContactFormProps {}
+interface ContactFormProps { }
 
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-export const ContactForm = ({}: ContactFormProps) => {
+export const ContactForm = ({ }: ContactFormProps) => {
   const { t } = useTranslation();
   const [objectAddress, setobjectAddress] = useState("");
   const [firstName, setFirstname] = useState("");
@@ -111,10 +111,10 @@ export const ContactForm = ({}: ContactFormProps) => {
             <div className={styles["contact-form__row-item"]}>
               <Input
                 label={t("contact.form.label.phone")}
-                placeholder={t("contact.form.placeholder.lastname")} 
+                placeholder={t("contact.form.placeholder.phone")}
                 value={phoneNo}
                 onChange={(e) => setPhoneNo(e.target.value)}
-              />            
+              />
             </div>
             <div className={styles["contact-form__row-item"]}>
               <div className={styles["contact-form__vertical-align"]}>
@@ -132,7 +132,7 @@ export const ContactForm = ({}: ContactFormProps) => {
             label={t("contact.form.label.message")}
             placeholder={t("contact.form.placeholder.message")}
             value={requestText}
-            onChange={(e) => setRequestText(e.target.value)}/>
+            onChange={(e) => setRequestText(e.target.value)} />
         </div>
         <div className={styles["contact-form__send-button"]}>
           <Button>
