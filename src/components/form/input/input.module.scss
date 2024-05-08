@@ -21,8 +21,9 @@
   padding: var(--spacing-5) var(--spacing-3) var(--spacing-2);
   background-color: var(--color-brand-green-light);
   border: 0;
+  border-bottom: 2px solid transparent;
   width: 100%;
-  height: 100%;
+  outline: none;
 
   &::placeholder {
     color: var(--color-text-primary);
@@ -30,16 +31,14 @@
   }
 
   &:focus {
-    outline: none;
     border-bottom: 2px solid var(--color-text-primary);
-    padding-bottom: 2px;
     transition: all 0.04s ease;
   }
 }
 
 .input__error {
-  color: var(--color-signal-red);
   @include typo-copyright();
+  color: var(--color-signal-red);
 }
 
 .input--error {

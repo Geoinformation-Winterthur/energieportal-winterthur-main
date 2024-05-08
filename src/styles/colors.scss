@@ -9,6 +9,7 @@ $color-grey-light: #ececea;
 $color-green-dark: #1e666e;
 $color-green-light: #e6eeef;
 $color-green-light-50: rgba(230, 238, 239, 0.50);
+$color-disabled: rgb(154, 129, 127, 0.8);
 
 // signal colors
 $color-signal-red: #ec1700;
@@ -35,6 +36,7 @@ $color-scale-red-dark: #9b1200;
   --color-footer-bg: #{$color-grey-dark};
   --color-border: #{$color-grey-light};
   --color-tabs-inactive: #{$color-grey};
+  --color-disabled: #{$color-disabled};
   --color-brand-green-dark: #{$color-green-dark};
   --color-brand-green-light: #{$color-green-light};
   --color-brand-green-light-50: #{$color-green-light-50};

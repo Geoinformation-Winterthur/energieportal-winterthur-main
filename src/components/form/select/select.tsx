@@ -46,7 +46,7 @@ export const Select = ({ label, options, onChange }: SelectProps) => {
         slotProps={{
           popup: { disablePortal: true }
         }}>
-        {options.map(option => <MuiOption value={option.value} key={option.value} >{option.label}</MuiOption>)}
+        {options.map(option => <MuiOption value={option.value} key={option.label} >{option.label}</MuiOption>)}
       </MuiSelect>
     </div>
   )

@@ -2,13 +2,13 @@
 @import "../../../styles/typography.scss";
 
 .autocomplete {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: var(--spacing-4);
   width: 100%;
 
   @include tablet-up {
-    flex-direction: row;
+    grid-template-columns: 1fr 0fr;
   }
 }
 
@@ -32,9 +32,6 @@
 
     &:focus {
       outline: none;
-      border-bottom: 3px solid var(--color-text-primary);
-      padding-bottom: 6px;
-      transition: all 0.14s ease-out;
     }
   }
 

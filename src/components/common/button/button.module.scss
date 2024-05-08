@@ -14,9 +14,8 @@
   padding: 0 var(--spacing-4);
   transition: background-color 0.2s ease-out;
 
-  &:focus,
-  &:hover,
-  &:active {
+  &:focus-visible,
+  &:hover {
     background-color: var(--color-black);
   }
 
