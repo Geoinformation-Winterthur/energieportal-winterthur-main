@@ -9,7 +9,7 @@ interface InputProps {
   name?: string;
   value?: string;
   autofocus?: boolean;
-  error?: boolean;
+  error?: string;
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
   onBlur?: (e: React.FocusEvent<HTMLInputElement>) => void;
   onKeyDown?: KeyboardEventHandler<HTMLInputElement> | undefined;
@@ -45,6 +45,7 @@ export const Input = ({
         autoFocus={autofocus}
         onKeyDown={onKeyDown}
       />
+      {error && <p className={styles["input__error"]}>{error}</p>}
     </div>
   );
 };

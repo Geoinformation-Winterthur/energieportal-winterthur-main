@@ -32,9 +32,6 @@
 
     &:focus {
       outline: none;
-      border-bottom: 3px solid var(--color-text-primary);
-      padding-bottom: 6px;
-      transition: all 0.14s ease-out;
     }
   }
 

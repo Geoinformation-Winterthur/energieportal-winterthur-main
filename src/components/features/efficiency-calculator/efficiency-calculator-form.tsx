@@ -61,7 +61,7 @@ export const EfficiencyCalculatorForm = ({ handleSubmit }: EfficiencyCalculatorF
             value={usableBuildingArea}
             onChange={(e) => setUsableBuildingArea(e.target.value)}
             onBlur={(e) => setUsableBuildingAreaError(e.target.value === "")}
-            error={usableBuildingAreaError}
+            error={usableBuildingAreaError ? t("my_property.refurbishment_efficiency_calculator.form_error") : ""}
             onKeyDown={(e) => blockInvalidChars(e)}
           />
           <Select
@@ -82,7 +82,7 @@ export const EfficiencyCalculatorForm = ({ handleSubmit }: EfficiencyCalculatorF
             value={powerConsumption}
             onChange={(e) => setPowerConsumption(e.target.value)}
             onBlur={(e) => setPowerConsumptionError(e.target.value === "")}
-            error={powerConsumptionError}
+            error={powerConsumptionError ? t("my_property.refurbishment_efficiency_calculator.form_error") : ""}
             onKeyDown={(e) => blockInvalidChars(e)}
           />
           <Select
