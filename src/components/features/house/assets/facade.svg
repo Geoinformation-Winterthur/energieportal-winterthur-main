@@ -1,0 +1,18 @@
+<svg width="500" height="397" viewBox="0 0 500 397" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M249.5 14L381.5 127.5L117.5 127L249.5 14Z" fill="#E6EEEF"/>
+<path d="M375 120.625V315.938H125V120.625" fill="#E6EEEF"/>
+<path d="M375 120.625V315.938H125V120.625M375 120.625L394 137M375 120.625L249 14L125 120.625M125 120.625L103.5 139.5" stroke="black" stroke-width="12" stroke-miterlimit="10"/>
+<path d="M375 121V315.5" stroke="#FF1900" stroke-width="12"/>
+<path d="M125 121V315.5" stroke="#FF1900" stroke-width="12"/>
+<path d="M375 316V391H125V316" stroke="black" stroke-width="12" stroke-miterlimit="10"/>
+<path d="M331.25 203.438H278.125V315.938H331.25V203.438Z" fill="white" stroke="black" stroke-width="12" stroke-miterlimit="10"/>
+<path d="M243.75 203.438H165.625V247.188H243.75V203.438Z" fill="white" stroke="black" stroke-width="12" stroke-miterlimit="10"/>
+<path d="M500 315.938H0" stroke="black" stroke-width="12" stroke-miterlimit="10"/>
+<path d="M142.188 105L142.188 8.125H187.5V64.5" stroke="black" stroke-width="12" stroke-miterlimit="10"/>
+<path d="M201.562 6.56249L128.125 6.5625" stroke="black" stroke-width="12" stroke-miterlimit="10"/>
+<path d="M33 204C41.5 208.5 43.6667 212 54.3333 212C65 212 65 204 75.6667 204C86.3333 204 86.3333 212 97 212M33 204L50 196M33 204L42 223.5" stroke="#FF1900" stroke-width="10" stroke-miterlimit="10"/>
+<path d="M465 204C456.5 208.5 454.333 212 443.667 212C433 212 433 204 422.333 204C411.667 204 411.667 212 401 212M465 204L448 196M465 204L456 223.5" stroke="#FF1900" stroke-width="10" stroke-miterlimit="10"/>
+<path d="M33 240C41.5 244.5 43.6667 248 54.3333 248C65 248 65 240 75.6667 240C86.3333 240 86.3333 248 97 248M33 240L50 232M33 240L42 259.5" stroke="#FF1900" stroke-width="10" stroke-miterlimit="10"/>
+<path d="M465 240C456.5 244.5 454.333 248 443.667 248C433 248 433 240 422.333 240C411.667 240 411.667 248 401 248M465 240L448 232M465 240L456 259.5" stroke="#FF1900" stroke-width="10" stroke-miterlimit="10"/>
+<path d="M394 137L375 120.625L249 14L125 120.625L103.5 139.5" stroke="black" stroke-width="12" stroke-miterlimit="10"/>
+</svg>

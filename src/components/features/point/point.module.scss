@@ -1,0 +1,28 @@
+.point {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-brand-red);
+  opacity: 0.8;
+  border-radius: 50%;
+
+  &.point--roof {
+    top: 18%;
+    right: 38%;
+  }
+
+  &.point--facade {
+    top: 49%;
+    right: 26%;
+  }
+
+  &.point--windows {
+    top: 51%;
+    right: 45%;
+  }
+
+  &.point--basement {
+    top: 69%;
+    right: 56%;
+  }
+}
