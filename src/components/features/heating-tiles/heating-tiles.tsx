@@ -3,10 +3,8 @@ import { Slider } from "@/components/common/slider/slider";
 import { SliderSlide } from "@/components/common/slider/slider-slide";
 import { useWindowSize } from "@/hooks/useWindowSize";
 import { Heating } from "@/types/heating";
-import { getEnergyPlan } from "@/utils/get-energy-plan";
 import { getHeatingSystems } from "@/utils/get-heating-systems";
 import { getPropertyFacts } from "@/utils/get-property-facts";
-import { isValidArea } from "@/utils/is-valid-area";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useTranslation } from "../../../../i18n";
@@ -21,7 +19,6 @@ export const HeatingTiles = () => {
   const [currentAddress, setCurrentAddress] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [heatingSystems, setHeatingSystems] = useState<Heating[]>([])
-  const [energyPlan, setEnergyPlan] = useState("");
 
   useEffect(() => {
     if (searchParams.get("address")) {
@@ -36,13 +33,9 @@ export const HeatingTiles = () => {
       const eCoordinate = propertyData.results[0].attributes.gkode;
       const nCoordinate = propertyData.results[0].attributes.gkodn;
       const heatingData = await getHeatingSystems(eCoordinate, nCoordinate);
-      const energyPlanData = await getEnergyPlan(eCoordinate, nCoordinate);
 
       if (heatingData) {
         setHeatingSystems(heatingData);
-      }
-      if (energyPlanData) {
-        setEnergyPlan(energyPlanData)
       }
       setIsLoading(false);
     }
@@ -52,12 +45,17 @@ export const HeatingTiles = () => {
     }
   }, [currentAddress])
 
-  const getPros = (heating: Heating) => t(`my_property.heating_recommendations.${heating.code}.pros`, { returnObjects: true }) as string[];
-  const getCons = (heating: Heating) => t(`my_property.heating_recommendations.${heating.code}.cons`, { returnObjects: true }) as string[];
+  const getStatus = (heating: Heating) => {
+    if (heating.status === "Verdichtung") {
+      return `${heating.code}_verdichtung`;
+    }
+    if (heating.status === "in Prüfung") {
+      return `${heating.code}_pruefung`;
+    }
+    return `${heating.code}_planung`;
+  }
 
-  const renderHeating = (heating: Heating) => (
-    <HeatingTile title={t(`my_property.heating_recommendations.${heating.code}.title`)} code={heating.code as IconType} pros={getPros(heating)} cons={getCons(heating)} isRecommendation={heating.isRecommendation} key={heating.code} energyPlan={isValidArea(energyPlan) ? energyPlan : undefined} />
-  )
+  const renderHeating = (heating: Heating) => <HeatingTile code={heating.code === "districtheating" ? getStatus(heating) : heating.code} isRecommendation={heating.isRecommendation} icon={heating.code as IconType} showStatus={heating.code === "districtheating"} key={heating.code} />
 
   const sortHeatingsByRecommendation = () => {
     return heatingSystems.sort((a, b) => {

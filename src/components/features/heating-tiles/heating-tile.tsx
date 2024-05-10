@@ -3,24 +3,24 @@ import { Icon, IconType } from "@/components/common/icon/icon";
 import clsx from "clsx";
 import { useTranslation } from "../../../../i18n";
 import styles from "./heating-tile.module.scss";
-import { EnergyPlanArea } from "@/types/energy-plan-area";
 
 interface HeatingTileProps {
-  title: string;
-  code: IconType;
-  pros?: string[];
-  cons?: string[];
+  code: string;
   isRecommendation?: boolean;
-  energyPlan?: EnergyPlanArea;
+  icon: IconType;
+  showStatus?: boolean
 }
 
-export const HeatingTile = ({ title, code, pros, cons, isRecommendation, energyPlan }: HeatingTileProps) => {
+export const HeatingTile = ({ code, isRecommendation, icon, showStatus }: HeatingTileProps) => {
   const { t } = useTranslation();
+
+  const getPros = () => t(`my_property.heating_recommendations.${code}.pros`, { returnObjects: true }) as string[];
+  const getCons = () => t(`my_property.heating_recommendations.${code}.cons`, { returnObjects: true }) as string[];
 
   const EnergyPlanStatus = () => (
     <div className={styles["heating-tile__status"]}>
       <h5 className={styles["heating-tile__status-label"]}>{t("my_property.heating_recommendations.state")}</h5>
-      <button className={styles["heating-tile__status-btn"]}>{t(`my_property.districtheating.${energyPlan}.label`)}</button>
+      <button className={styles["heating-tile__status-btn"]}>{t(`my_property.heating_recommendations.${code}.status.label`)}</button>
     </div>
   )
 
@@ -30,15 +30,15 @@ export const HeatingTile = ({ title, code, pros, cons, isRecommendation, energyP
       <div className={styles["heating-tile__inner"]}>
         <div className={styles["heating-tile__content"]}>
           <div className={styles["heating-tile__header"]}>
-            <h4 className={styles["heating-tile__title"]}>{title}</h4>
-            <Icon icon={code} size={56} />
+            <h4 className={styles["heating-tile__title"]}>{t(`my_property.heating_recommendations.${code}.title`)}</h4>
+            <Icon icon={icon} size={56} />
           </div>
           <div className={styles["heating-tile__lists"]}>
-            {code === "districtheating" && energyPlan && <EnergyPlanStatus />}
+            {showStatus && <EnergyPlanStatus />}
             <div>
               <h5 className={styles["heating-tile__list-title"]}>{t("my_property.heating_recommendations.pros")}</h5>
               <ul className={styles["heating-tile__list"]}>
-                {pros && pros.map(pro => (
+                {getPros().map(pro => (
                   <li className={styles["heating-tile__list-item"]} key={pro}>{pro}</li>
                 ))}
               </ul>
@@ -46,7 +46,7 @@ export const HeatingTile = ({ title, code, pros, cons, isRecommendation, energyP
             <div>
               <h5 className={styles["heating-tile__list-title"]}>{t("my_property.heating_recommendations.cons")}</h5>
               <ul className={styles["heating-tile__list"]}>
-                {cons && cons.map(con => (
+                {getCons().map(con => (
                   <li className={styles["heating-tile__list-item"]} key={con}>{con}</li>
                 ))}
               </ul>
