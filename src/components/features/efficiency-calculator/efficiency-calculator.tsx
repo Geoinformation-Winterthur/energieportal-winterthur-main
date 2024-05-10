@@ -32,7 +32,7 @@ export const EfficiencyCalculator = () => {
       <div className={styles["efficiency-calculator__content"]}>
         <EfficiencyCalculatorForm handleSubmit={handleSubmit} />
         {isLoading && <Icon icon="loading" color="red" size={72} />}
-        {value && code && <EfficiencyCalculatorResult value={value} code={code} />}
+        {code && <EfficiencyCalculatorResult value={value} code={code} />}
       </div>
       <div>
         <Accordion summary={t("my_property.refurbishment_efficiency_calculator.summary_1")}>
