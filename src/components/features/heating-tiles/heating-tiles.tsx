@@ -36,8 +36,6 @@ export const HeatingTiles = () => {
 
       if (heatingData) {
         setHeatingSystems(heatingData);
-        console.log(heatingData);
-
       }
       setIsLoading(false);
     }
