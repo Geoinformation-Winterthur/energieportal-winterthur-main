@@ -3,6 +3,7 @@ import { Option as MuiOption } from '@mui/base/Option';
 import { Select as MuiSelect, SelectRootSlotProps } from '@mui/base/Select';
 import React from 'react';
 import "./select.scss";
+import { useTranslation } from '../../../../i18n';
 
 type Option = {
   value: string;
@@ -12,10 +13,12 @@ type Option = {
 interface SelectProps {
   label: string;
   options: Option[];
+  defaultValue?: string;
   onChange?: ((event: React.MouseEvent<Element, MouseEvent> | React.KeyboardEvent<Element> | React.FocusEvent<Element, Element> | null, value: string | null) => void) | undefined;
 }
 
-export const Select = ({ label, options, onChange }: SelectProps) => {
+export const Select = ({ label, options, defaultValue, onChange }: SelectProps) => {
+  const { t } = useTranslation();
 
   const Button = React.forwardRef(function Button<
     TValue extends {},
@@ -36,7 +39,8 @@ export const Select = ({ label, options, onChange }: SelectProps) => {
     <div className="select">
       <label className='select__label' htmlFor="select">{label}</label>
       <MuiSelect
-        placeholder="Bitte auswählen"
+        defaultValue={defaultValue}
+        placeholder={defaultValue ?? t("my_property.refurbishment_efficiency_calculator.form.pladeholder")}
         id="select-button"
         name="select"
         onChange={onChange}

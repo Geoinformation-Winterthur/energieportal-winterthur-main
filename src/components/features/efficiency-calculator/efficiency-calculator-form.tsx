@@ -23,7 +23,7 @@ export const EfficiencyCalculatorForm = ({ handleSubmit }: EfficiencyCalculatorF
   const [powerConsumption, setPowerConsumption] = useState("");
   const [powerConsumptionError, setPowerConsumptionError] = useState(false);
   const [unit, setUnit] = useState("");
-  const [hotWaterViaHeater, setHotWaterViaHeater] = useState(false);
+  const [hotWaterViaHeater, setHotWaterViaHeater] = useState(true);
   const [numberPersons, setNumberPersons] = useState("");
   const { t } = useTranslation();
 
@@ -39,6 +39,15 @@ export const EfficiencyCalculatorForm = ({ handleSubmit }: EfficiencyCalculatorF
   const handleSubmitClick = () => {
     const searchParams = `usableBuildingArea=${Number(usableBuildingArea)}&powerConsumption=${Number(powerConsumption)}&unit=${unit}&hotWaterViaHeater=${hotWaterViaHeater}&numberPersons=${Number(numberPersons)}&heatingConstructionYear=${heatingConstructionYear}`;
     handleSubmit(searchParams, buildingType);
+  }
+
+  const handleHotWaterViaHeaterChange = (value: string) => {
+    if (value === "false") {
+      setHotWaterViaHeater(false);
+    } else {
+      setHotWaterViaHeater(true);
+      setNumberPersons("");
+    }
   }
 
   return (
@@ -96,11 +105,12 @@ export const EfficiencyCalculatorForm = ({ handleSubmit }: EfficiencyCalculatorF
         <h5 className={styles["efficiency-calculator-form__title"]}>{t("my_property.refurbishment_efficiency_calculator.form_hot_water")}</h5>
         <div className={styles["efficiency-calculator-form__50-50"]}>
           <Select
+            defaultValue="true"
             label={t("my_property.refurbishment_efficiency_calculator.form.label_hot_water")}
             options={hotWaterViaHeaterOptions}
-            onChange={(_, value) => setHotWaterViaHeater(value === "true" ? true : false)}
+            onChange={(_, value) => handleHotWaterViaHeaterChange(value ?? "")}
           />
-          {hotWaterViaHeater &&
+          {!hotWaterViaHeater &&
             <Input
               label={t("my_property.refurbishment_efficiency_calculator.form.label_number_persons")}
               type="number"
