@@ -1,13 +1,17 @@
-import { ReactNode } from "react";
+import { ReactNode, useContext } from "react";
 import styles from './tab-list.module.scss';
+import { TabsContext } from "../../../../context/tabs-context";
+import clsx from "clsx";
 
 interface TabListProps {
     children: ReactNode;
 }
 
 export default function TabList({ children }: TabListProps) {
+    const tabs = useContext(TabsContext);
+    
     return (
-        <div className={styles['tab-list']} role="tablist">
+        <div className={clsx(styles['tab-list'], styles[`tab-list--${tabs.variant}`])} role="tablist">
             {children}
         </div>
     )

@@ -15,7 +15,7 @@ export default function Tab({ label, value }: TabProps) {
     <button
       onKeyDown={(event) => tabs.handleKeyDown(event)}
       onBlur={(event) => tabs.handleBlur(event)}
-      className={clsx(styles['tab'], isActive && styles['tab--active'])}
+      className={clsx(styles['tab'], isActive && styles['tab--active'], styles[`tab--${tabs.variant}`])}
       onClick={() => tabs.changeTabsValue(value)}
       tabIndex={isActive ? 0 : -1}
       aria-selected={isActive}

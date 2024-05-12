@@ -1,17 +1,17 @@
 'use client'
 
 import { KeyboardEvent, ReactNode, useState } from "react";
-import { TabsContext } from "../../../context/tabs-context";
-
+import { TabVariant, TabsContext } from "../../../context/tabs-context";
 interface TabsProps {
   children: ReactNode;
   initialValue: string;
   name: string;
+  variant?: TabVariant;
 }
 
-export default function Tabs({ children, initialValue, name }: TabsProps) {
+export default function Tabs({ children, initialValue, name, variant = 'default' }: TabsProps) {
   const changeTabsValue = (value: string) => {
-    setTabsValue({ value, name, changeTabsValue, handleKeyDown, handleBlur })
+    setTabsValue({ value, name, variant, changeTabsValue, handleKeyDown, handleBlur })
   }
   const handleKeyDown = (event: KeyboardEvent) => {
     if (event.target instanceof HTMLElement) {
@@ -47,7 +47,7 @@ export default function Tabs({ children, initialValue, name }: TabsProps) {
       event.target.parentNode?.querySelector('[aria-selected="true"]')?.setAttribute('tabindex', '0');
     }
   }
-  const [tabsValue, setTabsValue] = useState({ value: initialValue, name, changeTabsValue, handleKeyDown, handleBlur })
+  const [tabsValue, setTabsValue] = useState({ value: initialValue, variant, name, changeTabsValue, handleKeyDown, handleBlur })
 
   return (
     <TabsContext.Provider value={tabsValue}>
