@@ -1,0 +1,71 @@
+@import "../../../styles/breakpoints.scss";
+
+.overlay {
+    display: block;
+    position: fixed;
+    height: 100%;
+    max-height: 100%;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    transition: 0.3s visibility;
+    inset-block-start: 0px;
+    inset-block-end: 0px;
+
+    &.overlay--closed {
+        pointer-events: none;
+        visibility: hidden;
+    }
+
+    &::backdrop {
+        background-color: var(--color-backdrop);
+    }
+
+    .overlay__inner {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        transform: translateY(100%);
+        transition: 0.3s transform ease-out;
+
+        &.overlay__inner--open {
+            transform: translateY(0);
+        }
+    }
+
+    .overlay__header {
+        display: flex;
+        justify-content: center;
+        padding: var(--spacing-6) 0;
+    }
+
+    .overlay__close-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 48px;
+        width: 48px;
+        background: var(--color-brand-red);
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .overlay__content {
+        background: var(--color-white);
+        height: 100%;
+        overflow-y: auto;
+    }
+    
+    @include tablet-up {
+        .overlay__header {
+            padding: var(--spacing-8) 0;
+        }
+
+        .overlay__close-button {
+            height: 34px;
+            width: 34px;
+        }
+    }
+}

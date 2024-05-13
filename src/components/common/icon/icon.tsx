@@ -9,6 +9,7 @@ import Check from "./assets/check.svg";
 import ChevronDown from "./assets/chevron-down.svg";
 import ChevronUp from "./assets/chevron-up.svg";
 import Close from "./assets/close.svg";
+import CloseOverlay from "./assets/close_overlay.svg";
 import Consulting from "./assets/consulting.svg";
 import DistrictHeating from "./assets/districtheating.svg";
 import Error from "./assets/error.svg";
@@ -35,6 +36,7 @@ export type IconType =
   | "burger"
   | "chevron-down"
   | "chevron-up"
+  | "close_overlay"
   | "close"
   | "consulting"
   | "districtheating"
@@ -57,7 +59,7 @@ export type IconType =
 interface IconProps {
   icon: IconType;
   size?: number;
-  color?: "red" | "dark";
+  color?: "red" | "dark" | "light";
   onButtonClick?: () => void;
 }
 
@@ -71,6 +73,7 @@ export const Icon = ({ icon, size = 20, color, onButtonClick }: IconProps) => {
     "chevron-down": <ChevronDown width={size} height={size} />,
     "chevron-up": <ChevronUp width={size} height={size} />,
     close: <Close width={size} height={size} />,
+    "close_overlay": <CloseOverlay width={size} height={size} />,
     consulting: <Consulting width={size} height={size} />,
     districtheating: <DistrictHeating width={size} height={size} />,
     error: <Error width={size} height={size} />,
