@@ -16,21 +16,44 @@ const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 export const ContactForm = ({ }: ContactFormProps) => {
   const { t } = useTranslation();
   const [objectAddress, setobjectAddress] = useState("");
+  const [objectAddressError, setObjectAddressError] = useState(false);
   const [firstName, setFirstname] = useState("");
+  const [firstNameError, setFirstnameError] = useState(false);
   const [lastName, setLastname] = useState("");
+  const [lastNameError, setLastnameError] = useState(false);
   const [eMailAddress, setEMailAddress] = useState("");
   const [phoneNo, setPhoneNo] = useState("");
+  const [phoneNoError, setPhoneNoError] = useState(false);
   const [asksForCallback, setAsksForCallback] = useState(false);
   const [requestText, setRequestText] = useState("");
+  const [requestTextError, setRequestTextError] = useState(false);
   const [hasEmailError, setHasEmailError] = useState(false);
   const [showRequiredError, setShowRequiredError] = useState(false);
 
   const handleFormSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (eMailAddress === "") {
+    const requiredFields = [
+      { field: objectAddress, setter: setObjectAddressError },
+      { field: firstName, setter: setFirstnameError },
+      { field: lastName, setter: setLastnameError },
+      { field: eMailAddress, setter: setHasEmailError },
+      { field: phoneNo, setter: setPhoneNoError },
+      { field: requestText, setter: setRequestTextError },
+    ];
+
+    // set error state for empty fields
+    requiredFields.forEach(({ field, setter }) => {
+      if (field === "") {
+        setter(true);
+      }
+    });
+
+    // return if any required field is empty
+    if (requiredFields.some(({ field }) => field === "")) {
       setShowRequiredError(true);
       return;
     }
+
     const body = JSON.stringify({
       objectAddress,
       firstName,
@@ -79,13 +102,45 @@ export const ContactForm = ({ }: ContactFormProps) => {
           {t("contact.subtitle_contact_form")}
         </h2>
         <div className={styles["contact-form__item"]}>
-          <Input label={t("contact.form.label.address")} placeholder={t("contact.form.placeholder.address")} value={objectAddress} onChange={(e) => setobjectAddress(e.target.value)} />
+          <Input
+            label={t("contact.form.label.address")}
+            placeholder={t("contact.form.placeholder.address")}
+            value={objectAddress}
+            onChange={(e) => setobjectAddress(e.target.value)}
+            onBlur={(e) => {
+              if (e.target.value === "") {
+                setObjectAddressError(true)
+              }
+            }}
+          />
         </div>
         <div className={styles["contact-form__item"]}>
-          <Input label={t("contact.form.label.firstname")} placeholder={t("contact.form.placeholder.firstname")} value={firstName} onChange={(e) => setFirstname(e.target.value)} />
+          <Input
+            label={t("contact.form.label.firstname")}
+            placeholder={t("contact.form.placeholder.firstname")}
+            value={firstName}
+            onChange={(e) => setFirstname(e.target.value)}
+            onBlur={(e) => {
+              if (e.target.value === "") {
+                setFirstnameError(true)
+              }
+            }}
+            error={(firstNameError && firstName === "") ? t("contact.form.error.default") : ""}
+          />
         </div>
         <div className={styles["contact-form__item"]}>
-          <Input label={t("contact.form.label.lastname")} placeholder={t("contact.form.placeholder.lastname")} value={lastName} onChange={(e) => setLastname(e.target.value)} />
+          <Input
+            label={t("contact.form.label.lastname")}
+            placeholder={t("contact.form.placeholder.lastname")}
+            value={lastName}
+            onChange={(e) => setLastname(e.target.value)}
+            onBlur={(e) => {
+              if (e.target.value === "") {
+                setLastnameError(true)
+              }
+            }}
+            error={(lastNameError && lastName === "") ? t("contact.form.error.default") : ""}
+          />
         </div>
         <div className={styles["contact-form__item"]}>
           <Input
@@ -103,7 +158,7 @@ export const ContactForm = ({ }: ContactFormProps) => {
               const hasError = !emailRegex.test(e.target.value);
               setHasEmailError(hasError);
             }}
-            error={(showRequiredError && eMailAddress === "") || hasEmailError ? t("contact.form.error.email") : ""}
+            error={(hasEmailError) ? t("contact.form.error.email") : ""}
           />
         </div>
         <div className={styles["contact-form__item"]}>
@@ -114,6 +169,12 @@ export const ContactForm = ({ }: ContactFormProps) => {
                 placeholder={t("contact.form.placeholder.phone")}
                 value={phoneNo}
                 onChange={(e) => setPhoneNo(e.target.value)}
+                onBlur={(e) => {
+                  if (e.target.value === "") {
+                    setPhoneNoError(true)
+                  }
+                }}
+                error={(phoneNoError && phoneNo === "") ? t("contact.form.error.default") : ""}
               />
             </div>
             <div className={styles["contact-form__row-item"]}>
@@ -132,7 +193,14 @@ export const ContactForm = ({ }: ContactFormProps) => {
             label={t("contact.form.label.message")}
             placeholder={t("contact.form.placeholder.message")}
             value={requestText}
-            onChange={(e) => setRequestText(e.target.value)} />
+            onChange={(e) => setRequestText(e.target.value)}
+            onBlur={(e) => {
+              if (e.target.value === "") {
+                setRequestTextError(true)
+              }
+            }}
+            error={(requestTextError && requestText === "") ? t("contact.form.error.default") : ""}
+          />
         </div>
         <div className={styles["contact-form__send-button"]}>
           <Button>

@@ -555,6 +555,7 @@
     "contact.address_1": "Pionierstrasse 7, 8403 Winterthur",
     "contact.address_2_name": "Stadtwerk Winterthur Energieberatung",
     "contact.address_2": "Untere Schöntalstrasse 12, 8406 Winterthur",
+    "contact.form.error.default": "Bitte geben Sie dieses Pflichtfeld an.",
     "contact.form.label.address": "Objektadresse (Pflichtfeld)",
     "contact.form.label.firstname": "Vorname (Pflichtfeld)",
     "contact.form.label.lastname": "Nachname (Pflichtfeld)",

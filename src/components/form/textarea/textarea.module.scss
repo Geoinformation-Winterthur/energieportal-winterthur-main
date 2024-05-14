@@ -46,14 +46,15 @@
 }
 
 .textarea__error {
-  color: var(--color-error);
+  @include typo-copyright();
+  color: var(--color-signal-red);
 }
 
 .textarea--error {
   .textarea__label {
-    color: var(--color-error);
+    color: var(--color-signal-red);
   }
   .textarea__input {
-    border-color: var(--color-error);
+    border-color: var(--color-signal-red);
   }
 }
