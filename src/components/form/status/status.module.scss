@@ -1,0 +1,40 @@
+@import "../../../styles/breakpoints.scss";
+@import "../../../styles/typography.scss";
+
+.status {
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 2px;
+  margin-top: var(--spacing-8);
+  margin-bottom: var(--spacing-10);
+  padding: var(--spacing-4);
+  display: flex;
+  gap: var(--spacing-4);
+  align-items: center;
+}
+
+.status__icon {
+  --icon-size: 24px;
+  width: var(--icon-size);
+  height: var(--icon-size);
+}
+
+.status__text {
+  @include typo-body();
+}
+
+.status--success {
+  border-color: var(--color-signal-green);
+}
+
+.status--info {
+  border-color: var(--color-info);
+}
+
+.status--warning {
+  border-color: var(--color-signal-orange);
+}
+
+.status--error {
+  border-color: var(--color-signal-red);
+}

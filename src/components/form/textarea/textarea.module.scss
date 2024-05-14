@@ -6,7 +6,7 @@
 }
 
 .textarea__label {
-  @include typo-copyright();
+  @include typo-label();
 
   position: absolute;
   z-index: 1;
@@ -25,8 +25,8 @@
   position: relative;
   width: 100%;
   resize: vertical;
-  min-height: var(--spacing-24);
-  max-height: 320px;
+  min-height: 168px;
+  max-height: 560px;
 
   &::placeholder {
     color: var(--color-text-primary);
@@ -46,7 +46,7 @@
 }
 
 .textarea__error {
-  @include typo-copyright();
+  @include typo-label();
   color: var(--color-signal-red);
 }
 

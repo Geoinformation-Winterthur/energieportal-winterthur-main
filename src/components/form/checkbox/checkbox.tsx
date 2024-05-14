@@ -3,6 +3,7 @@ import styles from "./checkbox.module.scss";
 interface CheckboxProps {
   label: string;
   checked: boolean;
+  name?: string;
   error?: string;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
@@ -10,6 +11,7 @@ interface CheckboxProps {
 export const Checkbox = ({
   label,
   checked,
+  name,
   error,
   onChange,
 }: CheckboxProps) => {
@@ -19,6 +21,7 @@ export const Checkbox = ({
         <input
           className={styles["checkbox__input"]}
           id={label}
+          name={name}
           type="checkbox"
           checked={checked}
           onChange={onChange}

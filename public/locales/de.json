@@ -556,12 +556,14 @@
     "contact.address_2_name": "Stadtwerk Winterthur Energieberatung",
     "contact.address_2": "Untere Schöntalstrasse 12, 8406 Winterthur",
     "contact.form.error.default": "Bitte geben Sie dieses Pflichtfeld an.",
+    "contact.form.error.honeypot": "Das Formular wurde automatisch ausgefüllt. Um Spam zu verhindern, bitte wir Sie die Seite neu zu laden und die Felder manuell auszufüllen.",
     "contact.form.label.address": "Objektadresse (Pflichtfeld)",
     "contact.form.label.firstname": "Vorname (Pflichtfeld)",
     "contact.form.label.lastname": "Nachname (Pflichtfeld)",
     "contact.form.label.email": "E-Mail Adresse (Pflichtfeld)",
     "contact.form.error.email": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
     "contact.form.label.phone": "Telefon (Pflichtfeld)",
+    "contact.form.label.fax": "Fax (Pflichtfeld)",
     "contact.form.label.callback": "Bitte um Rückruf",
     "contact.form.label.message": "Ihr Anliegen (Pflichtfeld)",
     "contact.form.label.send": "Anfrage senden",
@@ -570,6 +572,9 @@
     "contact.form.placeholder.lastname": "Muster",
     "contact.form.placeholder.email": "max.muster@email.ch",
     "contact.form.placeholder.message": "Mein Anliegen",
-    "contact.form.placeholder.phone": "079 123 45 67"
+    "contact.form.placeholder.phone": "079 123 45 67",
+    "contact.form.placeholder.fax": "079 123 45 68",
+    "contact.form.feedback.success": "Wir haben Ihre Anfrage erhalten und werden uns so schnell wie möglich bei Ihnen melden.",
+    "contact.form.feedback.error": "Ihre Anfrage konnte nicht gesendet werden. Bitte versuchen Sie es später erneut."
   }
 }
