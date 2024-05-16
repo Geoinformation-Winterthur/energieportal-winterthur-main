@@ -41,7 +41,7 @@ export default function Tabs({ children, initialValue, name, variant = 'default'
     }
   }
 
-  const handleBlur = (event: React.FocusEvent<HTMLButtonElement>) => {
+  const handleBlur = (event: React.FocusEvent) => {
     if (event.target instanceof Element && !(event.target.parentNode?.contains(event.relatedTarget as Node))) {
       event.target.setAttribute('tabindex', '-1');
       event.target.parentNode?.querySelector('[aria-selected="true"]')?.setAttribute('tabindex', '0');
