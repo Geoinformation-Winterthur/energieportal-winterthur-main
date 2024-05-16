@@ -1,15 +1,17 @@
 "use client";
 import clsx from "clsx";
 import Airwater from "./assets/airwater.svg";
-import ArrowLeft from "./assets/arrow-left.svg";
 import ArrowDown from "./assets/arrow-down.svg";
+import ArrowLeft from "./assets/arrow-left.svg";
 import ArrowRight from "./assets/arrow-right.svg";
 import Burger from "./assets/burger.svg";
+import Check from "./assets/check.svg";
 import ChevronDown from "./assets/chevron-down.svg";
 import ChevronUp from "./assets/chevron-up.svg";
 import Close from "./assets/close.svg";
 import Consulting from "./assets/consulting.svg";
 import DistrictHeating from "./assets/districtheating.svg";
+import Error from "./assets/error.svg";
 import Geothermal from "./assets/geothermal.svg";
 import Groundwater from "./assets/groundwater.svg";
 import Heating from "./assets/heating.svg";
@@ -22,6 +24,7 @@ import Phone from "./assets/phone.svg";
 import Refurbishment from "./assets/refurbishment.svg";
 import Search from "./assets/search.svg";
 import Send from "./assets/send.svg";
+import Warning from "./assets/warning.svg";
 import styles from "./icon.module.scss";
 
 export type IconType =
@@ -35,6 +38,7 @@ export type IconType =
   | "close"
   | "consulting"
   | "districtheating"
+  | "error"
   | "geothermal"
   | "groundwater"
   | "heating"
@@ -47,6 +51,8 @@ export type IconType =
   | "refurbishment"
   | "search"
   | "send"
+  | "success"
+  | "warning"
 
 interface IconProps {
   icon: IconType;
@@ -67,6 +73,7 @@ export const Icon = ({ icon, size = 20, color, onButtonClick }: IconProps) => {
     close: <Close width={size} height={size} />,
     consulting: <Consulting width={size} height={size} />,
     districtheating: <DistrictHeating width={size} height={size} />,
+    error: <Error width={size} height={size} />,
     geothermal: <Geothermal width={size} height={size} />,
     groundwater: <Groundwater width={size} height={size} />,
     heating: <Heating width={size} height={size} />,
@@ -79,6 +86,8 @@ export const Icon = ({ icon, size = 20, color, onButtonClick }: IconProps) => {
     refurbishment: <Refurbishment width={size} height={size} />,
     search: <Search width={size} height={size} />,
     send: <Send width={size} height={size} />,
+    success: <Check width={size} height={size} />,
+    warning: <Warning width={size} height={size} />,
   };
 
   if (onButtonClick) {

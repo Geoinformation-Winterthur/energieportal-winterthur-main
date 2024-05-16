@@ -7,7 +7,7 @@
 }
 
 .select__label {
-  @include typo-copyright();
+  @include typo-label();
 
   position: absolute;
   z-index: 1;
