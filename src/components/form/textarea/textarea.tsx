@@ -5,7 +5,9 @@ interface TextAreaProps {
   placeholder?: string;
   name?: string;
   value?: string;
+  error?: string;
   onChange?: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
+  onBlur?: (e: React.FocusEvent<HTMLTextAreaElement>) => void;
 }
 
 export const Textarea = ({
@@ -13,12 +15,15 @@ export const Textarea = ({
   placeholder,
   name,
   value,
+  error,
   onChange,
+  onBlur,
 }: TextAreaProps) => {
   return (
     <div
       className={`
         ${styles["textarea"]}
+        ${error ? styles["textarea--error"] : ""}
       `}
     >
       <label className={styles["textarea__label"]} htmlFor={name}>
@@ -29,8 +34,10 @@ export const Textarea = ({
         name={name}
         value={value}
         onChange={onChange}
+        onBlur={onBlur}
         placeholder={placeholder}
       />
+      {error && <p className={styles["textarea__error"]}>{error}</p>}
     </div>
   );
 };

@@ -6,7 +6,7 @@
 }
 
 .input__label {
-  @include typo-copyright();
+  @include typo-label();
 
   position: absolute;
   z-index: 1;
@@ -37,7 +37,7 @@
 }
 
 .input__error {
-  @include typo-copyright();
+  @include typo-label();
   color: var(--color-signal-red);
 }
 

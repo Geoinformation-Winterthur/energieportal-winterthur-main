@@ -14,7 +14,7 @@ export default function Tab({ value, children }: TabProps) {
   return (
     <div
       hidden={isHidden}
-      className={clsx(styles['tab-panel'], isHidden && styles['tab-panel--hidden'])}
+      className={clsx(styles['tab-panel'], isHidden && styles['tab-panel--hidden'], styles[`tab-panel--${tabs.variant}`])}
       tabIndex={0}
       id={`${tabs.name}-panel-${value}`}
       aria-labelledby={`${tabs.name}-tab-${value}`}

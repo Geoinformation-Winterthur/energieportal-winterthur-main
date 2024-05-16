@@ -6,7 +6,7 @@
 }
 
 .textarea__label {
-  @include typo-copyright();
+  @include typo-label();
 
   position: absolute;
   z-index: 1;
@@ -25,8 +25,8 @@
   position: relative;
   width: 100%;
   resize: vertical;
-  min-height: var(--spacing-24);
-  max-height: 320px;
+  min-height: 168px;
+  max-height: 560px;
 
   &::placeholder {
     color: var(--color-text-primary);
@@ -46,14 +46,15 @@
 }
 
 .textarea__error {
-  color: var(--color-error);
+  @include typo-label();
+  color: var(--color-signal-red);
 }
 
 .textarea--error {
   .textarea__label {
-    color: var(--color-error);
+    color: var(--color-signal-red);
   }
   .textarea__input {
-    border-color: var(--color-error);
+    border-color: var(--color-signal-red);
   }
 }
