@@ -52,18 +52,6 @@ export const HeatingTiles = () => {
     })
   }
 
-  const sortHeatingsByRecommendation = (heatings: RawHeating[]) => {
-    return transformHeatingData(heatings).sort((a, b) => {
-      if (a.isRecommendation && !b.isRecommendation) {
-        return -1;
-      } else if (!a.isRecommendation && b.isRecommendation) {
-        return 1;
-      } else {
-        return 0;
-      }
-    });
-  }
-
   useEffect(() => {
     if (searchParams.get("address")) {
       setCurrentAddress(searchParams.get("address") ?? "");
@@ -71,6 +59,18 @@ export const HeatingTiles = () => {
   }, [searchParams])
 
   useEffect(() => {
+    const sortHeatingsByRecommendation = (heatings: RawHeating[]) => {
+      return transformHeatingData(heatings).sort((a, b) => {
+        if (a.isRecommendation && !b.isRecommendation) {
+          return -1;
+        } else if (!a.isRecommendation && b.isRecommendation) {
+          return 1;
+        } else {
+          return 0;
+        }
+      });
+    }
+
     async function propertyWrapper() {
       setIsLoading(true);
       const propertyData = await getPropertyFacts(currentAddress || "");
@@ -87,7 +87,7 @@ export const HeatingTiles = () => {
     if (currentAddress) {
       propertyWrapper();
     }
-  }, [currentAddress, sortHeatingsByRecommendation])
+  }, [currentAddress])
 
   const renderHeating = (heating: Heating) => <HeatingTile heating={heating} allRecommendations={heatingSystems} key={heating.code} />
 

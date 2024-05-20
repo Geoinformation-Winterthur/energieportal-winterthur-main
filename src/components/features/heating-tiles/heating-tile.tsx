@@ -25,7 +25,7 @@ export const HeatingTile = ({ heating, allRecommendations }: HeatingTileProps) =
 
   const renderHeatingOverlay = (trigger: React.ReactNode) => (
     <Overlay trigger={trigger}>
-      <Tabs initialValue={heating.code} name={'heating-tabs'} variant="reduced">
+      <Tabs initialValue={heating.code} name={'heating-tabs'} variant="reduced" inOverlay>
         <TabList>
           {allRecommendations?.map(heating => (
             <Tab label={t(`my_property.heating_recommendations.${heating.code}.title`)} value={heating.code} key={heating.code}></Tab>
