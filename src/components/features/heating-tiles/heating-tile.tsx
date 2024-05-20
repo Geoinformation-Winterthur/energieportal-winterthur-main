@@ -1,40 +1,65 @@
 import { Button } from "@/components/common/button/button";
 import { Icon, IconType } from "@/components/common/icon/icon";
+import { FullWidth } from "@/components/common/layout/full-width/full-width";
+import Overlay from "@/components/common/overlay/overlay";
+import TabList from "@/components/common/tabs/tab-list/tab-list";
+import TabPanel from "@/components/common/tabs/tab-panel/tab-panel";
+import Tab from "@/components/common/tabs/tab/tab";
+import Tabs from "@/components/common/tabs/tabs";
+import { HeatingsFaq } from "@/templates/faq/heatings/heatings-faq";
+import { Heating } from "@/types/heating";
 import clsx from "clsx";
 import { useTranslation } from "../../../../i18n";
 import styles from "./heating-tile.module.scss";
 
 interface HeatingTileProps {
-  code: string;
-  isRecommendation?: boolean;
-  icon: IconType;
-  showStatus?: boolean
+  heating: Heating;
+  allRecommendations?: Heating[];
 }
 
-export const HeatingTile = ({ code, isRecommendation, icon, showStatus }: HeatingTileProps) => {
+export const HeatingTile = ({ heating, allRecommendations }: HeatingTileProps) => {
   const { t } = useTranslation();
 
-  const getPros = () => t(`my_property.heating_recommendations.${code}.pros`, { returnObjects: true }) as string[];
-  const getCons = () => t(`my_property.heating_recommendations.${code}.cons`, { returnObjects: true }) as string[];
+  const getPros = () => t(`my_property.heating_recommendations.${heating.code}.pros`, { returnObjects: true }) as string[];
+  const getCons = () => t(`my_property.heating_recommendations.${heating.code}.cons`, { returnObjects: true }) as string[];
+
+  const renderHeatingOverlay = (trigger: React.ReactNode) => (
+    <Overlay trigger={trigger}>
+      <Tabs initialValue={heating.code} name={'heating-tabs'} variant="reduced">
+        <TabList>
+          {allRecommendations?.map(heating => (
+            <Tab label={t(`my_property.heating_recommendations.${heating.code}.title`)} value={heating.code} key={heating.code}></Tab>
+          ))}
+        </TabList>
+        {allRecommendations?.map(heating => (
+          <TabPanel value={heating.code} key={heating.code}>
+            <FullWidth variant="white">
+              <HeatingsFaq code={heating.code} />
+            </FullWidth>
+          </TabPanel>
+        ))}
+      </Tabs>
+    </Overlay>
+  )
 
   const EnergyPlanStatus = () => (
     <div className={styles["heating-tile__status"]}>
       <h5 className={styles["heating-tile__status-label"]}>{t("my_property.heating_recommendations.state")}</h5>
-      <button className={styles["heating-tile__status-btn"]}>{t(`my_property.heating_recommendations.${code}.status.label`)}</button>
+      {renderHeatingOverlay(<button className={styles["heating-tile__status-btn"]}>{t(`my_property.heating_recommendations.${heating.code}.status.label`)}</button>)}
     </div>
   )
 
   return (
-    <div className={clsx(styles["heating-tile"], isRecommendation && styles["heating-tile--is-recommendation"])}>
-      {isRecommendation && <div className={styles["heating-tile__flag"]}>{t("my_property.heating_recommendations.flag")}</div>}
+    <div className={clsx(styles["heating-tile"], heating.isRecommendation && styles["heating-tile--is-recommendation"])}>
+      {heating.isRecommendation && <div className={styles["heating-tile__flag"]}>{t("my_property.heating_recommendations.flag")}</div>}
       <div className={styles["heating-tile__inner"]}>
         <div className={styles["heating-tile__content"]}>
           <div className={styles["heating-tile__header"]}>
-            <h4 className={styles["heating-tile__title"]}>{t(`my_property.heating_recommendations.${code}.title`)}</h4>
-            <Icon icon={icon} size={56} />
+            <h4 className={styles["heating-tile__title"]}>{t(`my_property.heating_recommendations.${heating.code}.title`)}</h4>
+            <Icon icon={heating.isDistrictHeating ? "districtheating" : heating.code as IconType} size={56} />
           </div>
           <div className={styles["heating-tile__lists"]}>
-            {showStatus && <EnergyPlanStatus />}
+            {heating.isDistrictHeating && <EnergyPlanStatus />}
             <div>
               <h5 className={styles["heating-tile__list-title"]}>{t("my_property.heating_recommendations.pros")}</h5>
               <ul className={styles["heating-tile__list"]}>
@@ -53,7 +78,7 @@ export const HeatingTile = ({ code, isRecommendation, icon, showStatus }: Heatin
             </div>
           </div>
         </div>
-        <Button>{t("my_property.heating_recommendations.button")}</Button>
+        {renderHeatingOverlay(<Button>{t("my_property.heating_recommendations.button")}</Button>)}
       </div>
     </div>
   )
