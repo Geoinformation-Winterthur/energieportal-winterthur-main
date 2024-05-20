@@ -1,4 +1,7 @@
 import { Button } from "@/components/common/button/button";
+import { FullWidth } from "@/components/common/layout/full-width/full-width";
+import Overlay from "@/components/common/overlay/overlay";
+import { Refurbishment } from "@/templates/faq/refurbishment/refurbishment";
 import { useTranslation } from "../../../../i18n";
 import { HouseType } from "../house/house";
 import styles from "./savings-potential-tile.module.scss";
@@ -22,7 +25,11 @@ export const SavingsPotentialTile = ({ type }: SavingsPotentialTileProps) => {
         </ul>
       </div>
       <div className={styles["savings-potential-tile__button"]}>
-        <Button>{t("my_property.refurbishment_saving_potential.button")}</Button>
+        <Overlay trigger={<Button>{t("my_property.refurbishment_saving_potential.button")}</Button>}>
+          <FullWidth variant="white">
+            <Refurbishment />
+          </FullWidth>
+        </Overlay>
       </div>
     </div>
   )
