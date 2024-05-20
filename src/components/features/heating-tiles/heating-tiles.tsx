@@ -1,4 +1,4 @@
-import { Icon, IconType } from "@/components/common/icon/icon";
+import { Icon } from "@/components/common/icon/icon";
 import { Slider } from "@/components/common/slider/slider";
 import { SliderSlide } from "@/components/common/slider/slider-slide";
 import { useWindowSize } from "@/hooks/useWindowSize";
@@ -11,6 +11,12 @@ import { useTranslation } from "../../../../i18n";
 import { HeatingTile } from "./heating-tile";
 import styles from "./heating-tiles.module.scss";
 
+type RawHeating = {
+  code: string;
+  isRecommendation: boolean;
+  status: string;
+}
+
 export const HeatingTiles = () => {
   const { t } = useTranslation();
   const { isMobile } = useWindowSize();
@@ -18,7 +24,33 @@ export const HeatingTiles = () => {
   const searchParams = useSearchParams();
   const [currentAddress, setCurrentAddress] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
-  const [heatingSystems, setHeatingSystems] = useState<Heating[]>([])
+  const [heatingSystems, setHeatingSystems] = useState<Heating[]>([]);
+
+  const transformHeatingData = (heatings: RawHeating[]) => {
+    return heatings.map(heating => {
+      if (heating.code === "districtheating") {
+        let specificCode;
+        switch (heating.status) {
+          case "Verdichtung":
+            specificCode = `${heating.code}_v`;
+            break;
+          case "in Prüfung":
+            specificCode = `${heating.code}_pr`;
+            break;
+          default:
+            specificCode = `${heating.code}_pl`;
+            break;
+        }
+        return {
+          code: specificCode,
+          isRecommendation: heating.isRecommendation,
+          status: heating.status,
+          isDistrictHeating: true
+        } as Heating;
+      }
+      return heating as Heating;
+    })
+  }
 
   useEffect(() => {
     if (searchParams.get("address")) {
@@ -27,6 +59,18 @@ export const HeatingTiles = () => {
   }, [searchParams])
 
   useEffect(() => {
+    const sortHeatingsByRecommendation = (heatings: RawHeating[]) => {
+      return transformHeatingData(heatings).sort((a, b) => {
+        if (a.isRecommendation && !b.isRecommendation) {
+          return -1;
+        } else if (!a.isRecommendation && b.isRecommendation) {
+          return 1;
+        } else {
+          return 0;
+        }
+      });
+    }
+
     async function propertyWrapper() {
       setIsLoading(true);
       const propertyData = await getPropertyFacts(currentAddress || "");
@@ -35,7 +79,7 @@ export const HeatingTiles = () => {
       const heatingData = await getHeatingSystems(eCoordinate, nCoordinate);
 
       if (heatingData) {
-        setHeatingSystems(heatingData);
+        setHeatingSystems(sortHeatingsByRecommendation(heatingData));
       }
       setIsLoading(false);
     }
@@ -45,29 +89,7 @@ export const HeatingTiles = () => {
     }
   }, [currentAddress])
 
-  const getStatus = (heating: Heating) => {
-    if (heating.status === "Verdichtung") {
-      return `${heating.code}_verdichtung`;
-    }
-    if (heating.status === "in Prüfung") {
-      return `${heating.code}_pruefung`;
-    }
-    return `${heating.code}_planung`;
-  }
-
-  const renderHeating = (heating: Heating) => <HeatingTile code={heating.code === "districtheating" ? getStatus(heating) : heating.code} isRecommendation={heating.isRecommendation} icon={heating.code as IconType} showStatus={heating.code === "districtheating"} key={heating.code} />
-
-  const sortHeatingsByRecommendation = () => {
-    return heatingSystems.sort((a, b) => {
-      if (a.isRecommendation && !b.isRecommendation) {
-        return -1;
-      } else if (!a.isRecommendation && b.isRecommendation) {
-        return 1;
-      } else {
-        return 0;
-      }
-    });
-  }
+  const renderHeating = (heating: Heating) => <HeatingTile heating={heating} allRecommendations={heatingSystems} key={heating.code} />
 
   return (
     <div className={styles["heating-tiles"]}>
@@ -78,11 +100,11 @@ export const HeatingTiles = () => {
       {isLoading ? <Icon icon="loading" /> : ""}
       {isMobile ?
         <Slider>
-          {sortHeatingsByRecommendation().map(heating => <SliderSlide key={heating.code}>{renderHeating(heating)}</SliderSlide>)}
+          {heatingSystems.map(heating => <SliderSlide key={heating.code}>{renderHeating(heating)}</SliderSlide>)}
         </Slider>
         :
         <div className={styles["heating-tiles__content"]}>
-          {sortHeatingsByRecommendation().map(heating => renderHeating(heating))}
+          {heatingSystems.map(heating => renderHeating(heating))}
         </div>}
     </div>
   )

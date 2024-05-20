@@ -162,7 +162,7 @@
       ]
     },
     "my_property.heating_recommendations.districtheating.title": "Vorgesehene Wärmenetze",
-    "my_property.heating_recommendations.districtheating_verdichtung": {
+    "my_property.heating_recommendations.districtheating_v": {
       "title": "Bestehende Wärmenetze",
       "pros": [
         "auch für den Altbau geeignet",
@@ -179,7 +179,7 @@
         "description": "Verdichtung: Sie können Ihre Liegenschaft an die Fernwärme anschliessen. Informieren Sie sich über das weitere Vorgehen bei Stadtwerk Winterthur Kundenberatung Wärme unter 052 267 16 29 oder stadtwerk.waerme@win.ch."
       }
     },
-    "my_property.heating_recommendations.districtheating_pruefung": {
+    "my_property.heating_recommendations.districtheating_pr": {
       "title": "Vorgesehene Wärmenetze",
       "pros": [
         "auch für den Altbau geeignet",
@@ -196,7 +196,7 @@
         "description": "in Prüfung: Die technische und wirtschaftliche Machbarkeit des Wärmenetzes in Ihrem Quartier wird derzeit geprüft. Die Resultate der Machbarkeitsstudie liegen im 3. Quartal 2024 vor und das weitere Vorgehen wird geplant."
       }
     },
-    "my_property.heating_recommendations.districtheating_planung": {
+    "my_property.heating_recommendations.districtheating_pl": {
       "title": "Vorgesehene Wärmenetze",
       "pros": [
         "auch für den Altbau geeignet",

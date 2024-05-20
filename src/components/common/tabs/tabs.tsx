@@ -7,11 +7,12 @@ interface TabsProps {
   initialValue: string;
   name: string;
   variant?: TabVariant;
+  inOverlay?: boolean;
 }
 
-export default function Tabs({ children, initialValue, name, variant = 'default' }: TabsProps) {
+export default function Tabs({ children, initialValue, name, variant = 'default', inOverlay = false }: TabsProps) {
   const changeTabsValue = (value: string) => {
-    setTabsValue({ value, name, variant, changeTabsValue, handleKeyDown, handleBlur })
+    setTabsValue({ value, name, variant, inOverlay, changeTabsValue, handleKeyDown, handleBlur })
   }
   const handleKeyDown = (event: KeyboardEvent) => {
     if (event.target instanceof HTMLElement) {
@@ -47,7 +48,7 @@ export default function Tabs({ children, initialValue, name, variant = 'default'
       event.target.parentNode?.querySelector('[aria-selected="true"]')?.setAttribute('tabindex', '0');
     }
   }
-  const [tabsValue, setTabsValue] = useState({ value: initialValue, variant, name, changeTabsValue, handleKeyDown, handleBlur })
+  const [tabsValue, setTabsValue] = useState({ value: initialValue, variant, name, inOverlay, changeTabsValue, handleKeyDown, handleBlur })
 
   return (
     <TabsContext.Provider value={tabsValue}>
