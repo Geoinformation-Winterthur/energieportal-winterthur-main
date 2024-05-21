@@ -20,14 +20,15 @@ export const SavingsPotential = () => {
   }
 
   const renderMobileOverlay = (type: HouseType) => (
-    <>
+
+    <Overlay trigger={<Point type={type} onClick={handlePointClick} />} key={type}>
       {typeToShow && (
-        <Overlay trigger={<Point type={type} onClick={handlePointClick} />} key={type}>
+        <>
           <House type={typeToShow} />
           <SavingsPotentialTile type={typeToShow} />
-        </Overlay>
+        </>
       )}
-    </>
+    </Overlay>
   )
 
   return (
@@ -43,7 +44,7 @@ export const SavingsPotential = () => {
             return typeToShow !== type && <Point type={type} onClick={handlePointClick} isBlurred={typeToShow ? true : false} key={type} />
           })}
         </div>
-        {typeToShow ? <SavingsPotentialTile type={typeToShow} /> :
+        {typeToShow && !isMobile ? <SavingsPotentialTile type={typeToShow} /> :
           <div className={styles["savings-potential__empty-state"]}>
             <h4 className={styles["savings-potential__empty-state-text"]}>{t("my_property.refurbishment_saving_potential.empty")}</h4>
           </div>

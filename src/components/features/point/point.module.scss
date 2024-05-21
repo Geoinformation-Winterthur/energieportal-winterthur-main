@@ -1,10 +1,17 @@
+@import "../../../styles/breakpoints.scss";
+
 .point {
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 32px;
+  height: 32px;
   background-color: var(--color-brand-red);
   opacity: 0.8;
   border-radius: 50%;
+
+  @include tablet-up {
+    width: 50px;
+    height: 50px;
+  }
 
   &.point--blurred {
     opacity: 0.5;
