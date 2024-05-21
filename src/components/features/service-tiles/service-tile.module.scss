@@ -16,9 +16,9 @@
 }
 
 .service-tile__header {
-  display: flex;
+  display: grid;
   justify-content: space-between;
-  align-items: center;
+  grid-template-columns: auto max-content;
   margin-bottom: var(--spacing-4);
 }
 
