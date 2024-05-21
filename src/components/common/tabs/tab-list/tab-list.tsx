@@ -4,15 +4,15 @@ import { TabsContext } from "../../../../context/tabs-context";
 import clsx from "clsx";
 
 interface TabListProps {
-    children: ReactNode;
+  children: ReactNode;
 }
 
 export default function TabList({ children }: TabListProps) {
-    const tabs = useContext(TabsContext);
-    
-    return (
-        <div className={clsx(styles['tab-list'], styles[`tab-list--${tabs.variant}`])} role="tablist">
-            {children}
-        </div>
-    )
+  const tabs = useContext(TabsContext);
+
+  return (
+    <div className={clsx(styles['tab-list'], styles[`tab-list--${tabs.variant}`], tabs.inOverlay ? styles["tab-list--in-overlay"] : "")} role="tablist">
+      {children}
+    </div>
+  )
 }

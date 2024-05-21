@@ -3,7 +3,6 @@
 
 .full-width {
   padding: var(--spacing-10) var(--spacing-5);
-  background-color: var(--color-brand-green-light);
 
   @include tablet-up {
     display: flex;
@@ -11,6 +10,14 @@
     justify-content: center;
     align-items: center;
     padding: var(--spacing-20);
+  }
+
+  &.full-width--green {
+    background-color: var(--color-brand-green-light);
+  }
+
+  &.full-width--white {
+    background-color: var(--color-white);
   }
 }
 

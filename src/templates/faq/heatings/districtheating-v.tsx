@@ -4,10 +4,10 @@ import { useTranslation } from "../../../../i18n";
 import styles from "../faq.module.scss";
 
 interface DistrictHeatingVProps {
-  isPlanned?: boolean;
+  inPlanning?: boolean;
 }
 
-export const DistrictHeatingV = ({ isPlanned }: DistrictHeatingVProps) => {
+export const DistrictHeatingV = ({ inPlanning }: DistrictHeatingVProps) => {
 
   const { t } = useTranslation();
 
@@ -22,7 +22,7 @@ export const DistrictHeatingV = ({ isPlanned }: DistrictHeatingVProps) => {
   return (
     <div className={styles["faq"]}>
       <div className={styles["faq__box"]}>
-        {isPlanned ? renderInPlanning() : renderInReview()}
+        {inPlanning ? renderInPlanning() : renderInReview()}
       </div>
       <div className={styles["faq__acc-wrapper"]}>
         <h4 className={styles["faq__title"]}>{t("my_property.heating_faq.functionality")}</h4>
