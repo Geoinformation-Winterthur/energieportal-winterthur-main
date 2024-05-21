@@ -3,11 +3,9 @@
 .tab-list {
   display: flex;
   gap: var(--spacing-0-75);
-  overflow-x: scroll;
 
   @include tablet-up {
     gap: var(--spacing-1-5);
-    overflow-x: hidden;
   }
 
   &.tab-list--in-overlay {
