@@ -6,6 +6,10 @@
   opacity: 0.8;
   border-radius: 50%;
 
+  &.point--blurred {
+    opacity: 0.5;
+  }
+
   &.point--roof {
     top: 18%;
     right: 38%;

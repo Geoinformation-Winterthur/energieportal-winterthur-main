@@ -1,16 +1,33 @@
+import { useWindowSize } from "@/hooks/useWindowSize";
 import { useState } from "react";
 import { useTranslation } from "../../../../i18n";
 import { House, HouseType } from "../house/house";
 import { Point } from "../point/point";
 import { SavingsPotentialTile } from "./savings-potential-tile";
 import styles from "./savings-potential.module.scss";
+import Overlay from "@/components/common/overlay/overlay";
 
 export const SavingsPotential = () => {
   const { t } = useTranslation();
   const [typeToShow, setTypeToShow] = useState<HouseType | null>(null);
+  const { isMobile } = useWindowSize();
+  const houseTypes: HouseType[] = ["roof", "facade", "windows", "basement"];
 
-  const handlePointClick = (type: HouseType) => (
-    setTypeToShow(type)
+  const handlePointClick = (type: HouseType) => {
+    if (isMobile) {
+    }
+    return setTypeToShow(type);
+  }
+
+  const renderMobileOverlay = (type: HouseType) => (
+    <>
+      {typeToShow && (
+        <Overlay trigger={<Point type={type} onClick={handlePointClick} />} key={type}>
+          <House type={typeToShow} />
+          <SavingsPotentialTile type={typeToShow} />
+        </Overlay>
+      )}
+    </>
   )
 
   return (
@@ -19,10 +36,12 @@ export const SavingsPotential = () => {
       <div className={styles["savings-potential__content"]}>
         <div className={styles["savings-potential__house"]}>
           {typeToShow ? <House type={typeToShow} /> : <House type="base" />}
-          <Point type="roof" onClick={handlePointClick} />
-          <Point type="facade" onClick={handlePointClick} />
-          <Point type="windows" onClick={handlePointClick} />
-          <Point type="basement" onClick={handlePointClick} />
+          {houseTypes.map(type => {
+            if (isMobile) {
+              return renderMobileOverlay(type)
+            }
+            return typeToShow !== type && <Point type={type} onClick={handlePointClick} isBlurred={typeToShow ? true : false} key={type} />
+          })}
         </div>
         {typeToShow ? <SavingsPotentialTile type={typeToShow} /> :
           <div className={styles["savings-potential__empty-state"]}>
