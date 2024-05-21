@@ -66,6 +66,7 @@ export const Autocomplete = () => {
   const handleOnChange = async (value: string, reason: string) => {
     if (reason === "selectOption") {
       setSelectedValue(value);
+      handleSubmitClick(value);
       setSearchResults([]);
       setOpen(false)
       return;
