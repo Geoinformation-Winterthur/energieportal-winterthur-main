@@ -13,11 +13,9 @@ export const SavingsPotential = () => {
   const { isMobile } = useWindowSize();
   const houseTypes: HouseType[] = ["roof", "facade", "windows", "basement"];
 
-  const handlePointClick = (type: HouseType) => {
-    if (isMobile) {
-    }
-    return setTypeToShow(type);
-  }
+  const handlePointClick = (type: HouseType) => (
+    setTypeToShow(type)
+  )
 
   const renderMobileOverlay = (type: HouseType) => (
     <Overlay trigger={<Point type={type} onClick={handlePointClick} />} key={type}>
