@@ -50,11 +50,6 @@ export const SolarPotential = () => {
         </div>
         <div className={styles["solar-potential__content-right"]}>
           <SolarFacts solarFacts={solarFacts} />
-          <Accordion summary={t("my_property.solar_accordion.summary")}>
-            <AccordionDetails>
-              {t("my_property.solar_accordion.detail")}
-            </AccordionDetails>
-          </Accordion>
         </div>
       </div>
     </div>

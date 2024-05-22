@@ -3,6 +3,8 @@ import { SolarFacts as SolarFactsType } from "@/types/solar-facts";
 import { useTranslation } from "../../../../i18n";
 import styles from "./solar-facts.module.scss";
 import { Button } from "@/components/common/button/button";
+import { AccordionDetails } from "@mui/material";
+import { Accordion } from "@/components/common/accordion/accordion";
 
 interface SolarFactsProps {
   solarFacts: SolarFactsType | null;
@@ -117,6 +119,11 @@ export const SolarFacts = ({ solarFacts }: SolarFactsProps) => {
           </Button>
         </div>
       </section>
+      <Accordion summary={t("my_property.solar_accordion.summary")}>
+        <AccordionDetails>
+          {t("my_property.solar_accordion.detail")}
+        </AccordionDetails>
+      </Accordion>
     </div>
   )
 
