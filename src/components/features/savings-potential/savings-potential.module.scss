@@ -19,9 +19,8 @@
   padding-top: var(--spacing-6);
 
   @include tablet-up {
-    display: grid;
-    grid-template-columns: 60% 1fr;
-    gap: var(--spacing-6);
+    display: flex;
+    gap: 8%;
     padding-top: var(--spacing-16);
   }
 }
@@ -30,6 +29,9 @@
   position: relative;
   display: flex;
   justify-content: center;
+  height: max-content;
+  min-width: 50%;
+  flex: 1 0 auto;
 }
 
 .savings-potential__empty-state {
@@ -38,12 +40,16 @@
   align-items: center;
   padding: var(--spacing-5);
   background-color: var(--color-brand-green-light);
+  flex: 0 1 auto;
+  max-height: 650px;
 
   @include tablet-up {
-    padding: var(--spacing-20);
+    padding: var(--spacing-16);
   }
 }
 
 .savings-potential__empty-state-text {
   @include typo-headline-4();
+
+  text-align: center;
 }
