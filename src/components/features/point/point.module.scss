@@ -1,0 +1,59 @@
+@import "../../../styles/breakpoints.scss";
+
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0px rgba(255, 25, 0, 0.5);
+  }
+
+  100% {
+    box-shadow: 0 0 0 20px rgba(255, 25, 0, 0);
+  }
+}
+
+.point {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background-color: var(--color-brand-red);
+  opacity: 0.8;
+  border-radius: 50%;
+  animation: pulse-animation 1s infinite;
+
+  &:hover {
+    animation: pulse-animation 1s infinite;
+  }
+
+  @include tablet-up {
+    width: 50px;
+    height: 50px;
+  }
+
+  &.point--blurred {
+    opacity: 0.5;
+    animation: none;
+
+    &:hover {
+      animation: pulse-animation 1s infinite;
+    }
+  }
+
+  &.point--roof {
+    top: 18%;
+    right: 37%;
+  }
+
+  &.point--facade {
+    top: 47%;
+    right: 24%;
+  }
+
+  &.point--windows {
+    top: 45%;
+    right: 45%;
+  }
+
+  &.point--basement {
+    top: 64%;
+    right: 56%;
+  }
+}

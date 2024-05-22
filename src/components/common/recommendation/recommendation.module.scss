@@ -1,0 +1,24 @@
+@import "../../../styles/breakpoints.scss";
+@import "../../../styles/typography.scss";
+
+.recommendation {
+  border: 3px solid var(--color-brand-green-dark);
+}
+
+.recommendation__flag {
+  @include typo-headline-5();
+  padding: var(--spacing-4) var(--spacing-6);
+  background-color: var(--color-brand-green-dark);
+  color: var(--color-white);
+}
+
+.recommendation__inner {
+  @include typo-body();
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--spacing-10);
+  padding: var(--spacing-8);
+  width: 100%;
+  background-color: var(--color-white);
+}

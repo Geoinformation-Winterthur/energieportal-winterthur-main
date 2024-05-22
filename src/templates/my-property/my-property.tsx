@@ -12,6 +12,8 @@ import { EfficiencyCalculator } from "@/components/features/efficiency-calculato
 import { EndLayOut } from "@/components/features/end-layout/end-layout"
 import { PropertyFacts } from "@/components/features/property-facts/property-facts"
 import { PropertyImage } from "@/components/features/property-image/property-image"
+import { SavingsPotential } from "@/components/features/savings-potential/savings-potential"
+import { SolarPotential } from "@/components/features/solar-potential/solar-potential"
 import Link from "next/link"
 import { useTranslation } from "../../../i18n"
 import { HeatingRecommendations } from "../heating-recommandations/heating-recommandations"
@@ -33,7 +35,11 @@ export const MyPropertyPage = () => {
             <PropertyFacts />
             <div>
               <PropertyImage />
-              <p className={styles["my-property__update-info"]}>{t("my_property.property_update_info_1")} <Link href={t("my_property.property_update_info_link_target")}>{t("my_property.property_update_info_link")}</Link> {t("my_property.property_update_info_2")}</p>
+              <p className={styles["my-property__update-info"]}>
+                {t("my_property.property_update_info_1")}
+                <Link href={t("my_property.property_update_info_link_target")}>{t("my_property.property_update_info_link")}</Link>
+                {t("my_property.property_update_info_2")}
+              </p>
             </div>
           </div>
         </div>
@@ -45,7 +51,8 @@ export const MyPropertyPage = () => {
       <Tabs initialValue={'0'} name={'tabs'}>
         <TabList>
           <Tab label='Heizung' value={'0'}></Tab>
-          <Tab label='Sanierung' value={'1'}></Tab>
+          <Tab label='Solaranlage' value={'1'}></Tab>
+          <Tab label='Sanierung' value={'2'}></Tab>
         </TabList>
         <TabPanel value={'0'}>
           <FullWidth>
@@ -55,7 +62,14 @@ export const MyPropertyPage = () => {
         </TabPanel>
         <TabPanel value={'1'}>
           <FullWidth>
+            <SolarPotential />
+          </FullWidth>
+          <EndLayOut type="solar" />
+        </TabPanel>
+        <TabPanel value={'2'}>
+          <FullWidth>
             <EfficiencyCalculator />
+            <SavingsPotential />
           </FullWidth>
           <EndLayOut type="refurbishment" />
         </TabPanel>

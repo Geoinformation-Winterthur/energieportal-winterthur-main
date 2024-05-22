@@ -1,0 +1,65 @@
+@import "../../../styles/breakpoints.scss";
+
+.solar-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+.solar-image__img {
+  object-fit: cover;
+}
+
+.solar-image__clicked-coordinates {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background-color: var(--color-black);
+  border: 2px solid var(--color-white);
+  border-radius: 50%;
+}
+
+.solar-image__legend {
+  position: absolute;
+  display: flex;
+  transform: translateY(100%);
+  bottom: 0;
+  gap: var(--spacing-4);
+  background-color: var(--color-white);
+  width: 100%;
+  padding: var(--spacing-6);
+}
+
+.solar-image__legend-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-2);
+}
+
+.solar-image__legend-color {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+
+.solar-image__legend-color--potential-1 {
+  background-color: var(--color-solar-potential-1);
+}
+
+.solar-image__legend-color--potential-2 {
+  background-color: var(--color-solar-potential-2);
+}
+
+.solar-image__legend-color--potential-3 {
+  background-color: var(--color-solar-potential-3);
+}
+
+.solar-image__legend-color--potential-4 {
+  background-color: var(--color-solar-potential-4);
+}

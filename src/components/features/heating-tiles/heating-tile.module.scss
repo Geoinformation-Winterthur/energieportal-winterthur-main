@@ -1,19 +1,6 @@
 @import "../../../styles/breakpoints.scss";
 @import "../../../styles/typography.scss";
 
-.heating-tile {
-  &--is-recommendation {
-    border: 3px solid var(--color-brand-green-dark);
-  }
-}
-
-.heating-tile__flag {
-  @include typo-headline-5();
-  padding: var(--spacing-4) var(--spacing-6);
-  background-color: var(--color-brand-green-dark);
-  color: var(--color-white);
-}
-
 .heating-tile__inner {
   display: flex;
   flex-direction: column;

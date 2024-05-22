@@ -2,13 +2,13 @@ import { Button } from "@/components/common/button/button";
 import { Icon, IconType } from "@/components/common/icon/icon";
 import { FullWidth } from "@/components/common/layout/full-width/full-width";
 import Overlay from "@/components/common/overlay/overlay";
+import { Recommendation } from "@/components/common/recommendation/recommendation";
 import TabList from "@/components/common/tabs/tab-list/tab-list";
 import TabPanel from "@/components/common/tabs/tab-panel/tab-panel";
 import Tab from "@/components/common/tabs/tab/tab";
 import Tabs from "@/components/common/tabs/tabs";
 import { HeatingsFaq } from "@/templates/faq/heatings/heatings-faq";
 import { Heating } from "@/types/heating";
-import clsx from "clsx";
 import { useTranslation } from "../../../../i18n";
 import styles from "./heating-tile.module.scss";
 
@@ -49,37 +49,47 @@ export const HeatingTile = ({ heating, allRecommendations }: HeatingTileProps) =
     </div>
   )
 
-  return (
-    <div className={clsx(styles["heating-tile"], heating.isRecommendation && styles["heating-tile--is-recommendation"])}>
-      {heating.isRecommendation && <div className={styles["heating-tile__flag"]}>{t("my_property.heating_recommendations.flag")}</div>}
-      <div className={styles["heating-tile__inner"]}>
-        <div className={styles["heating-tile__content"]}>
-          <div className={styles["heating-tile__header"]}>
-            <h4 className={styles["heating-tile__title"]}>{t(`my_property.heating_recommendations.${heating.code}.title`)}</h4>
-            <Icon icon={heating.isDistrictHeating ? "districtheating" : heating.code as IconType} size={56} />
+  const renderContent = () => (
+    <>
+      <div className={styles["heating-tile__content"]}>
+        <div className={styles["heating-tile__header"]}>
+          <h4 className={styles["heating-tile__title"]}>{t(`my_property.heating_recommendations.${heating.code}.title`)}</h4>
+          <Icon icon={heating.isDistrictHeating ? "districtheating" : heating.code as IconType} size={56} />
+        </div>
+        <div className={styles["heating-tile__lists"]}>
+          {heating.isDistrictHeating && <EnergyPlanStatus />}
+          <div>
+            <h5 className={styles["heating-tile__list-title"]}>{t("my_property.heating_recommendations.pros")}</h5>
+            <ul className={styles["heating-tile__list"]}>
+              {getPros().map(pro => (
+                <li className={styles["heating-tile__list-item"]} key={pro}>{pro}</li>
+              ))}
+            </ul>
           </div>
-          <div className={styles["heating-tile__lists"]}>
-            {heating.isDistrictHeating && <EnergyPlanStatus />}
-            <div>
-              <h5 className={styles["heating-tile__list-title"]}>{t("my_property.heating_recommendations.pros")}</h5>
-              <ul className={styles["heating-tile__list"]}>
-                {getPros().map(pro => (
-                  <li className={styles["heating-tile__list-item"]} key={pro}>{pro}</li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <h5 className={styles["heating-tile__list-title"]}>{t("my_property.heating_recommendations.cons")}</h5>
-              <ul className={styles["heating-tile__list"]}>
-                {getCons().map(con => (
-                  <li className={styles["heating-tile__list-item"]} key={con}>{con}</li>
-                ))}
-              </ul>
-            </div>
+          <div>
+            <h5 className={styles["heating-tile__list-title"]}>{t("my_property.heating_recommendations.cons")}</h5>
+            <ul className={styles["heating-tile__list"]}>
+              {getCons().map(con => (
+                <li className={styles["heating-tile__list-item"]} key={con}>{con}</li>
+              ))}
+            </ul>
           </div>
         </div>
-        {renderHeatingOverlay(<Button>{t("my_property.heating_recommendations.button")}</Button>)}
       </div>
-    </div>
-  )
+      {renderHeatingOverlay(<Button>{t("my_property.heating_recommendations.button")}</Button>)}
+    </>
+  );
+
+  return heating.isRecommendation
+    ? (
+        <Recommendation title={t("my_property.heating_recommendations.flag")} height={730}>
+          {renderContent()}
+        </Recommendation>
+    ) : (
+      <div className={styles["heating-tile"]}>
+        <div className={styles["heating-tile__inner"]}>
+          {renderContent()}
+        </div>
+      </div>
+    )
 }
