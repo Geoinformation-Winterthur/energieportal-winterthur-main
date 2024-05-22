@@ -16,5 +16,3 @@ export const FullWidth = ({ children, variant = "green" }: FullWidthProps) => {
     </div>
   )
 };
-
-

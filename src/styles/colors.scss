@@ -25,6 +25,12 @@ $color-scale-orange: #ffa800;
 $color-scale-red: #ef1c00;
 $color-scale-red-dark: #9b1200;
 
+// solar potential colors
+$color-solar-potential-1: #FF1900;
+$color-solar-potential-2: #FF7F00;
+$color-solar-potential-3: #FFFF00;
+$color-solar-potential-4: #0080FF;
+
 :root {
   --color-text-primary: #{$color-grey-dark};
   --color-headline-primary: #{$color-black};
@@ -51,4 +57,8 @@ $color-scale-red-dark: #9b1200;
   --color-scale-orange: #{$color-scale-orange};
   --color-scale-red: #{$color-scale-red};
   --color-scale-red-dark: #{$color-scale-red-dark};
+  --color-solar-potential-1: #{$color-solar-potential-1};
+  --color-solar-potential-2: #{$color-solar-potential-2};
+  --color-solar-potential-3: #{$color-solar-potential-3};
+  --color-solar-potential-4: #{$color-solar-potential-4};
 }
