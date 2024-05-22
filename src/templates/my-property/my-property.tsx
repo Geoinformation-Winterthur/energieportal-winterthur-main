@@ -12,6 +12,7 @@ import { EfficiencyCalculator } from "@/components/features/efficiency-calculato
 import { EndLayOut } from "@/components/features/end-layout/end-layout"
 import { PropertyFacts } from "@/components/features/property-facts/property-facts"
 import { PropertyImage } from "@/components/features/property-image/property-image"
+import { SavingsPotential } from "@/components/features/savings-potential/savings-potential"
 import Link from "next/link"
 import { useTranslation } from "../../../i18n"
 import { HeatingRecommendations } from "../heating-recommandations/heating-recommandations"
@@ -56,6 +57,7 @@ export const MyPropertyPage = () => {
         <TabPanel value={'1'}>
           <FullWidth>
             <EfficiencyCalculator />
+            <SavingsPotential />
           </FullWidth>
           <EndLayOut type="refurbishment" />
         </TabPanel>

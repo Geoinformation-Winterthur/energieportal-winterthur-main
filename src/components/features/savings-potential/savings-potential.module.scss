@@ -1,0 +1,55 @@
+@import "../../../styles/breakpoints.scss";
+@import "../../../styles/typography.scss";
+
+.savings-potential {
+  width: 100%;
+  padding: var(--spacing-10) var(--spacing-5);
+  background-color: var(--color-white);
+
+  @include tablet-up {
+    padding: var(--spacing-10);
+  }
+}
+
+.savings-potential__title {
+  @include typo-headline-3();
+}
+
+.savings-potential__content {
+  padding-top: var(--spacing-6);
+
+  @include tablet-up {
+    display: flex;
+    gap: 8%;
+    padding-top: var(--spacing-16);
+  }
+}
+
+.savings-potential__house {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: max-content;
+  min-width: 50%;
+  flex: 1 0 auto;
+}
+
+.savings-potential__empty-state {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacing-5);
+  background-color: var(--color-brand-green-light);
+  flex: 0 1 auto;
+  max-height: 650px;
+
+  @include tablet-up {
+    padding: var(--spacing-16);
+  }
+}
+
+.savings-potential__empty-state-text {
+  @include typo-headline-4();
+
+  text-align: center;
+}

@@ -459,6 +459,40 @@
     "my_property.refurbishment_efficiency_calculator.detail_1": "Die Energiebezugsfläche ist die Summe aller beheizten oder klimatisierten Flächen inklusive der Wände. Die Fläche des beheizten Dachgeschosses wird dabei erst ab einem Meter Höhe mitgerechnet. Trocknungs- oder Waschräume werden nicht dazugezählt.",
     "my_property.refurbishment_efficiency_calculator.summary_2": "Woher erhalte ich meinen durchschnittlichen Energieverbrauch pro Jahr?",
     "my_property.refurbishment_efficiency_calculator.detail_2": "Entnehmen Sie den Heizölverbrauch Ihrer Heizung aus dem Tankbuch. Bei einer Gasheizung oder einer Wärmepumpe kann der Gasverbrauch respektive der Stromverbrauch aus der Abrechnung von Stadtwerke Winterthur entnommen werden.",
+    "my_property.refurbishment_saving_potential.title": "Energiesparpotenzial an der Gebäudehülle",
+    "my_property.refurbishment_saving_potential.empty": "Klicken Sie auf einen roten Punkt für mehr Informationen.",
+    "my_property.refurbishment_saving_potential.potential": "Energiesparpotenzial:",
+    "my_property.refurbishment_saving_potential.costs": "Investitionskosten:",
+    "my_property.refurbishment_saving_potential.funding": "Förderbeiträge:",
+    "my_property.refurbishment_saving_potential.button": "Mehr erfahren",
+    "my_property.refurbishment_saving_potential.roof": {
+      "title": "Dach oder Dachboden dämmen",
+      "description": "Bei einem Satteldach kann der Raum zwischen den Sparren ausgedämmt oder eine zusätzliche Dämmung unterhalb der Sparren angebracht werden. Verwendet werden dabei Dämmplatten oder eine Einblasdämmung. Deutlich teurer ist eine Dämmung von aussen. Dazu muss das Dach komplett abgedeckt werden. Mit einem umfangreichen Dachausbau kann das Dachgeschoss auch als neuer Wohnraum genutzt werden. Wird der Dachraum nicht als Wohnraum genutzt, kann der Dachboden kostengünstig mit Dämmplatten gedämmt werden.",
+      "potential": "20%",
+      "costs": "mittel",
+      "funding": "vorhanden ohne Umnutzung"
+    },
+    "my_property.refurbishment_saving_potential.facade": {
+      "title": "Fassade dämmen",
+      "description": "Die meiste Heizwärme geht über die Fassade verloren. Dämmen Sie die Fassade innen oder aussen. Je nach Verwendungszeck und Bausubstanz stehen unterschiedliche Dämmmaterialen zur Auswahl. Hierbei müssen die bauphysikalischen Aspekte berücksichtigt werden. Wir empfehlen deshalb, eine bauphysikalische Beratung in Anspruch zu nehmen, um Bauschäden zu vermeiden. Häufig werden Dämmplatten oder ein Dämmputz verwendet. Um die Wärmedämmvorschriften mit einer verputzen Aussendämmung einhalten zu können, sind Dämmplatten mit einer Dicke von 10 bis 15 cm erforderlich, bei Hochleistungsdämmstoffen auch weniger. Bei Gebäuden, die im Inventar der schutzwürdigen Bauten sind, können Erleichterungen von den Wärmedämmvorschriften gewährt werden.",
+      "potential": "30%",
+      "costs": "mittel bis hoch",
+      "funding": "vorhanden"
+    },
+    "my_property.refurbishment_saving_potential.windows": {
+      "title": "Fenster und Türen ersetzen",
+      "description": "Sparen Sie Heizwärme durch den Ersatz alter Fenster und Türen, vorzugsweise alle 25 Jahre im Rahmen einer energetischen Gesamtsanierung. Neue Fenster sind luftdicht. Bei Umbauten kann dies zu Feuchtigkeit und Schimmelbildung bei Fensterlaibungen führen. Diese Problematik ist in einem Lüftungs- oder Sanierungskonzept zu berücksichtigen. Aber achten Sie darauf, Fenster nicht über einen längeren Zeitraum gekippt geöffnet zu lassen. Dabei geht viel Heizwärme verloren. Öffnen Sie mehrmals täglich alle Fenster und lassen Sie die Luft für höchstens 10 Minuten lang zirkulieren. Fenster- oder Rollläden sind wichtig, um im Sommer eine Überhitzung der Räume zu verhindern. Ein wirksamer Sonnenschutz ist deshalb bei allen Räumen Pflicht. Auch mit Sonnenschutzgläsern kann der Wärmeeintrag reduziert werden.",
+      "potential": "20%",
+      "costs": "mittel bis hoch",
+      "funding": "keine"
+    },
+    "my_property.refurbishment_saving_potential.basement": {
+      "title": "Kellerdecke dämmen",
+      "description": "Eine Dämmung der Kellerdecke ist vergleichsweise kostengünstig und bietet ein hohes Energiesparpotential. Zusätzlich steigt die Oberflächentemperatur des darüber liegenden Bodens und somit der Wohnkomfort. Meist werden Dämmplatten eingesetzt, welche von unten an der Kellerdecke befestigt werden. Zum Einsatz kommen Produkte aus Polystyrol (EPS oder XPS), Mineralfasern wie beispielsweise Steinwolle oder Holzfaserdämmstoffe.",
+      "potential": "10%",
+      "costs": "tief",
+      "funding": "keine"
+    },
     "my_property.refurbishment_faq.summary_1": "Warum lohnt sich eine energetische Sanierung meiner Liegenschaft?",
     "my_property.refurbishment_faq.detail_1": "Wer einen Altbau saniert, statt ihn abzureissen, leistet bereits einen wichtigen Beitrag zum Klimaschutz. Die Dämmung der Gebäudehülle reduziert die Heizkosten und steigern zusätzlich den Wohnkomfort im Winter wie auch im Sommer. Energiesparmassnahmen steigern den Wert Ihres Gebäudes, sie können in der Steuerrechnung abgezogen werden.",
     "my_property.refurbishment_faq.summary_2": "Kann ein denkmalgeschütztes Gebäude energetisch saniert werden?",
