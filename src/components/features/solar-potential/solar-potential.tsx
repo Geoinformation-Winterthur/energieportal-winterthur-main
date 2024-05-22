@@ -6,6 +6,8 @@ import { useTranslation } from '../../../../i18n';
 import { SolarFacts } from '../solar-facts/solar-facts';
 import { SolarImage } from '../solar-image/solar-image';
 import styles from './solar-potential.module.scss';
+import { Accordion } from '@/components/common/accordion/accordion';
+import { AccordionDetails } from '@mui/material';
 
 export const SolarPotential = () => {
   const { t } = useTranslation();
@@ -44,10 +46,15 @@ export const SolarPotential = () => {
       </div>
       <div className={styles["solar-potential__content"]}>
         <div className={styles["solar-potential__content-left"]}>
-          <SolarImage clickedCoordinates={clickedPosition} onImageClick={onImageClick}/>
+          <SolarImage clickedCoordinates={clickedPosition} onImageClick={onImageClick} />
         </div>
         <div className={styles["solar-potential__content-right"]}>
           <SolarFacts solarFacts={solarFacts} />
+          <Accordion summary={t("my_property.solar_accordion.summary")}>
+            <AccordionDetails>
+              {t("my_property.solar_accordion.detail")}
+            </AccordionDetails>
+          </Accordion>
         </div>
       </div>
     </div>
