@@ -1,6 +1,7 @@
 import { Button } from "@/components/common/button/button";
 import { FullWidth } from "@/components/common/layout/full-width/full-width";
 import Overlay from "@/components/common/overlay/overlay";
+import { useWindowSize } from "@/hooks/useWindowSize";
 import { Refurbishment } from "@/templates/faq/refurbishment/refurbishment";
 import { useTranslation } from "../../../../i18n";
 import { HouseType } from "../house/house";
@@ -12,6 +13,23 @@ interface SavingsPotentialTileProps {
 
 export const SavingsPotentialTile = ({ type }: SavingsPotentialTileProps) => {
   const { t } = useTranslation();
+  const { isMobile } = useWindowSize();
+
+  const renderMobileFaq = () => (
+    <div className={styles["savings-potential-tile__mobile-faq"]}>
+      <Refurbishment />
+    </div>
+  )
+
+  const renderDesktopFaq = () => (
+    <div className={styles["savings-potential-tile__button"]}>
+      <Overlay trigger={<Button>{t("my_property.refurbishment_saving_potential.button")}</Button>}>
+        <FullWidth variant="white">
+          <Refurbishment />
+        </FullWidth>
+      </Overlay>
+    </div>
+  )
 
   return (
     <div className={styles["savings-potential-tile"]}>
@@ -24,13 +42,7 @@ export const SavingsPotentialTile = ({ type }: SavingsPotentialTileProps) => {
           <li className={styles["savings-potential-tile__list-item"]}><span className={styles["savings-potential-tile__list-item-title"]}>{t("my_property.refurbishment_saving_potential.funding")}</span> {t(`my_property.refurbishment_saving_potential.${type}.funding`)}</li>
         </ul>
       </div>
-      <div className={styles["savings-potential-tile__button"]}>
-        <Overlay trigger={<Button>{t("my_property.refurbishment_saving_potential.button")}</Button>}>
-          <FullWidth variant="white">
-            <Refurbishment />
-          </FullWidth>
-        </Overlay>
-      </div>
+      {isMobile ? renderMobileFaq() : renderDesktopFaq()}
     </div>
   )
 }
