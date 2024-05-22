@@ -36,5 +36,3 @@ export const Teaser = ({ title, description, image, image_credits, link, link_ta
     </div>
   )
 };
-
-
