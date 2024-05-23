@@ -1,10 +1,18 @@
+import { Accordion } from "@/components/common/accordion/accordion";
+import { Button } from "@/components/common/button/button";
+import { FullWidth } from "@/components/common/layout/full-width/full-width";
+import Overlay from "@/components/common/overlay/overlay";
 import { Recommendation } from "@/components/common/recommendation/recommendation";
+import TabList from "@/components/common/tabs/tab-list/tab-list";
+import TabPanel from "@/components/common/tabs/tab-panel/tab-panel";
+import Tab from "@/components/common/tabs/tab/tab";
+import Tabs from "@/components/common/tabs/tabs";
+import { SolarPhotovoltaics } from "@/templates/faq/solar/photovoltaics";
+import { SolarThermal } from "@/templates/faq/solar/thermal";
 import { SolarFacts as SolarFactsType } from "@/types/solar-facts";
+import { AccordionDetails } from "@mui/material";
 import { useTranslation } from "../../../../i18n";
 import styles from "./solar-facts.module.scss";
-import { Button } from "@/components/common/button/button";
-import { AccordionDetails } from "@mui/material";
-import { Accordion } from "@/components/common/accordion/accordion";
 
 interface SolarFactsProps {
   solarFacts: SolarFactsType | null;
@@ -20,6 +28,28 @@ export const SolarFacts = ({ solarFacts }: SolarFactsProps) => {
       </p>
     )
   }
+
+  const renderFaqOverlay = (initialValue: string) => (
+    <Overlay trigger={<Button>{t("my_property.solar_button")}</Button>}>
+      <Tabs initialValue={initialValue} name={'heating-tabs'} variant="reduced" inOverlay>
+        <TabList>
+
+          <Tab label={t("my_property.solar_faq.photovoltaics.title")} value="photovoltaics" />
+          <Tab label={t("my_property.solar_faq.thermal.title")} value="thermal" />
+        </TabList>
+        <TabPanel value="photovoltaics">
+          <FullWidth variant="white">
+            <SolarPhotovoltaics />
+          </FullWidth>
+        </TabPanel>
+        <TabPanel value="thermal">
+          <FullWidth variant="white">
+            <SolarThermal />
+          </FullWidth>
+        </TabPanel>
+      </Tabs>
+    </Overlay>
+  )
 
   const renderTableRow = (label: string, value: string) => (
     <tr className={styles["solar-facts__table-row"]} key={label}>
@@ -105,18 +135,14 @@ export const SolarFacts = ({ solarFacts }: SolarFactsProps) => {
           </div>
         </Recommendation>
         <div className={styles["solar-facts__button"]}>
-          <Button>
-            Mehr erfahren
-          </Button>
+          {renderFaqOverlay("photovoltaics")}
         </div>
       </section>
       <section className={styles["solar-facts__section"]}>
         <h4 className={styles["solar-facts__subtitle"]}>{t("my_property.solar_facts.projected_annual_thermal_production_title")}</h4>
         {renderProjectedThermalProductionTable()}
         <div className={styles["solar-facts__button"]}>
-          <Button>
-            Mehr erfahren
-          </Button>
+          {renderFaqOverlay("thermal")}
         </div>
       </section>
       <Accordion summary={t("my_property.solar_accordion.summary")}>
