@@ -10,7 +10,7 @@ export default function OurConsultingService() {
 
   return (
     <>
-      <Intro title={t("our_consulting_service.intro.title")} variant="dark" />
+      <Intro title={t("our_consulting_service.intro.title")} variant="dark" slim />
       <OneCol>
         <Teaser title={t("our_consulting_service.teaser_title")} description={t("our_consulting_service.teaser_description")} image={t("our_consulting_service.teaser_image")} image_credits={t("our_consulting_service.teaser_image_credits")} link={t("our_consulting_service.teaser_link")} link_target={t("our_consulting_service.teaser_link_target")} subtitle={t("our_consulting_service.teaser_subtitle")} asRow />
       </OneCol>

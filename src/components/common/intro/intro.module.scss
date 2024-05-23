@@ -4,12 +4,12 @@
 .intro__content {
   display: flex;
   flex-direction: column;
+  padding: var(--spacing-10) var(--spacing-5);
   gap: var(--spacing-4);
-  padding: var(--spacing-10) var(--spacing-5) 190px;
 
   @include tablet-up {
     max-width: calc((10 / 12) * var(--max-width));
-    padding: var(--spacing-24) var(--spacing-20) var(--spacing-36);
+    padding: var(--spacing-24) var(--spacing-20);
     padding-right: calc(var(--spacing-20) + ((1 / 12) * var(--max-width)));
     margin: auto;
   }
@@ -25,13 +25,33 @@
 
 .intro--light {
   background-color: var(--color-brand-green-light);
+
+  & .intro__content {
+    padding-bottom: 190px;
+
+    @include tablet-up {
+      padding-bottom: var(--spacing-36);
+    }
+  }
 }
 
 .intro--dark {
   background-color: var(--color-brand-green-dark);
 
+  & .intro__content {
+    padding-bottom: 130px;
+
+    @include tablet-up {
+      padding-bottom: var(--spacing-24);
+    }
+  }
+
   & .intro__title,
   & .intro__lead {
     color: var(--color-white);
   }
+}
+
+.intro--slim .intro__content {
+  padding-bottom: var(--spacing-20);
 }

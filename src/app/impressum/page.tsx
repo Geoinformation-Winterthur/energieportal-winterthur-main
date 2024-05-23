@@ -7,7 +7,7 @@ export default function Impressum() {
 
   return (
     <main>
-      <Intro title="Impressum" variant="dark" />
+      <Intro title="Impressum" variant="dark" slim />
       <OneCol>
         <Section title="Kontakt und Verantwortung">
           <p>Verantwortlich für den Inhalt ist die Abteilung Energie und Technik der Stadt Winterthur.</p>
