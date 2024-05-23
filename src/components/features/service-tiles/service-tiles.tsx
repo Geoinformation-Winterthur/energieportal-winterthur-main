@@ -23,7 +23,7 @@ export const ServiceTiles = () => {
         <div className={styles["service-tiles__services"]}>
           {services.map(service => <ServiceTile service={service} key={service.title} />)}
         </div>}
-      <p className={styles["service-tiles__text"]}>{t("our_consulting_service.our-services.further_information_1")} <a href={t("our_consulting_service.our-services.further_information_link_target_1")}>{t("our_consulting_service.our-services.further_information_link_1")}</a> {t("our_consulting_service.our-services.further_information_2")} <a href={t("our_consulting_service.our-services.further_information_link_target_2")}>{t("our_consulting_service.our-services.further_information_link_2")}</a> {t("our_consulting_service.our-services.further_information_3")}</p>
+      <p className={styles["service-tiles__text"]}>{t("our_consulting_service.our-services.further_information_1")} <a href={t("our_consulting_service.our-services.further_information_link_target_1")} target="_blank">{t("our_consulting_service.our-services.further_information_link_1")}</a> {t("our_consulting_service.our-services.further_information_2")} <a href={t("our_consulting_service.our-services.further_information_link_target_2")} target="_blank">{t("our_consulting_service.our-services.further_information_link_2")}</a> {t("our_consulting_service.our-services.further_information_3")}</p>
     </div>
   )
 }
