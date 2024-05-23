@@ -58,24 +58,24 @@
   grid-template-columns: 1fr;
   gap: var(--spacing-4);
 
-  @include tablet-up {
+  @include desktop-up {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-.efficiency-calculator-form__70-30 {
+.efficiency-calculator-form__30-70 {
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--spacing-4);
 
-  @include tablet-up {
-    grid-template-columns: 1fr calc(70% - var(--spacing-2));
+  @include desktop-up {
+    grid-template-columns: calc(70% - var(--spacing-2)) 1fr;
   }
 }
 
 .efficiency-calculator-form__full,
 .efficiency-calculator-form__50-50,
-.efficiency-calculator-form__70-30 {
+.efficiency-calculator-form__30-70 {
   margin-bottom: var(--spacing-5);
 }
 
