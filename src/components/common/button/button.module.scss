@@ -2,6 +2,7 @@
 
 .button {
   @include typo-button();
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,13 +15,18 @@
   padding: 0 var(--spacing-4);
   transition: background-color 0.2s ease-out;
 
-  &:focus-visible,
-  &:hover {
+  &:focus-visible {
     background-color: var(--color-black);
   }
 
   &--disabled {
     pointer-events: none;
     opacity: 0.4;
+  }
+}
+
+@media (hover: hover) {
+  .button:hover {
+    background-color: var(--color-black);
   }
 }
