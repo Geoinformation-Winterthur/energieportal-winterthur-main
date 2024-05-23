@@ -8,7 +8,7 @@
   width: 100%;
 
   @include tablet-up {
-    grid-template-columns: 1fr 0fr;
+    grid-template-columns: 1fr auto;
   }
 }
 

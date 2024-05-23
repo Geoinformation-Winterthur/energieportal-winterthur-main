@@ -7,7 +7,7 @@ export default function Contact() {
   const { t } = useTranslation();
   return (
     <>
-      <Intro title={t("contact.title")} variant="dark" />
+      <Intro title={t("contact.title")} variant="dark" slim />
       <OneCol>
         <ContactForm />
       </OneCol>
