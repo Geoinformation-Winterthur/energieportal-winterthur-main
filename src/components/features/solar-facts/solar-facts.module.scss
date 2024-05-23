@@ -49,5 +49,9 @@
 }
 
 .solar-facts__section:not(:last-child) {
-  margin-bottom: var(--spacing-20);
+  margin-bottom: var(--spacing-10);
+
+  @include tablet-up {
+    margin-bottom: var(--spacing-20);
+  }
 }
