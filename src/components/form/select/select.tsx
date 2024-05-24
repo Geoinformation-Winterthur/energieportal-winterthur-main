@@ -30,8 +30,10 @@ export const Select = ({ label, options, defaultValue, onChange }: SelectProps) 
     const { ownerState, ...other } = props;
     return (
       <button type="button" {...other} ref={ref}>
-        {other.children}
-        <Icon icon='chevron-down' color='red' />
+        <span>{other.children}</span>
+        <span className="select__icon">
+          <Icon icon='chevron-down' color='red' />
+        </span>
       </button>
     );
   });

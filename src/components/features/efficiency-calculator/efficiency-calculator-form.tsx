@@ -82,7 +82,7 @@ export const EfficiencyCalculatorForm = ({ handleSubmit }: EfficiencyCalculatorF
       </div>
       <div>
         <h5 className={styles["efficiency-calculator-form__title"]}>{t("my_property.refurbishment_efficiency_calculator.form_power_consumption")}</h5>
-        <div className={styles["efficiency-calculator-form__30-70"]}>
+        <div className={styles["efficiency-calculator-form__70-30"]}>
           <Select
             label={t("my_property.refurbishment_efficiency_calculator.form_unit")}
             options={unitOptions}

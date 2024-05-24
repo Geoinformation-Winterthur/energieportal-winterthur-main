@@ -63,19 +63,19 @@
   }
 }
 
-.efficiency-calculator-form__30-70 {
+.efficiency-calculator-form__70-30 {
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--spacing-4);
 
   @include desktop-up {
-    grid-template-columns: calc(70% - var(--spacing-2)) 1fr;
+    grid-template-columns: auto calc(40% - var(--spacing-2));
   }
 }
 
 .efficiency-calculator-form__full,
 .efficiency-calculator-form__50-50,
-.efficiency-calculator-form__30-70 {
+.efficiency-calculator-form__70-30 {
   margin-bottom: var(--spacing-5);
 }
 

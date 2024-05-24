@@ -3,7 +3,7 @@
 
 .select {
   position: relative;
-  width: 100%
+  width: 100%;
 }
 
 .select__label {
@@ -13,6 +13,11 @@
   z-index: 1;
   top: var(--spacing-1);
   left: var(--spacing-3);
+}
+
+.select__icon {
+  flex: 1 0 auto;
+  text-align: right;
 }
 
 .base-Select-root.base-Select-root {
@@ -26,6 +31,13 @@
   text-align: left;
   background-color: var(--color-brand-green-light);
   border-bottom: 2px solid transparent;
+
+  & span {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+  }
 
   & svg {
     transition: transform 0.2s ease;
