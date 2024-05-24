@@ -23,6 +23,10 @@
     pointer-events: none;
     opacity: 0.4;
   }
+
+  &--pressed {
+    background-color: var(--color-black);
+  }
 }
 
 @media (hover: hover) {
