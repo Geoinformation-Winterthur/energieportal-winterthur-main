@@ -1,6 +1,8 @@
 import clsx from 'clsx';
+import { useState } from 'react';
 import { Icon, IconType } from "../icon/icon";
 import styles from "./button.module.scss";
+
 interface ButtonProps {
   children?: React.ReactNode | string;
   icon?: IconType;
@@ -16,6 +18,17 @@ export const Button = ({
   href,
   disabled,
 }: ButtonProps) => {
+
+  const [isPressed, setIsPressed] = useState(false);
+
+  const handleTouchStart = () => (
+    setIsPressed(true)
+  )
+
+  const handleTouchEnd = () => (
+    setIsPressed(false)
+  )
+
   if (href) {
     return (
       <a
@@ -29,8 +42,8 @@ export const Button = ({
   }
   return (
     <button
-      className={clsx(styles["button"], disabled ? styles["button--disabled"] : "")}
-      onClick={onClick}
+      className={clsx(styles["button"], disabled ? styles["button--disabled"] : "", isPressed ? styles["button--pressed"] : "")}
+      onClick={onClick} onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}
     >
       {children}
       {icon && <Icon icon={icon as IconType} size={24} />}
