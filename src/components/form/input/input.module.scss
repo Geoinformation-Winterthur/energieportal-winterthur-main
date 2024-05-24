@@ -3,22 +3,21 @@
 
 .input {
   position: relative;
+  background-color: var(--color-brand-green-light);
 }
 
 .input__label {
   @include typo-label();
 
-  position: absolute;
-  z-index: 1;
-  top: var(--spacing-1);
-  left: var(--spacing-3);
+  display: block;
+  padding: var(--spacing-1) var(--spacing-3);
 }
 
 .input__input {
   @include typo-body();
 
   position: relative;
-  padding: var(--spacing-5) var(--spacing-3) var(--spacing-2);
+  padding: 0 var(--spacing-3) var(--spacing-2);
   background-color: var(--color-brand-green-light);
   border: 0;
   border-bottom: 2px solid transparent;
@@ -39,6 +38,8 @@
 .input__error {
   @include typo-label();
   color: var(--color-signal-red);
+  padding-top: var(--spacing-1);
+  background-color: white;
 }
 
 .input--error {

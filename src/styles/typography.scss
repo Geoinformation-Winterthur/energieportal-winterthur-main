@@ -103,7 +103,7 @@
 
 @mixin typo-label {
   font-size: clamp(0.75rem, 0.4745rem + 0.3756vw, 0.8125rem);
-  line-height: 130%;
+  line-height: 100%;
   font-weight: 400;
   letter-spacing: 0.005625rem;
 }
