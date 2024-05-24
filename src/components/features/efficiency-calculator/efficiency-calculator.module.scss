@@ -58,7 +58,7 @@
   grid-template-columns: 1fr;
   gap: var(--spacing-4);
 
-  @include tablet-up {
+  @include desktop-up {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -68,8 +68,8 @@
   grid-template-columns: 1fr;
   gap: var(--spacing-4);
 
-  @include tablet-up {
-    grid-template-columns: 1fr calc(70% - var(--spacing-2));
+  @include desktop-up {
+    grid-template-columns: auto calc(40% - var(--spacing-2));
   }
 }
 

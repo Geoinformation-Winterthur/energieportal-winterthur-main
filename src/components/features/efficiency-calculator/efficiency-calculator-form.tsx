@@ -83,6 +83,11 @@ export const EfficiencyCalculatorForm = ({ handleSubmit }: EfficiencyCalculatorF
       <div>
         <h5 className={styles["efficiency-calculator-form__title"]}>{t("my_property.refurbishment_efficiency_calculator.form_power_consumption")}</h5>
         <div className={styles["efficiency-calculator-form__70-30"]}>
+          <Select
+            label={t("my_property.refurbishment_efficiency_calculator.form_unit")}
+            options={unitOptions}
+            onChange={(_, value) => setUnit(value ?? "")}
+          />
           <Input
             label={t("my_property.refurbishment_efficiency_calculator.form.label_power_consumption")}
             type="number"
@@ -93,11 +98,6 @@ export const EfficiencyCalculatorForm = ({ handleSubmit }: EfficiencyCalculatorF
             onBlur={(e) => setPowerConsumptionError(e.target.value === "")}
             error={powerConsumptionError ? t("my_property.refurbishment_efficiency_calculator.form_error") : ""}
             onKeyDown={(e) => blockInvalidChars(e)}
-          />
-          <Select
-            label={t("my_property.refurbishment_efficiency_calculator.form_unit")}
-            options={unitOptions}
-            onChange={(_, value) => setUnit(value ?? "")}
           />
         </div>
       </div>
