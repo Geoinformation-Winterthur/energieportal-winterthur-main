@@ -1,5 +1,9 @@
 export const unitOptions = [
   {
+    value: "Heizöl in Liter",
+    label: "Heizöl in Liter"
+  },
+  {
     value: "Gas in kWh",
     label: "Gas in kWh"
   },
@@ -30,9 +34,5 @@ export const unitOptions = [
   {
     value: "Strombedarf (Elektroheizung) in kWh",
     label: "Strombedarf (Elektroheizung) in kWh"
-  },
-  {
-    value: "Heizöl in Liter",
-    label: "Heizöl in Liter"
   }
 ]
