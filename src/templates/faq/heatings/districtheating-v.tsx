@@ -12,11 +12,11 @@ export const DistrictHeatingV = ({ inPlanning }: DistrictHeatingVProps) => {
   const { t } = useTranslation();
 
   const renderInPlanning = () => (
-    <p><span className={styles["faq__box-title"]}>{t("my_property.heating_faq.districtheating_v.status_pl_1")}</span> {t("my_property.heating_faq.districtheating_v.status_pl_2")} <a href={t("my_property.heating_faq.districtheating_v.status_pl_link_target_1")}>{t("my_property.heating_faq.districtheating_v.status_pl_link_1")}</a> {t("my_property.heating_faq.districtheating_v.status_pl_3")} <a href={t("my_property.heating_faq.districtheating_v.status_pl_link_target_2")}>{t("my_property.heating_faq.districtheating_v.status_pl_link_2")}</a>{t("my_property.heating_faq.districtheating_v.status_pl_4")}</p>
+    <p><span className={styles["faq__box-title"]}>{t("my_property.heating_faq.districtheating_v.status_pl_1")}</span> {t("my_property.heating_faq.districtheating_v.status_pl_2")} <a href={t("my_property.heating_faq.districtheating_v.status_pl_link_target_1")}>{t("my_property.heating_faq.districtheating_v.status_pl_link_1")}</a> {t("my_property.heating_faq.districtheating_v.status_pl_3")} <a href={t("my_property.heating_faq.districtheating_v.status_pl_link_target_2")}>{t("my_property.heating_faq.districtheating_v.status_pl_link_2")}</a>{t("my_property.heating_faq.districtheating_v.status_pl_4")} <a href={t("my_property.heating_faq.districtheating_v.status_pl_link_target_3")} target="_blank">{t("my_property.heating_faq.districtheating_v.status_pl_link_3")}</a>{t("my_property.heating_faq.districtheating_v.status_pl_5")}</p>
   )
 
   const renderInReview = () => (
-    <p><span className={styles["faq__box-title"]}>{t("my_property.heating_faq.districtheating_v.status_pr_1")}</span> {t("my_property.heating_faq.districtheating_v.status_pr_2")}</p>
+    <p><span className={styles["faq__box-title"]}>{t("my_property.heating_faq.districtheating_v.status_pr_1")}</span> {t("my_property.heating_faq.districtheating_v.status_pr_2")} <a href={t("my_property.heating_faq.districtheating_v.status_pr_link_target_1")} target="_blank">{t("my_property.heating_faq.districtheating_v.status_pr_link_1")}</a>{t("my_property.heating_faq.districtheating_v.status_pr_3")}</p>
   )
 
   return (
