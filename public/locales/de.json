@@ -421,7 +421,7 @@
     "my_property.heating_section_title": "Wie viel kostet ein erneuerbares Heizsystem? ",
     "my_property.heating_section_description": "Bei der Wahl des Heizsystems sind die Investitionskosten, die Energiekosten sowie die Kosten für Wartung und Unterhalt über die gesamte Lebensdauer zu berücksichtigen. Der Heizkostenrechner bietet eine schnelle Übersicht. Für eine vertiefte Betrachtung der individuellen Kosten und Förderbeiträge empfehlen wir eine Energieberatung.",
     "my_property.solar_potential.title": "Solarpotenzial auf Ihrer Dachfläche",
-    "my_property.solar_potential.lead": "Die folgenden Informationen stammen aus dem städtischen Solarkataster. Die errechnete Solarstrommenge stellt das idealisierte Potenzial dar, wenn das gesamte Dach mit Solarmodulen belegt wird. Die Berechnung berücksichtigt die Sonneneinstrahlung sowie die Dachneigung und -ausrichtung, nicht jedoch Verschattungen, Kamine oder Dachfenster.",
+    "my_property.solar_potential.lead": "Die folgenden Informationen stammen aus dem städtischen Solarkataster und stellen das idealisierte Potenzial dar. Die Berechnung berücksichtigt die Sonneneinstrahlung sowie die Dachneigung und -ausrichtung, nicht jedoch Verschattungen, Kamine oder Dachfenster.",
     "my_property.solar_potential_image_alt": "Solarpotenzial auf Ihrer Dachfläche",
     "my_property.solar_potential_legend_1": "Sehr gut",
     "my_property.solar_potential_legend_2": "Gut",
