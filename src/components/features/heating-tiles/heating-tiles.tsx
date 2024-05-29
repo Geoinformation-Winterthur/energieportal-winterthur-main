@@ -15,6 +15,7 @@ type RawHeating = {
   code: string;
   isRecommendation: boolean;
   status: string;
+  area: string;
 }
 
 export const HeatingTiles = () => {
@@ -25,6 +26,8 @@ export const HeatingTiles = () => {
   const [currentAddress, setCurrentAddress] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [heatingSystems, setHeatingSystems] = useState<Heating[]>([]);
+
+  const orderOfHeatings = ["districtheating", "geothermal", "airwater", "groundwater", "pellet"];
 
   const transformHeatingData = (heatings: RawHeating[]) => {
     return heatings.map(heating => {
@@ -59,15 +62,28 @@ export const HeatingTiles = () => {
   }, [searchParams])
 
   useEffect(() => {
-    const sortHeatingsByRecommendation = (heatings: RawHeating[]) => {
+    const sortHeatings = (heatings: RawHeating[]) => {
       return transformHeatingData(heatings).sort((a, b) => {
         if (a.isRecommendation && !b.isRecommendation) {
           return -1;
-        } else if (!a.isRecommendation && b.isRecommendation) {
+        }
+        if (!a.isRecommendation && b.isRecommendation) {
           return 1;
-        } else {
+        }
+
+        const indexA = orderOfHeatings.indexOf(a.code);
+        const indexB = orderOfHeatings.indexOf(b.code);
+
+        if (indexA === -1 && indexB !== -1) {
+          return 1;
+        }
+        if (indexA !== -1 && indexB === -1) {
+          return -1;
+        }
+        if (indexA === -1 && indexB === -1) {
           return 0;
         }
+        return indexA - indexB;
       });
     }
 
@@ -79,7 +95,7 @@ export const HeatingTiles = () => {
       const heatingData = await getHeatingSystems(eCoordinate, nCoordinate);
 
       if (heatingData) {
-        setHeatingSystems(sortHeatingsByRecommendation(heatingData));
+        setHeatingSystems(sortHeatings(heatingData));
       }
       setIsLoading(false);
     }
