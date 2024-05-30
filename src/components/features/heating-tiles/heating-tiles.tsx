@@ -27,8 +27,6 @@ export const HeatingTiles = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [heatingSystems, setHeatingSystems] = useState<Heating[]>([]);
 
-  const orderOfHeatings = ["districtheating", "geothermal", "airwater", "groundwater", "pellet"];
-
   const transformHeatingData = (heatings: RawHeating[]) => {
     return heatings.map(heating => {
       if (heating.code === "districtheating") {
@@ -62,6 +60,8 @@ export const HeatingTiles = () => {
   }, [searchParams])
 
   useEffect(() => {
+    const orderOfHeatings = ["districtheating", "geothermal", "airwater", "groundwater", "pellet"];
+
     const sortHeatings = (heatings: RawHeating[]) => {
       return transformHeatingData(heatings).sort((a, b) => {
         if (a.isRecommendation && !b.isRecommendation) {
