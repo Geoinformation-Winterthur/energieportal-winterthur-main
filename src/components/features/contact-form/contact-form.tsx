@@ -77,7 +77,7 @@ export const ContactForm = ({ }: ContactFormProps) => {
     // mock error, TODO: do this according to the actual response
     setServerFeedbackSuccess(false);
     setServerFeedbackText(t("contact.form.feedback.error"));
-  
+
     const response = await fetch("https://stadtplantest.winterthur.ch/energieportal-service/ContactForm?dryRun=true", {
       method: "POST",
       headers: {
@@ -85,7 +85,7 @@ export const ContactForm = ({ }: ContactFormProps) => {
         "User-Agent": "Mozilla/5.0",
         "Content-Type": "application/json",
       },
-      body: `{"objectAddress":"","firstName":"","lastName":"","eMailAddress":"","phoneNo":"","asksForCallback":false,"whenToCallBack":"","requestText":""}`,
+      body: body
     });
     const data = await response.json();
     console.log(data);
