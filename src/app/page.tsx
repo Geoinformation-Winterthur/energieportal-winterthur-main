@@ -9,7 +9,7 @@ import { AddressSearchBar } from "@/components/features/address-search-bar/addre
 import { MyPropertyPage } from "@/templates/my-property/my-property";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
-import { useTranslation } from "../../../i18n";
+import { useTranslation } from "../../i18n";
 
 export default function OnlineConsulting() {
   const { t } = useTranslation();

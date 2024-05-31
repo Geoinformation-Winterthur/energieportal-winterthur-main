@@ -24,7 +24,7 @@ export const Navigation = ({ }) => {
   const items = [
     {
       title: t('general.navigation.online_consulting'),
-      slug: "/online-beratung"
+      slug: "/"
     },
     {
       title: t('general.navigation.our_consulting_service'),
