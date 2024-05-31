@@ -3,12 +3,11 @@ import { Button } from "@/components/common/button/button";
 import { Contact } from "@/components/common/contact/contact";
 import { Checkbox } from "@/components/form/checkbox/checkbox";
 import { Input } from "@/components/form/input/input";
+import { Status } from "@/components/form/status/status";
 import { Textarea } from "@/components/form/textarea/textarea";
 import { useState } from "react";
 import { useTranslation } from "../../../../i18n";
 import styles from "./contact-form.module.scss";
-import { Autocomplete } from "@/components/form/autocomplete/autocomplete";
-import { Status } from "@/components/form/status/status";
 
 interface ContactFormProps { }
 
@@ -74,10 +73,6 @@ export const ContactForm = ({ }: ContactFormProps) => {
       requestText,
     });
 
-    // mock error, TODO: do this according to the actual response
-    setServerFeedbackSuccess(false);
-    setServerFeedbackText(t("contact.form.feedback.error"));
-
     const response = await fetch("https://stadtplantest.winterthur.ch/energieportal-service/ContactForm?dryRun=true", {
       method: "POST",
       headers: {
@@ -87,8 +82,9 @@ export const ContactForm = ({ }: ContactFormProps) => {
       },
       body: body
     });
-    const data = await response.json();
-    console.log(data);
+
+    setServerFeedbackSuccess(response.ok);
+    setServerFeedbackText(response.ok ? t("contact.form.feedback.success") : t("contact.form.feedback.error"));
   }
 
   return (
