@@ -16,7 +16,7 @@ export const DistrictHeatingP = () => {
         <h4 className={styles["faq__title"]}>{t("my_property.heating_faq.functionality")}</h4>
         <Accordion summary={t("my_property.heating_faq.districtheating_p.summary_1")}>
           <AccordionDetails>
-            {t("my_property.heating_faq.districtheating_p.detail_1")}
+            {t("my_property.heating_faq.districtheating_p.detail_1_1")} <a href={t("my_property.heating_faq.districtheating_p.detail_link_target_1")} target="_blank">{t("my_property.heating_faq.districtheating_p.detail_link_1")}</a>{t("my_property.heating_faq.districtheating_p.detail_1_2")}
           </AccordionDetails>
         </Accordion>
         <Accordion summary={t("my_property.heating_faq.districtheating_p.summary_2")} >

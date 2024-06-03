@@ -28,7 +28,7 @@ export const DistrictHeatingV = ({ inPlanning }: DistrictHeatingVProps) => {
         <h4 className={styles["faq__title"]}>{t("my_property.heating_faq.functionality")}</h4>
         <Accordion summary={t("my_property.heating_faq.districtheating_v.summary_1")}>
           <AccordionDetails>
-            {t("my_property.heating_faq.districtheating_v.detail_1")}
+            {t("my_property.heating_faq.districtheating_v.detail_1_1")} <a href={t("my_property.heating_faq.districtheating_v.detail_link_target_1")} target="_blank">{t("my_property.heating_faq.districtheating_v.detail_link_1")}</a>{t("my_property.heating_faq.districtheating_v.detail_1_2")}
           </AccordionDetails>
         </Accordion>
         <Accordion summary={t("my_property.heating_faq.districtheating_v.summary_2")} >
