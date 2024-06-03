@@ -1,4 +1,5 @@
 import { Icon } from "@/components/common/icon/icon";
+import { useWindowSize } from "@/hooks/useWindowSize";
 import { getCo2EmissionData } from "@/utils/get-co2-emission";
 import { getPropertyFacts } from "@/utils/get-property-facts";
 import clsx from "clsx";
@@ -15,7 +16,8 @@ export const Co2Emissions = () => {
   const searchParams = useSearchParams();
   const [currentAddress, setCurrentAddress] = useState<string | null>(null);
   const [co2EmissionValue, setCo2EmissionValue] = useState<string | null>(null);
-  const [isLoading, setIsLoading] = useState(false)
+  const [isLoading, setIsLoading] = useState(false);
+  const { isMobile } = useWindowSize();
   const isVeryHigh = co2EmissionValue === "> 25";
   const isHigh = co2EmissionValue === "20 - 25";
   const isRatherHigh = co2EmissionValue === "15 - 20";
@@ -122,6 +124,34 @@ export const Co2Emissions = () => {
               {renderVeryLow()}
             </li>
           </ul>
+          {isMobile &&
+            <div className={styles["co2-emissions__legend"]}>
+              <div className={styles["co2-emissions__legend-item"]}>
+                <span className={`${styles["co2-emissions__legend-color"]} ${styles["co2-emissions__legend-color--very-high"]}`}></span>
+                {t("my_property.co2_emissions.scale_value.very_high")}
+              </div>
+              <div className={styles["co2-emissions__legend-item"]}>
+                <span className={`${styles["co2-emissions__legend-color"]} ${styles["co2-emissions__legend-color--high"]}`}></span>
+                {t("my_property.co2_emissions.scale_value.high")}
+              </div>
+              <div className={styles["co2-emissions__legend-item"]}>
+                <span className={`${styles["co2-emissions__legend-color"]} ${styles["co2-emissions__legend-color--rather-high"]}`}></span>
+                {t("my_property.co2_emissions.scale_value.rather_high")}
+              </div>
+              <div className={styles["co2-emissions__legend-item"]}>
+                <span className={`${styles["co2-emissions__legend-color"]} ${styles["co2-emissions__legend-color--moderate"]}`}></span>
+                {t("my_property.co2_emissions.scale_value.moderate")}
+              </div>
+              <div className={styles["co2-emissions__legend-item"]}>
+                <span className={`${styles["co2-emissions__legend-color"]} ${styles["co2-emissions__legend-color--low"]}`}></span>
+                {t("my_property.co2_emissions.scale_value.low")}
+              </div>
+              <div className={styles["co2-emissions__legend-item"]}>
+                <span className={`${styles["co2-emissions__legend-color"]} ${styles["co2-emissions__legend-color--very-low"]}`}></span>
+                {t("my_property.co2_emissions.scale_value.very_low")}
+              </div>
+            </div>
+          }
           <div>
             {isVeryLow &&
               <>

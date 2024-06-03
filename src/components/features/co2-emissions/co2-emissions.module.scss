@@ -52,6 +52,14 @@
     display: none;
   }
 
+  &:not(.co2-emissions__scale-value--active) {
+    display: none;
+
+    @include tablet-up {
+      display: flex;
+    }
+  }
+
   &.co2-emissions__scale-value--active {
     .co2-emissions-result {
       display: flex;
@@ -161,4 +169,48 @@
   display: flex;
   justify-content: center;
   color: var(--color-brand-red);
+}
+
+.co2-emissions__legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-4);
+  width: 100%;
+  padding-top: var(--spacing-6);
+}
+
+.co2-emissions__legend-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+}
+
+.co2-emissions__legend-color {
+  display: inline-block;
+  width: var(--spacing-4);
+  height: var(--spacing-4);
+}
+
+.co2-emissions__legend-color--very-high {
+  background-color: var(--color-scale-red-dark);
+}
+
+.co2-emissions__legend-color--high {
+  background-color: var(--color-scale-red);
+}
+
+.co2-emissions__legend-color--rather-high {
+  background-color: var(--color-scale-orange);
+}
+
+.co2-emissions__legend-color--moderate {
+  background-color: var(--color-scale-yellow);
+}
+
+.co2-emissions__legend-color--low {
+  background-color: var(--color-scale-green-light);
+}
+
+.co2-emissions__legend-color--very-low {
+  background-color: var(--color-scale-green);
 }
