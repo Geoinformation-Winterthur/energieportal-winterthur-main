@@ -18,7 +18,7 @@ export const Header = () => {
         <div className={styles["header__topline"]}>
           <div className={styles["header__red-strip"]} />
           <Link href="/" className={clsx(styles["header__domain"], "link-primary")}>{t('general.header.domain')}</Link>
-          {!isMobile && <Logo type="full" width={260} />}
+          {!isMobile && <a className='no-animation' href={t("general.header.logo_link")} target='_blank'><Logo type="full" width={260} /></a>}
         </div>
         <Link href="/"><h1 className={styles["header__title"]}>{t('general.header.title')}</h1></Link>
       </div>
