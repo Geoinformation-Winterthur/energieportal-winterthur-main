@@ -5,4 +5,5 @@ export type Heating = {
   isRecommendation: boolean;
   status: string;
   isDistrictHeating?: boolean;
+  area: string;
 }

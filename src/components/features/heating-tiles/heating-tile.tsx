@@ -34,7 +34,7 @@ export const HeatingTile = ({ heating, allRecommendations }: HeatingTileProps) =
         {allRecommendations?.map(heating => (
           <TabPanel value={heating.code} key={heating.code}>
             <FullWidth variant="white">
-              <HeatingsFaq code={heating.code} />
+              <HeatingsFaq code={heating.code === "districtheating_v" && heating.area === "P1" ? "districtheating_p1" : heating.code} />
             </FullWidth>
           </TabPanel>
         ))}
@@ -82,9 +82,9 @@ export const HeatingTile = ({ heating, allRecommendations }: HeatingTileProps) =
 
   return heating.isRecommendation
     ? (
-        <Recommendation title={t("my_property.heating_recommendations.flag")} height={730}>
-          {renderContent()}
-        </Recommendation>
+      <Recommendation title={t("my_property.heating_recommendations.flag")} height={730}>
+        {renderContent()}
+      </Recommendation>
     ) : (
       <div className={styles["heating-tile"]}>
         <div className={styles["heating-tile__inner"]}>
