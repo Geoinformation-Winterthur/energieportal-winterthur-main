@@ -3,14 +3,22 @@ import { AccordionDetails } from "@mui/material";
 import { useTranslation } from "../../../../i18n";
 import styles from "../faq.module.scss";
 
-export const DistrictHeatingP = () => {
+interface DistrictHeatingPProps {
+  isP1?: boolean;
+}
+
+export const DistrictHeatingP = ({ isP1 }: DistrictHeatingPProps) => {
 
   const { t } = useTranslation();
+
+  const renderP1Status = () => (
+    <p>{t("my_property.heating_faq.districtheating_p1.status_1")} <a href={t("my_property.heating_faq.districtheating_p1.status_link_target_1")}>{t("my_property.heating_faq.districtheating_p1.status_link_1")}</a> {t("my_property.heating_faq.districtheating_p1.status_2")} <a href={t("my_property.heating_faq.districtheating_p1.status_link_target_2")}>{t("my_property.heating_faq.districtheating_p1.status_link_2")}</a>{t("my_property.heating_faq.districtheating_p1.status_3")} <a href={t("my_property.heating_faq.districtheating_p1.status_link_target_3")} target="_blank">{t("my_property.heating_faq.districtheating_p1.status_link_3")}</a>{t("my_property.heating_faq.districtheating_p1.status_4")}</p>
+  )
 
   return (
     <div className={styles["faq"]}>
       <div className={styles["faq__box"]}>
-        <p>{t("my_property.heating_faq.districtheating_p.status_1")} <a href={t("my_property.heating_faq.districtheating_p.status_link_target_1")}>{t("my_property.heating_faq.districtheating_p.status_link_1")}</a> {t("my_property.heating_faq.districtheating_p.status_2")} <a href={t("my_property.heating_faq.districtheating_p.status_link_target_2")}>{t("my_property.heating_faq.districtheating_p.status_link_2")}</a>{t("my_property.heating_faq.districtheating_p.status_3")} <a href={t("my_property.heating_faq.districtheating_p.status_link_target_3")} target="_blank">{t("my_property.heating_faq.districtheating_p.status_link_3")}</a>{t("my_property.heating_faq.districtheating_p.status_4")} </p>
+        {isP1 ? renderP1Status() : <p>{t("my_property.heating_faq.districtheating_p.status_1")} <a href={t("my_property.heating_faq.districtheating_p.status_link_target_1")}>{t("my_property.heating_faq.districtheating_p.status_link_1")}</a> {t("my_property.heating_faq.districtheating_p.status_2")} <a href={t("my_property.heating_faq.districtheating_p.status_link_target_2")}>{t("my_property.heating_faq.districtheating_p.status_link_2")}</a>{t("my_property.heating_faq.districtheating_p.status_3")} <a href={t("my_property.heating_faq.districtheating_p.status_link_target_3")} target="_blank">{t("my_property.heating_faq.districtheating_p.status_link_3")}</a>{t("my_property.heating_faq.districtheating_p.status_4")} </p>}
       </div>
       <div className={styles["faq__acc-wrapper"]}>
         <h4 className={styles["faq__title"]}>{t("my_property.heating_faq.functionality")}</h4>
