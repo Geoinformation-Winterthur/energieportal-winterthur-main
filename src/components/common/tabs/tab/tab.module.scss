@@ -2,6 +2,8 @@
 @import "../../../../styles/typography.scss";
 
 .tab {
+  @include typo-headline-3();
+
   display: flex;
   padding: var(--spacing-2) var(--spacing-4);
   justify-content: center;
@@ -9,12 +11,23 @@
   flex: 1 1 auto;
   height: 67px;
   width: 100%;
-  background: var(--color-brand-green-light-50);
+  background-color: var(--color-brand-green-light-50);
   overflow: hidden;
 
-  @include typo-tab;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
+
+  &:not(.tab--active) {
+
+    &:hover,
+    &:focus-visible {
+      color: var(--color-headline-primary);
+      background-color: var(--color-brand-green-light);
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    }
+  }
 
   &.tab--active {
+    color: var(--color-headline-primary);
     background: var(--color-brand-green-light);
 
     &.tab--default {
@@ -24,10 +37,21 @@
   }
 
   &.tab--reduced {
+    @include typo-headline-4();
+
     background: var(--color-footer-text);
 
     &.tab--active {
       background: var(--color-white);
+    }
+
+    &:not(.tab--active) {
+
+      &:hover,
+      &:focus-visible {
+        background-color: var(--color-tab-hover);
+        box-shadow: none;
+      }
     }
   }
 
@@ -42,8 +66,6 @@
   }
 
   .tab__inner {
-    @include typo-headline-4();
-
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;

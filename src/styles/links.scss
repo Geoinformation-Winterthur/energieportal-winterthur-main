@@ -38,6 +38,10 @@ a.link-primary {
   }
 }
 
+a.no-animation svg {
+  animation: none;
+}
+
 @keyframes animate {
   0% {
     transform: translateX(0);

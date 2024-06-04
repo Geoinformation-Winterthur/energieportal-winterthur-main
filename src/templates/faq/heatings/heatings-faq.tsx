@@ -10,9 +10,11 @@ interface HeatingsFaqProps {
   code: HeatingCode;
 }
 export const HeatingsFaq = ({ code }: HeatingsFaqProps) => {
+
   const heatingsFaqMap = {
     "airwater": <Airwater />,
     "districtheating_v": <DistrictHeatingP />,
+    "districtheating_p1": <DistrictHeatingP isP1 />,
     "districtheating_pl": <DistrictHeatingV inPlanning />,
     "districtheating_pr": <DistrictHeatingV />,
     "geothermal": <Geothermal />,

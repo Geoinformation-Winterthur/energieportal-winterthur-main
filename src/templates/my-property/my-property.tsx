@@ -15,13 +15,23 @@ import { PropertyImage } from "@/components/features/property-image/property-ima
 import { SavingsPotential } from "@/components/features/savings-potential/savings-potential"
 import { SolarPotential } from "@/components/features/solar-potential/solar-potential"
 import Link from "next/link"
+import { useSearchParams } from "next/navigation"
+import { useEffect, useState } from "react"
 import { useTranslation } from "../../../i18n"
 import { HeatingRecommendations } from "../heating-recommandations/heating-recommandations"
 import styles from "./my-property.module.scss"
 import { PropertyFactsAccordion } from "./property-facts-accordion"
 
 export const MyPropertyPage = () => {
+  const searchParams = useSearchParams();
+  const [currentAddress, setCurrentAddress] = useState<string | null>(null);
   const { t } = useTranslation();
+
+  useEffect(() => {
+    if (searchParams.get("address")) {
+      setCurrentAddress(searchParams.get("address") ?? "");
+    }
+  }, [searchParams])
 
   return (
     <div className={styles["my-property"]}>
@@ -30,7 +40,7 @@ export const MyPropertyPage = () => {
         <AddressSearchBar variant="light" />
         <Co2Emissions />
         <div className={styles["my-property__property-facts"]}>
-          <h3 className={styles["property-facts__title"]}>{t("my_property.property_facts_title")}</h3>
+          <h3 className={styles["property-facts__title"]}>{t("my_property.property_facts_title")} {currentAddress}</h3>
           <div className={styles["my-property__wrapper"]}>
             <PropertyFacts />
             <div>

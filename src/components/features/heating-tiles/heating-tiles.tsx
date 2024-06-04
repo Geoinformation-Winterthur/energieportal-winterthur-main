@@ -46,7 +46,8 @@ export const HeatingTiles = () => {
           code: specificCode,
           isRecommendation: heating.isRecommendation,
           status: heating.status,
-          isDistrictHeating: true
+          isDistrictHeating: true,
+          area: heating.area
         } as Heating;
       }
       return heating as Heating;

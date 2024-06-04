@@ -2,6 +2,7 @@
   "translation": {
     "general.header.title": "Energieportal Winterthur",
     "general.header.domain": "stadt.winterthur.ch/energieportal",
+    "general.header.logo_link": "https://stadt.winterthur.ch/",
     "general.navigation.online_consulting": "Online-Beratung",
     "general.navigation.our_consulting_service": "Unser Beratungsangebot",
     "general.navigation.contact": "Kontakt",
@@ -23,7 +24,7 @@
     "online_consulting.teaser_2_title": "Energieplan Winterthur",
     "online_consulting.teaser_2_description": "Im Stadtplan von Winterthur finden Sie den aktuellen kommunalen Energieplan.",
     "online_consulting.teaser_2_image": "stadtplan_winterthur.jpg",
-    "online_consulting.teaser_2_image_credits": "Bildquelle: Maps Winterthur",
+    "online_consulting.teaser_2_image_credits": "Bildquelle: Kommunaler Energieplan",
     "online_consulting.teaser_2_link": "Zum Energieplan",
     "online_consulting.teaser_2_link_target": "https://stadtplan.winterthur.ch/?topic=KommunalerEnergieplan",
     "online_consulting.section_title": "Wir unterstützen Sie gerne.",
@@ -74,7 +75,7 @@
     "my_property.co2_emissions.result.very_low_2": "Das Gebäude stösst zwischen 0 bis 5 kg CO₂-Emissionen pro m² beheizte Fläche pro Jahr aus.",
     "my_property.co2_emissions.result.very_low_3": "Die CO₂-Emissionen sind sehr gering. Ihr Gebäude hat bereits eine erneuerbare Heizlösung oder ist an der Fernwärme oder einem Quartierswärmeverbund angeschlossen.",
     "my_property.co2_emissions.result.no_result": "Es liegen aktuell noch keine Informationen über die CO₂-Emissionen vor.",
-    "my_property.property_facts_title": "Gebäudeinformation",
+    "my_property.property_facts_title": "Gebäudeinformation zu",
     "my_property.property_facts_category": "Gebäudekategorie",
     "my_property.property_facts_year": "Baujahr",
     "my_property.property_facts_area": "Gebäudefläche",
@@ -142,7 +143,7 @@
         "geringe Kosten für Wartung und Unterhalt"
       ],
       "cons": [
-        "bei Altbau mit grossen Heizkörpern oder einer Fussbodenheizung",
+        "bei Altbauten braucht es oft neue Heizkörper oder eine Bodenheizung",
         "Beurteilung der Lärmsituation erforderlich"
       ]
     },
@@ -158,7 +159,8 @@
       "cons": [
         "Pelletlagerraum und Kamin erforderlich",
         "Ausstoss von Luftschadstoffen",
-        "höhere Kosten für Wartung und Unterhalt"
+        "höhere Kosten für Wartung und Unterhalt",
+        "die verfügbaren Holzreserven sind knapp"
       ]
     },
     "my_property.heating_recommendations.districtheating.title": "Vorgesehene Wärmenetze",
@@ -267,7 +269,7 @@
     "my_property.heating_faq.geothermal.summary_7": "Brauche ich eine Bewilligung oder reicht eine Meldung?",
     "my_property.heating_faq.geothermal.detail_7": "In den meisten Fällen sind Erdsonden-Wärmepumpen lediglich meldepflichtig. Dabei genügt eine elektronische Eingabe der Meldung über das Webportal des Kantons Zürich. Werden Erdsonden innerhalb des Baulinienbereichs realisiert, braucht es dafür eine Baubewilligung. Zusätzlich zur Meldung oder zur Baubewilligung der Stadt Winterthur ist eine gewässerschutzrechtliche Bewilligung des Kantons einzuholen. Alle Informationen dazu finden Sie auf der Webseite des Kantons.",
     "my_property.heating_faq.geothermal.summary_8": "Welche Abstände müssen bei Erdsonden eingehalten werden?",
-    "my_property.heating_faq.geothermal.detail_8": "Sollen die Erdsonden weniger als 2.5 Meter vom Nachbargrundstück entfernt liegen, benötigen Sie die schriftliche Zustimmung des Nachbarn respektive der Nachbarin. Befindet sich der Standort weniger als 30 Meter von einer Bahnlinie, einem Bahn- oder einem Nationalstrassentunnel entfernt, ist eine Stellungnahme der SBB bzw. des ASTRA erforderlich. Erdsonden im Gewässerraum sind grundsätzlich nicht bewilligungsfähig.",
+    "my_property.heating_faq.geothermal.detail_8": "Zwischen zwei Erdsonden wird ein Mindestabstand von fünf Metern empfohlen. Liegen die Erdsonden zudem weniger als 2.5 Meter vom Nachbargrundstück entfernt, benötigen Sie die schriftliche Zustimmung des Nachbarn respektive der Nachbarin. Befindet sich der Standort weniger als 30 Meter von einer Bahnlinie, einem Bahn- oder einem Nationalstrassentunnel entfernt, ist eine Stellungnahme der SBB bzw. des ASTRA erforderlich. Erdsonden im Gewässerraum sind grundsätzlich nicht bewilligungsfähig.",
     "my_property.heating_faq.geothermal.summary_9": "Wie viel kostet mich die Meldung oder die Bewilligung?",
     "my_property.heating_faq.geothermal.detail_9_1": "Die Meldebestätigung ist derzeit noch kostenlos. Die Kosten eines Baubewilligungsverfahrens hängen von der Bausumme ab. Alle Informationen zu den Kosten finden Sie",
     "my_property.heating_faq.geothermal.detail_9_link_1": "hier",
@@ -335,7 +337,17 @@
     "my_property.heating_faq.pellet.detail_8_link": "hier",
     "my_property.heating_faq.pellet.detail_8_link_target": "https://stadt.winterthur.ch/themen/leben-in-winterthur/planen-und-bauen/wir-beraten-sie/baubewilligungsverfahren/kosten-des-baubewilligungsverfahren",
     "my_property.heating_faq.pellet.detail_8_2": ".",
-    "my_property.heating_faq.districtheating_p.status_1": "Sie können Ihre Liegenschaft an die Fernwärme anschliessen. Informieren Sie sich über das weitere Vorgehen bei Stadtwerk Winterthur Kundenberatung Wärme unter",
+    "my_property.heating_faq.districtheating_p1.status_1": "Sie können Ihre Liegenschaft an die Fernwärme anschliessen. Informieren Sie sich über das weitere Vorgehen bei Stadtwerk Winterthur Kundenberatung Wärme unter",
+    "my_property.heating_faq.districtheating_p1.status_link_1": "052 267 16 29",
+    "my_property.heating_faq.districtheating_p1.status_link_target_1": "tel:052 267 16 29",
+    "my_property.heating_faq.districtheating_p1.status_2": "oder",
+    "my_property.heating_faq.districtheating_p1.status_link_2": "stadtwerk.waerme@win.ch",
+    "my_property.heating_faq.districtheating_p1.status_link_target_2": "mailto:stadtwerk.waerme@win.ch",
+    "my_property.heating_faq.districtheating_p1.status_3": ". Mehr zu Wärmenetzen finden Sie",
+    "my_property.heating_faq.districtheating_p1.status_link_3": "hier",
+    "my_property.heating_faq.districtheating_p1.status_link_target_3": "https://stadtwerk.winterthur.ch/Angebot/Waerme/Waermenetze",
+    "my_property.heating_faq.districtheating_p1.status_4": ".",
+    "my_property.heating_faq.districtheating_p.status_1": "Sie können Ihre Liegenschaft an das Wärmenetz anschliessen. Informieren Sie sich über das weitere Vorgehen bei Stadtwerk Winterthur Kundenberatung Wärme unter",
     "my_property.heating_faq.districtheating_p.status_link_1": "052 267 16 29",
     "my_property.heating_faq.districtheating_p.status_link_target_1": "tel:052 267 16 29",
     "my_property.heating_faq.districtheating_p.status_2": "oder",
@@ -346,7 +358,10 @@
     "my_property.heating_faq.districtheating_p.status_link_target_3": "https://stadtwerk.winterthur.ch/Angebot/Waerme/Waermenetze",
     "my_property.heating_faq.districtheating_p.status_4": ".",
     "my_property.heating_faq.districtheating_p.summary_1": "Kann ich meine Liegenschaft an ein Wärmenetz anschliessen?",
-    "my_property.heating_faq.districtheating_p.detail_1": "Der kommunale Energieplan der Stadt zeigt, in welchen Gebieten bereits Fernwärme resp. ein Wärmenetz vorhanden ist. Diese Gebiete werden als «Prioritätsgebiet» bezeichnet. Ihre Liegenschaft befindet sich in einem solchen Gebiet. Der Anschluss an die Fernwärme resp. an das Wärmenetz ist in der Regel innerhalb eines Jahres möglich. Die individuelle Situation muss mit Stadtwerk Winterthur abgeklärt werden. Hausanschlüsse werden ausserhalb der Heizperiode – also von Mai bis September – erstellt.",
+    "my_property.heating_faq.districtheating_p.detail_1_1": "Der kommunale Energieplan zeigt, in welchen Gebieten bereits Fernwärme respektive ein Wärmenetz vorhanden ist. Diese Gebiete werden als «Prioritätsgebiet» bezeichnet und sollen in Zukunft verdichtet werden. Ihre Liegenschaft befindet sich in einem solchen Gebiet. Der Anschluss an die Fernwärme respektive an das Wärmenetz ist in der Regel innerhalb eines Jahres möglich. Die individuelle Situation muss mit Stadtwerk Winterthur abgeklärt werden. Hausanschlüsse werden ausserhalb der Heizperiode – also von Mai bis September – erstellt. Mehr Informationen zu Wärmenetzen finden Sie bei",
+    "my_property.heating_faq.districtheating_p.detail_link_1": "Stadtwerk Winterthur",
+    "my_property.heating_faq.districtheating_p.detail_link_target_1": "https://stadtwerk.winterthur.ch/Angebot/Waerme/Waermenetze",
+    "my_property.heating_faq.districtheating_p.detail_1_2": ".",
     "my_property.heating_faq.districtheating_p.summary_2": "Wie funktioniert ein Wärmenetz?",
     "my_property.heating_faq.districtheating_p.detail_2": "In einem Wärmenetz werden mehrere Liegenschaften von einer Heizzentrale aus über erdverlegte Leitungen mit Wärme versorgt. Quartierwärmeverbunde sind kleinere Wärmenetze, die Wärme an die Liegenschaften im Quartier verteilen. In den Leitungen wird Wasser mit bis zu 85 Grad Celsius geführt.",
     "my_property.heating_faq.districtheating_p.summary_3": "Was ist Fernwärme?",
@@ -390,7 +405,10 @@
     "my_property.heating_faq.districtheating_v.status_pr_link_target_1": "https://stadtwerk.winterthur.ch/Angebot/Waerme/Waermenetze",
     "my_property.heating_faq.districtheating_v.status_pr_3": ".",
     "my_property.heating_faq.districtheating_v.summary_1": "Kann ich meine Liegenschaft an ein Wärmenetz anschliessen?",
-    "my_property.heating_faq.districtheating_v.detail_1": "Der Energieplan zeigt, in welchen Gebieten in Winterthur bereits Wärmenetze vorhanden sind oder wo diese in Planung sind. Gebiete, in denen Wärmenetze vorgesehen sind, diese aber noch nicht gebaut sind, werden als «vorgesehene Wärmeversorgungsgebiete» bezeichnet. Ihre Liegenschaft befindet sich in einem solchen Gebiet.",
+    "my_property.heating_faq.districtheating_v.detail_1_1": "Der Energieplan zeigt, in welchen Gebieten in der Stadt Winterthur bereits Wärmenetze bestehen und wo diese in Planung oder in Prüfung sind. Gebiete, in denen Wärmenetze vorgesehen sind, diese aber noch nicht gebaut sind, werden als «vorgesehene Wärmeversorgungsgebiete» bezeichnet. Ihre Liegenschaft befindet sich in einem solchen Gebiet. Mehr Informationen zu Wärmenetzen finden Sie bei",
+    "my_property.heating_faq.districtheating_v.detail_link_1": "Stadtwerk Winterthur",
+    "my_property.heating_faq.districtheating_v.detail_link_target_1": "https://stadtwerk.winterthur.ch/Angebot/Waerme/Waermenetze",
+    "my_property.heating_faq.districtheating_v.detail_1_2": ".",
     "my_property.heating_faq.districtheating_v.summary_2": "Warum geht es so lange, bis ich weiss, ob und wann ein Wärmenetz gebaut wird?",
     "my_property.heating_faq.districtheating_v.detail_2": "Weil der Bau eines Wärmenetzes viel Zeit in Anspruch nimmt, ist es schwierig lange im Voraus konkrete Angaben zu machen. Je weiter fortgeschritten die Vorbereitung für die Erschliessung eines Gebietes ist, desto genauer kann die Wirtschaftlichkeit abgeschätzt und ein konkreter Zeitraum für den Bau angegeben werden.",
     "my_property.heating_faq.districtheating_v.summary_3": "Was beeinflusst die Wirtschaftlichkeit eines Wärmenetzes?",
@@ -416,11 +434,11 @@
     "my_property.heating_recommendations.accordion_link_target_1": "https://stadtplan.winterthur.ch/?topic=KommunalerEnergieplan",
     "my_property.heating_recommendations.accordion_detail_2": ". Der kommunale Energieplan dient als Instrument zur Koordination der Wärmeversorgung der Stadt und zeigt auf, welche erneuerbaren Energieträger in den jeweiligen Gebieten geeignet sind. Dabei werden Faktoren wie z.B. die vorhandene Wärmenetze oder die Bohrerlaubnis für Erdsonden berücksichtigt.",
     "my_property.heating_teaser_1_title": "Heizkostenrechner",
-    "my_property.heating_teaser_1_description": "Berechnen Sie Ihre Kosten im Heizkostenrechner.",
+    "my_property.heating_teaser_1_description": "Berechnen Sie Ihre Heizkosten für Einfamilienhäuser und kleine Mehrfamilienhäuser.",
     "my_property.heating_teaser_1_image": "wegweiser.jpg",
-    "my_property.heating_teaser_1_image_credits": "Bildquelle: Adobe Stock",
+    "my_property.heating_teaser_1_image_credits": "Bildquelle: Stadt Winterthur",
     "my_property.heating_teaser_1_link": "erneuerbarheizen.ch",
-    "my_property.heating_teaser_1_link_target": "https://erneuerbarheizen.ch",
+    "my_property.heating_teaser_1_link_target": "https://erneuerbarheizen.ch/heizkostenrechner/",
     "my_property.heating_teaser_2_title": "Förderbeiträge",
     "my_property.heating_teaser_2_description": "Erfahren Sie mehr zu den Förderbeiträgen.",
     "my_property.heating_teaser_2_image": "altstadt_winterthur.jpg",
@@ -463,7 +481,7 @@
     "my_property.solar_teaser_1_title": "Solarrechner",
     "my_property.solar_teaser_1_description": "Berechnen Sie Ihre Kosten im Solarrechner.",
     "my_property.solar_teaser_1_image": "solaranlage.jpg",
-    "my_property.solar_teaser_1_image_credits": "Bildquelle:",
+    "my_property.solar_teaser_1_image_credits": "Bildquelle: Stadt Winterthur",
     "my_property.solar_teaser_1_link": "EnergieSchweiz",
     "my_property.solar_teaser_1_link_target": "https://www.energieschweiz.ch/tools/solarrechner/",
     "my_property.solar_teaser_2_title": "Förderbeiträge",
@@ -548,7 +566,7 @@
     "my_property.solar_faq.thermal.detail_7_link_target": "https://stadt.winterthur.ch/themen/leben-in-winterthur/planen-und-bauen/wir-beraten-sie/baubewilligungsverfahren/kosten-des-baubewilligungsverfahren",
     "my_property.solar_faq.thermal.detail_7_2": ".",
     "my_property.refurbishment_efficiency_calculator.title": "Effizienz Ihrer Gebäudehülle",
-    "my_property.refurbishment_efficiency_calculator.lead": "Hier können Sie die Effizienz Ihrer Gebäudehülle freiwillig berechnen. Geben Sie dazu Ihren Energieverbrauch und die beheizte Fläche inklusive der Wände ein. Die Daten werden nicht gespeichert.",
+    "my_property.refurbishment_efficiency_calculator.lead": "Hier können Sie die Effizienz Ihrer Gebäudehülle berechnen. So können Sie abschätzen, ob sich eine energetische Sanierung für Ihr Gebäude lohnt.",
     "my_property.refurbishment_efficiency_calculator.form_building": "Gebäude",
     "my_property.refurbishment_efficiency_calculator.form_power_consumption": "Durchschnittlicher Energieverbrauch",
     "my_property.refurbishment_efficiency_calculator.form_unit": "Einheit des Energieverbrauchs (Pflichtfeld)",
@@ -556,7 +574,7 @@
     "my_property.refurbishment_efficiency_calculator.form.pladeholder": "Bitte auswählen",
     "my_property.refurbishment_efficiency_calculator.form.label_building_type": "Gebäudeart (Pflichtfeld)",
     "my_property.refurbishment_efficiency_calculator.form.label_building_area": "Energiebezugsfläche in m² (Pflichtfeld)",
-    "my_property.refurbishment_efficiency_calculator.form.label_construction_year": "Baujahr",
+    "my_property.refurbishment_efficiency_calculator.form.label_construction_year": "Baujahr der Heizung",
     "my_property.refurbishment_efficiency_calculator.form.label_power_consumption": "Energieverbrauch pro Jahr (Pflichtfeld)",
     "my_property.refurbishment_efficiency_calculator.form.label_hot_water": "Warmwasser über die Heizung?",
     "my_property.refurbishment_efficiency_calculator.form.label_number_persons": "Personen im Haushalt",
@@ -567,23 +585,23 @@
     "my_property.refurbishment_efficiency_calculator.result_box": "Empfehlung für Ihr Gebäude",
     "my_property.refurbishment_efficiency_calculator.result.bad": {
       "title": "Schlecht gedämmt:",
-      "text": "Die Gebäudehülle ist nicht oder schlecht gedämmt. Eine energetische Sanierung wird dringend empfohlen."
+      "text": "Die Gebäudehülle ist nicht oder schlecht gedämmt. Eine energetische Sanierung wird dringend empfohlen, um die benötigte Heizwärme zu senken. Sie finden Tipps zur energetischen Sanierung unten beim Energiesparpotenzial."
     },
     "my_property.refurbishment_efficiency_calculator.result.moderate": {
       "title": "Mässig gedämmt:",
-      "text": "Die Gebäudehülle ist nur mässig gedämmt. Eine energetische Sanierung wird empfohlen, um die benötigte Heizwärme zu senken."
+      "text": "Das Gebäude ist nur mässig gedämmt. Eine energetische Sanierung wird empfohlen, um die benötigte Heizwärme zu senken. Sie finden Tipps zur energetischen Sanierung unten beim Energiesparpotenzial."
     },
     "my_property.refurbishment_efficiency_calculator.result.good": {
       "title": "Gut gedämmt:",
-      "text": "Die Dämmung der Gebäudehülle ist auf einem guten Niveau. Es können weitere Optimierungen vorgenommen werden, um die benötigte Heizwärme weiter zu senken."
+      "text": "Die Dämmung der Gebäudehülle ist auf einem guten Niveau. Es können weitere Optimierungen vorgenommen werden, um die benötigte Heizwärme weiter zu senken. Sie finden Tipps zur energetischen Sanierung unten beim Energiesparpotenzial."
     },
     "my_property.refurbishment_efficiency_calculator.result.very_good": {
       "title": "Sehr gut gedämmt:",
-      "text": "Durch die ausgezeichnete Dämmung benötigen Sie nur sehr wenig Heizwärme."
+      "text": "Dank der ausgezeichneten Dämmung ist Ihre Gebäudehülle sehr effizient. Sie benötigen nur sehr wenig Heizwärme. Eine energetische Sanierung ist nicht notwendig."
     },
-    "my_property.refurbishment_efficiency_calculator.result_subtext": "Zum Vergleich: Ein Neubau benötigt etwa 50 kWh/m² pro Jahr. Das sind 5 Liter Heizöl pro m² Energiebezugsfläche.",
+    "my_property.refurbishment_efficiency_calculator.result_subtext": "Zum Vergleich: Ein Neubau benötigt etwa 50 kWh/m² Heizwärme pro Jahr. Das sind umgerechnet 5 Liter Heizöl pro m².",
     "my_property.refurbishment_efficiency_calculator.summary_1": "Was ist die Energiebezugsfläche?",
-    "my_property.refurbishment_efficiency_calculator.detail_1": "Die Energiebezugsfläche ist die Summe aller beheizten oder klimatisierten Flächen inklusive der Wände. Die Fläche des beheizten Dachgeschosses wird dabei erst ab einem Meter Höhe mitgerechnet. Trocknungs- oder Waschräume werden nicht dazugezählt.",
+    "my_property.refurbishment_efficiency_calculator.detail_1": "Die Energiebezugsfläche ist die Summe aller beheizten oder klimatisierten Flächen. Die Summe errechnet sich aus den äusseren Abmessungen einschliesslich der Wandquerschnitten. Zudem wird ein beheiztes Dachgeschoss erst ab einem Meter Höhe mitgerechnet. Trocknungs- oder Waschräume werden nicht dazugezählt.",
     "my_property.refurbishment_efficiency_calculator.summary_2": "Woher erhalte ich meinen durchschnittlichen Energieverbrauch pro Jahr?",
     "my_property.refurbishment_efficiency_calculator.detail_2": "Entnehmen Sie den Heizölverbrauch Ihrer Heizung aus dem Tankbuch. Bei einer Gasheizung oder einer Wärmepumpe kann der Gasverbrauch respektive der Stromverbrauch aus der Abrechnung von Stadtwerk Winterthur entnommen werden.",
     "my_property.refurbishment_saving_potential.title": "Energiesparpotenzial an der Gebäudehülle",

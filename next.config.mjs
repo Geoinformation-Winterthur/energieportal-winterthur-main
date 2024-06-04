@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
+  // basePath: "/energieportal",
+  images: { unoptimized: true },
   webpack: (config) => {
     config.module.rules.push({
       test: /\.svg$/i,
@@ -7,18 +10,7 @@ const nextConfig = {
       use: [{ loader: "@svgr/webpack", options: { icon: true } }],
     });
     return config;
-  },
-  async redirects() {
-    return [
-      {
-        source: '/',
-        destination: '/online-beratung',
-        permanent: true,
-      },
-    ]
-  },
+  }
 };
-
-
 
 export default nextConfig;
