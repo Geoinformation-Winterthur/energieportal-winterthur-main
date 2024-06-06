@@ -6,8 +6,6 @@ import { useTranslation } from '../../../../i18n';
 import { SolarFacts } from '../solar-facts/solar-facts';
 import { SolarImage } from '../solar-image/solar-image';
 import styles from './solar-potential.module.scss';
-import { Accordion } from '@/components/common/accordion/accordion';
-import { AccordionDetails } from '@mui/material';
 
 export const SolarPotential = () => {
   const { t } = useTranslation();

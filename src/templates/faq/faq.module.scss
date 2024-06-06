@@ -4,7 +4,19 @@
 .faq {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-16)
+  gap: var(--spacing-10);
+
+  @include tablet-up {
+    gap: var(--spacing-16);
+  }
+}
+
+.faq__heating-title {
+  @include typo-headline-3();
+
+  @include tablet-up {
+    display: none;
+  }
 }
 
 .faq__title {

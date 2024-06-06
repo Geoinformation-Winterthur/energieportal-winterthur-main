@@ -17,6 +17,7 @@ export const DistrictHeatingP = ({ isP1 }: DistrictHeatingPProps) => {
 
   return (
     <div className={styles["faq"]}>
+      <h3 className={styles["faq__heating-title"]}>{t("my_property.heating_recommendations.districtheating_v.title")}</h3>
       <div className={styles["faq__box"]}>
         {isP1 ? renderP1Status() : <p>{t("my_property.heating_faq.districtheating_p.status_1")} <a href={t("my_property.heating_faq.districtheating_p.status_link_target_1")}>{t("my_property.heating_faq.districtheating_p.status_link_1")}</a> {t("my_property.heating_faq.districtheating_p.status_2")} <a href={t("my_property.heating_faq.districtheating_p.status_link_target_2")}>{t("my_property.heating_faq.districtheating_p.status_link_2")}</a>{t("my_property.heating_faq.districtheating_p.status_3")} <a href={t("my_property.heating_faq.districtheating_p.status_link_target_3")} target="_blank">{t("my_property.heating_faq.districtheating_p.status_link_3")}</a>{t("my_property.heating_faq.districtheating_p.status_4")} </p>}
       </div>

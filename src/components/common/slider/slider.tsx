@@ -9,7 +9,6 @@ interface SliderProps {
   children: React.ReactNode;
 }
 
-
 export const Slider = ({ children }: SliderProps) => {
   const swiperRef = useRef<any>(null);
   const prevRef = useRef<HTMLButtonElement>(null);
@@ -20,6 +19,7 @@ export const Slider = ({ children }: SliderProps) => {
     register();
 
     const params: SwiperOptions = {
+      observeSlideChildren: true,
       slidesPerView: 1,
       spaceBetween: 16,
       pagination: {
@@ -31,8 +31,10 @@ export const Slider = ({ children }: SliderProps) => {
       },
     };
 
-    Object.assign(swiperRef.current, params);
-    swiperRef.current.initialize();
+    Object.assign(swiperRef?.current, params);
+    swiperRef?.current?.initialize();
+    console.log(swiperRef?.current?.initialize);
+
   }, []);
 
   return (

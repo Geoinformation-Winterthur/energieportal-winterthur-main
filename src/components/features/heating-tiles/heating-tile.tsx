@@ -7,6 +7,7 @@ import TabList from "@/components/common/tabs/tab-list/tab-list";
 import TabPanel from "@/components/common/tabs/tab-panel/tab-panel";
 import Tab from "@/components/common/tabs/tab/tab";
 import Tabs from "@/components/common/tabs/tabs";
+import { useWindowSize } from "@/hooks/useWindowSize";
 import { HeatingsFaq } from "@/templates/faq/heatings/heatings-faq";
 import { Heating } from "@/types/heating";
 import { useTranslation } from "../../../../i18n";
@@ -19,16 +20,25 @@ interface HeatingTileProps {
 
 export const HeatingTile = ({ heating, allRecommendations }: HeatingTileProps) => {
   const { t } = useTranslation();
+  const { isMobile } = useWindowSize();
 
   const getPros = () => t(`my_property.heating_recommendations.${heating.code}.pros`, { returnObjects: true }) as string[];
   const getCons = () => t(`my_property.heating_recommendations.${heating.code}.cons`, { returnObjects: true }) as string[];
+
+  const showIcon = (heating: Heating) => (
+    <Tab icon={heating.isDistrictHeating ? "districtheating" : heating.code as IconType} value={heating.code} key={heating.code}></Tab>
+  )
+
+  const showLabel = (heating: Heating) => (
+    <Tab label={t(`my_property.heating_recommendations.${heating.code}.title`)} value={heating.code} key={heating.code}></Tab>
+  )
 
   const renderHeatingOverlay = (trigger: React.ReactNode) => (
     <Overlay trigger={trigger}>
       <Tabs initialValue={heating.code} name={'heating-tabs'} variant="reduced" inOverlay>
         <TabList>
           {allRecommendations?.map(heating => (
-            <Tab label={t(`my_property.heating_recommendations.${heating.code}.title`)} value={heating.code} key={heating.code}></Tab>
+            isMobile ? showIcon(heating) : showLabel(heating)
           ))}
         </TabList>
         {allRecommendations?.map(heating => (

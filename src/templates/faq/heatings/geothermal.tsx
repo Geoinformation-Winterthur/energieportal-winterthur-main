@@ -9,6 +9,7 @@ export const Geothermal = () => {
 
   return (
     <div className={styles["faq"]}>
+      <h3 className={styles["faq__heating-title"]}>{t("my_property.heating_recommendations.geothermal.title")}</h3>
       <div className={styles["faq__acc-wrapper"]}>
         <h4 className={styles["faq__title"]}>{t("my_property.heating_faq.functionality")}</h4>
         <Accordion summary={t("my_property.heating_faq.geothermal.summary_1")}>

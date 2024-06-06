@@ -21,6 +21,7 @@ export const DistrictHeatingV = ({ inPlanning }: DistrictHeatingVProps) => {
 
   return (
     <div className={styles["faq"]}>
+      <h3 className={styles["faq__heating-title"]}>{t("my_property.heating_recommendations.districtheating_pr.title")}</h3>
       <div className={styles["faq__box"]}>
         {inPlanning ? renderInPlanning() : renderInReview()}
       </div>

@@ -33,6 +33,10 @@
   background-color: var(--color-white);
   width: 100%;
   padding: var(--spacing-6);
+
+  @media (max-width: 380px) {
+    gap: var(--spacing-2);
+  }
 }
 
 .solar-image__legend-item {

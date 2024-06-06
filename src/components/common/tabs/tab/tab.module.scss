@@ -70,4 +70,10 @@
     overflow: hidden;
     white-space: nowrap;
   }
+
+  .tab__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }

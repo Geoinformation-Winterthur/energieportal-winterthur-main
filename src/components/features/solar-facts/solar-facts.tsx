@@ -78,7 +78,7 @@ export const SolarFacts = ({ solarFacts }: SolarFactsProps) => {
     const annualProductionFacts = [
       { label: t("my_property.solar_facts.calculated_electricity_module_area"), value: `${solarFacts?.calculatedElectricityModuleArea} m²` },
       { label: t("my_property.solar_facts.calculated_electricity_max_power"), value: `${solarFacts?.calculatedElectricityMaxPower} kW` },
-      { label: t("my_property.solar_facts.electricity_production"), value: `${solarFacts?.electricityProduction} kWh` },
+      { label: t("my_property.solar_facts.electricity_production"), value: `${solarFacts?.electricityProduction} kWh pro Jahr` },
     ];
     return (
       <table className={styles["solar-facts__table"]}>

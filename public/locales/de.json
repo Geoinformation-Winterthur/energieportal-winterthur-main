@@ -147,7 +147,6 @@
         "Beurteilung der Lärmsituation erforderlich"
       ]
     },
-    "my_property.heating_recommendations.pellet.title": "Pelletheizung",
     "my_property.heating_recommendations.pellet": {
       "title": "Pelletheizung",
       "pros": [
@@ -163,7 +162,6 @@
         "die verfügbaren Holzreserven sind knapp"
       ]
     },
-    "my_property.heating_recommendations.districtheating.title": "Vorgesehene Wärmenetze",
     "my_property.heating_recommendations.districtheating_v": {
       "title": "Bestehende Wärmenetze",
       "pros": [
@@ -527,9 +525,9 @@
     "my_property.solar_faq.photovoltaics.detail_7_1": "In den meisten Fällen ist eine Photovoltaikanlage lediglich meldepflichtig. Dabei genügt eine elektronische Eingabe der Meldung über das",
     "my_property.solar_faq.photovoltaics.detail_7_link": "Webportal des Kantons Zürich",
     "my_property.solar_faq.photovoltaics.detail_7_link_target": "https://www.zh.ch/de/planen-bauen/baubewilligung/baueingabe-verfahren/meldeverfahren-solaranlagen-waermepumpen-eladestationen.html",
-    "my_property.solar_faq.photovoltaics.detail_7_2": ". Anlagen auf einem inventarisierten oder geschützten Gebäude oder innerhalb von Kernzonen benötigen ein Bewilligungsverfahren. Freistehende Anlagen ab einer Grösse von 20 m2 ebenfalls.",
+    "my_property.solar_faq.photovoltaics.detail_7_2": ". Anlagen auf einem inventarisierten oder geschützten Gebäude oder innerhalb von Kernzonen benötigen ein Bewilligungsverfahren. Freistehende Anlagen ab einer Grösse von 20 m² ebenfalls.",
     "my_property.solar_faq.photovoltaics.summary_8": "Welche Anforderungen muss die Photovoltaikanlage erfüllen?",
-    "my_property.solar_faq.photovoltaics.detail_8_1": "Die Meldebestätigung ist derzeit noch kostenlos. Die Kosten eines Baubewilligungsverfahrens hängen von der Bausumme ab. Alle Informationen zu den Kosten finden Sie",
+    "my_property.solar_faq.photovoltaics.detail_8_1": "Photovoltaikanlagen müssen ausreichend angepasst sein. Die Gestaltungsrichtlinien sind im",
     "my_property.solar_faq.photovoltaics.detail_8_link": "Leitfaden für Solaranlagen",
     "my_property.solar_faq.photovoltaics.detail_8_link_target": "https://www.zh.ch/content/dam/zhweb/bilder-dokumente/themen/planen-bauen/raumplanung/merkblaetter/Leitfaden%20f%C3%BCr%20Solaranlagen%20-%20Dezember%202022.pdf",
     "my_property.solar_faq.photovoltaics.detail_8_2": "des Kantons Zürich beschrieben. Auch darf die Anlage das Sonnenlicht nicht reflektieren.",
@@ -567,7 +565,7 @@
     "my_property.solar_faq.thermal.detail_7_2": ".",
     "my_property.refurbishment_efficiency_calculator.title": "Effizienz Ihrer Gebäudehülle",
     "my_property.refurbishment_efficiency_calculator.lead": "Hier können Sie die Effizienz Ihrer Gebäudehülle berechnen. So können Sie abschätzen, ob sich eine energetische Sanierung für Ihr Gebäude lohnt.",
-    "my_property.refurbishment_efficiency_calculator.form_building": "Gebäude",
+    "my_property.refurbishment_efficiency_calculator.form_building": "Gebäude und Heizung",
     "my_property.refurbishment_efficiency_calculator.form_power_consumption": "Durchschnittlicher Energieverbrauch",
     "my_property.refurbishment_efficiency_calculator.form_unit": "Einheit des Energieverbrauchs (Pflichtfeld)",
     "my_property.refurbishment_efficiency_calculator.form_hot_water": "Warmwasseraufbereitung",
@@ -712,7 +710,7 @@
         "description": "Die GEAK Plus Energieberatung ist ideal für eine detaillierte Beurteilung des Gebäudezustands und der Gebäudetechnik. Dabei werden die Energieeinsparungen einer energetischen Sanierung und die Investitionskosten abgeschätzt. Der von unserer GEAK-Expertin oder unserem GEAK-Experten erstellte Beratungsbericht zeigt die relevanten Massnahmen auf und gibt Ihnen die Grundlage für konkrete Entscheide.",
         "scope": "Zwei Beratungsgespräche von je 60 bis 90 Minuten ",
         "location": "Ihre Liegenschaft",
-        "costs": "pro Einfamilienhaus CHF 1'000.- abzüglich Förderbeitrag, beim Mehrfamilienhaus nach Absprache",
+        "costs": "pro Einfamilienhaus ab CHF 1'500.- abzüglich Förderbeitrag, beim Mehrfamilienhaus nach Absprache",
         "icon": "refurbishment"
       }
     ],
