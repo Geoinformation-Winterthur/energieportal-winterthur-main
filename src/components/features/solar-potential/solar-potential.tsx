@@ -1,7 +1,8 @@
 import { MapArea } from '@/types/map-area';
 import { SolarFacts as SolarFactsType } from '@/types/solar-facts';
 import { getSolarFacts } from '@/utils/get-solar-facts';
-import { useState } from 'react';
+import { useSearchParams } from 'next/navigation';
+import { useEffect, useState } from 'react';
 import { useTranslation } from '../../../../i18n';
 import { SolarFacts } from '../solar-facts/solar-facts';
 import { SolarImage } from '../solar-image/solar-image';
@@ -11,6 +12,9 @@ export const SolarPotential = () => {
   const { t } = useTranslation();
   const [solarFacts, setSolarFacts] = useState<SolarFactsType | null>(null);
   const [clickedPosition, setClickedPosition] = useState<{ x: number, y: number } | null>(null);
+
+  const searchParams = useSearchParams();
+  const [currentAddress, setCurrentAddress] = useState<string | null>(null);
 
   const onImageClick = async (e: React.MouseEvent<HTMLDivElement>, mapArea: MapArea | null) => {
     if (!mapArea) {
@@ -31,6 +35,17 @@ export const SolarPotential = () => {
     const facts = await getSolarFacts(roundedE, roundedN);
     setSolarFacts(facts);
   }
+
+  useEffect(() => {
+    if (searchParams.get("address")) {
+      setCurrentAddress(searchParams.get("address") ?? "");
+    }
+  }, [searchParams])
+
+  useEffect(() => {
+    setClickedPosition(null);
+    setSolarFacts(null);
+  }, [currentAddress])
 
   return (
     <div className={styles["solar-potential"]}>
