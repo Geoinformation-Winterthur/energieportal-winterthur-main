@@ -147,7 +147,6 @@
         "Beurteilung der Lärmsituation erforderlich"
       ]
     },
-    "my_property.heating_recommendations.pellet.title": "Pelletheizung",
     "my_property.heating_recommendations.pellet": {
       "title": "Pelletheizung",
       "pros": [
@@ -163,7 +162,6 @@
         "die verfügbaren Holzreserven sind knapp"
       ]
     },
-    "my_property.heating_recommendations.districtheating.title": "Vorgesehene Wärmenetze",
     "my_property.heating_recommendations.districtheating_v": {
       "title": "Bestehende Wärmenetze",
       "pros": [

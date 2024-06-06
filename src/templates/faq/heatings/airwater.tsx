@@ -9,6 +9,7 @@ export const Airwater = () => {
 
   return (
     <div className={styles["faq"]}>
+      <h3 className={styles["faq__heating-title"]}>{t("my_property.heating_recommendations.airwater.title")}</h3>
       <div className={styles["faq__acc-wrapper"]}>
         <h4 className={styles["faq__title"]}>{t("my_property.heating_faq.functionality")}</h4>
         <Accordion summary={t("my_property.heating_faq.airwater.summary_1")}>
@@ -16,7 +17,7 @@ export const Airwater = () => {
             {t("my_property.heating_faq.airwater.detail_1")}
           </AccordionDetails>
         </Accordion>
-        <Accordion summary={t("my_property.heating_faq.airwater.summary_2")} >
+        <Accordion summary={t("my_property.heating_faq.airwater.summary_2")}>
           <AccordionDetails>
             {t("my_property.heating_faq.airwater.detail_2")}
           </AccordionDetails>

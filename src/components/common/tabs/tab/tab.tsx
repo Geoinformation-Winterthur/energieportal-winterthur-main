@@ -2,13 +2,15 @@ import { useContext } from "react";
 import { TabsContext } from "../../../../context/tabs-context";
 import clsx from "clsx";
 import styles from './tab.module.scss';
+import { Icon, IconType } from "../../icon/icon";
 
 interface TabProps {
-  label: string;
+  label?: string
   value: string;
+  icon?: IconType;
 }
 
-export default function Tab({ label, value }: TabProps) {
+export default function Tab({ label, value, icon }: TabProps) {
   const tabs = useContext(TabsContext);
   const isActive = tabs.value === value;
   return (
@@ -22,7 +24,8 @@ export default function Tab({ label, value }: TabProps) {
       id={`${tabs.name}-tab-${value}`}
       aria-controls={`${tabs.name}-panel-${value}`}
       role="tab">
-      <span className={styles['tab__inner']}>{label}</span>
+      {label && <span className={styles['tab__inner']}>{label}</span>}
+      {icon && <span className={styles['tab__icon']}><Icon icon={icon} size={40} /></span>}
     </button>
   )
 }

@@ -9,6 +9,7 @@ export const Pellet = () => {
 
   return (
     <div className={styles["faq"]}>
+      <h3 className={styles["faq__heating-title"]}>{t("my_property.heating_recommendations.pellet.title")}</h3>
       <div className={styles["faq__acc-wrapper"]}>
         <h4 className={styles["faq__title"]}>{t("my_property.heating_faq.functionality")}</h4>
         <Accordion summary={t("my_property.heating_faq.pellet.summary_1")}>
