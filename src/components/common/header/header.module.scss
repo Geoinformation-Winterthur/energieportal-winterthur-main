@@ -2,7 +2,7 @@
 @import "../../../styles/typography.scss";
 
 .header {
-  padding: var(--spacing-9) var(--spacing-5) var(--spacing-5);
+  padding: var(--spacing-5) var(--spacing-5) var(--spacing-4);
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -26,7 +26,7 @@
 
 .header__topline {
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
   align-items: baseline;
   gap: var(--spacing-4);
 
@@ -39,7 +39,7 @@
 .header__red-strip {
   position: absolute;
   left: 0;
-  top: var(--spacing-11);
+  top: var(--spacing-7);
   width: var(--spacing-1);
   height: var(--spacing-11);
   background-color: var(--color-brand-red);
