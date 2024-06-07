@@ -20,8 +20,8 @@ export const Contact = ({ onContactPage }: ContactProps) => {
         <p>{t("contact.box.business_hours")}</p>
       </div>
       <div className={styles["contact__links"]}>
-        <a href={`tel:${t("contact.box.phone")}`}><Icon icon="phone" />{t("contact.box.phone")}</a>
-        {onContactPage ? <a href={`mailto:${t("contact.box.mail")}`}><Icon icon="mail" />{t("contact.box.mail")}</a> : <Link href={t("contact.box.link_target")}>{t("contact.box.link")} <Icon icon="arrow-right" /></Link>}
+        <a href={`tel:${t("contact.box.phone")}`} className="has-icon"><Icon icon="phone" />{t("contact.box.phone")}</a>
+        {onContactPage ? <a href={`mailto:${t("contact.box.mail")}`} className="has-icon"><Icon icon="mail" />{t("contact.box.mail")}</a> : <Link href={t("contact.box.link_target")} className="has-icon">{t("contact.box.link")} <Icon icon="arrow-right" /></Link>}
       </div>
     </div>
   )
