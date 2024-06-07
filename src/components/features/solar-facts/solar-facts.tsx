@@ -29,6 +29,10 @@ export const SolarFacts = ({ solarFacts }: SolarFactsProps) => {
     )
   }
 
+  const formatNumber = (value?: number) => {
+    return value?.toLocaleString('de-CH');
+  }
+
   const renderFaqOverlay = (initialValue: string) => (
     <Overlay trigger={<Button>{t("my_property.solar_button")}</Button>}>
       <Tabs initialValue={initialValue} name={'heating-tabs'} variant="reduced" inOverlay>
@@ -76,9 +80,9 @@ export const SolarFacts = ({ solarFacts }: SolarFactsProps) => {
 
   const renderProjectedAnnualProductionTable = () => {
     const annualProductionFacts = [
-      { label: t("my_property.solar_facts.calculated_electricity_module_area"), value: `${solarFacts?.calculatedElectricityModuleArea} m²` },
-      { label: t("my_property.solar_facts.calculated_electricity_max_power"), value: `${solarFacts?.calculatedElectricityMaxPower} kW` },
-      { label: t("my_property.solar_facts.electricity_production"), value: `${solarFacts?.electricityProduction} kWh pro Jahr` },
+      { label: t("my_property.solar_facts.calculated_electricity_module_area"), value: `${formatNumber(solarFacts?.calculatedElectricityModuleArea)} m²` },
+      { label: t("my_property.solar_facts.calculated_electricity_max_power"), value: `${formatNumber(solarFacts?.calculatedElectricityMaxPower)} kW` },
+      { label: t("my_property.solar_facts.electricity_production"), value: `${formatNumber(solarFacts?.electricityProduction)} kWh pro Jahr` },
     ];
     return (
       <table className={styles["solar-facts__table"]}>
@@ -98,9 +102,9 @@ export const SolarFacts = ({ solarFacts }: SolarFactsProps) => {
 
   const renderProjectedThermalProductionTable = () => {
     const thermalProductionFacts = [
-      { label: t("my_property.solar_facts.calculated_thermal_module_area"), value: `${solarFacts?.calculatedThermalModuleArea} m²` },
-      { label: t("my_property.solar_facts.calculated_thermal_max_power"), value: `${solarFacts?.calculatedThermalMaxPower} kW` },
-      { label: t("my_property.solar_facts.thermal_production"), value: `${solarFacts?.thermalProduction} kWh` },
+      { label: t("my_property.solar_facts.calculated_thermal_module_area"), value: `${formatNumber(solarFacts?.calculatedThermalModuleArea)} m²` },
+      { label: t("my_property.solar_facts.calculated_thermal_max_power"), value: `${formatNumber(solarFacts?.calculatedThermalMaxPower)} kW` },
+      { label: t("my_property.solar_facts.thermal_production"), value: `${formatNumber(solarFacts?.thermalProduction)} kWh pro Jahr` },
     ];
     return (
       <table className={styles["solar-facts__table"]}>

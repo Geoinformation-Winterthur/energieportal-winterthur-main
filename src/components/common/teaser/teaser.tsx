@@ -1,8 +1,8 @@
+import clsx from "clsx";
 import Image from "next/image";
 import Link from "next/link";
 import { Icon } from "../icon/icon";
 import styles from "./teaser.module.scss";
-import clsx from "clsx";
 
 interface TeaserProps {
   title: string;
@@ -17,7 +17,6 @@ interface TeaserProps {
 
 export const Teaser = ({ title, description, image, image_credits, link, link_target, subtitle, asRow }: TeaserProps) => {
 
-  //const pathToImages = "/energieportal/images/"
   const pathToImages = "/images/"
 
   return (
@@ -32,7 +31,7 @@ export const Teaser = ({ title, description, image, image_credits, link, link_ta
         <h3 className={styles["teaser__title"]}>{title}</h3>
         <p className={styles["teaser__description"]}>{description}</p>
         {subtitle && <h4 className={styles["teaser__subtitle"]}>{subtitle}</h4>}
-        {link_target.startsWith("/") ? <Link href={link_target}>{link} <Icon icon="arrow-right" /></Link> : <a href={link_target} target="_blank">{link} <Icon icon="link" /></a>}
+        {link_target.startsWith("/") ? <Link href={link_target} className="has-icon">{link}<Icon icon="arrow-right" /></Link> : <a href={link_target} target="_blank" className="has-icon">{link} <Icon icon="link" /></a>}
       </div>
     </div>
   )
