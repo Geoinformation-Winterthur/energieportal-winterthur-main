@@ -59,6 +59,7 @@ export const Navigation = ({ }) => {
     <>
       {isOpen ? <Icon icon="close" size={24} onButtonClick={toggleNavMenu} /> : <Icon icon="burger" size={24} onButtonClick={toggleNavMenu} />}
       <ul className={clsx(styles["navigation-panel"], isOpen ? styles["navigation--open"] : styles["navigation--closed"])}>
+        <Link href="/" onClick={toggleNavMenu} className={clsx(styles["navigation__domain"], "link-primary")}>{t('general.header.domain')}</Link>
         {items.map((item) => (
           <li className={styles["navigation-panel__items"]} key={item.slug}>
             <Link href={item.slug} onClick={() => setIsOpen(false)}>{item.title}</Link>
