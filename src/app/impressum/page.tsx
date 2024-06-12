@@ -19,7 +19,7 @@ export default function Impressum() {
             Pionierstrasse 7 <br />
             8403 Winterthur <br />
           </address>
-          <a href="mailto:energiefachstelle@win.ch"><Icon icon="mail" />energiefachstelle@win.ch</a>
+          <a href="mailto:energiefachstelle@win.ch" className="has-icon"><Icon icon="mail" />energiefachstelle@win.ch</a>
         </Section>
         <Section title="Realisierungspartner">
           <p>Bei der Erstellung des Energieportales wurde die Stadt Winterthur durch dreipol GmbH unterstützt.</p>
@@ -28,8 +28,8 @@ export default function Impressum() {
             Langstrasse 94 <br />
             8004 Zürich <br />
           </address>
-          <a href="mailto:hello@dreipol.ch"><Icon icon="mail" />hello@dreipol.ch</a>
-          <a href="https://www.dreipol.ch" target="_blank">dreipol.ch<Icon icon="link" /></a>
+          <a href="mailto:hello@dreipol.ch" className="has-icon"><Icon icon="mail" />hello@dreipol.ch</a>
+          <a href="https://www.dreipol.ch" className="has-icon" target="_blank">dreipol.ch<Icon icon="link" /></a>
         </Section>
         <Section title="Datenschutz">
           <p>Den Umgang mit der Erhebung, Verarbeitung und Löschung von Daten, sowie Ihrer Rechte betreffend dem Datenschutz können Sie aus der <a href="/pdf/Datenschutzerklaerung.pdf" target="_blank">Datenschutzerklärung</a> entnehmen.</p>
