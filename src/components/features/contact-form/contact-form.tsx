@@ -59,7 +59,7 @@ export const ContactForm = ({ }: ContactFormProps) => {
     });
 
     // return if any required field is empty
-    if (requiredFields.some(({ field }) => field === "")) {
+    if (requiredFields.some(({ field }) => field === "") || !emailRegex.test(eMailAddress)) {
       return;
     }
 
