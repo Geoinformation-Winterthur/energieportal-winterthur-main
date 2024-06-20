@@ -17,7 +17,7 @@ interface TeaserProps {
 
 export const Teaser = ({ title, description, image, image_credits, link, link_target, subtitle, asRow }: TeaserProps) => {
 
-  const pathToImages = "/images/"
+  const pathToImages = "/energieportal/images/"
 
   return (
     <div className={clsx(styles["teaser"], asRow ? styles["teaser--as-row"] : "")}>
