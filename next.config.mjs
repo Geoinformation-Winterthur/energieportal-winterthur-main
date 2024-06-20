@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: "/energieportal",
+  basePath: process.env.NEXT_PUBLIC_APP_PATH,
+  assetPrefix: process.env.NEXT_PUBLIC_APP_PATH,
   images: { unoptimized: true },
   trailingSlash: true,
   webpack: (config) => {
