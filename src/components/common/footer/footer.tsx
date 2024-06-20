@@ -5,7 +5,7 @@ import styles from "./footer.module.scss";
 
 export const Footer = () => {
   const { t } = useTranslation();
-  const pathToFiles = "/energieportal/pdf/"
+  const pathToFiles = `${process.env.NEXT_PUBLIC_BASE_PATH}/pdf/`;
 
   return (
     <footer className={styles["footer"]}>

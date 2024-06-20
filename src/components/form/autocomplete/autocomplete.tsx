@@ -40,7 +40,7 @@ export const Autocomplete = () => {
   }, [searchParams])
 
   const getAddresses = async (value: string) => {
-    const response = await fetch(`https://stadtplantest.winterthur.ch/energieportal-service/Address?search=${value}`);
+    const response = await fetch(`${process.env.NEXT_PUBLIC_API_ENDPOINT}/Address?search=${value}`);
     const data = await response.json();
     return data;
   }

@@ -73,7 +73,7 @@ export const ContactForm = ({ }: ContactFormProps) => {
       requestText,
     });
 
-    const response = await fetch("https://stadtplantest.winterthur.ch/energieportal-service/ContactForm", {
+    const response = await fetch(`${process.env.NEXT_PUBLIC_API_ENDPOINT}/ContactForm`, {
       method: "POST",
       headers: {
         "Accept": "*/*",
