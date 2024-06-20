@@ -32,10 +32,10 @@ export default function Impressum() {
           <a href="https://www.dreipol.ch" className="has-icon" target="_blank">dreipol.ch<Icon icon="link" /></a>
         </Section>
         <Section title="Datenschutz">
-          <p>Den Umgang mit der Erhebung, Verarbeitung und Löschung von Daten, sowie Ihrer Rechte betreffend dem Datenschutz können Sie aus der <a href="/pdf/Datenschutzerklaerung.pdf" target="_blank">Datenschutzerklärung</a> entnehmen.</p>
+          <p>Den Umgang mit der Erhebung, Verarbeitung und Löschung von Daten, sowie Ihrer Rechte betreffend dem Datenschutz können Sie aus der <a href="/energieportal/pdf/Datenschutzerklaerung.pdf" target="_blank">Datenschutzerklärung</a> entnehmen.</p>
         </Section>
         <Section title="Nutzungsbedingungen">
-          <p>Den Nutzungsgegenstand und Umgang mit der Applikation und deren Geodaten können Sie aus den <a href="/pdf/Nutzungsbedingungen.pdf" target="_blank">Nutzungsbedingungen</a> entnehmen.</p>
+          <p>Den Nutzungsgegenstand und Umgang mit der Applikation und deren Geodaten können Sie aus den <a href="/energieportal/pdf/Nutzungsbedingungen.pdf" target="_blank">Nutzungsbedingungen</a> entnehmen.</p>
         </Section>
       </OneCol>
     </main>
