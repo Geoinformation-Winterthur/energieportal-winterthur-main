@@ -1,0 +1,80 @@
+html {
+  font-size: 100%;
+}
+
+html body {
+  letter-spacing: 0;
+  color: var(--color-text-primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-headline-primary);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p,
+address {
+  font-size: clamp(1.125rem, 1.081rem + 0.1878vw, 1.25rem);
+  line-height: 130%;
+  font-weight: 400;
+  letter-spacing: 0.00625rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ol,
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  counter-reset: li;
+}
+
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  text-decoration: none;
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  color: var(--color-text-primary);
+}
+
+address {
+  font-style: normal;
+}
+
+figure {
+  margin: 0;
+}
+
+input[type="search"] {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: transparent;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

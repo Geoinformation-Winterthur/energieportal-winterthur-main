@@ -1,0 +1,46 @@
+@import "../../../styles/breakpoints.scss";
+@import "../../../styles/typography.scss";
+@import "../../../styles/animated-underline.scss";
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: var(--spacing-5);
+  padding: var(--spacing-5) var(--spacing-8);
+  background-color: var(--color-footer-bg);
+  border-top: var(--spacing-1) solid var(--color-brand-red);
+
+  @include tablet-up {
+    flex-direction: row;
+    padding: var(--spacing-4) var(--spacing-8);
+  }
+}
+
+.footer__links {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+}
+
+.footer__copyright,
+.footer__link {
+  @include typo-body-small();
+
+  color: var(--color-footer-text);
+}
+
+.footer__link {
+
+  &:focus,
+  &:hover,
+  &:active {
+    color: var(--color-footer-text);
+  }
+}
+
+.footer__divider {
+  width: 2px;
+  height: var(--spacing-4);
+  background-color: var(--color-footer-text);
+}

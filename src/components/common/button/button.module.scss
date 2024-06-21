@@ -1,0 +1,36 @@
+@import "../../../styles/typography.scss";
+
+.button {
+  @include typo-button();
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-3);
+  width: 100%;
+  min-width: max-content;
+  height: var(--spacing-14);
+  color: var(--color-white);
+  background-color: var(--color-brand-red);
+  padding: 0 var(--spacing-4);
+  transition: background-color 0.2s ease-out;
+
+  &:focus-visible {
+    background-color: var(--color-black);
+  }
+
+  &--disabled {
+    pointer-events: none;
+    opacity: 0.4;
+  }
+
+  &--pressed {
+    background-color: var(--color-black);
+  }
+}
+
+@media (hover: hover) {
+  .button:hover {
+    background-color: var(--color-black);
+  }
+}

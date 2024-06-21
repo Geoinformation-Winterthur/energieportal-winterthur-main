@@ -1,0 +1,91 @@
+@import "../../../styles/breakpoints.scss";
+@import "../../../styles/typography.scss";
+
+.teaser {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+
+  @include tablet-up {
+    gap: var(--spacing-8);
+    width: 100%;
+  }
+
+  &.teaser--as-row {
+
+    @include tablet-up {
+      flex-direction: row-reverse;
+      gap: var(--spacing-26);
+    }
+  }
+}
+
+.teaser__image {
+  align-self: center;
+  position: relative;
+  aspect-ratio: 1/1;
+  width: 100%;
+  height: auto;
+  width: calc(100% - var(--spacing-8));
+
+
+  @include tablet-up {
+    width: 100%;
+  }
+
+  img {
+    object-fit: cover;
+  }
+}
+
+.teaser__image-background {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: calc(100% + var(--spacing-8));
+  background-color: var(--color-brand-green-light);
+  transform: rotate(-90deg);
+
+  @include tablet-up {
+    height: calc(100% + var(--spacing-16));
+  }
+}
+
+.teaser__image-copyright {
+  @include typo-copyright();
+
+  color: var(--color-brand-green-dark);
+  margin-left: 6px;
+  margin-top: 3px;
+
+  @include tablet-up {
+    margin-left: var(--spacing-3);
+    margin-top: var(--spacing-2);
+  }
+}
+
+.teaser__content {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  gap: var(--spacing-3);
+  width: calc(100% - var(--spacing-8));
+
+  @include tablet-up {
+    align-self: flex-start;
+    gap: var(--spacing-4);
+  }
+}
+
+.teaser__title {
+  @include typo-headline-3();
+}
+
+.teaser__description {
+  @include typo-body();
+}
+
+.teaser__subtitle {
+  @include typo-headline-4();
+}

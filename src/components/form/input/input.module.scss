@@ -1,0 +1,49 @@
+@import "../../../styles/breakpoints.scss";
+@import "../../../styles/typography.scss";
+
+.input {
+  position: relative;
+  background-color: var(--color-brand-green-light);
+}
+
+.input__label {
+  @include typo-label();
+
+  display: block;
+  padding: var(--spacing-1) var(--spacing-3);
+}
+
+.input__input {
+  @include typo-body();
+
+  position: relative;
+  padding: 0 var(--spacing-3) var(--spacing-2);
+  background-color: var(--color-brand-green-light);
+  border: 0;
+  border-bottom: 2px solid transparent;
+  width: 100%;
+  outline: none;
+
+  &::placeholder {
+    color: var(--color-text-primary);
+    opacity: 0.5;
+  }
+
+  &:focus {
+    border-bottom: 2px solid var(--color-text-primary);
+    transition: all 0.04s ease;
+  }
+}
+
+.input__error {
+  @include typo-label();
+  color: var(--color-signal-red);
+  padding-top: var(--spacing-1);
+  background-color: white;
+}
+
+.input--error {
+  .input__label {
+    color: var(--color-signal-red);
+  }
+}

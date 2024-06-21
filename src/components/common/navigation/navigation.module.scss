@@ -1,0 +1,67 @@
+@import "../../../styles/typography.scss";
+
+@keyframes animate {
+  from {
+    left: 0;
+  }
+
+  to {
+    left: 100%;
+  }
+}
+
+.navigation {
+  height: var(--spacing-16);
+  display: flex;
+  align-items: center;
+}
+
+.navigation__items {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-8);
+}
+
+.navigation__divider {
+  width: 2px;
+  height: var(--spacing-4);
+  background-color: var(--color-text-primary);
+}
+
+.navigation-panel {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-14);
+  padding: 160px var(--spacing-5);
+  height: 100%;
+  width: 100%;
+  background-color: var(--color-white);
+  top: 0;
+  left: 0;
+  transition: all 0.2s ease-out;
+}
+
+.navigation-panel__items {
+  margin-left: var(--spacing-8);
+
+  a {
+    @include typo-headline-4();
+  }
+}
+
+.navigation__domain {
+  position: absolute;
+  top: var(--spacing-16);
+}
+
+.navigation--open {
+  z-index: 1;
+  opacity: 1;
+}
+
+.navigation--closed {
+  opacity: 0;
+  animation: animate 0.1s forwards;
+  animation-delay: 0.3s;
+}

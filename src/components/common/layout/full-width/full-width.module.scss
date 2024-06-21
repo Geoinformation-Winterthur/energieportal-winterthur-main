@@ -1,0 +1,34 @@
+@import "../../../../styles/breakpoints.scss";
+@import "../../../../styles/typography.scss";
+
+.full-width {
+  padding: var(--spacing-10) var(--spacing-5);
+
+  @include tablet-up {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spacing-20);
+  }
+
+  &.full-width--green {
+    background-color: var(--color-brand-green-light);
+  }
+
+  &.full-width--white {
+    background-color: var(--color-white);
+  }
+}
+
+.full-width__inner {
+  @include tablet-up {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-31);
+    max-width: var(--max-width);
+    width: 100%;
+  }
+}

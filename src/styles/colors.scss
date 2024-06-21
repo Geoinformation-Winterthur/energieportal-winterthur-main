@@ -1,0 +1,64 @@
+// base colors
+$color-red: #ff1900;
+$color-black: #000000;
+$color-white: #ffffff;
+$color-grey: #767676;
+$color-grey-dark: #44443f;
+$color-grey-medium: #bec0c2;
+$color-grey-light: #ececea;
+$color-green-dark: #1e666e;
+$color-green-light: #e6eeef;
+$color-green-light-50: rgba(230, 238, 239, 0.50);
+$color-backdrop: rgba(0, 0, 0, 0.3);
+$color-tab-hover: #dddddb;
+
+// signal colors
+$color-signal-red: #ec1700;
+$color-signal-orange: #ff9800;
+$color-signal-green: #4caf62;
+
+// scale colors
+$color-scale-green: #4caf62;
+$color-scale-green-light: #aee113;
+$color-scale-yellow: #ffe500;
+$color-scale-orange: #ffa800;
+$color-scale-red: #ef1c00;
+$color-scale-red-dark: #9b1200;
+
+// solar potential colors
+$color-solar-potential-1: #FF1900;
+$color-solar-potential-2: #FF7F00;
+$color-solar-potential-3: #FFFF00;
+$color-solar-potential-4: #0080FF;
+
+:root {
+  --color-text-primary: #{$color-grey-dark};
+  --color-headline-primary: #{$color-black};
+  --color-links: #{$color-red};
+  --color-brand-red: #{$color-red};
+  --color-brand-grey: #{$color-grey-medium};
+  --color-black: #{$color-black};
+  --color-white: #{$color-white};
+  --color-footer-text: #{$color-grey-light};
+  --color-footer-bg: #{$color-grey-dark};
+  --color-border: #{$color-grey-light};
+  --color-tabs-inactive: #{$color-grey};
+  --color-backdrop: #{$color-backdrop};
+  --color-tab-hover: #{$color-tab-hover};
+  --color-brand-green-dark: #{$color-green-dark};
+  --color-brand-green-light: #{$color-green-light};
+  --color-brand-green-light-50: #{$color-green-light-50};
+  --color-signal-red: #{$color-scale-red};
+  --color-signal-orange: #{$color-scale-orange};
+  --color-signal-green: #{$color-scale-green};
+  --color-scale-green: #{$color-scale-green};
+  --color-scale-green-light: #{$color-scale-green-light};
+  --color-scale-yellow: #{$color-scale-yellow};
+  --color-scale-orange: #{$color-scale-orange};
+  --color-scale-red: #{$color-scale-red};
+  --color-scale-red-dark: #{$color-scale-red-dark};
+  --color-solar-potential-1: #{$color-solar-potential-1};
+  --color-solar-potential-2: #{$color-solar-potential-2};
+  --color-solar-potential-3: #{$color-solar-potential-3};
+  --color-solar-potential-4: #{$color-solar-potential-4};
+}

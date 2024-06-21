@@ -1,0 +1,90 @@
+@import "../../../styles/breakpoints.scss";
+@import "../../../styles/typography.scss";
+
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-8);
+}
+
+.contact-form__subtitle {
+  @include typo-headline-3();
+
+  margin-bottom: var(--spacing-4);
+}
+
+
+.contact-form__contact-block {
+  margin-bottom: var(--spacing-20);
+}
+
+.contact-form__room {
+  margin-bottom: var(--spacing-4);
+}
+
+.contact-form__rooms-title {
+  @include typo-headline-4();
+
+  margin-bottom: var(--spacing-4);
+}
+
+.contact-form__rooms-name {
+  @include typo-headline-5();
+}
+
+.contact-form__left {
+  width: 100%;
+
+  @include desktop-up {
+    width: calc(40% - var(--spacing-4));
+  }
+}
+
+.contact-form__right {
+  width: 100%;
+
+  @include desktop-up {
+    width: calc(60% - var(--spacing-4));
+  }
+}
+
+.contact-form__item {
+  margin-bottom: var(--spacing-8);
+}
+
+.contact-form__row {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--spacing-4);
+
+  @include desktop-up {
+    flex-direction: row;
+    row-gap: 0;
+    column-gap: var(--spacing-6);
+  }
+}
+
+.contact-form__row-item {
+  display: inline;
+  width: 100%;
+}
+
+.contact-form__vertical-align {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.contact-form__send-button {
+  max-width: fit-content;
+  margin-left: auto;
+}
+
+// Hide the fax field, since it is used as a honeypot
+.contact-form__fax {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}

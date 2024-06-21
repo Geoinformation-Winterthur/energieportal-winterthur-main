@@ -1,0 +1,71 @@
+@import "../../../styles/breakpoints.scss";
+@import "../../../styles/typography.scss";
+
+.header {
+  padding: var(--spacing-9) var(--spacing-5) var(--spacing-5);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--spacing-5);
+
+  @include tablet-up {
+    flex-direction: column;
+    padding: var(--spacing-8) var(--spacing-8) 0;
+  }
+}
+
+.header__content {
+  width: 100%;
+
+  @include tablet-up {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-8);
+  }
+}
+
+.header__topline {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--spacing-4);
+
+
+  @include tablet-up {
+    height: var(--spacing-11);
+  }
+}
+
+.header__red-strip {
+  position: absolute;
+  left: 0;
+  top: var(--spacing-11);
+  width: var(--spacing-1);
+  height: var(--spacing-11);
+  background-color: var(--color-brand-red);
+  z-index: 2;
+
+  @include tablet-up {
+    top: var(--spacing-9);
+  }
+}
+
+.header__domain {
+  position: absolute;
+  top: var(--spacing-16);
+
+  @include tablet-up {
+    top: 0;
+    position: relative;
+  }
+}
+
+.header__title {
+  @include typo-headline-2();
+
+  display: none;
+
+  @include tablet-up {
+    display: block;
+  }
+}

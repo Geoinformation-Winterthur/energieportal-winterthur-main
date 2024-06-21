@@ -1,0 +1,9 @@
+@import "../../../../styles/breakpoints.scss";
+
+.tab-panel.tab-panel--reduced {
+  background: var(--color-white);
+}
+
+.tab-panel.tab-panel--in-overlay {
+  margin-top: var(--spacing-20);
+}

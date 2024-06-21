@@ -1,0 +1,45 @@
+@import "../../../styles/breakpoints.scss";
+@import "../../../styles/typography.scss";
+
+.solar-potential {
+  width: 100%;
+}
+
+.solar-potential__header {
+  margin-bottom: var(--spacing-6);
+  display: inline-block;
+}
+
+.solar-potential__title {
+  @include typo-headline-3();
+  margin-bottom: var(--spacing-4);
+}
+
+.solar-potential__lead {
+  @include typo-lead();
+  max-width: calc((8 / 12) * var(--max-width));
+  margin-bottom: var(--spacing-10);
+}
+
+.solar-potential__content {
+  display: flex;
+  flex-direction: column;
+
+  @include tablet-up {
+    display: grid;
+    justify-content: space-between;
+    gap: var(--spacing-8);
+    grid-template-columns: calc(5/12 * 100%) calc(7/12 * 100%);
+  }
+}
+
+.solar-potential__content-right {
+  background-color: var(--color-white);
+  padding: var(--spacing-6);
+  margin-top: var(--spacing-16);
+
+  @include tablet-up {
+    padding: var(--spacing-10);
+    margin-top: 0;
+  }
+}

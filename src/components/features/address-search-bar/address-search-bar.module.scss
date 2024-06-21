@@ -1,0 +1,55 @@
+@import "../../../styles/breakpoints.scss";
+@import "../../../styles/typography.scss";
+
+.address-search-bar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+  padding: var(--spacing-8) var(--spacing-4);
+  margin-top: -145px; // half of the components size
+
+  @include tablet-up {
+    flex-direction: row;
+    align-items: center;
+    padding: var(--spacing-10);
+    margin-top: -84px; // half of the components size
+  }
+}
+
+.address-search-bar--dark {
+  background-color: var(--color-brand-green-dark);
+
+  & .address-search-bar__form {
+    @include tablet-up {
+      width: 80%;
+    }
+  }
+}
+
+.address-search-bar--light {
+  background-color: var(--color-brand-green-light);
+  margin-top: -96px; // half of the components size
+
+  @include tablet-up {
+    margin-top: -68px; // half of the components size
+  }
+
+  & .address-search-bar__form {
+    width: 100%;
+  }
+}
+
+.address-search-bar__title {
+  @include typo-headline-3();
+
+  margin-bottom: var(--spacing-2);
+
+  @include tablet-up {
+    margin-bottom: 0;
+  }
+}
+
+.address-search-bar__title,
+.address-search-bar__lead {
+  color: var(--color-white);
+}

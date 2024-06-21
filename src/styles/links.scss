@@ -1,0 +1,66 @@
+@import "./typography.scss";
+
+a {
+  @include typo-body();
+
+  display: inline;
+  color: var(--color-links);
+  text-decoration: none;
+  transition: color 0.2s ease-out;
+  max-width: max-content;
+
+  svg {
+    color: var(--color-links);
+    transition: transform 0.2s ease;
+  }
+
+  &:focus,
+  &:hover,
+  &:active,
+  &--active {
+    color: var(--color-text-primary);
+
+    svg {
+      animation: animate 0.3s ease-in-out forwards;
+    }
+  }
+}
+
+a.has-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-2);
+}
+
+a.link-primary {
+  color: var(--color-text-primary);
+
+  &:focus,
+  &:hover,
+  &:active,
+  &--active {
+    color: var(--color-links);
+  }
+}
+
+a.no-animation svg {
+  animation: none;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(20px);
+  }
+
+  55% {
+    transform: translateX(-20px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
