@@ -2,17 +2,15 @@
 
 Das Energieportal der Stadt Winterthur
 
-Important Links:
-
-- [Prod Environment](https://energieportal-winterthur.vercel.app/)
-- [Confluence](https://dreipol.atlassian.net/wiki/spaces/WI/pages/1150484481/WIN-23-06+Winergie+Projektsetup)
-- [Jira Board](https://dreipol.atlassian.net/jira/software/c/projects/WIN2306/boards/53)
-- [Figma Designs](https://www.figma.com/file/LTnxaRaa7oUmf1qpYMqgSd/%5BWIN-23-06%5D-Winergie)
-- [Miro Board](https://miro.com/app/board/uXjVNkh3Trc=/)
-
 ## Setup
 
-First, install the dependencies:
+Make sure to use the right Node version:
+
+```bash
+nvm use
+```
+
+Install the dependencies:
 
 ```bash
 npm i
@@ -50,6 +48,6 @@ The scripts for linting and prettifying are executed automatically as part of th
 
 ### Vercel
 
-Find the project on [Vercel](https://vercel.com/dreipol/energieportal-winterthur).
+Find the project on [Vercel](https://energieportal-winterthur.vercel.app/).
 
 To update your Production Deployment, push to the "main" branch.
