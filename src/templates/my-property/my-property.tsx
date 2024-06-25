@@ -43,14 +43,7 @@ export const MyPropertyPage = () => {
           <h3 className={styles["property-facts__title"]}>{t("my_property.property_facts_title")} {currentAddress}</h3>
           <div className={styles["my-property__wrapper"]}>
             <PropertyFacts />
-            <div>
-              <PropertyImage />
-              <p className={styles["my-property__update-info"]}>
-                {t("my_property.property_update_info_1")}
-                <Link href={t("my_property.property_update_info_link_target")}>{t("my_property.property_update_info_link")}</Link>
-                {t("my_property.property_update_info_2")}
-              </p>
-            </div>
+            <PropertyImage />
           </div>
         </div>
         <PropertyFactsAccordion />
