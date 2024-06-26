@@ -71,7 +71,7 @@
     "my_property.property_facts_egid": "Identifikationsnummer (EGID)",
     "my_property.property_facts_not_available": "Keine Angabe",
     "my_property.property_image_alt": "Gebäude von oben",
-    "my_property.property_facts.accordion_summary": "Sind Sie an einer Schätzung der CO2-Emissionen Ihres Gebäudes interessiert?",
+    "my_property.property_facts.accordion_summary": "Sind Sie an einer Schätzung der CO₂-Emissionen Ihres Gebäudes interessiert?",
     "my_property.property_facts.accordion_detail_1": "Eine Schätzung der CO₂-Emissionen Ihres Gebäudes finden Sie auf dem",
     "my_property.property_facts.accordion_link_1": "Geoportal des Bundes",
     "my_property.property_facts.accordion_link_target_1": "https://map.geo.admin.ch/#/map?lang=de&center=2660000,1190000&z=1&bgLayer=ch.swisstopo.pixelkarte-farbe&topic=ech&layers=ch.bafu.klima-co2_ausstoss_gebaeude",
