@@ -57,7 +57,7 @@ export const MyPropertyPage = () => {
           <h2 className={styles["co2-emissions__title"]}>{t("my_property.co2_emissions_title")}</h2>
           <p className={styles["co2-emissions__lead"]}>{t("my_property.co2_emissions.lead_1")} <a href={t("my_property.co2_emissions.lead_link_target_1")} target="_blank">{t("my_property.co2_emissions.lead_link_1")}</a> {t("my_property.co2_emissions.lead_2")} <a href="#tabs" onClick={(e) => handleScroll(e)}>{t("my_property.co2_emissions.lead_link_2")}</a>{t("my_property.co2_emissions.lead_3")}</p>
           <h3 className={styles["property-facts__title"]}>{t("my_property.property_facts_title")} {currentAddress}</h3>
-          <p className={styles["property-facts__lead"]}>{t("my_property.property_facts.lead_1")} <a href={t("my_property.property_facts.lead_link_target_1")} target="_blank">{t("my_property.property_facts.lead_link_1")}</a>{t("my_property.property_facts.lead_2")} <a href={t("my_property.property_facts.lead_link_target_2")} target="_blank">{t("my_property.property_facts.lead_link_2")}</a> {t("my_property.property_facts.lead_3")}</p>
+          <p className={styles["property-facts__lead"]}>{t("my_property.property_facts.lead_1")} <a href={t("my_property.property_facts.lead_link_target_1")} target="_blank">{t("my_property.property_facts.lead_link_1")}</a>{t("my_property.property_facts.lead_2")} <a href={process.env.NEXT_PUBLIC_BASE_PATH + t("my_property.property_facts.lead_link_target_2")} target="_blank">{t("my_property.property_facts.lead_link_2")}</a> {t("my_property.property_facts.lead_3")}</p>
           <div className={styles["property-facts__wrapper"]}>
             <PropertyFacts />
             <PropertyImage />
