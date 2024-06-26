@@ -17,9 +17,9 @@ export const PropertyFacts = () => {
   const [year, setYear] = useState("");
   const [area, setArea] = useState("");
   const [floors, setFloors] = useState("");
+  const [apartments, setApartments] = useState(0);
   const [heating, setHeating] = useState("");
   const [heatSource, setHeatSource] = useState("");
-  const [egid, setEgid] = useState("");
 
   useEffect(() => {
     if (searchParams.get("address")) {
@@ -35,9 +35,9 @@ export const PropertyFacts = () => {
       setYear(propertyAttributes?.gbauj || isNotAvailableMessage);
       setArea(propertyAttributes?.garea && propertyAttributes?.garea + " m²" || isNotAvailableMessage);
       setFloors(propertyAttributes?.gastw || isNotAvailableMessage);
+      setApartments(propertyAttributes?.ganzwhg || isNotAvailableMessage);
       setHeating(getPropertyHeatingType(propertyAttributes?.gwaerzh1) || isNotAvailableMessage);
       setHeatSource(getPropertyHeatSource(propertyAttributes?.genh1) || isNotAvailableMessage);
-      setEgid(propertyAttributes?.egid || isNotAvailableMessage);
     }
 
     if (currentAddress) {
@@ -66,16 +66,16 @@ export const PropertyFacts = () => {
             <td className={styles["property-facts__table-row-data"]}>{floors}</td>
           </tr>
           <tr className={styles["property-facts__table-row"]}>
+            <th className={styles["property-facts__table-row-head"]}>{t("my_property.property_facts_apartments")}</th>
+            <td className={styles["property-facts__table-row-data"]}>{apartments}</td>
+          </tr>
+          <tr className={styles["property-facts__table-row"]}>
             <th className={styles["property-facts__table-row-head"]}>{t("my_property.property_facts_heating")}</th>
             <td className={styles["property-facts__table-row-data"]}>{heating}</td>
           </tr>
           <tr className={styles["property-facts__table-row"]}>
             <th className={styles["property-facts__table-row-head"]}>{t("my_property.property_facts_heat_source")}</th>
             <td className={styles["property-facts__table-row-data"]}>{heatSource}</td>
-          </tr>
-          <tr className={styles["property-facts__table-row"]}>
-            <th className={styles["property-facts__table-row-head"]}>{t("my_property.property_facts_egid")}</th>
-            <td className={styles["property-facts__table-row-data"]}>{egid}</td>
           </tr>
         </tbody>
       </table>

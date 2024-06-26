@@ -1,5 +1,4 @@
 import { useTranslation } from "../../../../i18n";
-import { Co2EmissionDescription } from "./co2-emission-description";
 import styles from "./co2-emissions.module.scss";
 
 export const Co2Emissions = () => {
@@ -13,7 +12,6 @@ export const Co2Emissions = () => {
         <a href={t("my_property.co2_emissions_link_target")} target="_blank">{t("my_property.co2_emissions_link")}</a>
         {t("my_property.co2_emissions_lead_post")}
       </p>
-      <Co2EmissionDescription />
     </div>
   )
 }

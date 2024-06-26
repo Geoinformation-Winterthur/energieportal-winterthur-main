@@ -1,13 +1,36 @@
 @import "../../styles/breakpoints.scss";
 @import "../../styles/typography.scss";
 
+.co2-emissions__title {
+  @include typo-headline-2();
+
+  margin-bottom: var(--spacing-2);
+
+  @include tablet-up {
+    margin-bottom: var(--spacing-4);
+  }
+}
+
+.co2-emissions__lead,
+.co2-emissions__lead a {
+  @include typo-lead();
+}
+
+.co2-emissions__lead {
+  margin-bottom: var(--spacing-12);
+}
+
 .property-facts__title {
   @include typo-headline-3();
 
   margin-bottom: var(--spacing-6);
 }
 
-.my-property__wrapper {
+.property-facts__lead {
+  margin-bottom: var(--spacing-6);
+}
+
+.property-facts__wrapper {
   display: flex;
   flex-direction: column-reverse;
   gap: var(--spacing-8);
@@ -16,8 +39,4 @@
     display: grid;
     grid-template-columns: 70% 30%;
   }
-}
-
-.my-property__update-info {
-  margin-top: var(--spacing-4);
 }
