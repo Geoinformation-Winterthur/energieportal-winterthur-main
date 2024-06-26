@@ -14,9 +14,8 @@ a {
     transition: transform 0.2s ease;
   }
 
-  &:focus,
+  &:focus-visible,
   &:hover,
-  &:active,
   &--active {
     color: var(--color-text-primary);
 
@@ -35,9 +34,8 @@ a.has-icon {
 a.link-primary {
   color: var(--color-text-primary);
 
-  &:focus,
+  &:focus-visible,
   &:hover,
-  &:active,
   &--active {
     color: var(--color-links);
   }
