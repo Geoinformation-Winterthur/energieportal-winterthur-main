@@ -43,7 +43,7 @@ export const MyPropertyPage = () => {
     if (currentAddress) {
       const targetElement = document.getElementById('online-consulting');
       if (targetElement) {
-        targetElement.scrollIntoView({ behavior: 'smooth', block: "end" });
+        targetElement.scrollIntoView({ behavior: 'smooth' });
       }
     }
   }, [currentAddress])
@@ -53,7 +53,7 @@ export const MyPropertyPage = () => {
       <Intro title={t("my_property.title")} variant="dark" />
       <OneCol noPaddingTop>
         <AddressSearchBar variant="light" />
-        <div id="online-consulting">
+        <div id="online-consulting" className={styles["my-property_online-consulting"]}>
           <h2 className={styles["co2-emissions__title"]}>{t("my_property.co2_emissions_title")}</h2>
           <p className={styles["co2-emissions__lead"]}>{t("my_property.co2_emissions.lead_1")} <a href={t("my_property.co2_emissions.lead_link_target_1")} target="_blank">{t("my_property.co2_emissions.lead_link_1")}</a> {t("my_property.co2_emissions.lead_2")} <a href="#tabs" onClick={(e) => handleScroll(e)}>{t("my_property.co2_emissions.lead_link_2")}</a>{t("my_property.co2_emissions.lead_3")}</p>
           <h3 className={styles["property-facts__title"]}>{t("my_property.property_facts_title")} {currentAddress}</h3>

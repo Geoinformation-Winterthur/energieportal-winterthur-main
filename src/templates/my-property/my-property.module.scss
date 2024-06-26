@@ -1,6 +1,10 @@
 @import "../../styles/breakpoints.scss";
 @import "../../styles/typography.scss";
 
+.my-property_online-consulting {
+  scroll-margin-top: 250px;
+}
+
 .co2-emissions__title {
   @include typo-headline-2();
 
