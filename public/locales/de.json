@@ -59,7 +59,7 @@
     "my_property.property_facts.lead_link_target_1": "https://www.housing-stat.ch/de/index.html",
     "my_property.property_facts.lead_2": ". Die Angaben entsprechen teilweise nicht dem aktuellen Stand. Die Gemeinden sind verpflichtet, die Daten aktuell zu halten. Wir bitten Sie daher, fehlerhafte Angaben",
     "my_property.property_facts.lead_link_2": "hier",
-    "my_property.property_facts.lead_link_target_2": "/kontakt",
+    "my_property.property_facts.lead_link_target_2": "/kontakt/",
     "my_property.property_facts.lead_3": "zu melden.",
     "my_property.property_facts_category": "Gebäudekategorie",
     "my_property.property_facts_year": "Baujahr",
