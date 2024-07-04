@@ -33,8 +33,6 @@ export const Slider = ({ children }: SliderProps) => {
 
     Object.assign(swiperRef?.current, params);
     swiperRef?.current?.initialize();
-    console.log(swiperRef?.current?.initialize);
-
   }, []);
 
   return (
