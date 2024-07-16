@@ -50,4 +50,4 @@ The scripts for linting and prettifying are executed automatically as part of th
 
 Find the project on [Vercel](https://energieportal-winterthur.vercel.app/).
 
-To update your Production Deployment, push to the "main" branch.
+To update the Production Deployment, push to the "main" branch.
