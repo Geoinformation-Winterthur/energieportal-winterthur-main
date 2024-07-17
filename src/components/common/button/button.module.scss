@@ -24,13 +24,22 @@
     opacity: 0.4;
   }
 
-  &--pressed {
+  &--pressed:not(.button--light) {
     background-color: var(--color-black);
+  }
+
+  &--light {
+    color: var(--color-text-primary);
+    background-color: var(--color-white);
+
+    &.button--disabled {
+      background-color: var(--color-tab-hover);
+    }
   }
 }
 
 @media (hover: hover) {
-  .button:hover {
+  .button:not(.button--light):hover {
     background-color: var(--color-black);
   }
 }

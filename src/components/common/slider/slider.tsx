@@ -1,4 +1,3 @@
-
 import { useEffect, useRef } from "react";
 import { register } from "swiper/element/bundle";
 import { SwiperOptions } from "swiper/types";
@@ -27,14 +26,12 @@ export const Slider = ({ children }: SliderProps) => {
       },
       navigation: {
         nextEl: nextRef.current,
-        prevEl: prevRef.current
+        prevEl: prevRef.current,
       },
     };
 
     Object.assign(swiperRef?.current, params);
     swiperRef?.current?.initialize();
-    console.log(swiperRef?.current?.initialize);
-
   }, []);
 
   return (

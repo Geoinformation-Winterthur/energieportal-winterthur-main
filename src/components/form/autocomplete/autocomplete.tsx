@@ -74,18 +74,10 @@ export const Autocomplete = () => {
   const handleOnChange = async (value: string, reason: string) => {
     if (reason === "selectOption") {
       setSelectedValue(value);
-      handleSubmitClick(value);
       setSearchResults([]);
       setOpen(false);
       return;
     }
-  };
-
-  const handleSubmitClick = (value: string) => {
-    router.push(pathname + "?" + createQueryString("address", value), {
-      scroll: false,
-    });
-    setSubmittedAddress(value);
   };
 
   const handleClearClick = () => {
@@ -96,6 +88,17 @@ export const Autocomplete = () => {
   const handleOnBlur = () => {
     setSearchResults([]);
     setOpen(false);
+  };
+
+  const handleSubmit = (event?: React.FormEvent<HTMLFormElement>) => {
+    event && event.preventDefault();
+    router.push(
+      pathname + "?" + createQueryString("address", selectedValue ?? ""),
+      {
+        scroll: false,
+      }
+    );
+    setSubmittedAddress(selectedValue);
   };
 
   return (
@@ -131,11 +134,16 @@ export const Autocomplete = () => {
             >
               <Icon icon={isLoading ? "loading" : "search"} />
             </div>
-            <input
-              type="text"
-              {...params.inputProps}
-              placeholder={t("address.search_bar.input_placeholder")}
-            />
+            <form
+              onSubmit={handleSubmit}
+              className={styles["autocomplete__form"]}
+            >
+              <input
+                type="text"
+                {...params.inputProps}
+                placeholder={t("address.search_bar.input_placeholder")}
+              />
+            </form>
             {submittedAddress && (
               <div
                 className={clsx(
@@ -153,7 +161,7 @@ export const Autocomplete = () => {
         {submittedAddress ? (
           <Button
             disabled={!selectedValue || !searchString}
-            onClick={() => handleSubmitClick(searchString ?? "")}
+            onClick={() => handleSubmit()}
           >
             {t("address.search_bar.edit")}
           </Button>
@@ -161,7 +169,7 @@ export const Autocomplete = () => {
           <Button
             disabled={!selectedValue || !searchString}
             icon="arrow-right"
-            onClick={() => handleSubmitClick(searchString ?? "")}
+            onClick={() => handleSubmit()}
           >
             {t("address.search_bar.submit")}
           </Button>
