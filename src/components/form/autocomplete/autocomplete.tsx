@@ -134,7 +134,10 @@ export const Autocomplete = () => {
             >
               <Icon icon={isLoading ? "loading" : "search"} />
             </div>
-            <form onSubmit={handleSubmit}>
+            <form
+              onSubmit={handleSubmit}
+              className={styles["autocomplete__form"]}
+            >
               <input
                 type="text"
                 {...params.inputProps}
