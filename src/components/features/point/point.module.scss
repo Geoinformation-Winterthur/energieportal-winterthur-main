@@ -38,22 +38,71 @@
   }
 
   &.point--roof {
-    top: 18%;
-    right: 37%;
+    top: 15%;
+    right: 36%;
+
+    @media (430px < width < 834px) {
+      top: 19%;
+    }
+
+    @include tablet-up {
+      top: 14%;
+      right: 34%;
+    }
+
+    @include desktop-up {
+      top: 18%;
+      right: 37%;
+    }
   }
 
   &.point--facade {
     top: 47%;
-    right: 24%;
+    right: 22%;
+
+    @media (430px < width < 834px) {
+      right: 24%;
+    }
+
+    @include tablet-up {
+      right: 20%;
+    }
+
+    @include desktop-up {
+      right: 24%;
+    }
   }
 
   &.point--windows {
     top: 45%;
-    right: 45%;
+    right: 43%;
+
+    @media (430px < width < 834px) {
+      right: 46%;
+    }
+
+    @include tablet-up {
+      right: 42%;
+    }
+
+    @include desktop-up {
+      right: 45%;
+    }
   }
 
   &.point--basement {
-    top: 64%;
+    top: 62%;
     right: 56%;
+
+    @media (430px < width < 834px) {
+      top: 65%;
+    }
+
+    @include tablet-up {
+      top: 60%;
+    }
+    @include desktop-up {
+      top: 64%;
+    }
   }
 }
