@@ -57,7 +57,7 @@ export const Geothermal = () => {
         </Accordion>
         <Accordion summary={t("my_property.heating_faq.geothermal.summary_9")}>
           <AccordionDetails>
-            {t("my_property.heating_faq.geothermal.detail_9_1")} <a href={t("my_property.heating_faq.geothermal.detail_9_link_target_1")} target="_blank">{t("my_property.heating_faq.geothermal.detail_9_link_1")}</a>{t("my_property.heating_faq.geothermal.detail_9_2")} <a href={t("my_property.heating_faq.geothermal.detail_9_link_target_2")} target="_blank">{t("my_property.heating_faq.geothermal.detail_9_link_2")}</a> {t("my_property.heating_faq.geothermal.detail_9_3")}
+            {t("my_property.heating_faq.geothermal.detail_9_1")} <a href={t("my_property.heating_faq.geothermal.detail_9_link_target_1")} target="_blank">{t("my_property.heating_faq.geothermal.detail_9_link_1")}</a>{t("my_property.heating_faq.geothermal.detail_9_2")}
           </AccordionDetails>
         </Accordion>
       </div>

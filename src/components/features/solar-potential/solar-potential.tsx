@@ -36,6 +36,11 @@ export const SolarPotential = () => {
     setSolarFacts(facts);
   }
 
+  const onZoomClick = () => {
+    setClickedPosition(null);
+    setSolarFacts(null);
+  }
+
   useEffect(() => {
     if (searchParams.get("address")) {
       setCurrentAddress(searchParams.get("address") ?? "");
@@ -59,7 +64,7 @@ export const SolarPotential = () => {
       </div>
       <div className={styles["solar-potential__content"]}>
         <div className={styles["solar-potential__content-left"]}>
-          <SolarImage clickedCoordinates={clickedPosition} onImageClick={onImageClick} />
+          <SolarImage clickedCoordinates={clickedPosition} onImageClick={onImageClick} onZoomClick={onZoomClick} />
         </div>
         <div className={styles["solar-potential__content-right"]}>
           <SolarFacts solarFacts={solarFacts} />

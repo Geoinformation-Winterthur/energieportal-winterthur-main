@@ -9,6 +9,7 @@ interface ButtonProps {
   onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
   href?: string;
   disabled?: boolean;
+  light?: boolean;
 }
 
 export const Button = ({
@@ -17,6 +18,7 @@ export const Button = ({
   onClick,
   href,
   disabled,
+  light
 }: ButtonProps) => {
 
   const [isPressed, setIsPressed] = useState(false);
@@ -32,7 +34,7 @@ export const Button = ({
   if (href) {
     return (
       <a
-        className={clsx(styles["button"], disabled ? styles["button--disabled"] : "")}
+        className={clsx(styles["button"], disabled ? styles["button--disabled"] : "", light ? styles["button--light"] : "")}
         href={href}
       >
         {children}
@@ -42,7 +44,7 @@ export const Button = ({
   }
   return (
     <button
-      className={clsx(styles["button"], disabled ? styles["button--disabled"] : "", isPressed ? styles["button--pressed"] : "")}
+      className={clsx(styles["button"], disabled ? styles["button--disabled"] : "", isPressed ? styles["button--pressed"] : "", light ? styles["button--light"] : "")}
       onClick={onClick} onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}
     >
       {children}
