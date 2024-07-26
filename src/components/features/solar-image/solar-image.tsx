@@ -15,6 +15,8 @@ import styles from "./solar-image.module.scss";
 
 const PIN_SIZE = 16;
 const HALF_PIN_SIZE = PIN_SIZE / 2;
+const INITIAL_ZOOM_LEVEL = 2;
+const INITIAL_MARGIN = 20;
 
 interface SolarImageProps {
   clickedCoordinates: { x: number; y: number } | null;
@@ -37,14 +39,14 @@ export const SolarImage = ({
   const [imgSrc, setImgSrc] = useState("");
   const [solarImageSrc, setSolarImageSrc] = useState("");
   const [coordinates, setCoordinates] = useState<MapArea | null>(null);
-  const [zoomLevel, setZoomLevel] = useState(2);
-  const [margin, setMargin] = useState(20);
+  const [zoomLevel, setZoomLevel] = useState(INITIAL_ZOOM_LEVEL);
+  const [margin, setMargin] = useState(INITIAL_MARGIN);
 
   useEffect(() => {
     if (searchParams.get("address")) {
       setCurrentAddress(searchParams.get("address") ?? "");
-      setZoomLevel(2);
-      setMargin(20);
+      setZoomLevel(INITIAL_ZOOM_LEVEL);
+      setMargin(INITIAL_MARGIN);
     }
   }, [searchParams]);
 
@@ -98,7 +100,7 @@ export const SolarImage = ({
     if (zoomLevel === 3) {
       return;
     }
-    zoomLevel === 0 ? setMargin(margin - 20) : setMargin(margin - 10);
+    zoomLevel === 0 ? setMargin(margin - 30) : setMargin(margin - 10);
     setZoomLevel(zoomLevel + 1);
     onZoomClick();
   };
@@ -108,7 +110,7 @@ export const SolarImage = ({
     if (zoomLevel === 0) {
       return;
     }
-    zoomLevel - 1 === 0 ? setMargin(margin + 20) : setMargin(margin + 10);
+    zoomLevel - 1 === 0 ? setMargin(margin + 30) : setMargin(margin + 10);
     setZoomLevel(zoomLevel - 1);
     onZoomClick();
   };
