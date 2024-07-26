@@ -4,12 +4,6 @@ Das Energieportal der Stadt Winterthur
 
 ## Setup
 
-Make sure to use the right Node version:
-
-```bash
-nvm use
-```
-
 Install the dependencies:
 
 ```bash
