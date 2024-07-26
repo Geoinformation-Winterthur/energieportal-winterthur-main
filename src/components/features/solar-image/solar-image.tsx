@@ -2,14 +2,16 @@ import { Button } from "@/components/common/button/button";
 import { Icon } from "@/components/common/icon/icon";
 import { MapArea } from "@/types/map-area";
 import { getPropertyFacts } from "@/utils/get-property-facts";
-import { getPropertyImage } from "@/utils/get-property-image";
-import { getSolarImage } from "@/utils/get-solar-potential";
+import {
+  getSolarImage,
+  getSolarImageRoofArea,
+} from "@/utils/get-solar-potential";
+import clsx from "clsx";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useTranslation } from "../../../../i18n";
 import styles from "./solar-image.module.scss";
-import clsx from "clsx";
 
 const PIN_SIZE = 16;
 const HALF_PIN_SIZE = PIN_SIZE / 2;
@@ -64,13 +66,13 @@ export const SolarImage = ({
         nCoordIncreased,
       });
 
-      const image = await getPropertyImage(
+      const image = await getSolarImage(
         eCoordDecreased,
         nCoordDecreased,
         eCoordIncreased,
         nCoordIncreased
       );
-      const solarImage = await getSolarImage(
+      const solarImage = await getSolarImageRoofArea(
         eCoordDecreased,
         nCoordDecreased,
         eCoordIncreased,
