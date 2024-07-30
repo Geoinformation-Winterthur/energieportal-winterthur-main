@@ -4,13 +4,14 @@
 .service-tiles__title {
   @include typo-headline-2();
 
-  margin-bottom: var(--spacing-10)
+  margin-bottom: var(--spacing-10);
 }
 
 .service-tiles__services {
   display: grid;
   align-items: end;
   gap: var(--spacing-8);
+  height: max-content;
 
   @include tablet-up {
     grid-template-columns: 1fr 1fr;

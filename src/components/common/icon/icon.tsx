@@ -20,8 +20,10 @@ import Info from "./assets/info.svg";
 import Link from "./assets/link.svg";
 import Loading from "./assets/loading.svg";
 import Mail from "./assets/mail.svg";
+import Minus from "./assets/minus.svg";
 import Pellet from "./assets/pellet.svg";
 import Phone from "./assets/phone.svg";
+import Plus from "./assets/plus.svg";
 import Refurbishment from "./assets/refurbishment.svg";
 import Search from "./assets/search.svg";
 import Send from "./assets/send.svg";
@@ -29,7 +31,7 @@ import Warning from "./assets/warning.svg";
 import styles from "./icon.module.scss";
 
 export type IconType =
-  "airwater"
+  | "airwater"
   | "arrow-down"
   | "arrow-left"
   | "arrow-right"
@@ -48,13 +50,15 @@ export type IconType =
   | "link"
   | "loading"
   | "mail"
+  | "minus"
   | "pellet"
   | "phone"
+  | "plus"
   | "refurbishment"
   | "search"
   | "send"
   | "success"
-  | "warning"
+  | "warning";
 
 interface IconProps {
   icon: IconType;
@@ -73,7 +77,7 @@ export const Icon = ({ icon, size = 20, color, onButtonClick }: IconProps) => {
     "chevron-down": <ChevronDown width={size} height={size} />,
     "chevron-up": <ChevronUp width={size} height={size} />,
     close: <Close width={size} height={size} />,
-    "close_overlay": <CloseOverlay width={size} height={size} />,
+    close_overlay: <CloseOverlay width={size} height={size} />,
     consulting: <Consulting width={size} height={size} />,
     districtheating: <DistrictHeating width={size} height={size} />,
     error: <Error width={size} height={size} />,
@@ -84,8 +88,10 @@ export const Icon = ({ icon, size = 20, color, onButtonClick }: IconProps) => {
     link: <Link width={size} height={size} />,
     loading: <Loading width={size} height={size} />,
     mail: <Mail width={size} height={size} />,
+    minus: <Minus width={size} height={size} />,
     pellet: <Pellet width={size} height={size} />,
     phone: <Phone width={size} height={size} />,
+    plus: <Plus width={size} height={size} />,
     refurbishment: <Refurbishment width={size} height={size} />,
     search: <Search width={size} height={size} />,
     send: <Send width={size} height={size} />,
@@ -95,10 +101,13 @@ export const Icon = ({ icon, size = 20, color, onButtonClick }: IconProps) => {
 
   if (onButtonClick) {
     return (
-      <button className={clsx(styles["icon-button"], styles[`icon--${color}`])} onClick={onButtonClick}>
+      <button
+        className={clsx(styles["icon-button"], styles[`icon--${color}`])}
+        onClick={onButtonClick}
+      >
         {iconMap[icon]}
       </button>
-    )
+    );
   }
 
   return (

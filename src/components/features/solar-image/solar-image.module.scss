@@ -24,6 +24,26 @@
   border-radius: 50%;
 }
 
+.solar-image__buttons {
+  position: absolute;
+  bottom: var(--spacing-1);
+  right: var(--spacing-1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-white);
+}
+
+.solar-image__buttons-divider {
+  width: 70%;
+  height: 1px;
+  background-color: var(--color-tab-hover);
+
+  &--hidden {
+    display: none;
+  }
+}
+
 .solar-image__legend {
   position: absolute;
   display: flex;
