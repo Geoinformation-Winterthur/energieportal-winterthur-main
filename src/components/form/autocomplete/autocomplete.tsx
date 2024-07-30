@@ -92,6 +92,9 @@ export const Autocomplete = () => {
 
   const handleSubmit = (event?: React.FormEvent<HTMLFormElement>) => {
     event && event.preventDefault();
+    if (!selectedValue) {
+      return;
+    }
     router.push(
       pathname + "?" + createQueryString("address", selectedValue ?? ""),
       {

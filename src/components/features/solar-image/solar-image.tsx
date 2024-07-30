@@ -2,17 +2,21 @@ import { Button } from "@/components/common/button/button";
 import { Icon } from "@/components/common/icon/icon";
 import { MapArea } from "@/types/map-area";
 import { getPropertyFacts } from "@/utils/get-property-facts";
-import { getPropertyImage } from "@/utils/get-property-image";
-import { getSolarImage } from "@/utils/get-solar-potential";
+import {
+  getSolarImage,
+  getSolarImageRoofArea,
+} from "@/utils/get-solar-potential";
+import clsx from "clsx";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useTranslation } from "../../../../i18n";
 import styles from "./solar-image.module.scss";
-import clsx from "clsx";
 
 const PIN_SIZE = 16;
 const HALF_PIN_SIZE = PIN_SIZE / 2;
+const INITIAL_ZOOM_LEVEL = 2;
+const INITIAL_MARGIN = 20;
 
 interface SolarImageProps {
   clickedCoordinates: { x: number; y: number } | null;
@@ -35,14 +39,14 @@ export const SolarImage = ({
   const [imgSrc, setImgSrc] = useState("");
   const [solarImageSrc, setSolarImageSrc] = useState("");
   const [coordinates, setCoordinates] = useState<MapArea | null>(null);
-  const [zoomLevel, setZoomLevel] = useState(2);
-  const [margin, setMargin] = useState(20);
+  const [zoomLevel, setZoomLevel] = useState(INITIAL_ZOOM_LEVEL);
+  const [margin, setMargin] = useState(INITIAL_MARGIN);
 
   useEffect(() => {
     if (searchParams.get("address")) {
       setCurrentAddress(searchParams.get("address") ?? "");
-      setZoomLevel(2);
-      setMargin(20);
+      setZoomLevel(INITIAL_ZOOM_LEVEL);
+      setMargin(INITIAL_MARGIN);
     }
   }, [searchParams]);
 
@@ -64,13 +68,13 @@ export const SolarImage = ({
         nCoordIncreased,
       });
 
-      const image = await getPropertyImage(
+      const image = await getSolarImage(
         eCoordDecreased,
         nCoordDecreased,
         eCoordIncreased,
         nCoordIncreased
       );
-      const solarImage = await getSolarImage(
+      const solarImage = await getSolarImageRoofArea(
         eCoordDecreased,
         nCoordDecreased,
         eCoordIncreased,
@@ -96,7 +100,7 @@ export const SolarImage = ({
     if (zoomLevel === 3) {
       return;
     }
-    zoomLevel === 0 ? setMargin(margin - 20) : setMargin(margin - 10);
+    zoomLevel === 0 ? setMargin(margin - 30) : setMargin(margin - 10);
     setZoomLevel(zoomLevel + 1);
     onZoomClick();
   };
@@ -106,7 +110,7 @@ export const SolarImage = ({
     if (zoomLevel === 0) {
       return;
     }
-    zoomLevel - 1 === 0 ? setMargin(margin + 20) : setMargin(margin + 10);
+    zoomLevel - 1 === 0 ? setMargin(margin + 30) : setMargin(margin + 10);
     setZoomLevel(zoomLevel - 1);
     onZoomClick();
   };
