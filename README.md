@@ -22,26 +22,30 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-To create a local build:
-
-```bash
-npm run build
-```
-
-and
-
-```bash
-npm run start
-```
-
 ### Linter & Prettier
 
 The scripts for linting and prettifying are executed automatically as part of the pre-commit hook.
 
 ## Deployment
 
-### Vercel
+### Create build for roll-out
 
-Find the project on [Vercel](https://energieportal-winterthur.vercel.app/).
+Make sure, the correct root path is set in your .env file:
 
-To update the Production Deployment, push to the "main" branch.
+```bash
+NEXT_PUBLIC_BASE_PATH=/energieportal
+```
+
+Also, specify the backend service where to query the data from (productive or testing environment):
+
+```bash
+NEXT_PUBLIC_API_ENDPOINT=https://stadtplan.winterthur.ch/energieportal-service
+```
+
+Ceate the build files:
+
+```bash
+npm run build
+```
+
+Finally, find the result in /out in the root directory.
