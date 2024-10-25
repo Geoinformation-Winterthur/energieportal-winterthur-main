@@ -195,6 +195,134 @@
         "description": "in Planung: Ein Teil des Wärmenetzes in Ihrem Quartier ist derzeit im Bau. Die Planung des Ausbaus dieses Wärmenetzes dauert von Juli 2024 bis Ende 2025. Ist die Wirtschaftlichkeit für den Ausbau gegeben, wird das gesamte Gebiet «Neuwiesen» voraussichtlich ab 2026 erschlossen. Bei Fragen wenden Sie sich an Stadtwerk Winterthur Kundenberatung Wärme unter 052 267 16 29 oder stadtwerk.waerme@win.ch."
       }
     },
+    "my_property.heating_faq.districtheating_p1": {
+      "title": "Verdichtung:",
+      "status_1": "Sie können Ihre Liegenschaft an die Fernwärme anschliessen. Informieren Sie sich über das weitere Vorgehen bei Stadtwerk Winterthur Kundenberatung Wärme unter",
+      "status_link_1": "052 267 16 29",
+      "status_link_target_1": "tel:052 267 16 29",
+      "status_2": "oder",
+      "status_link_2": "stadtwerk.waerme@win.ch",
+      "status_link_target_2": "mailto:stadtwerk.waerme@win.ch",
+      "status_3": "."
+    },
+    "my_property.heating_faq.districtheating_p2": {
+      "title": "Verdichtung:",
+      "status_1": "Sie können Ihre Liegenschaft an das Wärmenetz anschliessen. Informieren Sie sich über das weitere Vorgehen bei Stadtwerk Winterthur Kundenberatung Wärme unter",
+      "status_link_1": "052 267 16 29",
+      "status_link_target_1": "tel:052 267 16 29",
+      "status_2": "oder",
+      "status_link_2": "stadtwerk.waerme@win.ch",
+      "status_link_target_2": "mailto:stadtwerk.waerme@win.ch",
+      "status_3": "."
+    },
+    "my_property.heating_faq.districtheating_p7": {
+      "title": "Verdichtung:",
+      "status_1": "Sie können Ihre Liegenschaft an das Wärmenetz anschliessen. Informieren Sie sich über das weitere Vorgehen bei Stadtwerk Winterthur Kundenberatung Wärme unter",
+      "status_link_1": "052 267 16 29",
+      "status_link_target_1": "tel:052 267 16 29",
+      "status_2": "oder",
+      "status_link_2": "stadtwerk.waerme@win.ch",
+      "status_link_target_2": "mailto:stadtwerk.waerme@win.ch",
+      "status_3": "."
+    },
+    "my_property.heating_faq.districtheating_p9": {
+      "title": "Verdichtung:",
+      "status_1": "Sie können Ihre Liegenschaft an das Wärmenetz anschliessen. Informieren Sie sich über das weitere Vorgehen bei Stadtwerk Winterthur Kundenberatung Wärme unter",
+      "status_link_1": "052 267 16 29",
+      "status_link_target_1": "tel:052 267 16 29",
+      "status_2": "oder",
+      "status_link_2": "stadtwerk.waerme@win.ch",
+      "status_link_target_2": "mailto:stadtwerk.waerme@win.ch",
+      "status_3": "."
+    },
+    "my_property.heating_faq.districtheating_p12": {
+      "title": "Verdichtung:",
+      "status_1": "Sie können Ihre Liegenschaft an das Wärmenetz anschliessen. Informieren Sie sich über das weitere Vorgehen bei Stadtwerk Winterthur Kundenberatung Wärme unter",
+      "status_link_1": "052 267 16 29",
+      "status_link_target_1": "tel:052 267 16 29",
+      "status_2": "oder",
+      "status_link_2": "stadtwerk.waerme@win.ch",
+      "status_link_target_2": "mailto:stadtwerk.waerme@win.ch",
+      "status_3": "."
+    },
+    "my_property.heating_faq.districtheating_p13": {
+      "title": "Verdichtung:",
+      "status_1": "Sie können Ihre Liegenschaft an das Wärmenetz anschliessen. Informieren Sie sich über das weitere Vorgehen bei Stadtwerk Winterthur Kundenberatung Wärme unter",
+      "status_link_1": "052 267 16 29",
+      "status_link_target_1": "tel:052 267 16 29",
+      "status_2": "oder",
+      "status_link_2": "stadtwerk.waerme@win.ch",
+      "status_link_target_2": "mailto:stadtwerk.waerme@win.ch",
+      "status_3": "."
+    },
+    "my_property.heating_faq.districtheating_p14": {
+      "title": "Verdichtung:",
+      "status_1": "Sie können Ihre Liegenschaft an das Wärmenetz anschliessen. Informieren Sie sich über das weitere Vorgehen bei Stadtwerk Winterthur Kundenberatung Wärme unter",
+      "status_link_1": "052 267 16 29",
+      "status_link_target_1": "tel:052 267 16 29",
+      "status_2": "oder",
+      "status_link_2": "stadtwerk.waerme@win.ch",
+      "status_link_target_2": "mailto:stadtwerk.waerme@win.ch",
+      "status_3": "."
+    },
+    "my_property.heating_faq.districtheating_p15": {
+      "title": "Verdichtung:",
+      "status_1": "Sie können Ihre Liegenschaft an das Wärmenetz anschliessen. Informieren Sie sich über das weitere Vorgehen bei Stadtwerk Winterthur Kundenberatung Wärme unter",
+      "status_link_1": "052 267 16 29",
+      "status_link_target_1": "tel:052 267 16 29",
+      "status_2": "oder",
+      "status_link_2": "stadtwerk.waerme@win.ch",
+      "status_link_target_2": "mailto:stadtwerk.waerme@win.ch",
+      "status_3": "."
+    },
+    "my_property.heating_faq.districtheating_v3": {
+      "title": "In Prüfung:",
+      "status_1": "Die technische und wirtschaftliche Machbarkeit des Wärmenetzes in Ihrem Quartier wird derzeit geprüft. Die Resultate der Machbarkeitsstudie liegen im 3. Quartal 2024 vor und das weitere Vorgehen wird geplant."
+    },
+    "my_property.heating_faq.districtheating_v4": {
+      "title": "In Planung:",
+      "status_1": "Ein Teil des Wärmenetzes in Ihrem Quartier ist derzeit im Bau. Die Planung des Ausbaus dieses Wärmenetzes dauert von Juli 2024 bis Ende 2025. Ist die Wirtschaftlichkeit für den Ausbau gegeben, wird das gesamte Gebiet «Neuwiesen» voraussichtlich ab 2026 erschlossen. Bei Fragen wenden Sie sich an Stadtwerk Winterthur Kundenberatung Wärme unter",
+      "status_link_1": "052 267 16 29",
+      "status_link_target_1": "tel:052 267 16 29",
+      "status_3": "oder",
+      "status_link_2": "stadtwerk.waerme@win.ch",
+      "status_link_target_2": "mailto:stadtwerk.waerme@win.ch",
+      "status_4": "."
+    },
+    "my_property.heating_faq.districtheating_v5": {
+      "title": "In Prüfung:",
+      "status_1": "Die technische und wirtschaftliche Machbarkeit des Wärmenetzes in Ihrem Quartier wird derzeit geprüft. Die Resultate der Machbarkeitsstudie liegen im 3. Quartal 2024 vor und das weitere Vorgehen wird geplant."
+    },
+    "my_property.heating_faq.districtheating_v8": {
+      "title": "In Prüfung:",
+      "status_1": "Die technische und wirtschaftliche Machbarkeit des Wärmenetzes in Ihrem Quartier wird derzeit geprüft. Die Resultate der Machbarkeitsstudie liegen im 3. Quartal 2024 vor und das weitere Vorgehen wird geplant."
+    },
+    "my_property.heating_faq.districtheating_v10": {
+      "title": "In Prüfung:",
+      "status_1": "Die technische und wirtschaftliche Machbarkeit des Wärmenetzes in Ihrem Quartier wird derzeit geprüft. Die Resultate der Machbarkeitsstudie liegen im 3. Quartal 2024 vor und das weitere Vorgehen wird geplant."
+    },
+    "my_property.heating_faq.districtheating_v11": {
+      "title": "In Planung:",
+      "status_1": "Die Planungsphase dieses Wärmenetzes dauert von Juli 2024 bis Ende 2025. Ist die Wirtschaftlichkeit für das Wärmenetz gegeben, wird das gesamte Gebiet «Seen» voraussichtlich ab 2026 erschlossen. Bei Fragen wenden Sie sich an Stadtwerk Winterthur Kundenberatung Wärme unter",
+      "status_link_1": "052 267 16 29",
+      "status_link_target_1": "tel:052 267 16 29",
+      "status_3": "oder",
+      "status_link_2": "stadtwerk.waerme@win.ch",
+      "status_link_target_2": "mailto:stadtwerk.waerme@win.ch",
+      "status_4": "."
+    },
+    "my_property.heating_faq.districtheating_v17": {
+      "title": "In Prüfung:",
+      "status_1": "Die technische und wirtschaftliche Machbarkeit des Wärmenetzes in Ihrem Quartier wird derzeit geprüft. Die Resultate der Machbarkeitsstudie liegen im 3. Quartal 2024 vor und das weitere Vorgehen wird geplant."
+    },
+    "my_property.heating_faq.districtheating_v18": {
+      "title": "In Prüfung:",
+      "status_1": "Die technische und wirtschaftliche Machbarkeit des Wärmenetzes in Ihrem Quartier wird derzeit geprüft. Die Resultate der Machbarkeitsstudie liegen im 3. Quartal 2024 vor und das weitere Vorgehen wird geplant."
+    },
+    "my_property.heating_faq.districtheating_v19": {
+      "title": "In Prüfung:",
+      "status_1": "Die technische und wirtschaftliche Machbarkeit des Wärmenetzes in Ihrem Quartier wird derzeit geprüft. Die Resultate der Machbarkeitsstudie liegen im 3. Quartal 2024 vor und das weitere Vorgehen wird geplant."
+    },
     "my_property.heating_faq.functionality": "Funktionsweise und Wissenswertes",
     "my_property.heating_faq.permit": "Bewilligungsverfahren",
     "my_property.heating_faq.groundwater.summary_1": "Wie funktioniert eine Grundwasser-Wärmepumpe?",

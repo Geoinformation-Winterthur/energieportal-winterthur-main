@@ -8,21 +8,19 @@ import { Pellet } from "./pellet";
 
 interface HeatingsFaqProps {
   code: HeatingCode;
+  area: string;
 }
-export const HeatingsFaq = ({ code }: HeatingsFaqProps) => {
-
+export const HeatingsFaq = ({ code, area }: HeatingsFaqProps) => {
   const heatingsFaqMap = {
-    "airwater": <Airwater />,
-    "districtheating_v": <DistrictHeatingP />,
-    "districtheating_p1": <DistrictHeatingP isP1 />,
-    "districtheating_pl": <DistrictHeatingV inPlanning />,
-    "districtheating_pr": <DistrictHeatingV />,
-    "geothermal": <Geothermal />,
-    "groundwater": <Groundwater />,
-    "pellet": <Pellet />
-  }
+    airwater: <Airwater />,
+    districtheating_v: <DistrictHeatingP area={area} />,
+    districtheating_p1: <DistrictHeatingP area={area} />,
+    districtheating_pl: <DistrictHeatingV area={area} />,
+    districtheating_pr: <DistrictHeatingV area={area} />,
+    geothermal: <Geothermal />,
+    groundwater: <Groundwater />,
+    pellet: <Pellet />,
+  };
 
-  return (
-    <div>{heatingsFaqMap[code]}</div>
-  )
-}
+  return <div>{heatingsFaqMap[code]}</div>;
+};
