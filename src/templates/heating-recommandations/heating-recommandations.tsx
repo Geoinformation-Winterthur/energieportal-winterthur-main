@@ -30,7 +30,7 @@ export const HeatingRecommendations = () => {
             target="_blank"
           >
             {t("my_property.heating_recommendations.accordion_link_2")}
-          </a>{" "}
+          </a>
           {t("my_property.heating_recommendations.accordion_detail_3")}
         </AccordionDetails>
       </Accordion>

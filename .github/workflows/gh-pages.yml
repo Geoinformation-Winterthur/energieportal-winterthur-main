@@ -23,7 +23,8 @@ jobs:
 
       - name: Build the project
         env:
-          NEXT_PUBLIC_BASE_PATH: "/energieportal"
+          NEXT_PUBLIC_BASE_PATH: "/energieportal-winterthur-main"
+          NEXT_PUBLIC_API_ENDPOINT: "https://stadtplan.winterthur.ch/energieportal-service"
         run: |
           npm run build
 
