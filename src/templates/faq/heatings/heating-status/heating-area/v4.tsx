@@ -7,27 +7,27 @@ export const V4 = () => {
   return (
     <p>
       <span className={styles["heating-status__title"]}>
-        {t("my_property.heating_faq.districtheating_v4.title")}
+        {t("my_property.heating_faq.districtheating_V4.title")}:
       </span>{" "}
-      {t("my_property.heating_faq.districtheating_v4.status_1")}{" "}
+      {t("my_property.heating_faq.districtheating_V4.status_1")}{" "}
       <a
         href={t(
-          "my_property.heating_faq.districtheating_v4.status_link_target_1"
+          "my_property.heating_faq.districtheating_V4.status_link_target_1"
         )}
         target="_blank"
       >
-        {t("my_property.heating_faq.districtheating_v4.status_link_1")}
+        {t("my_property.heating_faq.districtheating_V4.status_link_1")}
       </a>{" "}
-      {t("my_property.heating_faq.districtheating_v4.status_3")}{" "}
+      {t("my_property.heating_faq.districtheating_V4.status_3")}{" "}
       <a
         href={t(
-          "my_property.heating_faq.districtheating_v4.status_link_target_2"
+          "my_property.heating_faq.districtheating_V4.status_link_target_2"
         )}
         target="_blank"
       >
-        {t("my_property.heating_faq.districtheating_v4.status_link_2")}
+        {t("my_property.heating_faq.districtheating_V4.status_link_2")}
       </a>
-      {t("my_property.heating_faq.districtheating_v4.status_4")}
+      {t("my_property.heating_faq.districtheating_V4.status_4")}
     </p>
   );
 };

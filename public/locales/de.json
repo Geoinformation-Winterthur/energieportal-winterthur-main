@@ -144,7 +144,7 @@
         "die verfügbaren Holzreserven sind knapp"
       ]
     },
-    "my_property.heating_recommendations.districtheating_v": {
+    "my_property.heating_recommendations.districtheating_p": {
       "title": "Bestehende Wärmenetze",
       "pros": [
         "auch für den Altbau geeignet",
@@ -155,13 +155,9 @@
       "cons": [
         "teurer bei kleiner Heizleistung",
         "Spitzenabdeckung mit Erdgas"
-      ],
-      "status": {
-        "label": "Verdichtung",
-        "description": "Verdichtung: Sie können Ihre Liegenschaft an die Fernwärme anschliessen. Informieren Sie sich über das weitere Vorgehen bei Stadtwerk Winterthur Kundenberatung Wärme unter 052 267 16 29 oder stadtwerk.waerme@win.ch."
-      }
+      ]
     },
-    "my_property.heating_recommendations.districtheating_pr": {
+    "my_property.heating_recommendations.districtheating_v": {
       "title": "Vorgesehene Wärmenetze",
       "pros": [
         "auch für den Altbau geeignet",
@@ -178,25 +174,8 @@
         "description": "in Prüfung: Die technische und wirtschaftliche Machbarkeit des Wärmenetzes in Ihrem Quartier wird derzeit geprüft. Die Resultate der Machbarkeitsstudie liegen im 3. Quartal 2024 vor und das weitere Vorgehen wird geplant."
       }
     },
-    "my_property.heating_recommendations.districtheating_pl": {
-      "title": "Vorgesehene Wärmenetze",
-      "pros": [
-        "auch für den Altbau geeignet",
-        "für Mehrfamilienhäuser mit hoher Heizleistung geeignet",
-        "lokal produzierte Heizenergie aus Kehricht oder Holzschnitzel",
-        "geringe Kosten für Wartung und Unterhalt"
-      ],
-      "cons": [
-        "teurer bei kleiner Heizleistung",
-        "Übergangslösung nötig, wenn die Heizung ausfällt, bevor das Wärmenetz gebaut ist"
-      ],
-      "status": {
-        "label": "in Planung",
-        "description": "in Planung: Ein Teil des Wärmenetzes in Ihrem Quartier ist derzeit im Bau. Die Planung des Ausbaus dieses Wärmenetzes dauert von Juli 2024 bis Ende 2025. Ist die Wirtschaftlichkeit für den Ausbau gegeben, wird das gesamte Gebiet «Neuwiesen» voraussichtlich ab 2026 erschlossen. Bei Fragen wenden Sie sich an Stadtwerk Winterthur Kundenberatung Wärme unter 052 267 16 29 oder stadtwerk.waerme@win.ch."
-      }
-    },
-    "my_property.heating_faq.districtheating_p1": {
-      "title": "Verdichtung:",
+    "my_property.heating_faq.districtheating_P1": {
+      "title": "Verdichtung",
       "status_1": "Sie können Ihre Liegenschaft an die Fernwärme anschliessen. Informieren Sie sich über das weitere Vorgehen bei Stadtwerk Winterthur Kundenberatung Wärme unter",
       "status_link_1": "052 267 16 29",
       "status_link_target_1": "tel:052 267 16 29",
@@ -205,8 +184,8 @@
       "status_link_target_2": "mailto:stadtwerk.waerme@win.ch",
       "status_3": "."
     },
-    "my_property.heating_faq.districtheating_p2": {
-      "title": "Verdichtung:",
+    "my_property.heating_faq.districtheating_P2": {
+      "title": "Verdichtung",
       "status_1": "Sie können Ihre Liegenschaft an das Wärmenetz anschliessen. Informieren Sie sich über das weitere Vorgehen bei Stadtwerk Winterthur Kundenberatung Wärme unter",
       "status_link_1": "052 267 16 29",
       "status_link_target_1": "tel:052 267 16 29",
@@ -215,8 +194,8 @@
       "status_link_target_2": "mailto:stadtwerk.waerme@win.ch",
       "status_3": "."
     },
-    "my_property.heating_faq.districtheating_p7": {
-      "title": "Verdichtung:",
+    "my_property.heating_faq.districtheating_P7": {
+      "title": "Verdichtung",
       "status_1": "Sie können Ihre Liegenschaft an das Wärmenetz anschliessen. Informieren Sie sich über das weitere Vorgehen bei Stadtwerk Winterthur Kundenberatung Wärme unter",
       "status_link_1": "052 267 16 29",
       "status_link_target_1": "tel:052 267 16 29",
@@ -225,8 +204,8 @@
       "status_link_target_2": "mailto:stadtwerk.waerme@win.ch",
       "status_3": "."
     },
-    "my_property.heating_faq.districtheating_p9": {
-      "title": "Verdichtung:",
+    "my_property.heating_faq.districtheating_P9": {
+      "title": "Verdichtung",
       "status_1": "Sie können Ihre Liegenschaft an das Wärmenetz anschliessen. Informieren Sie sich über das weitere Vorgehen bei Stadtwerk Winterthur Kundenberatung Wärme unter",
       "status_link_1": "052 267 16 29",
       "status_link_target_1": "tel:052 267 16 29",
@@ -235,8 +214,8 @@
       "status_link_target_2": "mailto:stadtwerk.waerme@win.ch",
       "status_3": "."
     },
-    "my_property.heating_faq.districtheating_p12": {
-      "title": "Verdichtung:",
+    "my_property.heating_faq.districtheating_P12": {
+      "title": "Verdichtung",
       "status_1": "Sie können Ihre Liegenschaft an das Wärmenetz anschliessen. Informieren Sie sich über das weitere Vorgehen bei Stadtwerk Winterthur Kundenberatung Wärme unter",
       "status_link_1": "052 267 16 29",
       "status_link_target_1": "tel:052 267 16 29",
@@ -245,8 +224,8 @@
       "status_link_target_2": "mailto:stadtwerk.waerme@win.ch",
       "status_3": "."
     },
-    "my_property.heating_faq.districtheating_p13": {
-      "title": "Verdichtung:",
+    "my_property.heating_faq.districtheating_P13": {
+      "title": "Verdichtung",
       "status_1": "Sie können Ihre Liegenschaft an das Wärmenetz anschliessen. Informieren Sie sich über das weitere Vorgehen bei Stadtwerk Winterthur Kundenberatung Wärme unter",
       "status_link_1": "052 267 16 29",
       "status_link_target_1": "tel:052 267 16 29",
@@ -255,8 +234,8 @@
       "status_link_target_2": "mailto:stadtwerk.waerme@win.ch",
       "status_3": "."
     },
-    "my_property.heating_faq.districtheating_p14": {
-      "title": "Verdichtung:",
+    "my_property.heating_faq.districtheating_P14": {
+      "title": "Verdichtung",
       "status_1": "Sie können Ihre Liegenschaft an das Wärmenetz anschliessen. Informieren Sie sich über das weitere Vorgehen bei Stadtwerk Winterthur Kundenberatung Wärme unter",
       "status_link_1": "052 267 16 29",
       "status_link_target_1": "tel:052 267 16 29",
@@ -265,8 +244,8 @@
       "status_link_target_2": "mailto:stadtwerk.waerme@win.ch",
       "status_3": "."
     },
-    "my_property.heating_faq.districtheating_p15": {
-      "title": "Verdichtung:",
+    "my_property.heating_faq.districtheating_P15": {
+      "title": "Verdichtung",
       "status_1": "Sie können Ihre Liegenschaft an das Wärmenetz anschliessen. Informieren Sie sich über das weitere Vorgehen bei Stadtwerk Winterthur Kundenberatung Wärme unter",
       "status_link_1": "052 267 16 29",
       "status_link_target_1": "tel:052 267 16 29",
@@ -275,13 +254,13 @@
       "status_link_target_2": "mailto:stadtwerk.waerme@win.ch",
       "status_3": "."
     },
-    "my_property.heating_faq.districtheating_v3": {
-      "title": "In Prüfung:",
+    "my_property.heating_faq.districtheating_V3": {
+      "title": "In Prüfung",
       "status_1": "Die technische und wirtschaftliche Machbarkeit des Wärmenetzes in Ihrem Quartier wird derzeit geprüft. Die Resultate der Machbarkeitsstudie liegen im 3. Quartal 2024 vor und das weitere Vorgehen wird geplant."
     },
-    "my_property.heating_faq.districtheating_v4": {
-      "title": "In Planung:",
-      "status_1": "Ein Teil des Wärmenetzes in Ihrem Quartier ist derzeit im Bau. Die Planung des Ausbaus dieses Wärmenetzes dauert von Juli 2024 bis Ende 2025. Ist die Wirtschaftlichkeit für den Ausbau gegeben, wird das gesamte Gebiet «Neuwiesen» voraussichtlich ab 2026 erschlossen. Bei Fragen wenden Sie sich an Stadtwerk Winterthur Kundenberatung Wärme unter",
+    "my_property.heating_faq.districtheating_V4": {
+      "title": "In Planung",
+      "status_1": "Ein Teil des Wärmenetzes in Ihrem Quartier ist derzeit im Bau. Die Planun des Ausbaus dieses Wärmenetzes dauert von Juli 2024 bis Ende 2025. Ist die Wirtschaftlichkeit für den Ausbau gegeben, wird das gesamte Gebiet «Neuwiesen» voraussichtlich ab 2026 erschlossen. Bei Fragen wenden Sie sich an Stadtwerk Winterthur Kundenberatung Wärme unter",
       "status_link_1": "052 267 16 29",
       "status_link_target_1": "tel:052 267 16 29",
       "status_3": "oder",
@@ -289,20 +268,20 @@
       "status_link_target_2": "mailto:stadtwerk.waerme@win.ch",
       "status_4": "."
     },
-    "my_property.heating_faq.districtheating_v5": {
-      "title": "In Prüfung:",
+    "my_property.heating_faq.districtheating_V5": {
+      "title": "In Prüfung",
       "status_1": "Die technische und wirtschaftliche Machbarkeit des Wärmenetzes in Ihrem Quartier wird derzeit geprüft. Die Resultate der Machbarkeitsstudie liegen im 3. Quartal 2024 vor und das weitere Vorgehen wird geplant."
     },
-    "my_property.heating_faq.districtheating_v8": {
-      "title": "In Prüfung:",
+    "my_property.heating_faq.districtheating_V8": {
+      "title": "In Prüfung",
       "status_1": "Die technische und wirtschaftliche Machbarkeit des Wärmenetzes in Ihrem Quartier wird derzeit geprüft. Die Resultate der Machbarkeitsstudie liegen im 3. Quartal 2024 vor und das weitere Vorgehen wird geplant."
     },
-    "my_property.heating_faq.districtheating_v10": {
-      "title": "In Prüfung:",
+    "my_property.heating_faq.districtheating_V10": {
+      "title": "In Prüfung",
       "status_1": "Die technische und wirtschaftliche Machbarkeit des Wärmenetzes in Ihrem Quartier wird derzeit geprüft. Die Resultate der Machbarkeitsstudie liegen im 3. Quartal 2024 vor und das weitere Vorgehen wird geplant."
     },
-    "my_property.heating_faq.districtheating_v11": {
-      "title": "In Planung:",
+    "my_property.heating_faq.districtheating_V11": {
+      "title": "In Planung",
       "status_1": "Die Planungsphase dieses Wärmenetzes dauert von Juli 2024 bis Ende 2025. Ist die Wirtschaftlichkeit für das Wärmenetz gegeben, wird das gesamte Gebiet «Seen» voraussichtlich ab 2026 erschlossen. Bei Fragen wenden Sie sich an Stadtwerk Winterthur Kundenberatung Wärme unter",
       "status_link_1": "052 267 16 29",
       "status_link_target_1": "tel:052 267 16 29",
@@ -311,16 +290,16 @@
       "status_link_target_2": "mailto:stadtwerk.waerme@win.ch",
       "status_4": "."
     },
-    "my_property.heating_faq.districtheating_v17": {
-      "title": "In Prüfung:",
+    "my_property.heating_faq.districtheating_V17": {
+      "title": "In Prüfung",
       "status_1": "Die technische und wirtschaftliche Machbarkeit des Wärmenetzes in Ihrem Quartier wird derzeit geprüft. Die Resultate der Machbarkeitsstudie liegen im 3. Quartal 2024 vor und das weitere Vorgehen wird geplant."
     },
-    "my_property.heating_faq.districtheating_v18": {
-      "title": "In Prüfung:",
+    "my_property.heating_faq.districtheating_V18": {
+      "title": "In Prüfung",
       "status_1": "Die technische und wirtschaftliche Machbarkeit des Wärmenetzes in Ihrem Quartier wird derzeit geprüft. Die Resultate der Machbarkeitsstudie liegen im 3. Quartal 2024 vor und das weitere Vorgehen wird geplant."
     },
-    "my_property.heating_faq.districtheating_v19": {
-      "title": "In Prüfung:",
+    "my_property.heating_faq.districtheating_V19": {
+      "title": "In Prüfung",
       "status_1": "Die technische und wirtschaftliche Machbarkeit des Wärmenetzes in Ihrem Quartier wird derzeit geprüft. Die Resultate der Machbarkeitsstudie liegen im 3. Quartal 2024 vor und das weitere Vorgehen wird geplant."
     },
     "my_property.heating_faq.functionality": "Funktionsweise und Wissenswertes",
@@ -442,26 +421,6 @@
     "my_property.heating_faq.pellet.detail_8_link": "hier",
     "my_property.heating_faq.pellet.detail_8_link_target": "https://stadt.winterthur.ch/themen/leben-in-winterthur/planen-und-bauen/wir-beraten-sie/baubewilligungsverfahren/kosten-des-baubewilligungsverfahren",
     "my_property.heating_faq.pellet.detail_8_2": ".",
-    "my_property.heating_faq.districtheating_p1.status_1": "Sie können Ihre Liegenschaft an die Fernwärme anschliessen. Informieren Sie sich über das weitere Vorgehen bei Stadtwerk Winterthur Kundenberatung Wärme unter",
-    "my_property.heating_faq.districtheating_p1.status_link_1": "052 267 16 29",
-    "my_property.heating_faq.districtheating_p1.status_link_target_1": "tel:052 267 16 29",
-    "my_property.heating_faq.districtheating_p1.status_2": "oder",
-    "my_property.heating_faq.districtheating_p1.status_link_2": "stadtwerk.waerme@win.ch",
-    "my_property.heating_faq.districtheating_p1.status_link_target_2": "mailto:stadtwerk.waerme@win.ch",
-    "my_property.heating_faq.districtheating_p1.status_3": ". Mehr zu Wärmenetzen finden Sie",
-    "my_property.heating_faq.districtheating_p1.status_link_3": "hier",
-    "my_property.heating_faq.districtheating_p1.status_link_target_3": "https://stadtwerk.winterthur.ch/Angebot/Waerme/Waermenetze",
-    "my_property.heating_faq.districtheating_p1.status_4": ".",
-    "my_property.heating_faq.districtheating_p.status_1": "Sie können Ihre Liegenschaft an das Wärmenetz anschliessen. Informieren Sie sich über das weitere Vorgehen bei Stadtwerk Winterthur Kundenberatung Wärme unter",
-    "my_property.heating_faq.districtheating_p.status_link_1": "052 267 16 29",
-    "my_property.heating_faq.districtheating_p.status_link_target_1": "tel:052 267 16 29",
-    "my_property.heating_faq.districtheating_p.status_2": "oder",
-    "my_property.heating_faq.districtheating_p.status_link_2": "stadtwerk.waerme@win.ch",
-    "my_property.heating_faq.districtheating_p.status_link_target_2": "mailto:stadtwerk.waerme@win.ch",
-    "my_property.heating_faq.districtheating_p.status_3": ". Mehr zu Wärmenetzen finden Sie",
-    "my_property.heating_faq.districtheating_p.status_link_3": "hier",
-    "my_property.heating_faq.districtheating_p.status_link_target_3": "https://stadtwerk.winterthur.ch/Angebot/Waerme/Waermenetze",
-    "my_property.heating_faq.districtheating_p.status_4": ".",
     "my_property.heating_faq.districtheating_p.summary_1": "Kann ich meine Liegenschaft an ein Wärmenetz anschliessen?",
     "my_property.heating_faq.districtheating_p.detail_1_1": "Der kommunale Energieplan zeigt, in welchen Gebieten bereits Fernwärme respektive ein Wärmenetz vorhanden ist. Diese Gebiete werden als «Prioritätsgebiet» bezeichnet und sollen in Zukunft verdichtet werden. Ihre Liegenschaft befindet sich in einem solchen Gebiet. Der Anschluss an die Fernwärme respektive an das Wärmenetz ist in der Regel innerhalb eines Jahres möglich. Die individuelle Situation muss mit Stadtwerk Winterthur abgeklärt werden. Hausanschlüsse werden ausserhalb der Heizperiode – also von Mai bis September – erstellt. Mehr Informationen zu Wärmenetzen finden Sie bei",
     "my_property.heating_faq.districtheating_p.detail_link_1": "Stadtwerk Winterthur",
@@ -493,22 +452,6 @@
     "my_property.heating_faq.districtheating_p.detail_8_link": "hier",
     "my_property.heating_faq.districtheating_p.detail_8_link_target": "https://stadt.winterthur.ch/themen/leben-in-winterthur/planen-und-bauen/wir-beraten-sie/baubewilligungsverfahren/kosten-des-baubewilligungsverfahren",
     "my_property.heating_faq.districtheating_p.detail_8_2": ".",
-    "my_property.heating_faq.districtheating_v.status_pl_1": "In Planung:",
-    "my_property.heating_faq.districtheating_v.status_pl_2": "Ein Teil des Wärmenetzes in Ihrem Quartier ist derzeit im Bau. Die Planung des Ausbaus dieses Wärmenetzes dauert von Juli 2024 bis Ende 2025. Ist die Wirtschaftlichkeit für den Ausbau gegeben, wird das gesamte Gebiet «Neuwiesen» voraussichtlich ab 2026 erschlossen. Bei Fragen wenden Sie sich an Stadtwerk Winterthur Kundenberatung Wärme unter",
-    "my_property.heating_faq.districtheating_v.status_pl_link_1": "052 267 16 29",
-    "my_property.heating_faq.districtheating_v.status_pl_link_target_1": "tel:052 267 16 29",
-    "my_property.heating_faq.districtheating_v.status_pl_3": "oder",
-    "my_property.heating_faq.districtheating_v.status_pl_link_2": "stadtwerk.waerme@win.ch",
-    "my_property.heating_faq.districtheating_v.status_pl_link_target_2": "mailto:stadtwerk.waerme@win.ch",
-    "my_property.heating_faq.districtheating_v.status_pl_4": ". Mehr zu Wärmenetzen finden Sie",
-    "my_property.heating_faq.districtheating_v.status_pl_link_3": "hier",
-    "my_property.heating_faq.districtheating_v.status_pl_link_target_3": "https://stadtwerk.winterthur.ch/Angebot/Waerme/Waermenetze",
-    "my_property.heating_faq.districtheating_v.status_pl_5": ".",
-    "my_property.heating_faq.districtheating_v.status_pr_1": "In Prüfung:",
-    "my_property.heating_faq.districtheating_v.status_pr_2": "Die technische und wirtschaftliche Machbarkeit des Wärmenetzes in Ihrem Quartier wird derzeit geprüft. Die Resultate der Machbarkeitsstudie liegen ab dem 3. Quartal 2024 vor und das weitere Vorgehen wird geplant. Mehr zu Wärmenetzen finden Sie",
-    "my_property.heating_faq.districtheating_v.status_pr_link_1": "hier",
-    "my_property.heating_faq.districtheating_v.status_pr_link_target_1": "https://stadtwerk.winterthur.ch/Angebot/Waerme/Waermenetze",
-    "my_property.heating_faq.districtheating_v.status_pr_3": ".",
     "my_property.heating_faq.districtheating_v.summary_1": "Kann ich meine Liegenschaft an ein Wärmenetz anschliessen?",
     "my_property.heating_faq.districtheating_v.detail_1_1": "Der Energieplan zeigt, in welchen Gebieten in der Stadt Winterthur bereits Wärmenetze bestehen und wo diese in Planung oder in Prüfung sind. Gebiete, in denen Wärmenetze vorgesehen sind, diese aber noch nicht gebaut sind, werden als «vorgesehene Wärmeversorgungsgebiete» bezeichnet. Ihre Liegenschaft befindet sich in einem solchen Gebiet. Mehr Informationen zu Wärmenetzen finden Sie bei",
     "my_property.heating_faq.districtheating_v.detail_link_1": "Stadtwerk Winterthur",

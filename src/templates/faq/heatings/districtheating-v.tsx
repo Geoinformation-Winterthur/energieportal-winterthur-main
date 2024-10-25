@@ -14,7 +14,7 @@ export const DistrictHeatingV = ({ area }: DistrictHeatingVProps) => {
   return (
     <div className={styles["faq"]}>
       <h3 className={styles["faq__heating-title"]}>
-        {t("my_property.heating_recommendations.districtheating_pr.title")}
+        {t("my_property.heating_recommendations.districtheating_v.title")}
       </h3>
       <div className={styles["faq__box"]}>
         <HeatingStatus area={area} />

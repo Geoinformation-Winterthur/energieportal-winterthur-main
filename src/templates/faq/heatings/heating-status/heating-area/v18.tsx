@@ -7,9 +7,9 @@ export const V18 = () => {
   return (
     <p>
       <span className={styles["heating-status__title"]}>
-        {t("my_property.heating_faq.districtheating_v18.title")}
+        {t("my_property.heating_faq.districtheating_V18.title")}:
       </span>{" "}
-      {t("my_property.heating_faq.districtheating_v18.status_1")}
+      {t("my_property.heating_faq.districtheating_V18.status_1")}
     </p>
   );
 };

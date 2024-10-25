@@ -36,11 +36,7 @@ export const HeatingTile = ({
 
   const showIcon = (heating: Heating) => (
     <Tab
-      icon={
-        heating.isDistrictHeating
-          ? "districtheating"
-          : (heating.code as IconType)
-      }
+      icon={heating.code as IconType}
       value={heating.code}
       key={heating.code}
     ></Tab>
@@ -70,14 +66,7 @@ export const HeatingTile = ({
         {allRecommendations?.map((heating) => (
           <TabPanel value={heating.code} key={heating.code}>
             <FullWidth variant="white">
-              <HeatingsFaq
-                code={
-                  heating.code === "districtheating_v" && heating.area === "P1"
-                    ? "districtheating_p1"
-                    : heating.code
-                }
-                area={heating.area}
-              />
+              <HeatingsFaq code={heating.code} area={heating.area} />
             </FullWidth>
           </TabPanel>
         ))}
@@ -92,9 +81,7 @@ export const HeatingTile = ({
       </h5>
       {renderHeatingOverlay(
         <button className={styles["heating-tile__status-btn"]}>
-          {t(
-            `my_property.heating_recommendations.${heating.code}.status.label`
-          )}
+          {t(`my_property.heating_faq.districtheating_${heating.area}.title`)}
         </button>
       )}
     </div>
@@ -107,14 +94,7 @@ export const HeatingTile = ({
           <h4 className={styles["heating-tile__title"]}>
             {t(`my_property.heating_recommendations.${heating.code}.title`)}
           </h4>
-          <Icon
-            icon={
-              heating.isDistrictHeating
-                ? "districtheating"
-                : (heating.code as IconType)
-            }
-            size={56}
-          />
+          <Icon icon={heating.code as IconType} size={56} />
         </div>
         <div className={styles["heating-tile__lists"]}>
           {heating.isDistrictHeating && <EnergyPlanStatus />}
