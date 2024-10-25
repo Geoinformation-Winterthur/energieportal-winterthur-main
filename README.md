@@ -2,50 +2,57 @@
 
 Das Energieportal der Stadt Winterthur
 
-## Setup
+## Anpassung Inhalte
 
-Install the dependencies:
+Die Texte der Website finden sich im File "/public/locales/de.json" und lassen sich dort anpassen.
+
+Wenn sich die Struktur eines Texts ändert (z.B. weitere Links hinzukommen, an anderer Stelle etc.), muss auch entsprechend das Template angepasst werden, das für die Darstellung des Texts verantwortlich ist. Das entsprechende Template lässt sich ausfindig machen, in dem nach dem key der Translation im Projekt gesucht wird.
+
+## Development
+
+### Setup
+
+Den Code entweder über HTTPS oder SSH klonen und in einer Entwicklungsumgebung öffnen.
+
+In Kommandozeile in Projektordner navigieren und Dependencies installieren:
 
 ```bash
 npm i
 ```
 
-## Development
+Auf root-Ebene eine Datei ".env" mit diesem Inhalt erstellen:
+
+```bash
+NEXT_PUBLIC_BASE_PATH=/energieportal
+NEXT_PUBLIC_API_ENDPOINT=https://stadtplan.winterthur.ch/energieportal-service
+```
 
 ### NextJS Server
 
-Run the development server:
+Den lokalen Entwicklungsserver starten:
 
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-### Linter & Prettier
-
-The scripts for linting and prettifying are executed automatically as part of the pre-commit hook.
+Im Browser [http://localhost:3000/energieportal](http://localhost:3000/energieportal) öffnen.
 
 ## Deployment
 
-### Create build for roll-out
+### Test-Umgebung
 
-Make sure, the correct root path is set in your .env file:
+Das Deployment auf eine Testumgebung erfolgt über Github Pages und wird automatisch ausgelöst, sobald Änderungen auf dem main-Branch vorgenommen werden:
 
-```bash
-NEXT_PUBLIC_BASE_PATH=/energieportal
-```
+https://geoinformation-winterthur.github.io/energieportal-winterthur-main/
 
-Also, specify the backend service where to query the data from (productive or testing environment):
+### Produktiv-Umgebung
 
-```bash
-NEXT_PUBLIC_API_ENDPOINT=https://stadtplan.winterthur.ch/energieportal-service
-```
+Das Veröffentlichen in die Produktivumgebung erfolgt manuell durch Edgar Butwilowski anhand von statischen Build-Files.
 
-Ceate the build files:
+Zum Generieren der Build-Files diesen Befehl in der Kommandozentrale ausführen:
 
 ```bash
 npm run build
 ```
 
-Finally, find the result in /out in the root directory.
+Die generierten Files wurden auf root-Ebene des Projektes im Ordner "/out" abgelegt. Den gesamten Ordner an Edgar ausliefern.
