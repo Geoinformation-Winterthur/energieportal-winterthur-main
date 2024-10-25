@@ -16,7 +16,7 @@ type RawHeating = {
   isRecommendation: boolean;
   status: string;
   area: string;
-}
+};
 
 export const HeatingTiles = () => {
   const { t } = useTranslation();
@@ -28,40 +28,37 @@ export const HeatingTiles = () => {
   const [heatingSystems, setHeatingSystems] = useState<Heating[]>([]);
 
   const transformHeatingData = (heatings: RawHeating[]) => {
-    return heatings.map(heating => {
+    return heatings.map((heating) => {
       if (heating.code === "districtheating") {
-        let specificCode;
-        switch (heating.status) {
-          case "Verdichtung":
-            specificCode = `${heating.code}_v`;
-            break;
-          case "in Prüfung":
-            specificCode = `${heating.code}_pr`;
-            break;
-          default:
-            specificCode = `${heating.code}_pl`;
-            break;
-        }
         return {
-          code: specificCode,
+          code:
+            heating.status === "Verdichtung"
+              ? `${heating.code}_p`
+              : `${heating.code}_v`,
           isRecommendation: heating.isRecommendation,
           status: heating.status,
           isDistrictHeating: true,
-          area: heating.area
+          area: heating.area,
         } as Heating;
       }
       return heating as Heating;
-    })
-  }
+    });
+  };
 
   useEffect(() => {
     if (searchParams.get("address")) {
       setCurrentAddress(searchParams.get("address") ?? "");
     }
-  }, [searchParams])
+  }, [searchParams]);
 
   useEffect(() => {
-    const orderOfHeatings = ["districtheating", "geothermal", "airwater", "groundwater", "pellet"];
+    const orderOfHeatings = [
+      "districtheating",
+      "geothermal",
+      "airwater",
+      "groundwater",
+      "pellet",
+    ];
 
     const sortHeatings = (heatings: RawHeating[]) => {
       return transformHeatingData(heatings).sort((a, b) => {
@@ -86,7 +83,7 @@ export const HeatingTiles = () => {
         }
         return indexA - indexB;
       });
-    }
+    };
 
     async function propertyWrapper() {
       setIsLoading(true);
@@ -104,25 +101,40 @@ export const HeatingTiles = () => {
     if (currentAddress) {
       propertyWrapper();
     }
-  }, [currentAddress])
+  }, [currentAddress]);
 
-  const renderHeating = (heating: Heating) => <HeatingTile heating={heating} allRecommendations={heatingSystems} key={heating.code} />
+  const renderHeating = (heating: Heating) => (
+    <HeatingTile
+      heating={heating}
+      allRecommendations={heatingSystems}
+      key={heating.code}
+    />
+  );
 
   return (
     <div className={styles["heating-tiles"]}>
       <div className={styles["heating-tiles__header"]}>
-        <h3 className={styles["heating-tiles__title"]}>{t("my_property.heating_recommendations.title")}</h3>
-        <p className={styles["heating-tiles__lead"]}>{t("my_property.heating_recommendations.lead")}</p>
+        <h3 className={styles["heating-tiles__title"]}>
+          {t("my_property.heating_recommendations.title")}
+        </h3>
+        <p className={styles["heating-tiles__lead"]}>
+          {t("my_property.heating_recommendations.lead")}
+        </p>
       </div>
       {isLoading ? <Icon icon="loading" /> : ""}
-      {isMobile ?
+      {isMobile ? (
         <Slider>
-          {heatingSystems.map(heating => <SliderSlide key={heating.code}>{renderHeating(heating)}</SliderSlide>)}
+          {heatingSystems.map((heating) => (
+            <SliderSlide key={heating.code}>
+              {renderHeating(heating)}
+            </SliderSlide>
+          ))}
         </Slider>
-        :
+      ) : (
         <div className={styles["heating-tiles__content"]}>
-          {heatingSystems.map(heating => renderHeating(heating))}
-        </div>}
+          {heatingSystems.map((heating) => renderHeating(heating))}
+        </div>
+      )}
     </div>
-  )
-}
+  );
+};

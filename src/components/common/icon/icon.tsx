@@ -41,7 +41,8 @@ export type IconType =
   | "close_overlay"
   | "close"
   | "consulting"
-  | "districtheating"
+  | "districtheating_p"
+  | "districtheating_v"
   | "error"
   | "geothermal"
   | "groundwater"
@@ -79,7 +80,8 @@ export const Icon = ({ icon, size = 20, color, onButtonClick }: IconProps) => {
     close: <Close width={size} height={size} />,
     close_overlay: <CloseOverlay width={size} height={size} />,
     consulting: <Consulting width={size} height={size} />,
-    districtheating: <DistrictHeating width={size} height={size} />,
+    districtheating_p: <DistrictHeating width={size} height={size} />,
+    districtheating_v: <DistrictHeating width={size} height={size} />,
     error: <Error width={size} height={size} />,
     geothermal: <Geothermal width={size} height={size} />,
     groundwater: <Groundwater width={size} height={size} />,
