@@ -9,7 +9,7 @@ export const V10 = () => {
       <span className={styles["heating-status__title"]}>
         {t("my_property.heating_faq.districtheating_V10.title")}:
       </span>{" "}
-      {t("my_property.heating_faq.districtheating_V10.status_1")}
+      {t("my_property.heating_faq.districtheating_V10.status_1")}{" "}
       <a
         href={t(
           "my_property.heating_faq.districtheating_V10.status_link_target_1"
