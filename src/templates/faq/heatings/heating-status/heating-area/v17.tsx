@@ -10,6 +10,33 @@ export const V17 = () => {
         {t("my_property.heating_faq.districtheating_V17.title")}:
       </span>{" "}
       {t("my_property.heating_faq.districtheating_V17.status_1")}
+      <a
+        href={t(
+          "my_property.heating_faq.districtheating_V17.status_link_target_1"
+        )}
+        target="_blank"
+      >
+        {t("my_property.heating_faq.districtheating_V17.status_link_1")}
+      </a>{" "}
+      {t("my_property.heating_faq.districtheating_V17.status_2")}{" "}
+      <a
+        href={t(
+          "my_property.heating_faq.districtheating_V17.status_link_target_2"
+        )}
+        target="_blank"
+      >
+        {t("my_property.heating_faq.districtheating_V17.status_link_2")}
+      </a>
+      {t("my_property.heating_faq.districtheating_V17.status_3")}{" "}
+      <a
+        href={t(
+          "my_property.heating_faq.districtheating_V17.status_link_target_3"
+        )}
+        target="_blank"
+      >
+        {t("my_property.heating_faq.districtheating_V17.status_link_3")}
+      </a>
+      {t("my_property.heating_faq.districtheating_V17.status_4")}
     </p>
   );
 };

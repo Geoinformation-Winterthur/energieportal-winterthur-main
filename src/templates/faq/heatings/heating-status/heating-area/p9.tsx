@@ -25,7 +25,15 @@ export const P9 = () => {
       >
         {t("my_property.heating_faq.districtheating_P9.status_link_2")}
       </a>
-      {t("my_property.heating_faq.districtheating_P9.status_3")}
+      {t("my_property.heating_faq.districtheating_P9.status_3")}{" "}
+      <a
+        href={t(
+          "my_property.heating_faq.districtheating_P9.status_link_target_3"
+        )}
+      >
+        {t("my_property.heating_faq.districtheating_P9.status_link_3")}
+      </a>
+      {t("my_property.heating_faq.districtheating_P9.status_4")}
     </p>
   );
 };
