@@ -21,15 +21,39 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build the project
+      - name: Build the project for Github Pages deployment
         env:
-          NEXT_PUBLIC_BASE_PATH: "/energieportal-winterthur-main"
           NEXT_PUBLIC_API_ENDPOINT: "https://stadtplan.winterthur.ch/energieportal-service"
-        run: |
-          npm run build
+          NEXT_PUBLIC_BASE_PATH: "/energieportal-winterthur-main"
+        run: npm run build
 
-      - name: Deploy to GitHub Pages
+      - name: Copy build files for deployment
+        run: |
+          mkdir -p ./builds/gh-pages
+          cp -r ./out/* ./builds/gh-pages/
+
+      - name: Build the project for productive deployment (with custom base path)
+        env:
+          NEXT_PUBLIC_API_ENDPOINT: "https://stadtplan.winterthur.ch/energieportal-service"
+          NEXT_PUBLIC_BASE_PATH: "/energieportal"
+        run: npm run build
+
+      - name: Copy custom base path build files to a visible directory
+        run: |
+          mkdir -p ./release_build
+          cp -r ./out/* ./release_build
+
+      - name: Commit custom build to repository
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add release_build
+          git commit -m "Add custom base path build files"
+          git push
+        if: success()
+
+      - name: Deploy to GitHub Pages (without base path)
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./out
+          publish_dir: ./builds/gh-pages
