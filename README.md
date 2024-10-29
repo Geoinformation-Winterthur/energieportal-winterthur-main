@@ -49,10 +49,13 @@ https://geoinformation-winterthur.github.io/energieportal-winterthur-main/
 
 Das Veröffentlichen in die Produktivumgebung erfolgt manuell durch Edgar Butwilowski anhand von statischen Build-Files.
 
-Zum Generieren der Build-Files diesen Befehl in der Kommandozentrale ausführen:
+Bei Änderungen auf dem main-Branch wird neben dem Deployment in die Testumgebung auch die Generierung der Build-Files für den Release angestossen.
+Diese werden auf Root-Ebene im Ordner "release_build" abgelegt.
+
+Hat man das Projekt ausgecheckt, lassen sich die Build-Files auch manuell über die Kommandozentrale generieren:
 
 ```bash
 npm run build
 ```
 
-Die generierten Files wurden auf root-Ebene des Projektes im Ordner "/out" abgelegt. Den gesamten Ordner an Edgar ausliefern.
+Die generierten Files werden auf Root-Ebene des Projektes im Ordner "/out" abgelegt.
