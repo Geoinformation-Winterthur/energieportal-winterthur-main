@@ -865,6 +865,180 @@
     "case_studies.accordion_summary": "Was sind «Pionierobjekte» und «Inventarobjekte»?",
     "case_studies.examples.title": "Finden Sie erfolgreiche Umsetzungen",
     "case_studies.examples.lead": "Folgend finden Sie gezielte Beispiele indem Sie unten das Thema des Umbaues auswählen.",
+    "case_studies.heating": {
+      "title": "Beispiele zum Thema Heizung",
+      "lead": "Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur. Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur.",
+      "items": [
+        {
+          "title": "Pilotprojekt mit wiederverwendeten Baumaterialien",
+          "image": "case-studies/heating/1/1.jpg",
+          "subtitle": "Gewerbegebäude Tössfeld",
+          "isPionier": true,
+          "isInventar": false,
+          "facts": [
+            "Pionierobjekt Zirkuläres Bauen",
+            "Aufstockung und Sanierung",
+            "Photovoltaikanlage"
+          ],
+          "button_label": "Beispiel ansehen"
+        },
+        {
+          "title": "Pilotprojekt mit wiederverwendeten Baumaterialien",
+          "image": "case-studies/heating/2/1.jpg",
+          "subtitle": "Gewerbegebäude Tössfeld",
+          "isPionier": false,
+          "isInventar": false,
+          "facts": [
+            "Pionierobjekt Zirkuläres Bauen",
+            "Aufstockung und Sanierung",
+            "Photovoltaikanlage"
+          ],
+          "button_label": "Beispiel ansehen"
+        },
+        {
+          "title": "Pilotprojekt mit wiederverwendeten Baumaterialien",
+          "image": "case-studies/heating/3/1.jpg",
+          "subtitle": "Gewerbegebäude Tössfeld",
+          "isPionier": false,
+          "isInventar": true,
+          "facts": [
+            "Pionierobjekt Zirkuläres Bauen",
+            "Aufstockung und Sanierung",
+            "Photovoltaikanlage"
+          ],
+          "button_label": "Beispiel ansehen"
+        },
+        {
+          "title": "Pilotprojekt mit wiederverwendeten Baumaterialien",
+          "image": "case-studies/heating/4/1.jpg",
+          "subtitle": "Gewerbegebäude Tössfeld",
+          "isPionier": false,
+          "isInventar": false,
+          "facts": [
+            "Pionierobjekt Zirkuläres Bauen",
+            "Aufstockung und Sanierung",
+            "Photovoltaikanlage"
+          ],
+          "button_label": "Beispiel ansehen"
+        }
+      ]
+    },
+    "case_studies.solar": {
+      "title": "Beispiele zum Thema Solaranlage",
+      "lead": "Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur. Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur.",
+      "items": [
+        {
+          "title": "Pilotprojekt mit wiederverwendeten Baumaterialien",
+          "image": "case-studies/solar/1/1.jpg",
+          "subtitle": "Gewerbegebäude Tössfeld",
+          "isPionier": true,
+          "isInventar": false,
+          "facts": [
+            "Pionierobjekt Zirkuläres Bauen",
+            "Aufstockung und Sanierung",
+            "Photovoltaikanlage"
+          ],
+          "button_label": "Beispiel ansehen"
+        },
+        {
+          "title": "Pilotprojekt mit wiederverwendeten Baumaterialien",
+          "image": "case-studies/solar/2/1.jpg",
+          "subtitle": "Gewerbegebäude Tössfeld",
+          "isPionier": false,
+          "isInventar": false,
+          "facts": [
+            "Pionierobjekt Zirkuläres Bauen",
+            "Aufstockung und Sanierung",
+            "Photovoltaikanlage"
+          ],
+          "button_label": "Beispiel ansehen"
+        },
+        {
+          "title": "Pilotprojekt mit wiederverwendeten Baumaterialien",
+          "image": "case-studies/solar/3/1.jpg",
+          "subtitle": "Gewerbegebäude Tössfeld",
+          "isPionier": false,
+          "isInventar": true,
+          "facts": [
+            "Pionierobjekt Zirkuläres Bauen",
+            "Aufstockung und Sanierung",
+            "Photovoltaikanlage"
+          ],
+          "button_label": "Beispiel ansehen"
+        },
+        {
+          "title": "Pilotprojekt mit wiederverwendeten Baumaterialien",
+          "image": "case-studies/solar/4/1.jpg",
+          "subtitle": "Gewerbegebäude Tössfeld",
+          "isPionier": false,
+          "isInventar": false,
+          "facts": [
+            "Pionierobjekt Zirkuläres Bauen",
+            "Aufstockung und Sanierung",
+            "Photovoltaikanlage"
+          ],
+          "button_label": "Beispiel ansehen"
+        }
+      ]
+    },
+    "case_studies.refurbishment": {
+      "title": "Beispiele zum Thema energetische Sanierungen",
+      "lead": "Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur. Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur.",
+      "items": [
+        {
+          "title": "Pilotprojekt mit wiederverwendeten Baumaterialien",
+          "image": "case-studies/refurbishment/1/1.jpg",
+          "subtitle": "Gewerbegebäude Tössfeld",
+          "isPionier": true,
+          "isInventar": false,
+          "facts": [
+            "Pionierobjekt Zirkuläres Bauen",
+            "Aufstockung und Sanierung",
+            "Photovoltaikanlage"
+          ],
+          "button_label": "Beispiel ansehen"
+        },
+        {
+          "title": "Pilotprojekt mit wiederverwendeten Baumaterialien",
+          "image": "case-studies/refurbishment/2/1.jpg",
+          "subtitle": "Gewerbegebäude Tössfeld",
+          "isPionier": false,
+          "isInventar": false,
+          "facts": [
+            "Pionierobjekt Zirkuläres Bauen",
+            "Aufstockung und Sanierung",
+            "Photovoltaikanlage"
+          ],
+          "button_label": "Beispiel ansehen"
+        },
+        {
+          "title": "Pilotprojekt mit wiederverwendeten Baumaterialien",
+          "image": "case-studies/refurbishment/3/1.jpg",
+          "subtitle": "Gewerbegebäude Tössfeld",
+          "isPionier": false,
+          "isInventar": true,
+          "facts": [
+            "Pionierobjekt Zirkuläres Bauen",
+            "Aufstockung und Sanierung",
+            "Photovoltaikanlage"
+          ],
+          "button_label": "Beispiel ansehen"
+        },
+        {
+          "title": "Pilotprojekt mit wiederverwendeten Baumaterialien",
+          "image": "case-studies/solar/4/1.jpg",
+          "subtitle": "Gewerbegebäude Tössfeld",
+          "isPionier": false,
+          "isInventar": false,
+          "facts": [
+            "Pionierobjekt Zirkuläres Bauen",
+            "Aufstockung und Sanierung",
+            "Photovoltaikanlage"
+          ],
+          "button_label": "Beispiel ansehen"
+        }
+      ]
+    },
     "contact.title": "Kontakt",
     "contact.subtitle_contact": "Kontakt",
     "contact.subtitle_contact_form": "Kontaktformular",

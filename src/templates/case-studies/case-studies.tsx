@@ -9,14 +9,10 @@ import TabPanel from "@/components/common/tabs/tab-panel/tab-panel";
 import Tab from "@/components/common/tabs/tab/tab";
 import Tabs from "@/components/common/tabs/tabs";
 import { Teaser } from "@/components/common/teaser/teaser";
-import { EfficiencyCalculator } from "@/components/features/efficiency-calculator/efficiency-calculator";
-import { EndLayOut } from "@/components/features/end-layout/end-layout";
-import { SavingsPotential } from "@/components/features/savings-potential/savings-potential";
-import { SolarPotential } from "@/components/features/solar-potential/solar-potential";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import { useTranslation } from "../../../i18n";
-import { HeatingRecommendations } from "../heating-recommandations/heating-recommandations";
 import styles from "./case-studies.module.scss";
+import { TeaserTiles } from "@/components/features/teaser-tiles/teaser-tiles";
 
 export const CaseStudiesTemplate = () => {
   const { t } = useTranslation();
@@ -52,7 +48,6 @@ export const CaseStudiesTemplate = () => {
           description={t("case_studies.examples.lead")}
         />
       </OneCol>
-
       <Tabs initialValue={"0"} name={"tabs"}>
         <TabList>
           <Tab label="Heizung" value={"0"}></Tab>
@@ -60,13 +55,19 @@ export const CaseStudiesTemplate = () => {
           <Tab label="Sanierung" value={"2"}></Tab>
         </TabList>
         <TabPanel value={"0"}>
-          <FullWidth></FullWidth>
+          <FullWidth>
+            <TeaserTiles type="heating" />
+          </FullWidth>
         </TabPanel>
         <TabPanel value={"1"}>
-          <FullWidth></FullWidth>
+          <FullWidth>
+            <TeaserTiles type="solar" />
+          </FullWidth>
         </TabPanel>
         <TabPanel value={"2"}>
-          <FullWidth></FullWidth>
+          <FullWidth>
+            <TeaserTiles type="refurbishment" />
+          </FullWidth>
         </TabPanel>
       </Tabs>
     </>
