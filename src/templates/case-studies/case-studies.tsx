@@ -60,14 +60,10 @@ export const CaseStudiesTemplate = () => {
           </FullWidth>
         </TabPanel>
         <TabPanel value={"1"}>
-          <FullWidth>
-            <TeaserTiles type="solar" />
-          </FullWidth>
+          <FullWidth>{/* <TeaserTiles type="solar" /> */}</FullWidth>
         </TabPanel>
         <TabPanel value={"2"}>
-          <FullWidth>
-            <TeaserTiles type="refurbishment" />
-          </FullWidth>
+          <FullWidth>{/* <TeaserTiles type="refurbishment" /> */}</FullWidth>
         </TabPanel>
       </Tabs>
     </>

@@ -870,166 +870,113 @@
       "lead": "Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur. Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur.",
       "items": [
         {
-          "title": "Pilotprojekt mit wiederverwendeten Baumaterialien",
-          "imageSrc": "case-studies/heating/1/1.jpg",
-          "imageAlt": "Teaserbild Gewerbegebäude Tössfeld",
-          "subtitle": "Gewerbegebäude Tössfeld",
-          "tag": "Pionierobjekt",
-          "facts": [
-            "Pionierobjekt Zirkuläres Bauen",
-            "Aufstockung und Sanierung",
-            "Photovoltaikanlage"
-          ],
-          "button_label": "Beispiel ansehen"
-        },
-        {
-          "title": "Pilotprojekt mit wiederverwendeten Baumaterialien",
-          "imageSrc": "case-studies/heating/2/1.jpg",
-          "imageAlt": "Teaserbild Gewerbegebäude Tössfeld",
-          "subtitle": "Gewerbegebäude Tössfeld",
-          "facts": [
-            "Pionierobjekt Zirkuläres Bauen",
-            "Aufstockung und Sanierung",
-            "Photovoltaikanlage"
-          ],
-          "button_label": "Beispiel ansehen"
-        },
-        {
-          "title": "Pilotprojekt mit wiederverwendeten Baumaterialien",
-          "imageSrc": "case-studies/heating/3/1.jpg",
-          "imageAlt": "Teaserbild Gewerbegebäude Tössfeld",
-          "subtitle": "Gewerbegebäude Tössfeld",
-          "tag": "Inventarobjekt",
-          "facts": [
-            "Pionierobjekt Zirkuläres Bauen",
-            "Aufstockung und Sanierung",
-            "Photovoltaikanlage"
-          ],
-          "button_label": "Beispiel ansehen"
-        },
-        {
-          "title": "Pilotprojekt mit wiederverwendeten Baumaterialien",
-          "imageSrc": "case-studies/heating/4/1.jpg",
-          "imageAlt": "Teaserbild Gewerbegebäude Tössfeld",
-          "subtitle": "Gewerbegebäude Tössfeld",
-          "facts": [
-            "Pionierobjekt Zirkuläres Bauen",
-            "Aufstockung und Sanierung",
-            "Photovoltaikanlage"
-          ],
-          "button_label": "Beispiel ansehen"
-        }
-      ]
-    },
-    "case_studies.solar": {
-      "title": "Beispiele zum Thema Solaranlage",
-      "lead": "Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur. Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur.",
-      "items": [
-        {
-          "title": "Pilotprojekt mit wiederverwendeten Baumaterialien",
-          "imageSrc": "case-studies/solar/1/1.jpg",
-          "imageAlt": "Teaserbild Gewerbegebäude Tössfeld",
-          "subtitle": "Gewerbegebäude Tössfeld",
-          "facts": [
-            "Pionierobjekt Zirkuläres Bauen",
-            "Aufstockung und Sanierung",
-            "Photovoltaikanlage"
-          ],
-          "button_label": "Beispiel ansehen"
-        },
-        {
-          "title": "Pilotprojekt mit wiederverwendeten Baumaterialien",
-          "imageSrc": "case-studies/solar/2/1.jpg",
-          "imageAlt": "Teaserbild Gewerbegebäude Tössfeld",
-          "subtitle": "Gewerbegebäude Tössfeld",
-          "facts": [
-            "Pionierobjekt Zirkuläres Bauen",
-            "Aufstockung und Sanierung",
-            "Photovoltaikanlage"
-          ],
-          "button_label": "Beispiel ansehen"
-        },
-        {
-          "title": "Pilotprojekt mit wiederverwendeten Baumaterialien",
-          "imageSrc": "case-studies/solar/3/1.jpg",
-          "imageAlt": "Teaserbild Gewerbegebäude Tössfeld",
-          "subtitle": "Gewerbegebäude Tössfeld",
-          "tag": "Inventarobjekt",
-          "facts": [
-            "Pionierobjekt Zirkuläres Bauen",
-            "Aufstockung und Sanierung",
-            "Photovoltaikanlage"
-          ],
-          "button_label": "Beispiel ansehen"
-        },
-        {
-          "title": "Pilotprojekt mit wiederverwendeten Baumaterialien",
-          "imageSrc": "case-studies/solar/4/1.jpg",
-          "imageAlt": "Teaserbild Gewerbegebäude Tössfeld",
-          "subtitle": "Gewerbegebäude Tössfeld",
-          "tag": "Pionierobjekt",
-          "facts": [
-            "Pionierobjekt Zirkuläres Bauen",
-            "Aufstockung und Sanierung",
-            "Photovoltaikanlage"
-          ],
-          "button_label": "Beispiel ansehen"
-        }
-      ]
-    },
-    "case_studies.refurbishment": {
-      "title": "Beispiele zum Thema energetische Sanierungen",
-      "lead": "Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur. Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur.",
-      "items": [
-        {
-          "title": "Pilotprojekt mit wiederverwendeten Baumaterialien",
-          "imageSrc": "case-studies/refurbishment/1/1.jpg",
-          "imageAlt": "Teaserbild Gewerbegebäude Tössfeld",
-          "subtitle": "Gewerbegebäude Tössfeld",
-          "facts": [
-            "Pionierobjekt Zirkuläres Bauen",
-            "Aufstockung und Sanierung",
-            "Photovoltaikanlage"
-          ],
-          "button_label": "Beispiel ansehen"
-        },
-        {
-          "title": "Pilotprojekt mit wiederverwendeten Baumaterialien",
-          "imageSrc": "case-studies/refurbishment/2/1.jpg",
-          "imageAlt": "Teaserbild Gewerbegebäude Tössfeld",
-          "subtitle": "Gewerbegebäude Tössfeld",
-          "tag": "Pionierobjekt",
-          "facts": [
-            "Pionierobjekt Zirkuläres Bauen",
-            "Aufstockung und Sanierung",
-            "Photovoltaikanlage"
-          ],
-          "button_label": "Beispiel ansehen"
-        },
-        {
-          "title": "Pilotprojekt mit wiederverwendeten Baumaterialien",
-          "imageSrc": "case-studies/refurbishment/3/1.jpg",
-          "imageAlt": "Teaserbild Gewerbegebäude Tössfeld",
-          "subtitle": "Gewerbegebäude Tössfeld",
-          "tag": "Inventarobjekt",
-          "facts": [
-            "Pionierobjekt Zirkuläres Bauen",
-            "Aufstockung und Sanierung",
-            "Photovoltaikanlage"
-          ],
-          "button_label": "Beispiel ansehen"
-        },
-        {
-          "title": "Pilotprojekt mit wiederverwendeten Baumaterialien",
-          "imageSrc": "case-studies/solar/4/1.jpg",
-          "imageAlt": "Teaserbild Gewerbegebäude Tössfeld",
-          "subtitle": "Gewerbegebäude Tössfeld",
-          "facts": [
-            "Pionierobjekt Zirkuläres Bauen",
-            "Aufstockung und Sanierung",
-            "Photovoltaikanlage"
-          ],
-          "button_label": "Beispiel ansehen"
+          "teaser": {
+            "title": "Pilotprojekt mit wiederverwendeten Baumaterialien",
+            "imageSrc": "case-studies/heating/1/images/1.jpg",
+            "imageAlt": "Teaserbild Gewerbegebäude Tössfeld",
+            "subtitle": "Gewerbegebäude Tössfeld",
+            "tag": "Pionierobjekt",
+            "facts": [
+              "Pionierobjekt Zirkuläres Bauen",
+              "Aufstockung und Sanierung",
+              "Photovoltaikanlage"
+            ],
+            "buttonLabel": "Beispiel ansehen"
+          },
+          "detail": {
+            "title": "Pilotprojekt mit wiederverwendeten Baumaterialien",
+            "images": [
+              {
+                "src": "case-studies/heating/1/images/1.jpg",
+                "alt": "Ansicht Gebäude",
+                "copyright": "Stadt Winterthur"
+              },
+              {
+                "src": "case-studies/heating/1/images/1.jpg",
+                "alt": "Ansicht Gebäude",
+                "copyright": "Stadt Winterthur"
+              },
+              {
+                "src": "case-studies/heating/1/images/1.jpg",
+                "alt": "Ansicht Gebäude",
+                "copyright": "Stadt Winterthur"
+              },
+              {
+                "src": "case-studies/heating/1/images/1.jpg",
+                "alt": "Ansicht Gebäude",
+                "copyright": "Stadt Winterthur"
+              },
+              {
+                "src": "case-studies/heating/1/images/1.jpg",
+                "alt": "Ansicht Gebäude",
+                "copyright": "Stadt Winterthur"
+              }
+            ],
+            "facts": [
+              {
+                "key": "Standort",
+                "value": "Gotzewil"
+              },
+              {
+                "key": "Gebäudeart",
+                "value": "Einfamilienhaus"
+              },
+              {
+                "key": "Baujahr",
+                "value": "1869"
+              },
+              {
+                "key": "Beheizte Fläche",
+                "value": "X m2"
+              },
+              {
+                "key": "Eigentümerschaft",
+                "value": "Stadt Winterthur"
+              },
+              {
+                "key": "Umsetzung",
+                "value": "cardosch&zimmermann Architektur gmbh"
+              },
+              {
+                "key": "Ausgangslage",
+                "value": "n.a."
+              },
+              {
+                "key": "Realisierte Massnahmen",
+                "value": "2019: Inndach-Photovoltaikanlage mit 8 kWp, Installation einer Luft-Wasser-Wärmpumpe, Dämmung des Dachgeschosses"
+              },
+              {
+                "key": "Jahresproduktion Strom",
+                "value": "123 kWh"
+              },
+              {
+                "key": "Modulfläche",
+                "value": "123 m²"
+              },
+              {
+                "key": "Ausrichtung",
+                "value": "Süden"
+              }
+            ],
+            "links": [
+              {
+                "src": "https://www.insitu.ch/",
+                "label": "Referenzblatt"
+              },
+              {
+                "src": "https://www.insitu.ch/",
+                "label": "Referenzblatt 2"
+              }
+            ],
+            "text": {
+              "pre": "Der ehemalige städtische Landwirtschaftsbetrieb aus dem Jahr 1869 wurde sorgfältig saniert und in ein energieeffizientes Einfamilienhaus umgewandelt, das nun vermietet wird. Ein besonderes Augenmerk der Renovation lag auf der Integration einer modernen Inndach-Photovoltaikanlage, die mit einer Leistung von 8 kWp das Herzstück der energetischen Sanierung bildet. Diese Anlage fügt sich nahtlos in das historische Dachbild ein und gewährleistet eine umweltfreundliche Energieproduktion. Neben der Photovoltaikanlage wurde das Dach umfassend gedämmt, um den Energieverlust zu minimieren. Zusätzliche Massnahmen umfassten die Erneuerung der Nasszellen, den Einbau eines neuen Bodenbelags sowie das Streichen der Fassade. Das gesamte Gebäude wird über eine Luft-Wasser-Wärmepumpe beheizt.",
+              "quote": {
+                "phrase": "«Wohnen mit Industriecharme» - Nach der Umnutzung und Sanierung bildet das ehemalige Gewerbegebäude jetzt zusammen mit den Liegenschaften auf dem benachbarten Frohsinnareal ein stimmiges Ensemble mit Industriecharme.",
+                "author": "Stadt Winterthur"
+              },
+              "post": "Der ehemalige städtische Landwirtschaftsbetrieb aus dem Jahr 1869 wurde sorgfältig saniert und in ein energieeffizientes Einfamilienhaus umgewandelt, das nun vermietet wird. Ein besonderes Augenmerk der Renovation lag auf der Integration einer modernen Inndach-Photovoltaikanlage, die mit einer Leistung von 8 kWp das Herzstück der energetischen Sanierung bildet. Diese Anlage fügt sich nahtlos in das historische Dachbild ein und gewährleistet eine umweltfreundliche Energieproduktion. Neben der Photovoltaikanlage wurde das Dach umfassend gedämmt, um den Energieverlust zu minimieren. Zusätzliche Massnahmen umfassten die Erneuerung der Nasszellen, den Einbau eines neuen Bodenbelags sowie das Streichen der Fassade. Das gesamte Gebäude wird über eine Luft-Wasser-Wärmepumpe beheizt."
+            }
+          }
         }
       ]
     },
