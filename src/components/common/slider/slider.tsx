@@ -5,7 +5,7 @@ import { Icon } from "../icon/icon";
 import "./slider.scss";
 
 interface SliderProps {
-  children: React.ReactNode;
+  children: React.ReactNode[];
 }
 
 export const Slider = ({ children }: SliderProps) => {
@@ -22,6 +22,7 @@ export const Slider = ({ children }: SliderProps) => {
       slidesPerView: 1,
       spaceBetween: 16,
       pagination: {
+        type: "fraction",
         el: pagRef.current,
       },
       navigation: {

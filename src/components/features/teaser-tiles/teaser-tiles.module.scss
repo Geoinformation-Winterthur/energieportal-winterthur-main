@@ -1,0 +1,35 @@
+@import "../../../styles/breakpoints.scss";
+@import "../../../styles/typography.scss";
+
+.teaser-tiles {
+    width: 100%;
+}
+
+.teaser-tiles__header {
+    margin-bottom: var(--spacing-6);
+}
+
+.teaser-tiles__title {
+    @include typo-headline-3();
+
+    margin-bottom: var(--spacing-4);
+}
+
+.teaser-tiles__lead {
+    @include typo-lead();
+    max-width: calc((8 / 12) * var(--max-width));
+}
+
+.teaser-tiles__content {
+    display: grid;
+    align-items: end;
+    gap: var(--spacing-8);
+
+    @include tablet-up {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: 1250px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

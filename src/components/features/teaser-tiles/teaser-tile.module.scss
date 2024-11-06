@@ -1,0 +1,71 @@
+@import "../../../styles/breakpoints.scss";
+@import "../../../styles/typography.scss";
+
+.teaser-tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: var(--spacing-4);
+    padding: var(--spacing-8);
+    width: 100%;
+    height: 730px;
+    background-color: var(--color-white);
+
+    @include tablet-up {
+        min-height: 730px;
+    }
+}
+
+.teaser-tile__content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+}
+
+.teaser-tile__title {
+    @include typo-headline-4();
+}
+
+.teaser-tile__img {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4/3;
+    max-height: 400px;
+
+    img {
+        object-fit: cover;
+    }
+}
+
+.teaser-tile__section {
+    display: flex;
+    gap: var(--spacing-6);
+    align-items: center;
+    justify-content: space-between;
+    min-height: var(--spacing-8);
+}
+
+.teaser-tile__subtitle {
+    @include typo-headline-5();
+}
+
+.teaser-tile__tag {
+    @include typo-tag();
+
+    padding: var(--spacing-2) var(--spacing-3);
+    color: var(--color-brand-green-dark);
+    background-color: var(--color-brand-green-light);
+    border-radius: 14px;
+}
+
+.teaser-tile__list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+    padding-left: 18px;
+    list-style-type: square;
+}
+
+.teaser-tile__list-item {
+    @include typo-body();
+}

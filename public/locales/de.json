@@ -871,10 +871,10 @@
       "items": [
         {
           "title": "Pilotprojekt mit wiederverwendeten Baumaterialien",
-          "image": "case-studies/heating/1/1.jpg",
+          "imageSrc": "case-studies/heating/1/1.jpg",
+          "imageAlt": "Teaserbild Gewerbegebäude Tössfeld",
           "subtitle": "Gewerbegebäude Tössfeld",
-          "isPionier": true,
-          "isInventar": false,
+          "tag": "Pionierobjekt",
           "facts": [
             "Pionierobjekt Zirkuläres Bauen",
             "Aufstockung und Sanierung",
@@ -884,10 +884,9 @@
         },
         {
           "title": "Pilotprojekt mit wiederverwendeten Baumaterialien",
-          "image": "case-studies/heating/2/1.jpg",
+          "imageSrc": "case-studies/heating/2/1.jpg",
+          "imageAlt": "Teaserbild Gewerbegebäude Tössfeld",
           "subtitle": "Gewerbegebäude Tössfeld",
-          "isPionier": false,
-          "isInventar": false,
           "facts": [
             "Pionierobjekt Zirkuläres Bauen",
             "Aufstockung und Sanierung",
@@ -897,10 +896,10 @@
         },
         {
           "title": "Pilotprojekt mit wiederverwendeten Baumaterialien",
-          "image": "case-studies/heating/3/1.jpg",
+          "imageSrc": "case-studies/heating/3/1.jpg",
+          "imageAlt": "Teaserbild Gewerbegebäude Tössfeld",
           "subtitle": "Gewerbegebäude Tössfeld",
-          "isPionier": false,
-          "isInventar": true,
+          "tag": "Inventarobjekt",
           "facts": [
             "Pionierobjekt Zirkuläres Bauen",
             "Aufstockung und Sanierung",
@@ -910,10 +909,9 @@
         },
         {
           "title": "Pilotprojekt mit wiederverwendeten Baumaterialien",
-          "image": "case-studies/heating/4/1.jpg",
+          "imageSrc": "case-studies/heating/4/1.jpg",
+          "imageAlt": "Teaserbild Gewerbegebäude Tössfeld",
           "subtitle": "Gewerbegebäude Tössfeld",
-          "isPionier": false,
-          "isInventar": false,
           "facts": [
             "Pionierobjekt Zirkuläres Bauen",
             "Aufstockung und Sanierung",
@@ -929,10 +927,9 @@
       "items": [
         {
           "title": "Pilotprojekt mit wiederverwendeten Baumaterialien",
-          "image": "case-studies/solar/1/1.jpg",
+          "imageSrc": "case-studies/solar/1/1.jpg",
+          "imageAlt": "Teaserbild Gewerbegebäude Tössfeld",
           "subtitle": "Gewerbegebäude Tössfeld",
-          "isPionier": true,
-          "isInventar": false,
           "facts": [
             "Pionierobjekt Zirkuläres Bauen",
             "Aufstockung und Sanierung",
@@ -942,10 +939,9 @@
         },
         {
           "title": "Pilotprojekt mit wiederverwendeten Baumaterialien",
-          "image": "case-studies/solar/2/1.jpg",
+          "imageSrc": "case-studies/solar/2/1.jpg",
+          "imageAlt": "Teaserbild Gewerbegebäude Tössfeld",
           "subtitle": "Gewerbegebäude Tössfeld",
-          "isPionier": false,
-          "isInventar": false,
           "facts": [
             "Pionierobjekt Zirkuläres Bauen",
             "Aufstockung und Sanierung",
@@ -955,10 +951,10 @@
         },
         {
           "title": "Pilotprojekt mit wiederverwendeten Baumaterialien",
-          "image": "case-studies/solar/3/1.jpg",
+          "imageSrc": "case-studies/solar/3/1.jpg",
+          "imageAlt": "Teaserbild Gewerbegebäude Tössfeld",
           "subtitle": "Gewerbegebäude Tössfeld",
-          "isPionier": false,
-          "isInventar": true,
+          "tag": "Inventarobjekt",
           "facts": [
             "Pionierobjekt Zirkuläres Bauen",
             "Aufstockung und Sanierung",
@@ -968,10 +964,10 @@
         },
         {
           "title": "Pilotprojekt mit wiederverwendeten Baumaterialien",
-          "image": "case-studies/solar/4/1.jpg",
+          "imageSrc": "case-studies/solar/4/1.jpg",
+          "imageAlt": "Teaserbild Gewerbegebäude Tössfeld",
           "subtitle": "Gewerbegebäude Tössfeld",
-          "isPionier": false,
-          "isInventar": false,
+          "tag": "Pionierobjekt",
           "facts": [
             "Pionierobjekt Zirkuläres Bauen",
             "Aufstockung und Sanierung",
@@ -987,10 +983,9 @@
       "items": [
         {
           "title": "Pilotprojekt mit wiederverwendeten Baumaterialien",
-          "image": "case-studies/refurbishment/1/1.jpg",
+          "imageSrc": "case-studies/refurbishment/1/1.jpg",
+          "imageAlt": "Teaserbild Gewerbegebäude Tössfeld",
           "subtitle": "Gewerbegebäude Tössfeld",
-          "isPionier": true,
-          "isInventar": false,
           "facts": [
             "Pionierobjekt Zirkuläres Bauen",
             "Aufstockung und Sanierung",
@@ -1000,10 +995,10 @@
         },
         {
           "title": "Pilotprojekt mit wiederverwendeten Baumaterialien",
-          "image": "case-studies/refurbishment/2/1.jpg",
+          "imageSrc": "case-studies/refurbishment/2/1.jpg",
+          "imageAlt": "Teaserbild Gewerbegebäude Tössfeld",
           "subtitle": "Gewerbegebäude Tössfeld",
-          "isPionier": false,
-          "isInventar": false,
+          "tag": "Pionierobjekt",
           "facts": [
             "Pionierobjekt Zirkuläres Bauen",
             "Aufstockung und Sanierung",
@@ -1013,10 +1008,10 @@
         },
         {
           "title": "Pilotprojekt mit wiederverwendeten Baumaterialien",
-          "image": "case-studies/refurbishment/3/1.jpg",
+          "imageSrc": "case-studies/refurbishment/3/1.jpg",
+          "imageAlt": "Teaserbild Gewerbegebäude Tössfeld",
           "subtitle": "Gewerbegebäude Tössfeld",
-          "isPionier": false,
-          "isInventar": true,
+          "tag": "Inventarobjekt",
           "facts": [
             "Pionierobjekt Zirkuläres Bauen",
             "Aufstockung und Sanierung",
@@ -1026,10 +1021,9 @@
         },
         {
           "title": "Pilotprojekt mit wiederverwendeten Baumaterialien",
-          "image": "case-studies/solar/4/1.jpg",
+          "imageSrc": "case-studies/solar/4/1.jpg",
+          "imageAlt": "Teaserbild Gewerbegebäude Tössfeld",
           "subtitle": "Gewerbegebäude Tössfeld",
-          "isPionier": false,
-          "isInventar": false,
           "facts": [
             "Pionierobjekt Zirkuläres Bauen",
             "Aufstockung und Sanierung",
