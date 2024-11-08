@@ -8,6 +8,10 @@ swiper-slide {
   align-items: center;
   gap: var(--spacing-6);
   margin: var(--spacing-6) 0;
+
+  &.swiper__buttons--slim {
+    margin: 0;
+  }
 }
 
 .swiper-button-prev,

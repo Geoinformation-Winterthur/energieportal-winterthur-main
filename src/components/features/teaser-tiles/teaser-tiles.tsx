@@ -1,49 +1,13 @@
+"use client";
 import { Slider } from "@/components/common/slider/slider";
 import { SliderSlide } from "@/components/common/slider/slider-slide";
 import { useWindowSize } from "@/hooks/useWindowSize";
 import { useTranslation } from "../../../../i18n";
 import { TeaserTile } from "./teaser-tile";
 import styles from "./teaser-tiles.module.scss";
-
-export type Teaser = {
-  title: string;
-  imageSrc: string;
-  imageAlt: string;
-  subtitle: string;
-  tag?: string;
-  facts: string[];
-  buttonLabel: string;
-};
-
-export type Detail = {
-  title: string;
-  images: {
-    src: string;
-    alt: string;
-    copyright: string;
-  }[];
-  facts: {
-    key: string;
-    value: string;
-  }[];
-  links: {
-    src: string;
-    label: string;
-  }[];
-  text: {
-    pre: string;
-    quote?: {
-      phrase: string;
-      author: string;
-    };
-    post?: string;
-  };
-};
-
-export type CaseStudy = {
-  teaser: Teaser;
-  detail: Detail;
-};
+import { Button } from "@/components/common/button/button";
+import { useState } from "react";
+import { CaseStudy } from "@/types/case-study";
 
 interface TeaserTilesProps {
   type?: string;
@@ -52,13 +16,16 @@ interface TeaserTilesProps {
 export const TeaserTiles = ({ type }: TeaserTilesProps) => {
   const { t } = useTranslation();
   const { isMobile } = useWindowSize();
+  const [showAll, setShowAll] = useState(false);
 
   const items: CaseStudy[] = t(`case_studies.${type}.items`, {
     returnObjects: true,
   }) as CaseStudy[];
 
+  const displayItems = showAll ? items : items.slice(0, 12);
+
   return (
-    type && (
+    Array.isArray(items) && (
       <div className={styles["teaser-tiles"]}>
         <div className={styles["teaser-tiles__header"]}>
           <h3 className={styles["teaser-tiles__title"]}>
@@ -68,7 +35,7 @@ export const TeaserTiles = ({ type }: TeaserTilesProps) => {
             {t(`case_studies.${type}.lead`)}
           </p>
         </div>
-        {items.length > 0 && isMobile ? (
+        {isMobile ? (
           <Slider>
             {items?.map((item, index) => (
               <SliderSlide key={index}>
@@ -82,16 +49,24 @@ export const TeaserTiles = ({ type }: TeaserTilesProps) => {
           </Slider>
         ) : (
           <div className={styles["teaser-tiles__content"]}>
-            {items.length &&
-              items?.map((item, index) => (
-                <>
-                  <TeaserTile
-                    key={index}
-                    teaser={item.teaser}
-                    detail={item.detail}
-                  />
-                </>
+            <div className={styles["teaser-tiles__grid"]}>
+              {displayItems?.map((item, index) => (
+                <TeaserTile
+                  key={index}
+                  teaser={item.teaser}
+                  detail={item.detail}
+                />
               ))}
+            </div>
+            {!showAll && items.length > 12 && (
+              <div className={styles["teaser-tiles__load-more-btn-container"]}>
+                <div className={styles["teaser-tiles__load-more-btn"]}>
+                  <Button onClick={() => setShowAll(true)}>
+                    Alle {items.length} Praxisbeispiele anzeigen
+                  </Button>
+                </div>
+              </div>
+            )}
           </div>
         )}
       </div>

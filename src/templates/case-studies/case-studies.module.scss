@@ -1,7 +1,0 @@
-@import "../../styles/typography.scss";
-
-.case-studies__acc-title {
-    @include typo-headline-4();
-
-    margin-bottom: var(--spacing-4);
-}

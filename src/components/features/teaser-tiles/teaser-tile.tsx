@@ -1,9 +1,9 @@
 import { Button } from "@/components/common/button/button";
 import Overlay from "@/components/common/overlay/overlay";
+import { Detail, Teaser } from "@/types/case-study";
 import Image from "next/image";
 import { DetailView } from "../detail-view/detail-view";
 import styles from "./teaser-tile.module.scss";
-import { Detail, Teaser } from "./teaser-tiles";
 
 interface TeaserTileProps {
   teaser: Teaser;

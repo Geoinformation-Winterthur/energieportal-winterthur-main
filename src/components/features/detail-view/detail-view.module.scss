@@ -1,17 +1,77 @@
 @import "../../../styles/breakpoints.scss";
 @import "../../../styles/typography.scss";
 
+.detail-view {
+    padding: var(--spacing-10) var(--spacing-5);
+
+    @include tablet-up {
+        padding: var(--spacing-20);
+    }
+}
+
+.detail-view__inner {
+    @include tablet-up {
+        margin: 0 auto;
+        max-width: var(--max-width);
+        width: 100%;
+    }
+}
+
+.detail-view__title {
+    @include typo-headline-3();
+
+    margin-bottom: var(--spacing-8);
+}
+
+.detail-view__img-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    @include tablet-up {
+        aspect-ratio: 16/9;
+        max-height: 500px;
+    }
+
+    img {
+        width: 100%;
+        height: calc(100% - var(--spacing-5));
+        max-height: 600px;
+        object-fit: contain;
+
+        @include tablet-up {
+            width: auto;
+        }
+    }
+}
+
+.detail-view__copyright {
+    @include typo-copyright();
+}
+
+.detail-view__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-8);
+    margin-top: var(--spacing-4);
+
+    @include tablet-up {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 .detail-view__table {
     width: 100%;
     border-collapse: collapse;
 }
 
 .detail-view__table-row {
-    border-bottom: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-text-primary);
 }
 
 .detail-view__table-row-head {
-    @include typo-headline-5();
+    @include typo-body();
 
     text-align: left;
 }
@@ -23,4 +83,35 @@
 .detail-view__table-row-head,
 .detail-view__table-row-data {
     padding: var(--spacing-2);
+}
+
+.detail-view__links {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+    margin-top: var(--spacing-8);
+}
+
+.detail-view__text {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-8);
+}
+
+.detail-view__quote {
+    padding: var(--spacing-4) var(--spacing-8);
+
+    @include tablet-up {
+        padding: var(--spacing-10) var(--spacing-20);
+    }
+}
+
+.detail-view__phrase {
+    @include typo-headline-4();
+
+    margin-bottom: var(--spacing-2);
+}
+
+.detail-view__author {
+    @include typo-body-small();
 }

@@ -6,9 +6,10 @@ import "./slider.scss";
 
 interface SliderProps {
   children: React.ReactNode[];
+  slimPagination?: boolean;
 }
 
-export const Slider = ({ children }: SliderProps) => {
+export const Slider = ({ children, slimPagination }: SliderProps) => {
   const swiperRef = useRef<any>(null);
   const prevRef = useRef<HTMLButtonElement>(null);
   const nextRef = useRef<HTMLButtonElement>(null);
@@ -19,6 +20,7 @@ export const Slider = ({ children }: SliderProps) => {
 
     const params: SwiperOptions = {
       observeSlideChildren: true,
+      autoHeight: true,
       slidesPerView: 1,
       spaceBetween: 16,
       pagination: {
@@ -42,7 +44,9 @@ export const Slider = ({ children }: SliderProps) => {
           {children}
         </swiper-container>
       </div>
-      <div className="swiper__buttons">
+      <div
+        className={`swiper__buttons ${slimPagination ? "swiper__buttons--slim" : ""}`}
+      >
         <button className="swiper-button-prev" ref={prevRef}>
           <Icon icon="arrow-left" size={20} />
         </button>

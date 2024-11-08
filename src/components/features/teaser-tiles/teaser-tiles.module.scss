@@ -21,6 +21,11 @@
 }
 
 .teaser-tiles__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.teaser-tiles__grid {
     display: grid;
     align-items: end;
     gap: var(--spacing-8);
@@ -32,4 +37,15 @@
     @media (min-width: 1250px) {
         grid-template-columns: 1fr 1fr 1fr;
     }
+}
+
+.teaser-tiles__load-more-btn-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.teaser-tiles__load-more-btn {
+    width: max-content;
+    margin-top: var(--spacing-16);
 }

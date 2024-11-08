@@ -1,10 +1,7 @@
 import { Icon } from "@/components/common/icon/icon";
-import { FullWidth } from "@/components/common/layout/full-width/full-width";
-import { TwoCols } from "@/components/common/layout/two-cols/two-cols";
 import { Slider } from "@/components/common/slider/slider";
 import { SliderSlide } from "@/components/common/slider/slider-slide";
-import Image from "next/image";
-import { Detail } from "../teaser-tiles/teaser-tiles";
+import { Detail } from "@/types/case-study";
 import styles from "./detail-view.module.scss";
 
 interface DetailViewProps {
@@ -13,8 +10,9 @@ interface DetailViewProps {
 
 export const DetailView = ({ detail }: DetailViewProps) => {
   const imagePath = `${process.env.NEXT_PUBLIC_BASE_PATH}/`;
+
   const renderLeftCol = () => (
-    <>
+    <div>
       <table className={styles["detail-view__table"]}>
         <tbody>
           {detail.facts.map((fact) => (
@@ -29,52 +27,61 @@ export const DetailView = ({ detail }: DetailViewProps) => {
           ))}
         </tbody>
       </table>
-      <div>
+      <div className={styles["detail-view__links"]}>
         {detail.links.map((link) => (
-          <a href={link.src} target="_blank" className="has-icon">
+          <a
+            key={link.label}
+            href={link.src}
+            target="_blank"
+            className="has-icon"
+          >
             {link.label} <Icon icon="arrow-right" />
           </a>
         ))}
       </div>
-    </>
+    </div>
   );
 
   const renderRightCol = () => (
-    <>
-      <p>{detail.text.post}</p>
+    <div className={styles["detail-view__text"]}>
+      <p>{detail.text.pre}</p>
       {detail.text.quote && (
-        <div>
-          <p>{detail.text.quote?.phrase}</p>
-          <p>{detail.text.quote?.author}</p>
+        <div className={styles["detail-view__quote"]}>
+          <p className={styles["detail-view__phrase"]}>
+            {detail.text.quote?.phrase}
+          </p>
+          <p className={styles["detail-view__author"]}>
+            {detail.text.quote?.author}
+          </p>
         </div>
       )}
       {detail.text.post && <p>{detail.text.post}</p>}
-    </>
+    </div>
   );
 
   return (
-    <FullWidth variant="white">
-      <h3>{detail.title}</h3>
-      <Slider>
-        {detail.images.map((image, index) => (
-          <SliderSlide key={index}>
-            <div
-              style={{
-                position: "relative",
-                width: "500px",
-                height: "500px",
-              }}
-            >
-              <Image src={imagePath + image.src} alt={image.alt} fill />
-            </div>
-            <p>{image.copyright}</p>
-          </SliderSlide>
-        ))}
-      </Slider>
-      <TwoCols
-        contentLeft={renderLeftCol()}
-        contentRight={renderRightCol()}
-      ></TwoCols>
-    </FullWidth>
+    <div className={styles["detail-view"]}>
+      <div className={styles["detail-view__inner"]}>
+        <h3 className={styles["detail-view__title"]}>{detail.title}</h3>
+        <Slider slimPagination>
+          {detail.images.map((image, index) => (
+            <SliderSlide key={index}>
+              <div className={styles["detail-view__img-container"]}>
+                <figure>
+                  <img src={imagePath + image.src} alt={image.alt} />
+                  <figcaption className={styles["detail-view__copyright"]}>
+                    Bildquelle: {image.copyright}
+                  </figcaption>
+                </figure>
+              </div>
+            </SliderSlide>
+          ))}
+        </Slider>
+        <div className={styles["detail-view__content"]}>
+          {renderLeftCol()}
+          {renderRightCol()}
+        </div>
+      </div>
+    </div>
   );
 };

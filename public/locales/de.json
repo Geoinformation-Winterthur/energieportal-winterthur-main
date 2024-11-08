@@ -861,20 +861,1290 @@
     "case_studies.teaser_subtitle": "Besitzen Sie ein spannendes Objekt?",
     "case_studies.teaser_link": "Melden Sie sich gerne bei uns.",
     "case_studies.teaser_link_target": "/kontakt",
-    "case_studies.accordion_title": "Begriffserklärung",
     "case_studies.accordion_summary": "Was sind «Pionierobjekte» und «Inventarobjekte»?",
     "case_studies.examples.title": "Finden Sie erfolgreiche Umsetzungen",
     "case_studies.examples.lead": "Folgend finden Sie gezielte Beispiele indem Sie unten das Thema des Umbaues auswählen.",
     "case_studies.heating": {
       "title": "Beispiele zum Thema Heizung",
-      "lead": "Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur. Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur.",
+      "lead": "",
+      "items": [
+        {
+          "teaser": {
+            "title": "Energetische Sanierung und Luft-WP -- Wohnen im ehemaligem Ökonomiegebäude",
+            "imageSrc": "case-studies/heating/1/images/1.jpg",
+            "imageAlt": "Wülflingerstrasse 255",
+            "subtitle": "Wülflingerstrasse 255 -- Umnutzung und Sanierung innerhalb des Denkmalschutzes -- Mehrfamilienhaus",
+            "tag": "Inventarobjekt",
+            "facts": [
+              "Luft-Wasser Wärmepumpe",
+              "PV-Anlage"
+            ],
+            "buttonLabel": "Beispiel ansehen"
+          },
+          "detail": {
+            "title": "Energetische Sanierung und Luft-WP - Wohnen im ehemaligem Ökonomiegebäude",
+            "images": [
+              {
+                "src": "case-studies/heating/1/images/1.jpg",
+                "alt": "Wülflingerstrasse 255 - Aussenansicht",
+                "copyright": "Lucas Peters"
+              },
+              {
+                "src": "case-studies/heating/1/images/2.jpg",
+                "alt": "Wülflingerstrasse 255 - Innenansicht",
+                "copyright": "Lucas Peters"
+              },
+              {
+                "src": "case-studies/heating/1/images/3.jpg",
+                "alt": "Wülflingerstrasse 255 - Innenansicht",
+                "copyright": "Lucas Peters"
+              }
+            ],
+            "facts": [
+              {
+                "key": "Standort",
+                "value": "Lindenplatz"
+              },
+              {
+                "key": "Gebäudeart",
+                "value": "Mehrfamilienhaus"
+              },
+              {
+                "key": "Baujahr",
+                "value": "1897"
+              },
+              {
+                "key": "Beheizte Fläche",
+                "value": "X m²"
+              },
+              {
+                "key": "Eigentümerschaft",
+                "value": "Stadt Winterthur"
+              },
+              {
+                "key": "Umsetzung",
+                "value": "RWPA Architekturagentur GmbH"
+              },
+              {
+                "key": "Ausgangslage",
+                "value": "unbeheiztes Ökonomiegebäude"
+              },
+              {
+                "key": "Realisierte Massnahmen",
+                "value": "2019: Umnutzung von Werkstatt und Lager zu Wohnen mit energetischen Fassadensanierung sowie Fensterersatz, Installation einer Photovoltaikanlage und einer Luft-Wasser-Wärmepumpe"
+              },
+              {
+                "key": "Einsparung Energieverbrauch/ -kosten",
+                "value": "X %"
+              },
+              {
+                "key": "Einsparung CO₂-Emissionen",
+                "value": "X %"
+              }
+            ],
+            "links": [
+              {
+                "src": "https://www.robauen.ch/customer/files/394/052-Referenzblatt-A3.pdf",
+                "label": "Referenzblatt"
+              }
+            ],
+            "text": {
+              "pre": "Im Jahr 1897 erstellten die Besitzer des Gasthauses Frohsinn im Zentrum von Wülflingen ein kleines Ökonomiegebäude. Die Stadt erwarb das Ökonomiegebäude 1962 und vermietete es an Gewerbetreibende. Im Rahmen der Neugestaltung des Frohsinnareals entschied die Stadt 2017, zwei Wohnungen zu realisieren: Eine Loftwohnung und eine Maisonettewohnung. Die äussere Erscheinung mit Fassaden aus Sichtbackstein und Kupferblech blieb weitgehend erhalten. Die Dämmung der Decke ist mit roh belassenen Fermacellplatten verkleidet, die Stahlkonstruktion der Tragstruktur ist sichtbar und auf den Böden liegt ein Industrie-Stabparkett.",
+              "quote": {
+                "phrase": "«Wohnen mit Industriecharme - Nach der Umnutzung und Sanierung bildet das ehemalige Gewerbegebäude jetzt zusammen mit den Liegenschaften auf dem benachbarten Frohsinnareal ein stimmiges Ensemble mit Industriecharme.»",
+                "author": "Stadt Winterthur"
+              },
+              "post": "Das Gebäude wird mit einer Luft-Wasser-Wärmepumpe beheizt. Diese Heizlösung arbeitet aufgrund der guten Dämmung des historischen Gebäudes energetisch, effizient. Weiterhin können die Energiekosten langfristig gesenkt und der Immobilienwert nachhaltig erhalten bleiben. Die Dämmung der Decke mit roh belassenen Fermacellplatten, die Stahlkonstruktion der Tragstruktur ist sichtbar."
+            }
+          }
+        },
+        {
+          "teaser": {
+            "title": "Erdsonden-Wärmepumpe mit Solaranlage",
+            "imageSrc": "case-studies/heating/2/images/1.jpg",
+            "imageAlt": "Mehrfamilienhaus in Stadtteil X",
+            "subtitle": "Mehrfamilienhaus in Stadtteil X",
+            "tag": "",
+            "facts": [
+              "Erdsonden-Wärmepumpe mit zwei Erdsonden",
+              "Photovoltaikanlage inkl. Dachbegrünung",
+              "Umfassende Gebäudesanierung"
+            ],
+            "buttonLabel": "Beispiel ansehen"
+          },
+          "detail": {
+            "title": "Erdsonden-Wärmepumpe mit Solaranlage",
+            "images": [
+              {
+                "src": "case-studies/heating/2/images/1.jpg",
+                "alt": "Mehrfamilienhaus in Stadtteil X - Aussenansicht",
+                "copyright": ""
+              },
+              {
+                "src": "case-studies/heating/2/images/2.jpg",
+                "alt": "Mehrfamilienhaus in Stadtteil X - mit Hauseigentümer",
+                "copyright": ""
+              }
+            ],
+            "facts": [
+              {
+                "key": "Standort",
+                "value": ""
+              },
+              {
+                "key": "Gebäudeart",
+                "value": ""
+              },
+              {
+                "key": "Baujahr",
+                "value": ""
+              },
+              {
+                "key": "Beheizte Fläche",
+                "value": " m²"
+              },
+              {
+                "key": "Eigentümerschaft",
+                "value": ""
+              },
+              {
+                "key": "Umsetzung",
+                "value": ""
+              },
+              {
+                "key": "Ausgangslage",
+                "value": ""
+              },
+              {
+                "key": "Realisierte Massnahmen",
+                "value": ""
+              },
+              {
+                "key": "Einsparung Energiekosten",
+                "value": ""
+              },
+              {
+                "key": "Einsparung CO₂-Emissionen",
+                "value": "X %"
+              }
+            ],
+            "links": [
+              {
+                "src": "",
+                "label": ""
+              }
+            ],
+            "text": {
+              "pre": "",
+              "quote": {
+                "phrase": "",
+                "author": ""
+              },
+              "post": ""
+            }
+          }
+        },
+        {
+          "teaser": {
+            "title": "Energetische Sanierung und Luft-WP -- Wohnen im ehemaligem Ökonomiegebäude",
+            "imageSrc": "case-studies/heating/1/images/1.jpg",
+            "imageAlt": "Wülflingerstrasse 255",
+            "subtitle": "Wülflingerstrasse 255 -- Umnutzung und Sanierung innerhalb des Denkmalschutzes -- Mehrfamilienhaus",
+            "tag": "Inventarobjekt",
+            "facts": [
+              "Luft-Wasser Wärmepumpe",
+              "PV-Anlage"
+            ],
+            "buttonLabel": "Beispiel ansehen"
+          },
+          "detail": {
+            "title": "Energetische Sanierung und Luft-WP - Wohnen im ehemaligem Ökonomiegebäude",
+            "images": [
+              {
+                "src": "case-studies/heating/1/images/1.jpg",
+                "alt": "Wülflingerstrasse 255 - Aussenansicht",
+                "copyright": "Lucas Peters"
+              },
+              {
+                "src": "case-studies/heating/1/images/2.jpg",
+                "alt": "Wülflingerstrasse 255 - Innenansicht",
+                "copyright": "Lucas Peters"
+              },
+              {
+                "src": "case-studies/heating/1/images/3.jpg",
+                "alt": "Wülflingerstrasse 255 - Innenansicht",
+                "copyright": "Lucas Peters"
+              }
+            ],
+            "facts": [
+              {
+                "key": "Standort",
+                "value": "Lindenplatz"
+              },
+              {
+                "key": "Gebäudeart",
+                "value": "Mehrfamilienhaus"
+              },
+              {
+                "key": "Baujahr",
+                "value": "1897"
+              },
+              {
+                "key": "Beheizte Fläche",
+                "value": "X m²"
+              },
+              {
+                "key": "Eigentümerschaft",
+                "value": "Stadt Winterthur"
+              },
+              {
+                "key": "Umsetzung",
+                "value": "RWPA Architekturagentur GmbH"
+              },
+              {
+                "key": "Ausgangslage",
+                "value": "unbeheiztes Ökonomiegebäude"
+              },
+              {
+                "key": "Realisierte Massnahmen",
+                "value": "2019: Umnutzung von Werkstatt und Lager zu Wohnen mit energetischen Fassadensanierung sowie Fensterersatz, Installation einer Photovoltaikanlage und einer Luft-Wasser-Wärmepumpe"
+              },
+              {
+                "key": "Einsparung Energieverbrauch/ -kosten",
+                "value": "X %"
+              },
+              {
+                "key": "Einsparung CO₂-Emissionen",
+                "value": "X %"
+              }
+            ],
+            "links": [
+              {
+                "src": "https://www.robauen.ch/customer/files/394/052-Referenzblatt-A3.pdf",
+                "label": "Referenzblatt"
+              }
+            ],
+            "text": {
+              "pre": "Im Jahr 1897 erstellten die Besitzer des Gasthauses Frohsinn im Zentrum von Wülflingen ein kleines Ökonomiegebäude. Die Stadt erwarb das Ökonomiegebäude 1962 und vermietete es an Gewerbetreibende. Im Rahmen der Neugestaltung des Frohsinnareals entschied die Stadt 2017, zwei Wohnungen zu realisieren: Eine Loftwohnung und eine Maisonettewohnung. Die äussere Erscheinung mit Fassaden aus Sichtbackstein und Kupferblech blieb weitgehend erhalten. Die Dämmung der Decke ist mit roh belassenen Fermacellplatten verkleidet, die Stahlkonstruktion der Tragstruktur ist sichtbar und auf den Böden liegt ein Industrie-Stabparkett.",
+              "quote": {
+                "phrase": "«Wohnen mit Industriecharme - Nach der Umnutzung und Sanierung bildet das ehemalige Gewerbegebäude jetzt zusammen mit den Liegenschaften auf dem benachbarten Frohsinnareal ein stimmiges Ensemble mit Industriecharme.»",
+                "author": "Stadt Winterthur"
+              },
+              "post": "Das Gebäude wird mit einer Luft-Wasser-Wärmepumpe beheizt. Diese Heizlösung arbeitet aufgrund der guten Dämmung des historischen Gebäudes energetisch, effizient. Weiterhin können die Energiekosten langfristig gesenkt und der Immobilienwert nachhaltig erhalten bleiben. Die Dämmung der Decke mit roh belassenen Fermacellplatten, die Stahlkonstruktion der Tragstruktur ist sichtbar."
+            }
+          }
+        },
+        {
+          "teaser": {
+            "title": "Energetische Sanierung und Luft-WP -- Wohnen im ehemaligem Ökonomiegebäude",
+            "imageSrc": "case-studies/heating/1/images/1.jpg",
+            "imageAlt": "Wülflingerstrasse 255",
+            "subtitle": "Wülflingerstrasse 255 -- Umnutzung und Sanierung innerhalb des Denkmalschutzes -- Mehrfamilienhaus",
+            "tag": "Inventarobjekt",
+            "facts": [
+              "Luft-Wasser Wärmepumpe",
+              "PV-Anlage"
+            ],
+            "buttonLabel": "Beispiel ansehen"
+          },
+          "detail": {
+            "title": "Energetische Sanierung und Luft-WP - Wohnen im ehemaligem Ökonomiegebäude",
+            "images": [
+              {
+                "src": "case-studies/heating/1/images/1.jpg",
+                "alt": "Wülflingerstrasse 255 - Aussenansicht",
+                "copyright": "Lucas Peters"
+              },
+              {
+                "src": "case-studies/heating/1/images/2.jpg",
+                "alt": "Wülflingerstrasse 255 - Innenansicht",
+                "copyright": "Lucas Peters"
+              },
+              {
+                "src": "case-studies/heating/1/images/3.jpg",
+                "alt": "Wülflingerstrasse 255 - Innenansicht",
+                "copyright": "Lucas Peters"
+              }
+            ],
+            "facts": [
+              {
+                "key": "Standort",
+                "value": "Lindenplatz"
+              },
+              {
+                "key": "Gebäudeart",
+                "value": "Mehrfamilienhaus"
+              },
+              {
+                "key": "Baujahr",
+                "value": "1897"
+              },
+              {
+                "key": "Beheizte Fläche",
+                "value": "X m²"
+              },
+              {
+                "key": "Eigentümerschaft",
+                "value": "Stadt Winterthur"
+              },
+              {
+                "key": "Umsetzung",
+                "value": "RWPA Architekturagentur GmbH"
+              },
+              {
+                "key": "Ausgangslage",
+                "value": "unbeheiztes Ökonomiegebäude"
+              },
+              {
+                "key": "Realisierte Massnahmen",
+                "value": "2019: Umnutzung von Werkstatt und Lager zu Wohnen mit energetischen Fassadensanierung sowie Fensterersatz, Installation einer Photovoltaikanlage und einer Luft-Wasser-Wärmepumpe"
+              },
+              {
+                "key": "Einsparung Energieverbrauch/ -kosten",
+                "value": "X %"
+              },
+              {
+                "key": "Einsparung CO₂-Emissionen",
+                "value": "X %"
+              }
+            ],
+            "links": [
+              {
+                "src": "https://www.robauen.ch/customer/files/394/052-Referenzblatt-A3.pdf",
+                "label": "Referenzblatt"
+              }
+            ],
+            "text": {
+              "pre": "Im Jahr 1897 erstellten die Besitzer des Gasthauses Frohsinn im Zentrum von Wülflingen ein kleines Ökonomiegebäude. Die Stadt erwarb das Ökonomiegebäude 1962 und vermietete es an Gewerbetreibende. Im Rahmen der Neugestaltung des Frohsinnareals entschied die Stadt 2017, zwei Wohnungen zu realisieren: Eine Loftwohnung und eine Maisonettewohnung. Die äussere Erscheinung mit Fassaden aus Sichtbackstein und Kupferblech blieb weitgehend erhalten. Die Dämmung der Decke ist mit roh belassenen Fermacellplatten verkleidet, die Stahlkonstruktion der Tragstruktur ist sichtbar und auf den Böden liegt ein Industrie-Stabparkett.",
+              "quote": {
+                "phrase": "«Wohnen mit Industriecharme - Nach der Umnutzung und Sanierung bildet das ehemalige Gewerbegebäude jetzt zusammen mit den Liegenschaften auf dem benachbarten Frohsinnareal ein stimmiges Ensemble mit Industriecharme.»",
+                "author": "Stadt Winterthur"
+              },
+              "post": "Das Gebäude wird mit einer Luft-Wasser-Wärmepumpe beheizt. Diese Heizlösung arbeitet aufgrund der guten Dämmung des historischen Gebäudes energetisch, effizient. Weiterhin können die Energiekosten langfristig gesenkt und der Immobilienwert nachhaltig erhalten bleiben. Die Dämmung der Decke mit roh belassenen Fermacellplatten, die Stahlkonstruktion der Tragstruktur ist sichtbar."
+            }
+          }
+        },
+        {
+          "teaser": {
+            "title": "Energetische Sanierung und Luft-WP -- Wohnen im ehemaligem Ökonomiegebäude",
+            "imageSrc": "case-studies/heating/1/images/1.jpg",
+            "imageAlt": "Wülflingerstrasse 255",
+            "subtitle": "Wülflingerstrasse 255 -- Umnutzung und Sanierung innerhalb des Denkmalschutzes -- Mehrfamilienhaus",
+            "tag": "Inventarobjekt",
+            "facts": [
+              "Luft-Wasser Wärmepumpe",
+              "PV-Anlage"
+            ],
+            "buttonLabel": "Beispiel ansehen"
+          },
+          "detail": {
+            "title": "Energetische Sanierung und Luft-WP - Wohnen im ehemaligem Ökonomiegebäude",
+            "images": [
+              {
+                "src": "case-studies/heating/1/images/1.jpg",
+                "alt": "Wülflingerstrasse 255 - Aussenansicht",
+                "copyright": "Lucas Peters"
+              },
+              {
+                "src": "case-studies/heating/1/images/2.jpg",
+                "alt": "Wülflingerstrasse 255 - Innenansicht",
+                "copyright": "Lucas Peters"
+              },
+              {
+                "src": "case-studies/heating/1/images/3.jpg",
+                "alt": "Wülflingerstrasse 255 - Innenansicht",
+                "copyright": "Lucas Peters"
+              }
+            ],
+            "facts": [
+              {
+                "key": "Standort",
+                "value": "Lindenplatz"
+              },
+              {
+                "key": "Gebäudeart",
+                "value": "Mehrfamilienhaus"
+              },
+              {
+                "key": "Baujahr",
+                "value": "1897"
+              },
+              {
+                "key": "Beheizte Fläche",
+                "value": "X m²"
+              },
+              {
+                "key": "Eigentümerschaft",
+                "value": "Stadt Winterthur"
+              },
+              {
+                "key": "Umsetzung",
+                "value": "RWPA Architekturagentur GmbH"
+              },
+              {
+                "key": "Ausgangslage",
+                "value": "unbeheiztes Ökonomiegebäude"
+              },
+              {
+                "key": "Realisierte Massnahmen",
+                "value": "2019: Umnutzung von Werkstatt und Lager zu Wohnen mit energetischen Fassadensanierung sowie Fensterersatz, Installation einer Photovoltaikanlage und einer Luft-Wasser-Wärmepumpe"
+              },
+              {
+                "key": "Einsparung Energieverbrauch/ -kosten",
+                "value": "X %"
+              },
+              {
+                "key": "Einsparung CO₂-Emissionen",
+                "value": "X %"
+              }
+            ],
+            "links": [
+              {
+                "src": "https://www.robauen.ch/customer/files/394/052-Referenzblatt-A3.pdf",
+                "label": "Referenzblatt"
+              }
+            ],
+            "text": {
+              "pre": "Im Jahr 1897 erstellten die Besitzer des Gasthauses Frohsinn im Zentrum von Wülflingen ein kleines Ökonomiegebäude. Die Stadt erwarb das Ökonomiegebäude 1962 und vermietete es an Gewerbetreibende. Im Rahmen der Neugestaltung des Frohsinnareals entschied die Stadt 2017, zwei Wohnungen zu realisieren: Eine Loftwohnung und eine Maisonettewohnung. Die äussere Erscheinung mit Fassaden aus Sichtbackstein und Kupferblech blieb weitgehend erhalten. Die Dämmung der Decke ist mit roh belassenen Fermacellplatten verkleidet, die Stahlkonstruktion der Tragstruktur ist sichtbar und auf den Böden liegt ein Industrie-Stabparkett.",
+              "quote": {
+                "phrase": "«Wohnen mit Industriecharme - Nach der Umnutzung und Sanierung bildet das ehemalige Gewerbegebäude jetzt zusammen mit den Liegenschaften auf dem benachbarten Frohsinnareal ein stimmiges Ensemble mit Industriecharme.»",
+                "author": "Stadt Winterthur"
+              },
+              "post": "Das Gebäude wird mit einer Luft-Wasser-Wärmepumpe beheizt. Diese Heizlösung arbeitet aufgrund der guten Dämmung des historischen Gebäudes energetisch, effizient. Weiterhin können die Energiekosten langfristig gesenkt und der Immobilienwert nachhaltig erhalten bleiben. Die Dämmung der Decke mit roh belassenen Fermacellplatten, die Stahlkonstruktion der Tragstruktur ist sichtbar."
+            }
+          }
+        },
+        {
+          "teaser": {
+            "title": "Energetische Sanierung und Luft-WP -- Wohnen im ehemaligem Ökonomiegebäude",
+            "imageSrc": "case-studies/heating/1/images/1.jpg",
+            "imageAlt": "Wülflingerstrasse 255",
+            "subtitle": "Wülflingerstrasse 255 -- Umnutzung und Sanierung innerhalb des Denkmalschutzes -- Mehrfamilienhaus",
+            "tag": "Inventarobjekt",
+            "facts": [
+              "Luft-Wasser Wärmepumpe",
+              "PV-Anlage"
+            ],
+            "buttonLabel": "Beispiel ansehen"
+          },
+          "detail": {
+            "title": "Energetische Sanierung und Luft-WP - Wohnen im ehemaligem Ökonomiegebäude",
+            "images": [
+              {
+                "src": "case-studies/heating/1/images/1.jpg",
+                "alt": "Wülflingerstrasse 255 - Aussenansicht",
+                "copyright": "Lucas Peters"
+              },
+              {
+                "src": "case-studies/heating/1/images/2.jpg",
+                "alt": "Wülflingerstrasse 255 - Innenansicht",
+                "copyright": "Lucas Peters"
+              },
+              {
+                "src": "case-studies/heating/1/images/3.jpg",
+                "alt": "Wülflingerstrasse 255 - Innenansicht",
+                "copyright": "Lucas Peters"
+              }
+            ],
+            "facts": [
+              {
+                "key": "Standort",
+                "value": "Lindenplatz"
+              },
+              {
+                "key": "Gebäudeart",
+                "value": "Mehrfamilienhaus"
+              },
+              {
+                "key": "Baujahr",
+                "value": "1897"
+              },
+              {
+                "key": "Beheizte Fläche",
+                "value": "X m²"
+              },
+              {
+                "key": "Eigentümerschaft",
+                "value": "Stadt Winterthur"
+              },
+              {
+                "key": "Umsetzung",
+                "value": "RWPA Architekturagentur GmbH"
+              },
+              {
+                "key": "Ausgangslage",
+                "value": "unbeheiztes Ökonomiegebäude"
+              },
+              {
+                "key": "Realisierte Massnahmen",
+                "value": "2019: Umnutzung von Werkstatt und Lager zu Wohnen mit energetischen Fassadensanierung sowie Fensterersatz, Installation einer Photovoltaikanlage und einer Luft-Wasser-Wärmepumpe"
+              },
+              {
+                "key": "Einsparung Energieverbrauch/ -kosten",
+                "value": "X %"
+              },
+              {
+                "key": "Einsparung CO₂-Emissionen",
+                "value": "X %"
+              }
+            ],
+            "links": [
+              {
+                "src": "https://www.robauen.ch/customer/files/394/052-Referenzblatt-A3.pdf",
+                "label": "Referenzblatt"
+              }
+            ],
+            "text": {
+              "pre": "Im Jahr 1897 erstellten die Besitzer des Gasthauses Frohsinn im Zentrum von Wülflingen ein kleines Ökonomiegebäude. Die Stadt erwarb das Ökonomiegebäude 1962 und vermietete es an Gewerbetreibende. Im Rahmen der Neugestaltung des Frohsinnareals entschied die Stadt 2017, zwei Wohnungen zu realisieren: Eine Loftwohnung und eine Maisonettewohnung. Die äussere Erscheinung mit Fassaden aus Sichtbackstein und Kupferblech blieb weitgehend erhalten. Die Dämmung der Decke ist mit roh belassenen Fermacellplatten verkleidet, die Stahlkonstruktion der Tragstruktur ist sichtbar und auf den Böden liegt ein Industrie-Stabparkett.",
+              "quote": {
+                "phrase": "«Wohnen mit Industriecharme - Nach der Umnutzung und Sanierung bildet das ehemalige Gewerbegebäude jetzt zusammen mit den Liegenschaften auf dem benachbarten Frohsinnareal ein stimmiges Ensemble mit Industriecharme.»",
+                "author": "Stadt Winterthur"
+              },
+              "post": "Das Gebäude wird mit einer Luft-Wasser-Wärmepumpe beheizt. Diese Heizlösung arbeitet aufgrund der guten Dämmung des historischen Gebäudes energetisch, effizient. Weiterhin können die Energiekosten langfristig gesenkt und der Immobilienwert nachhaltig erhalten bleiben. Die Dämmung der Decke mit roh belassenen Fermacellplatten, die Stahlkonstruktion der Tragstruktur ist sichtbar."
+            }
+          }
+        },
+        {
+          "teaser": {
+            "title": "Energetische Sanierung und Luft-WP -- Wohnen im ehemaligem Ökonomiegebäude",
+            "imageSrc": "case-studies/heating/1/images/1.jpg",
+            "imageAlt": "Wülflingerstrasse 255",
+            "subtitle": "Wülflingerstrasse 255 -- Umnutzung und Sanierung innerhalb des Denkmalschutzes -- Mehrfamilienhaus",
+            "tag": "Inventarobjekt",
+            "facts": [
+              "Luft-Wasser Wärmepumpe",
+              "PV-Anlage"
+            ],
+            "buttonLabel": "Beispiel ansehen"
+          },
+          "detail": {
+            "title": "Energetische Sanierung und Luft-WP - Wohnen im ehemaligem Ökonomiegebäude",
+            "images": [
+              {
+                "src": "case-studies/heating/1/images/1.jpg",
+                "alt": "Wülflingerstrasse 255 - Aussenansicht",
+                "copyright": "Lucas Peters"
+              },
+              {
+                "src": "case-studies/heating/1/images/2.jpg",
+                "alt": "Wülflingerstrasse 255 - Innenansicht",
+                "copyright": "Lucas Peters"
+              },
+              {
+                "src": "case-studies/heating/1/images/3.jpg",
+                "alt": "Wülflingerstrasse 255 - Innenansicht",
+                "copyright": "Lucas Peters"
+              }
+            ],
+            "facts": [
+              {
+                "key": "Standort",
+                "value": "Lindenplatz"
+              },
+              {
+                "key": "Gebäudeart",
+                "value": "Mehrfamilienhaus"
+              },
+              {
+                "key": "Baujahr",
+                "value": "1897"
+              },
+              {
+                "key": "Beheizte Fläche",
+                "value": "X m²"
+              },
+              {
+                "key": "Eigentümerschaft",
+                "value": "Stadt Winterthur"
+              },
+              {
+                "key": "Umsetzung",
+                "value": "RWPA Architekturagentur GmbH"
+              },
+              {
+                "key": "Ausgangslage",
+                "value": "unbeheiztes Ökonomiegebäude"
+              },
+              {
+                "key": "Realisierte Massnahmen",
+                "value": "2019: Umnutzung von Werkstatt und Lager zu Wohnen mit energetischen Fassadensanierung sowie Fensterersatz, Installation einer Photovoltaikanlage und einer Luft-Wasser-Wärmepumpe"
+              },
+              {
+                "key": "Einsparung Energieverbrauch/ -kosten",
+                "value": "X %"
+              },
+              {
+                "key": "Einsparung CO₂-Emissionen",
+                "value": "X %"
+              }
+            ],
+            "links": [
+              {
+                "src": "https://www.robauen.ch/customer/files/394/052-Referenzblatt-A3.pdf",
+                "label": "Referenzblatt"
+              }
+            ],
+            "text": {
+              "pre": "Im Jahr 1897 erstellten die Besitzer des Gasthauses Frohsinn im Zentrum von Wülflingen ein kleines Ökonomiegebäude. Die Stadt erwarb das Ökonomiegebäude 1962 und vermietete es an Gewerbetreibende. Im Rahmen der Neugestaltung des Frohsinnareals entschied die Stadt 2017, zwei Wohnungen zu realisieren: Eine Loftwohnung und eine Maisonettewohnung. Die äussere Erscheinung mit Fassaden aus Sichtbackstein und Kupferblech blieb weitgehend erhalten. Die Dämmung der Decke ist mit roh belassenen Fermacellplatten verkleidet, die Stahlkonstruktion der Tragstruktur ist sichtbar und auf den Böden liegt ein Industrie-Stabparkett.",
+              "quote": {
+                "phrase": "«Wohnen mit Industriecharme - Nach der Umnutzung und Sanierung bildet das ehemalige Gewerbegebäude jetzt zusammen mit den Liegenschaften auf dem benachbarten Frohsinnareal ein stimmiges Ensemble mit Industriecharme.»",
+                "author": "Stadt Winterthur"
+              },
+              "post": "Das Gebäude wird mit einer Luft-Wasser-Wärmepumpe beheizt. Diese Heizlösung arbeitet aufgrund der guten Dämmung des historischen Gebäudes energetisch, effizient. Weiterhin können die Energiekosten langfristig gesenkt und der Immobilienwert nachhaltig erhalten bleiben. Die Dämmung der Decke mit roh belassenen Fermacellplatten, die Stahlkonstruktion der Tragstruktur ist sichtbar."
+            }
+          }
+        },
+        {
+          "teaser": {
+            "title": "Energetische Sanierung und Luft-WP -- Wohnen im ehemaligem Ökonomiegebäude",
+            "imageSrc": "case-studies/heating/1/images/1.jpg",
+            "imageAlt": "Wülflingerstrasse 255",
+            "subtitle": "Wülflingerstrasse 255 -- Umnutzung und Sanierung innerhalb des Denkmalschutzes -- Mehrfamilienhaus",
+            "tag": "Inventarobjekt",
+            "facts": [
+              "Luft-Wasser Wärmepumpe",
+              "PV-Anlage"
+            ],
+            "buttonLabel": "Beispiel ansehen"
+          },
+          "detail": {
+            "title": "Energetische Sanierung und Luft-WP - Wohnen im ehemaligem Ökonomiegebäude",
+            "images": [
+              {
+                "src": "case-studies/heating/1/images/1.jpg",
+                "alt": "Wülflingerstrasse 255 - Aussenansicht",
+                "copyright": "Lucas Peters"
+              },
+              {
+                "src": "case-studies/heating/1/images/2.jpg",
+                "alt": "Wülflingerstrasse 255 - Innenansicht",
+                "copyright": "Lucas Peters"
+              },
+              {
+                "src": "case-studies/heating/1/images/3.jpg",
+                "alt": "Wülflingerstrasse 255 - Innenansicht",
+                "copyright": "Lucas Peters"
+              }
+            ],
+            "facts": [
+              {
+                "key": "Standort",
+                "value": "Lindenplatz"
+              },
+              {
+                "key": "Gebäudeart",
+                "value": "Mehrfamilienhaus"
+              },
+              {
+                "key": "Baujahr",
+                "value": "1897"
+              },
+              {
+                "key": "Beheizte Fläche",
+                "value": "X m²"
+              },
+              {
+                "key": "Eigentümerschaft",
+                "value": "Stadt Winterthur"
+              },
+              {
+                "key": "Umsetzung",
+                "value": "RWPA Architekturagentur GmbH"
+              },
+              {
+                "key": "Ausgangslage",
+                "value": "unbeheiztes Ökonomiegebäude"
+              },
+              {
+                "key": "Realisierte Massnahmen",
+                "value": "2019: Umnutzung von Werkstatt und Lager zu Wohnen mit energetischen Fassadensanierung sowie Fensterersatz, Installation einer Photovoltaikanlage und einer Luft-Wasser-Wärmepumpe"
+              },
+              {
+                "key": "Einsparung Energieverbrauch/ -kosten",
+                "value": "X %"
+              },
+              {
+                "key": "Einsparung CO₂-Emissionen",
+                "value": "X %"
+              }
+            ],
+            "links": [
+              {
+                "src": "https://www.robauen.ch/customer/files/394/052-Referenzblatt-A3.pdf",
+                "label": "Referenzblatt"
+              }
+            ],
+            "text": {
+              "pre": "Im Jahr 1897 erstellten die Besitzer des Gasthauses Frohsinn im Zentrum von Wülflingen ein kleines Ökonomiegebäude. Die Stadt erwarb das Ökonomiegebäude 1962 und vermietete es an Gewerbetreibende. Im Rahmen der Neugestaltung des Frohsinnareals entschied die Stadt 2017, zwei Wohnungen zu realisieren: Eine Loftwohnung und eine Maisonettewohnung. Die äussere Erscheinung mit Fassaden aus Sichtbackstein und Kupferblech blieb weitgehend erhalten. Die Dämmung der Decke ist mit roh belassenen Fermacellplatten verkleidet, die Stahlkonstruktion der Tragstruktur ist sichtbar und auf den Böden liegt ein Industrie-Stabparkett.",
+              "quote": {
+                "phrase": "«Wohnen mit Industriecharme - Nach der Umnutzung und Sanierung bildet das ehemalige Gewerbegebäude jetzt zusammen mit den Liegenschaften auf dem benachbarten Frohsinnareal ein stimmiges Ensemble mit Industriecharme.»",
+                "author": "Stadt Winterthur"
+              },
+              "post": "Das Gebäude wird mit einer Luft-Wasser-Wärmepumpe beheizt. Diese Heizlösung arbeitet aufgrund der guten Dämmung des historischen Gebäudes energetisch, effizient. Weiterhin können die Energiekosten langfristig gesenkt und der Immobilienwert nachhaltig erhalten bleiben. Die Dämmung der Decke mit roh belassenen Fermacellplatten, die Stahlkonstruktion der Tragstruktur ist sichtbar."
+            }
+          }
+        },
+        {
+          "teaser": {
+            "title": "Energetische Sanierung und Luft-WP -- Wohnen im ehemaligem Ökonomiegebäude",
+            "imageSrc": "case-studies/heating/1/images/1.jpg",
+            "imageAlt": "Wülflingerstrasse 255",
+            "subtitle": "Wülflingerstrasse 255 -- Umnutzung und Sanierung innerhalb des Denkmalschutzes -- Mehrfamilienhaus",
+            "tag": "Inventarobjekt",
+            "facts": [
+              "Luft-Wasser Wärmepumpe",
+              "PV-Anlage"
+            ],
+            "buttonLabel": "Beispiel ansehen"
+          },
+          "detail": {
+            "title": "Energetische Sanierung und Luft-WP - Wohnen im ehemaligem Ökonomiegebäude",
+            "images": [
+              {
+                "src": "case-studies/heating/1/images/1.jpg",
+                "alt": "Wülflingerstrasse 255 - Aussenansicht",
+                "copyright": "Lucas Peters"
+              },
+              {
+                "src": "case-studies/heating/1/images/2.jpg",
+                "alt": "Wülflingerstrasse 255 - Innenansicht",
+                "copyright": "Lucas Peters"
+              },
+              {
+                "src": "case-studies/heating/1/images/3.jpg",
+                "alt": "Wülflingerstrasse 255 - Innenansicht",
+                "copyright": "Lucas Peters"
+              }
+            ],
+            "facts": [
+              {
+                "key": "Standort",
+                "value": "Lindenplatz"
+              },
+              {
+                "key": "Gebäudeart",
+                "value": "Mehrfamilienhaus"
+              },
+              {
+                "key": "Baujahr",
+                "value": "1897"
+              },
+              {
+                "key": "Beheizte Fläche",
+                "value": "X m²"
+              },
+              {
+                "key": "Eigentümerschaft",
+                "value": "Stadt Winterthur"
+              },
+              {
+                "key": "Umsetzung",
+                "value": "RWPA Architekturagentur GmbH"
+              },
+              {
+                "key": "Ausgangslage",
+                "value": "unbeheiztes Ökonomiegebäude"
+              },
+              {
+                "key": "Realisierte Massnahmen",
+                "value": "2019: Umnutzung von Werkstatt und Lager zu Wohnen mit energetischen Fassadensanierung sowie Fensterersatz, Installation einer Photovoltaikanlage und einer Luft-Wasser-Wärmepumpe"
+              },
+              {
+                "key": "Einsparung Energieverbrauch/ -kosten",
+                "value": "X %"
+              },
+              {
+                "key": "Einsparung CO₂-Emissionen",
+                "value": "X %"
+              }
+            ],
+            "links": [
+              {
+                "src": "https://www.robauen.ch/customer/files/394/052-Referenzblatt-A3.pdf",
+                "label": "Referenzblatt"
+              }
+            ],
+            "text": {
+              "pre": "Im Jahr 1897 erstellten die Besitzer des Gasthauses Frohsinn im Zentrum von Wülflingen ein kleines Ökonomiegebäude. Die Stadt erwarb das Ökonomiegebäude 1962 und vermietete es an Gewerbetreibende. Im Rahmen der Neugestaltung des Frohsinnareals entschied die Stadt 2017, zwei Wohnungen zu realisieren: Eine Loftwohnung und eine Maisonettewohnung. Die äussere Erscheinung mit Fassaden aus Sichtbackstein und Kupferblech blieb weitgehend erhalten. Die Dämmung der Decke ist mit roh belassenen Fermacellplatten verkleidet, die Stahlkonstruktion der Tragstruktur ist sichtbar und auf den Böden liegt ein Industrie-Stabparkett.",
+              "quote": {
+                "phrase": "«Wohnen mit Industriecharme - Nach der Umnutzung und Sanierung bildet das ehemalige Gewerbegebäude jetzt zusammen mit den Liegenschaften auf dem benachbarten Frohsinnareal ein stimmiges Ensemble mit Industriecharme.»",
+                "author": "Stadt Winterthur"
+              },
+              "post": "Das Gebäude wird mit einer Luft-Wasser-Wärmepumpe beheizt. Diese Heizlösung arbeitet aufgrund der guten Dämmung des historischen Gebäudes energetisch, effizient. Weiterhin können die Energiekosten langfristig gesenkt und der Immobilienwert nachhaltig erhalten bleiben. Die Dämmung der Decke mit roh belassenen Fermacellplatten, die Stahlkonstruktion der Tragstruktur ist sichtbar."
+            }
+          }
+        },
+        {
+          "teaser": {
+            "title": "Energetische Sanierung und Luft-WP -- Wohnen im ehemaligem Ökonomiegebäude",
+            "imageSrc": "case-studies/heating/1/images/1.jpg",
+            "imageAlt": "Wülflingerstrasse 255",
+            "subtitle": "Wülflingerstrasse 255 -- Umnutzung und Sanierung innerhalb des Denkmalschutzes -- Mehrfamilienhaus",
+            "tag": "Inventarobjekt",
+            "facts": [
+              "Luft-Wasser Wärmepumpe",
+              "PV-Anlage"
+            ],
+            "buttonLabel": "Beispiel ansehen"
+          },
+          "detail": {
+            "title": "Energetische Sanierung und Luft-WP - Wohnen im ehemaligem Ökonomiegebäude",
+            "images": [
+              {
+                "src": "case-studies/heating/1/images/1.jpg",
+                "alt": "Wülflingerstrasse 255 - Aussenansicht",
+                "copyright": "Lucas Peters"
+              },
+              {
+                "src": "case-studies/heating/1/images/2.jpg",
+                "alt": "Wülflingerstrasse 255 - Innenansicht",
+                "copyright": "Lucas Peters"
+              },
+              {
+                "src": "case-studies/heating/1/images/3.jpg",
+                "alt": "Wülflingerstrasse 255 - Innenansicht",
+                "copyright": "Lucas Peters"
+              }
+            ],
+            "facts": [
+              {
+                "key": "Standort",
+                "value": "Lindenplatz"
+              },
+              {
+                "key": "Gebäudeart",
+                "value": "Mehrfamilienhaus"
+              },
+              {
+                "key": "Baujahr",
+                "value": "1897"
+              },
+              {
+                "key": "Beheizte Fläche",
+                "value": "X m²"
+              },
+              {
+                "key": "Eigentümerschaft",
+                "value": "Stadt Winterthur"
+              },
+              {
+                "key": "Umsetzung",
+                "value": "RWPA Architekturagentur GmbH"
+              },
+              {
+                "key": "Ausgangslage",
+                "value": "unbeheiztes Ökonomiegebäude"
+              },
+              {
+                "key": "Realisierte Massnahmen",
+                "value": "2019: Umnutzung von Werkstatt und Lager zu Wohnen mit energetischen Fassadensanierung sowie Fensterersatz, Installation einer Photovoltaikanlage und einer Luft-Wasser-Wärmepumpe"
+              },
+              {
+                "key": "Einsparung Energieverbrauch/ -kosten",
+                "value": "X %"
+              },
+              {
+                "key": "Einsparung CO₂-Emissionen",
+                "value": "X %"
+              }
+            ],
+            "links": [
+              {
+                "src": "https://www.robauen.ch/customer/files/394/052-Referenzblatt-A3.pdf",
+                "label": "Referenzblatt"
+              }
+            ],
+            "text": {
+              "pre": "Im Jahr 1897 erstellten die Besitzer des Gasthauses Frohsinn im Zentrum von Wülflingen ein kleines Ökonomiegebäude. Die Stadt erwarb das Ökonomiegebäude 1962 und vermietete es an Gewerbetreibende. Im Rahmen der Neugestaltung des Frohsinnareals entschied die Stadt 2017, zwei Wohnungen zu realisieren: Eine Loftwohnung und eine Maisonettewohnung. Die äussere Erscheinung mit Fassaden aus Sichtbackstein und Kupferblech blieb weitgehend erhalten. Die Dämmung der Decke ist mit roh belassenen Fermacellplatten verkleidet, die Stahlkonstruktion der Tragstruktur ist sichtbar und auf den Böden liegt ein Industrie-Stabparkett.",
+              "quote": {
+                "phrase": "«Wohnen mit Industriecharme - Nach der Umnutzung und Sanierung bildet das ehemalige Gewerbegebäude jetzt zusammen mit den Liegenschaften auf dem benachbarten Frohsinnareal ein stimmiges Ensemble mit Industriecharme.»",
+                "author": "Stadt Winterthur"
+              },
+              "post": "Das Gebäude wird mit einer Luft-Wasser-Wärmepumpe beheizt. Diese Heizlösung arbeitet aufgrund der guten Dämmung des historischen Gebäudes energetisch, effizient. Weiterhin können die Energiekosten langfristig gesenkt und der Immobilienwert nachhaltig erhalten bleiben. Die Dämmung der Decke mit roh belassenen Fermacellplatten, die Stahlkonstruktion der Tragstruktur ist sichtbar."
+            }
+          }
+        },
+        {
+          "teaser": {
+            "title": "Energetische Sanierung und Luft-WP -- Wohnen im ehemaligem Ökonomiegebäude",
+            "imageSrc": "case-studies/heating/1/images/1.jpg",
+            "imageAlt": "Wülflingerstrasse 255",
+            "subtitle": "Wülflingerstrasse 255 -- Umnutzung und Sanierung innerhalb des Denkmalschutzes -- Mehrfamilienhaus",
+            "tag": "Inventarobjekt",
+            "facts": [
+              "Luft-Wasser Wärmepumpe",
+              "PV-Anlage"
+            ],
+            "buttonLabel": "Beispiel ansehen"
+          },
+          "detail": {
+            "title": "Energetische Sanierung und Luft-WP - Wohnen im ehemaligem Ökonomiegebäude",
+            "images": [
+              {
+                "src": "case-studies/heating/1/images/1.jpg",
+                "alt": "Wülflingerstrasse 255 - Aussenansicht",
+                "copyright": "Lucas Peters"
+              },
+              {
+                "src": "case-studies/heating/1/images/2.jpg",
+                "alt": "Wülflingerstrasse 255 - Innenansicht",
+                "copyright": "Lucas Peters"
+              },
+              {
+                "src": "case-studies/heating/1/images/3.jpg",
+                "alt": "Wülflingerstrasse 255 - Innenansicht",
+                "copyright": "Lucas Peters"
+              }
+            ],
+            "facts": [
+              {
+                "key": "Standort",
+                "value": "Lindenplatz"
+              },
+              {
+                "key": "Gebäudeart",
+                "value": "Mehrfamilienhaus"
+              },
+              {
+                "key": "Baujahr",
+                "value": "1897"
+              },
+              {
+                "key": "Beheizte Fläche",
+                "value": "X m²"
+              },
+              {
+                "key": "Eigentümerschaft",
+                "value": "Stadt Winterthur"
+              },
+              {
+                "key": "Umsetzung",
+                "value": "RWPA Architekturagentur GmbH"
+              },
+              {
+                "key": "Ausgangslage",
+                "value": "unbeheiztes Ökonomiegebäude"
+              },
+              {
+                "key": "Realisierte Massnahmen",
+                "value": "2019: Umnutzung von Werkstatt und Lager zu Wohnen mit energetischen Fassadensanierung sowie Fensterersatz, Installation einer Photovoltaikanlage und einer Luft-Wasser-Wärmepumpe"
+              },
+              {
+                "key": "Einsparung Energieverbrauch/ -kosten",
+                "value": "X %"
+              },
+              {
+                "key": "Einsparung CO₂-Emissionen",
+                "value": "X %"
+              }
+            ],
+            "links": [
+              {
+                "src": "https://www.robauen.ch/customer/files/394/052-Referenzblatt-A3.pdf",
+                "label": "Referenzblatt"
+              }
+            ],
+            "text": {
+              "pre": "Im Jahr 1897 erstellten die Besitzer des Gasthauses Frohsinn im Zentrum von Wülflingen ein kleines Ökonomiegebäude. Die Stadt erwarb das Ökonomiegebäude 1962 und vermietete es an Gewerbetreibende. Im Rahmen der Neugestaltung des Frohsinnareals entschied die Stadt 2017, zwei Wohnungen zu realisieren: Eine Loftwohnung und eine Maisonettewohnung. Die äussere Erscheinung mit Fassaden aus Sichtbackstein und Kupferblech blieb weitgehend erhalten. Die Dämmung der Decke ist mit roh belassenen Fermacellplatten verkleidet, die Stahlkonstruktion der Tragstruktur ist sichtbar und auf den Böden liegt ein Industrie-Stabparkett.",
+              "quote": {
+                "phrase": "«Wohnen mit Industriecharme - Nach der Umnutzung und Sanierung bildet das ehemalige Gewerbegebäude jetzt zusammen mit den Liegenschaften auf dem benachbarten Frohsinnareal ein stimmiges Ensemble mit Industriecharme.»",
+                "author": "Stadt Winterthur"
+              },
+              "post": "Das Gebäude wird mit einer Luft-Wasser-Wärmepumpe beheizt. Diese Heizlösung arbeitet aufgrund der guten Dämmung des historischen Gebäudes energetisch, effizient. Weiterhin können die Energiekosten langfristig gesenkt und der Immobilienwert nachhaltig erhalten bleiben. Die Dämmung der Decke mit roh belassenen Fermacellplatten, die Stahlkonstruktion der Tragstruktur ist sichtbar."
+            }
+          }
+        },
+        {
+          "teaser": {
+            "title": "Energetische Sanierung und Luft-WP -- Wohnen im ehemaligem Ökonomiegebäude",
+            "imageSrc": "case-studies/heating/1/images/1.jpg",
+            "imageAlt": "Wülflingerstrasse 255",
+            "subtitle": "Wülflingerstrasse 255 -- Umnutzung und Sanierung innerhalb des Denkmalschutzes -- Mehrfamilienhaus",
+            "tag": "Inventarobjekt",
+            "facts": [
+              "Luft-Wasser Wärmepumpe",
+              "PV-Anlage"
+            ],
+            "buttonLabel": "Beispiel ansehen"
+          },
+          "detail": {
+            "title": "Energetische Sanierung und Luft-WP - Wohnen im ehemaligem Ökonomiegebäude",
+            "images": [
+              {
+                "src": "case-studies/heating/1/images/1.jpg",
+                "alt": "Wülflingerstrasse 255 - Aussenansicht",
+                "copyright": "Lucas Peters"
+              },
+              {
+                "src": "case-studies/heating/1/images/2.jpg",
+                "alt": "Wülflingerstrasse 255 - Innenansicht",
+                "copyright": "Lucas Peters"
+              },
+              {
+                "src": "case-studies/heating/1/images/3.jpg",
+                "alt": "Wülflingerstrasse 255 - Innenansicht",
+                "copyright": "Lucas Peters"
+              }
+            ],
+            "facts": [
+              {
+                "key": "Standort",
+                "value": "Lindenplatz"
+              },
+              {
+                "key": "Gebäudeart",
+                "value": "Mehrfamilienhaus"
+              },
+              {
+                "key": "Baujahr",
+                "value": "1897"
+              },
+              {
+                "key": "Beheizte Fläche",
+                "value": "X m²"
+              },
+              {
+                "key": "Eigentümerschaft",
+                "value": "Stadt Winterthur"
+              },
+              {
+                "key": "Umsetzung",
+                "value": "RWPA Architekturagentur GmbH"
+              },
+              {
+                "key": "Ausgangslage",
+                "value": "unbeheiztes Ökonomiegebäude"
+              },
+              {
+                "key": "Realisierte Massnahmen",
+                "value": "2019: Umnutzung von Werkstatt und Lager zu Wohnen mit energetischen Fassadensanierung sowie Fensterersatz, Installation einer Photovoltaikanlage und einer Luft-Wasser-Wärmepumpe"
+              },
+              {
+                "key": "Einsparung Energieverbrauch/ -kosten",
+                "value": "X %"
+              },
+              {
+                "key": "Einsparung CO₂-Emissionen",
+                "value": "X %"
+              }
+            ],
+            "links": [
+              {
+                "src": "https://www.robauen.ch/customer/files/394/052-Referenzblatt-A3.pdf",
+                "label": "Referenzblatt"
+              }
+            ],
+            "text": {
+              "pre": "Im Jahr 1897 erstellten die Besitzer des Gasthauses Frohsinn im Zentrum von Wülflingen ein kleines Ökonomiegebäude. Die Stadt erwarb das Ökonomiegebäude 1962 und vermietete es an Gewerbetreibende. Im Rahmen der Neugestaltung des Frohsinnareals entschied die Stadt 2017, zwei Wohnungen zu realisieren: Eine Loftwohnung und eine Maisonettewohnung. Die äussere Erscheinung mit Fassaden aus Sichtbackstein und Kupferblech blieb weitgehend erhalten. Die Dämmung der Decke ist mit roh belassenen Fermacellplatten verkleidet, die Stahlkonstruktion der Tragstruktur ist sichtbar und auf den Böden liegt ein Industrie-Stabparkett.",
+              "quote": {
+                "phrase": "«Wohnen mit Industriecharme - Nach der Umnutzung und Sanierung bildet das ehemalige Gewerbegebäude jetzt zusammen mit den Liegenschaften auf dem benachbarten Frohsinnareal ein stimmiges Ensemble mit Industriecharme.»",
+                "author": "Stadt Winterthur"
+              },
+              "post": "Das Gebäude wird mit einer Luft-Wasser-Wärmepumpe beheizt. Diese Heizlösung arbeitet aufgrund der guten Dämmung des historischen Gebäudes energetisch, effizient. Weiterhin können die Energiekosten langfristig gesenkt und der Immobilienwert nachhaltig erhalten bleiben. Die Dämmung der Decke mit roh belassenen Fermacellplatten, die Stahlkonstruktion der Tragstruktur ist sichtbar."
+            }
+          }
+        },
+        {
+          "teaser": {
+            "title": "Energetische Sanierung und Luft-WP -- Wohnen im ehemaligem Ökonomiegebäude",
+            "imageSrc": "case-studies/heating/1/images/1.jpg",
+            "imageAlt": "Wülflingerstrasse 255",
+            "subtitle": "Wülflingerstrasse 255 -- Umnutzung und Sanierung innerhalb des Denkmalschutzes -- Mehrfamilienhaus",
+            "tag": "Inventarobjekt",
+            "facts": [
+              "Luft-Wasser Wärmepumpe",
+              "PV-Anlage"
+            ],
+            "buttonLabel": "Beispiel ansehen"
+          },
+          "detail": {
+            "title": "Energetische Sanierung und Luft-WP - Wohnen im ehemaligem Ökonomiegebäude",
+            "images": [
+              {
+                "src": "case-studies/heating/1/images/1.jpg",
+                "alt": "Wülflingerstrasse 255 - Aussenansicht",
+                "copyright": "Lucas Peters"
+              },
+              {
+                "src": "case-studies/heating/1/images/2.jpg",
+                "alt": "Wülflingerstrasse 255 - Innenansicht",
+                "copyright": "Lucas Peters"
+              },
+              {
+                "src": "case-studies/heating/1/images/3.jpg",
+                "alt": "Wülflingerstrasse 255 - Innenansicht",
+                "copyright": "Lucas Peters"
+              }
+            ],
+            "facts": [
+              {
+                "key": "Standort",
+                "value": "Lindenplatz"
+              },
+              {
+                "key": "Gebäudeart",
+                "value": "Mehrfamilienhaus"
+              },
+              {
+                "key": "Baujahr",
+                "value": "1897"
+              },
+              {
+                "key": "Beheizte Fläche",
+                "value": "X m²"
+              },
+              {
+                "key": "Eigentümerschaft",
+                "value": "Stadt Winterthur"
+              },
+              {
+                "key": "Umsetzung",
+                "value": "RWPA Architekturagentur GmbH"
+              },
+              {
+                "key": "Ausgangslage",
+                "value": "unbeheiztes Ökonomiegebäude"
+              },
+              {
+                "key": "Realisierte Massnahmen",
+                "value": "2019: Umnutzung von Werkstatt und Lager zu Wohnen mit energetischen Fassadensanierung sowie Fensterersatz, Installation einer Photovoltaikanlage und einer Luft-Wasser-Wärmepumpe"
+              },
+              {
+                "key": "Einsparung Energieverbrauch/ -kosten",
+                "value": "X %"
+              },
+              {
+                "key": "Einsparung CO₂-Emissionen",
+                "value": "X %"
+              }
+            ],
+            "links": [
+              {
+                "src": "https://www.robauen.ch/customer/files/394/052-Referenzblatt-A3.pdf",
+                "label": "Referenzblatt"
+              }
+            ],
+            "text": {
+              "pre": "Im Jahr 1897 erstellten die Besitzer des Gasthauses Frohsinn im Zentrum von Wülflingen ein kleines Ökonomiegebäude. Die Stadt erwarb das Ökonomiegebäude 1962 und vermietete es an Gewerbetreibende. Im Rahmen der Neugestaltung des Frohsinnareals entschied die Stadt 2017, zwei Wohnungen zu realisieren: Eine Loftwohnung und eine Maisonettewohnung. Die äussere Erscheinung mit Fassaden aus Sichtbackstein und Kupferblech blieb weitgehend erhalten. Die Dämmung der Decke ist mit roh belassenen Fermacellplatten verkleidet, die Stahlkonstruktion der Tragstruktur ist sichtbar und auf den Böden liegt ein Industrie-Stabparkett.",
+              "quote": {
+                "phrase": "«Wohnen mit Industriecharme - Nach der Umnutzung und Sanierung bildet das ehemalige Gewerbegebäude jetzt zusammen mit den Liegenschaften auf dem benachbarten Frohsinnareal ein stimmiges Ensemble mit Industriecharme.»",
+                "author": "Stadt Winterthur"
+              },
+              "post": "Das Gebäude wird mit einer Luft-Wasser-Wärmepumpe beheizt. Diese Heizlösung arbeitet aufgrund der guten Dämmung des historischen Gebäudes energetisch, effizient. Weiterhin können die Energiekosten langfristig gesenkt und der Immobilienwert nachhaltig erhalten bleiben. Die Dämmung der Decke mit roh belassenen Fermacellplatten, die Stahlkonstruktion der Tragstruktur ist sichtbar."
+            }
+          }
+        }
+      ]
+    },
+    "case_studies.solar": {
+      "title": "Beispiele zum Thema Solaranlagen",
+      "lead": "",
+      "items": [
+        {
+          "teaser": {
+            "title": "Solarziegeldach im Wildpark Bruderhaus",
+            "imageSrc": "case-studies/solar/1/images/1.jpg",
+            "imageAlt": "Gewerbegebäude im Heiligberg",
+            "subtitle": "Gewerbegebäude im Heiligberg",
+            "tag": "Pionierobjekt",
+            "facts": [
+              "Einsatz Solarziegeln",
+              "Komplettsanierung mit Anbau"
+            ],
+            "buttonLabel": "Beispiel ansehen"
+          },
+          "detail": {
+            "title": "Solarziegeldach im Wildpark Bruderhaus",
+            "images": [
+              {
+                "src": "case-studies/solar/1/images/1.jpg",
+                "alt": "Gewerbegebäude im Heiligberg - Aussenansicht",
+                "copyright": "Stadt Winterthur"
+              },
+              {
+                "src": "case-studies/solar/1/images/2.jpg",
+                "alt": "Gewerbegebäude im Heiligberg - bei Nacht",
+                "copyright": "Stadt Winterthur"
+              }
+            ],
+            "facts": [
+              {
+                "key": "Standort",
+                "value": "Heiligberg"
+              },
+              {
+                "key": "Gebäudeart",
+                "value": "Gewerbegebäude"
+              },
+              {
+                "key": "Baujahr",
+                "value": "1863"
+              },
+              {
+                "key": "Beheizte Fläche",
+                "value": "X m²"
+              },
+              {
+                "key": "Eigentümerschaft",
+                "value": "Haldimann-Stiftung Aarau"
+              },
+              {
+                "key": "Umsetzung",
+                "value": "Architektur Büro Marazzi Reinhardt GmbH, Robauen GmbH"
+              },
+              {
+                "key": "Ausgangslage",
+                "value": "n.a."
+              },
+              {
+                "key": "Realisierte Massnahmen",
+                "value": "2019: (Indach-)Photovoltaikanlage mit Solarziegeln X kWp, Installation einer Erdsonden-Wärmepumpe, Umbau der Scheune zu Gewerberäume inkl. Anbau"
+              },
+              {
+                "key": "Jahresproduktion Strom",
+                "value": "X kWh"
+              },
+              {
+                "key": "Modulfläche",
+                "value": "X m²"
+              },
+              {
+                "key": "Modulfläche",
+                "value": "X m²"
+              },
+              {
+                "key": "Ausrichtung",
+                "value": "Süden"
+              }
+            ],
+            "links": [
+              {
+                "src": "https://www.stadt-zuerich.ch/energie/de/index/heizen-kuehlen/umsetzungen/vetterliweg.html",
+                "label": "Sanierung und Erdsonden-Wärmepumpe mit Solaranlage - Stadt Zürich (stadt-zuerich.ch)"
+              }
+            ],
+            "text": {
+              "pre": "Der Wildpark Bruderhaus wird durch ein Tier- und Naturschutz-Kompetenzzentrum ergänzt. Die bestehende Scheune wird saniert, ausgebaut und durch einen Anbau erweitert. Im Gebäude werden Büro-, Seminar-, Lager- und Werkstatträume untergebracht, sowie die öffentlichen Toiletten für die Besucher des Wildparks. Das Ensemble von Ökonomiegebäude und Restaurant bleibt erhalten, ebenso die zur Identifikation mit dem Ort wichtige Vertrautheit. Die baulichen Massnahmen orientieren sich an einer – zeitgemäss interpretierten – ländlichen Architektur. Insgesamt wird eine Geschossfläche von 1'150m² realisiert.",
+              "quote": {
+                "phrase": "«Die Reihe der Arbeiterhäuschen im Gartenquartier von Altstetten wurde 1943 als Backsteinhäuser ohne Fundament direkt in den Uetliberglehm gestellt. Die Herausforderung, das kleine Bijou 50 Jahre später energetisch zu erneuern, packten wir mit Freude an. Die Umsetzung ist gelungen und wir sind stolz auf unser «Nullwärme-Energiehaus.»",
+                "author": "Hauseigentümerin"
+              },
+              "post": ""
+            }
+          }
+        }
+      ]
+    },
+    "case_studies.refurbishment": {
+      "title": "Beispiele zum Thema energetische Sanierungen",
+      "lead": "",
       "items": [
         {
           "teaser": {
             "title": "Pilotprojekt mit wiederverwendeten Baumaterialien",
-            "imageSrc": "case-studies/heating/1/images/1.jpg",
-            "imageAlt": "Teaserbild Gewerbegebäude Tössfeld",
-            "subtitle": "Gewerbegebäude Tössfeld",
+            "imageSrc": "case-studies/refurbishment/1/images/1.jpg",
+            "imageAlt": "Gewerbegebäude im Tössfeld",
+            "subtitle": "Gewerbegebäude im Tössfeld",
             "tag": "Pionierobjekt",
             "facts": [
               "Pionierobjekt Zirkuläres Bauen",
@@ -887,94 +2157,76 @@
             "title": "Pilotprojekt mit wiederverwendeten Baumaterialien",
             "images": [
               {
-                "src": "case-studies/heating/1/images/1.jpg",
-                "alt": "Ansicht Gebäude",
-                "copyright": "Stadt Winterthur"
+                "src": "case-studies/refurbishment/1/images/1.jpg",
+                "alt": "Gewerbegebäude im Tössfeld - Aussenansicht",
+                "copyright": "baubüro in situ"
               },
               {
-                "src": "case-studies/heating/1/images/1.jpg",
-                "alt": "Ansicht Gebäude",
-                "copyright": "Stadt Winterthur"
+                "src": "case-studies/refurbishment/1/images/2.jpg",
+                "alt": "Gewerbegebäude im Tössfeld - Innenansicht",
+                "copyright": "baubüro in situ"
               },
               {
-                "src": "case-studies/heating/1/images/1.jpg",
-                "alt": "Ansicht Gebäude",
-                "copyright": "Stadt Winterthur"
-              },
-              {
-                "src": "case-studies/heating/1/images/1.jpg",
-                "alt": "Ansicht Gebäude",
-                "copyright": "Stadt Winterthur"
-              },
-              {
-                "src": "case-studies/heating/1/images/1.jpg",
-                "alt": "Ansicht Gebäude",
-                "copyright": "Stadt Winterthur"
+                "src": "case-studies/refurbishment/1/images/3.jpg",
+                "alt": "Gewerbegebäude im Tössfeld - Aussenansicht",
+                "copyright": "baubüro in situ"
               }
             ],
             "facts": [
               {
                 "key": "Standort",
-                "value": "Gotzewil"
+                "value": "Tössfeld"
               },
               {
                 "key": "Gebäudeart",
-                "value": "Einfamilienhaus"
+                "value": "Gewerbegebäude"
               },
               {
                 "key": "Baujahr",
-                "value": "1869"
+                "value": "1913"
               },
               {
                 "key": "Beheizte Fläche",
-                "value": "X m2"
+                "value": "X m²"
               },
               {
                 "key": "Eigentümerschaft",
-                "value": "Stadt Winterthur"
+                "value": "Stiftung Abendrot"
               },
               {
                 "key": "Umsetzung",
-                "value": "cardosch&zimmermann Architektur gmbh"
+                "value": "baubüro in situ"
               },
               {
                 "key": "Ausgangslage",
-                "value": "n.a."
+                "value": "Aufstockung und Sanierung einer Modellwerkstatt"
               },
               {
                 "key": "Realisierte Massnahmen",
-                "value": "2019: Inndach-Photovoltaikanlage mit 8 kWp, Installation einer Luft-Wasser-Wärmpumpe, Dämmung des Dachgeschosses"
+                "value": "2018: Sanierung und Umnutzung der bestehenden Kopfbau Halle 118 und Aufstockung für Büro- und Ateliernutzung, Pilotprojekt mit wiederverwendeten Baumaterialien, Installation einer Photovoltaikanlage mit X kWh"
               },
               {
-                "key": "Jahresproduktion Strom",
-                "value": "123 kWh"
+                "key": "Einsparung Energieverbrauch/ -kosten",
+                "value": "X %"
               },
               {
-                "key": "Modulfläche",
-                "value": "123 m²"
-              },
-              {
-                "key": "Ausrichtung",
-                "value": "Süden"
+                "key": "Einsparung CO₂-Emissionen",
+                "value": "X %"
               }
             ],
             "links": [
               {
                 "src": "https://www.insitu.ch/",
-                "label": "Referenzblatt"
-              },
-              {
-                "src": "https://www.insitu.ch/",
-                "label": "Referenzblatt 2"
+                "label": "baubüro in situ"
               }
             ],
             "text": {
-              "pre": "Der ehemalige städtische Landwirtschaftsbetrieb aus dem Jahr 1869 wurde sorgfältig saniert und in ein energieeffizientes Einfamilienhaus umgewandelt, das nun vermietet wird. Ein besonderes Augenmerk der Renovation lag auf der Integration einer modernen Inndach-Photovoltaikanlage, die mit einer Leistung von 8 kWp das Herzstück der energetischen Sanierung bildet. Diese Anlage fügt sich nahtlos in das historische Dachbild ein und gewährleistet eine umweltfreundliche Energieproduktion. Neben der Photovoltaikanlage wurde das Dach umfassend gedämmt, um den Energieverlust zu minimieren. Zusätzliche Massnahmen umfassten die Erneuerung der Nasszellen, den Einbau eines neuen Bodenbelags sowie das Streichen der Fassade. Das gesamte Gebäude wird über eine Luft-Wasser-Wärmepumpe beheizt.",
+              "pre": "Auf dem Lagerplatz Winterthur wurde eine bestehende Werkhalle aufgestockt. Mehr als die Hälfte der für die Erweiterung und Sanierung benötigten Bauteile rettete Baubüro in situ aus Abrissobjekten und baute sie vor Ort ein. Stützen, Träger, Fenster, Fassadenbleche und vieles mehr erhielten ein zweites Leben. Durch die Wiederverwendung von Bauteilen und ganzen Konstruktionen sowie deren geschickten Ergänzung mit neuen CO2-armen Materialien konnten die Treibhausgasemissionen im Vergleich zu einem konventionellen Neubau um 60% verringert werden – eine zukunftsfähige Strategie auf dem Weg zu Netto-Null.",
               "quote": {
-                "phrase": "«Wohnen mit Industriecharme» - Nach der Umnutzung und Sanierung bildet das ehemalige Gewerbegebäude jetzt zusammen mit den Liegenschaften auf dem benachbarten Frohsinnareal ein stimmiges Ensemble mit Industriecharme.",
-                "author": "Stadt Winterthur"
+                "phrase": "«…so wäre das ultimative Ziel wahrer zirkulärer Architektur ein Prozess, bei dem niemals Abfall produziert und somit auch keine graue Energie verschwendet wird.»",
+                "author": "baubüro in situ"
               },
-              "post": "Der ehemalige städtische Landwirtschaftsbetrieb aus dem Jahr 1869 wurde sorgfältig saniert und in ein energieeffizientes Einfamilienhaus umgewandelt, das nun vermietet wird. Ein besonderes Augenmerk der Renovation lag auf der Integration einer modernen Inndach-Photovoltaikanlage, die mit einer Leistung von 8 kWp das Herzstück der energetischen Sanierung bildet. Diese Anlage fügt sich nahtlos in das historische Dachbild ein und gewährleistet eine umweltfreundliche Energieproduktion. Neben der Photovoltaikanlage wurde das Dach umfassend gedämmt, um den Energieverlust zu minimieren. Zusätzliche Massnahmen umfassten die Erneuerung der Nasszellen, den Einbau eines neuen Bodenbelags sowie das Streichen der Fassade. Das gesamte Gebäude wird über eine Luft-Wasser-Wärmepumpe beheizt."
+              "post": ""
             }
           }
         }

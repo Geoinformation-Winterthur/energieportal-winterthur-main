@@ -9,13 +9,19 @@ import TabPanel from "@/components/common/tabs/tab-panel/tab-panel";
 import Tab from "@/components/common/tabs/tab/tab";
 import Tabs from "@/components/common/tabs/tabs";
 import { Teaser } from "@/components/common/teaser/teaser";
+import { TeaserTiles } from "@/components/features/teaser-tiles/teaser-tiles";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import { useTranslation } from "../../../i18n";
-import styles from "./case-studies.module.scss";
-import { TeaserTiles } from "@/components/features/teaser-tiles/teaser-tiles";
 
 export const CaseStudiesTemplate = () => {
   const { t } = useTranslation();
+
+  const hasTranslations = (type: string) => {
+    const translations = t(`case_studies.${type}.items`, {
+      returnObjects: true,
+    }) as string[];
+    return Array.isArray(translations);
+  };
 
   return (
     <>
@@ -31,16 +37,12 @@ export const CaseStudiesTemplate = () => {
           subtitle={t("case_studies.teaser_subtitle")}
           asRow
         />
-        <div>
-          <h4 className={styles["case-studies__acc-title"]}>
-            {t("case_studies.accordion_title")}
-          </h4>
-          <Accordion summary={t("case_studies.accordion_summary")}>
-            <AccordionDetails>
-              {t("case_studies.accordion_detail")}
-            </AccordionDetails>
-          </Accordion>
-        </div>
+
+        <Accordion summary={t("case_studies.accordion_summary")}>
+          <AccordionDetails>
+            {t("case_studies.accordion_detail")}
+          </AccordionDetails>
+        </Accordion>
       </OneCol>
       <OneCol noPaddingTop paddingBottomSmall>
         <Section
@@ -50,9 +52,15 @@ export const CaseStudiesTemplate = () => {
       </OneCol>
       <Tabs initialValue={"0"} name={"tabs"}>
         <TabList>
-          <Tab label="Heizung" value={"0"}></Tab>
-          <Tab label="Solaranlage" value={"1"}></Tab>
-          <Tab label="Sanierung" value={"2"}></Tab>
+          {hasTranslations("heating") && (
+            <Tab label="Heizung" value={"0"}></Tab>
+          )}
+          {hasTranslations("solar") && (
+            <Tab label="Solaranlage" value={"1"}></Tab>
+          )}
+          {hasTranslations("refurbishment") && (
+            <Tab label="Sanierung" value={"2"} />
+          )}
         </TabList>
         <TabPanel value={"0"}>
           <FullWidth>
@@ -60,10 +68,14 @@ export const CaseStudiesTemplate = () => {
           </FullWidth>
         </TabPanel>
         <TabPanel value={"1"}>
-          <FullWidth>{/* <TeaserTiles type="solar" /> */}</FullWidth>
+          <FullWidth>
+            <TeaserTiles type="solar" />
+          </FullWidth>
         </TabPanel>
         <TabPanel value={"2"}>
-          <FullWidth>{/* <TeaserTiles type="refurbishment" /> */}</FullWidth>
+          <FullWidth>
+            <TeaserTiles type="refurbishment" />
+          </FullWidth>
         </TabPanel>
       </Tabs>
     </>
