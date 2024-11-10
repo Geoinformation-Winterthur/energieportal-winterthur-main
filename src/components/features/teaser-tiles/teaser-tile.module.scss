@@ -22,8 +22,18 @@
     gap: var(--spacing-4);
 }
 
+.teaser-tile__header {
+    overflow: hidden;
+    height: 50px;
+}
+
 .teaser-tile__title {
     @include typo-headline-4();
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
 }
 
 .teaser-tile__img {
