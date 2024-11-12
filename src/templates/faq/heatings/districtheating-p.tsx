@@ -1,5 +1,7 @@
 import { Accordion } from "@/components/common/accordion/accordion";
+import { Icon } from "@/components/common/icon/icon";
 import { AccordionDetails } from "@mui/material";
+import Link from "next/link";
 import { useTranslation } from "../../../../i18n";
 import styles from "../faq.module.scss";
 import { HeatingStatus } from "./heating-status/heating-status";
@@ -129,6 +131,18 @@ export const DistrictHeatingP = ({ area }: DistrictHeatingPProps) => {
             {t("my_property.heating_faq.districtheating_p.detail_8_2")}
           </AccordionDetails>
         </Accordion>
+      </div>
+      <div>
+        <h4 className={styles["faq__title"]}>
+          {t("my_property.faq.case_studies.title")}
+        </h4>
+        <Link
+          href={t("my_property.faq.case_studies.link_target")}
+          className="has-icon"
+        >
+          {t("my_property.faq.case_studies.link")}
+          <Icon icon="arrow-right" />
+        </Link>
       </div>
     </div>
   );

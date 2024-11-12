@@ -17,6 +17,10 @@
     @include tablet-up {
       flex-direction: row-reverse;
       gap: var(--spacing-26);
+
+      .teaser__subtitle {
+        margin-top: var(--spacing-8);
+      }
     }
   }
 }

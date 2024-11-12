@@ -107,3 +107,10 @@
   font-weight: 400;
   letter-spacing: 0.005625rem;
 }
+
+@mixin typo-tag {
+  font-size: 1rem;
+  line-height: 100%;
+  font-weight: 600;
+  letter-spacing: 0.015rem;
+}
