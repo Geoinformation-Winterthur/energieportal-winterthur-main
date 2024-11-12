@@ -8,6 +8,15 @@ Die Texte der Website finden sich im File "/public/locales/de.json" und lassen s
 
 Wenn sich die Struktur eines Texts ändert (z.B. weitere Links hinzukommen, an anderer Stelle etc.), muss auch entsprechend das Template angepasst werden, das für die Darstellung des Texts verantwortlich ist. Das entsprechende Template lässt sich ausfindig machen, in dem nach dem key der Translation im Projekt gesucht wird.
 
+### Praxisbeispiele
+
+Unter den keys "case_studies.heating", "case_studies.refurbishment" und "case_studies.solar" finden sich die jeweiligen Praxisbeispiele.
+
+Darin genestet befindet sich jeweile eine Liste "items", wo Beispiele angepasst oder neue ergänzt werden können.
+Ein "item" besteht aus einem "teaser", der Übersichtskachel, sowie einem detail, der Detailansicht.
+
+Die zugehörigen Bilder und PDFs liegen im Ordner "public/case-studies/" in der jeweiligen Kategorie ab. Die Ordner (ausser "public") können nach Belieben (um)benannt werden - es müssen einfach die Bildpfade im "de.json" simultan angepasst werden.
+
 ## Development
 
 ### Setup
