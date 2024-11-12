@@ -28,16 +28,19 @@ export const DetailView = ({ detail }: DetailViewProps) => {
         </tbody>
       </table>
       <div className={styles['detail-view__links']}>
-        {detail.links.map((link) => (
-          <a
-            key={link.label}
-            href={link.src}
-            target="_blank"
-            className="has-icon"
-          >
-            {link.label} <Icon icon="arrow-right" />
-          </a>
-        ))}
+        {detail.links.map(
+          (link) =>
+            link.label && (
+              <a
+                key={link.label}
+                href={link.src}
+                target="_blank"
+                className="has-icon"
+              >
+                {link.label} <Icon icon="arrow-right" />
+              </a>
+            )
+        )}
       </div>
     </div>
   );
