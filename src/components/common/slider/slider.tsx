@@ -1,15 +1,20 @@
-import { useEffect, useRef } from "react";
-import { register } from "swiper/element/bundle";
-import { SwiperOptions } from "swiper/types";
-import { Icon } from "../icon/icon";
-import "./slider.scss";
+import { useEffect, useRef } from 'react';
+import { register } from 'swiper/element/bundle';
+import { SwiperOptions } from 'swiper/types';
+import { Icon } from '../icon/icon';
+import './slider.scss';
 
 interface SliderProps {
   children: React.ReactNode[];
   slimPagination?: boolean;
+  autoHeight?: boolean;
 }
 
-export const Slider = ({ children, slimPagination }: SliderProps) => {
+export const Slider = ({
+  children,
+  slimPagination,
+  autoHeight = false,
+}: SliderProps) => {
   const swiperRef = useRef<any>(null);
   const prevRef = useRef<HTMLButtonElement>(null);
   const nextRef = useRef<HTMLButtonElement>(null);
@@ -20,11 +25,11 @@ export const Slider = ({ children, slimPagination }: SliderProps) => {
 
     const params: SwiperOptions = {
       observeSlideChildren: true,
-      autoHeight: true,
+      autoHeight: autoHeight,
       slidesPerView: 1,
       spaceBetween: 16,
       pagination: {
-        type: "fraction",
+        type: 'fraction',
         el: pagRef.current,
       },
       navigation: {
@@ -39,13 +44,13 @@ export const Slider = ({ children, slimPagination }: SliderProps) => {
 
   return (
     <>
-      <div className={"swiper-container"}>
+      <div className={'swiper-container'}>
         <swiper-container init="false" ref={swiperRef}>
           {children}
         </swiper-container>
       </div>
       <div
-        className={`swiper__buttons ${slimPagination ? "swiper__buttons--slim" : ""}`}
+        className={`swiper__buttons ${slimPagination ? 'swiper__buttons--slim' : ''}`}
       >
         <button className="swiper-button-prev" ref={prevRef}>
           <Icon icon="arrow-left" size={20} />
