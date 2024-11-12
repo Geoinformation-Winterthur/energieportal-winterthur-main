@@ -6,6 +6,7 @@
     "general.navigation.online_consulting": "Online-Beratung",
     "general.navigation.our_consulting_service": "Unser Beratungsangebot",
     "general.navigation.contact": "Kontakt",
+    "general.navigation.case_studies": "Praxisbeispiele",
     "general.footer.copyright": "Stadt Winterthur 2024",
     "general.footer.privacy": "Datenschutz",
     "general.footer.privacy_link": "Datenschutzerklaerung.pdf",
@@ -27,6 +28,12 @@
     "online_consulting.teaser_2_image_credits": "Bildquelle: Kommunaler Energieplan",
     "online_consulting.teaser_2_link": "Zum Energieplan",
     "online_consulting.teaser_2_link_target": "https://stadtplan.winterthur.ch/?topic=KommunalerEnergieplan",
+    "online_consulting.teaser_3_title": "Winterthur baut um.",
+    "online_consulting.teaser_3_description": "Im Energieportal der Stadt Winterthur finden Sie ab sofort anschauliche Praxisbeispiele.",
+    "online_consulting.teaser_3_image": "altstadt_winterthur.jpg",
+    "online_consulting.teaser_3_image_credits": "Bildquelle: Maps Winterthur",
+    "online_consulting.teaser_3_link": "Praxisbeispiele ansehen",
+    "online_consulting.teaser_3_link_target": "/praxisbeispiele",
     "online_consulting.section_title": "Wir unterstützen Sie gerne.",
     "online_consulting.section_description": "Sie haben die Möglichkeit, sich auf dem Energieportal Winterthur digital beraten zu lassen. Bitte geben Sie dazu oben Ihre Adresse ein. Falls Sie eine persönliche Beratung bevorzugen oder weitere Fragen haben, kontaktieren Sie uns gerne.",
     "contact.box.title": "Kontakt",
@@ -174,6 +181,9 @@
         "description": "in Prüfung: Die technische und wirtschaftliche Machbarkeit des Wärmenetzes in Ihrem Quartier wird derzeit geprüft. Die Resultate der Machbarkeitsstudie liegen im 3. Quartal 2024 vor und das weitere Vorgehen wird geplant."
       }
     },
+    "my_property.faq.case_studies.title": "Beispiele aus der Praxis",
+    "my_property.faq.case_studies.link": "Zu den Praxisbeispielen",
+    "my_property.faq.case_studies.link_target": "/praxisbeispiele",
     "my_property.heating_faq.districtheating_P1": {
       "title": "Verdichtung",
       "status_1": "Für mehr Informationen zum Anschluss an die Fernwärme wenden Sie sich an Stadtwerk Winterthur, Kundenberatung Wärme, unter",
@@ -843,6 +853,1551 @@
     "our_consulting_service.our-services.further_information_link_2": "geak.ch",
     "our_consulting_service.our-services.further_information_link_target_2": "https://www.geak.ch/",
     "our_consulting_service.our-services.further_information_3": "finden Sie weitere Firmen oder selbstständige Fachpersonen, die Energieberatungen in Winterthur anbieten.",
+    "case_studies.intro.title": "Praxisbeispiele",
+    "case_studies.teaser_title": "Winterthur baut um.",
+    "case_studies.teaser_description": "Unser Team besteht aus erfahrenen Energieberaterinnen und Energieberatern der Energiefachstelle der Stadt Winterthur und Stadtwerk Winterthur. Wir kennen die gesetzlichen Grundlagen und sind informiert über den Ausbau von Wärmenetzen sowie über Förderbeiträge und beraten Sie von der ersten Projektidee bis zur Realisierung. Gerne vereinbaren wir einen Termin mit Ihnen und beraten wir Sie vor Ort oder in unseren Büros.",
+    "case_studies.teaser_image": "altstadt_winterthur.jpg",
+    "case_studies.teaser_image_credits": "Bildquelle: Maps Winterthur",
+    "case_studies.teaser_subtitle": "Besitzen Sie ein spannendes Objekt?",
+    "case_studies.teaser_link": "Melden Sie sich gerne bei uns.",
+    "case_studies.teaser_link_target": "/kontakt",
+    "case_studies.accordion_summary": "Was sind «Pionierobjekte» und «Inventarobjekte»?",
+    "case_studies.examples.title": "Finden Sie erfolgreiche Umsetzungen",
+    "case_studies.examples.lead": "Folgend finden Sie gezielte Beispiele indem Sie unten das Thema des Umbaues auswählen.",
+    "case_studies.heating": {
+      "title": "Beispiele zum Thema Heizung",
+      "lead": "",
+      "items": [
+        {
+          "teaser": {
+            "title": "Energetische Sanierung und Luft-WP -- Wohnen im ehemaligem Ökonomiegebäude",
+            "imageSrc": "case-studies/heating/1/images/1.jpg",
+            "imageAlt": "Wülflingerstrasse 255",
+            "subtitle": "Wülflingerstrasse 255 -- Umnutzung und Sanierung innerhalb des Denkmalschutzes -- Mehrfamilienhaus",
+            "tag": "Inventarobjekt",
+            "facts": [
+              "Luft-Wasser Wärmepumpe",
+              "PV-Anlage"
+            ],
+            "buttonLabel": "Beispiel ansehen"
+          },
+          "detail": {
+            "title": "Energetische Sanierung und Luft-WP - Wohnen im ehemaligem Ökonomiegebäude",
+            "images": [
+              {
+                "src": "case-studies/heating/1/images/1.jpg",
+                "alt": "Wülflingerstrasse 255 - Aussenansicht",
+                "copyright": "Lucas Peters"
+              },
+              {
+                "src": "case-studies/heating/1/images/2.jpg",
+                "alt": "Wülflingerstrasse 255 - Innenansicht",
+                "copyright": "Lucas Peters"
+              },
+              {
+                "src": "case-studies/heating/1/images/3.jpg",
+                "alt": "Wülflingerstrasse 255 - Innenansicht",
+                "copyright": "Lucas Peters"
+              },
+              {
+                "src": "case-studies/heating/1/images/4.jpg",
+                "alt": "Wülflingerstrasse 255 - Rohbau",
+                "copyright": "Lucas Peters"
+              }
+            ],
+            "facts": [
+              {
+                "key": "Standort",
+                "value": "Lindenplatz"
+              },
+              {
+                "key": "Gebäudeart",
+                "value": "Mehrfamilienhaus"
+              },
+              {
+                "key": "Baujahr",
+                "value": "1897"
+              },
+              {
+                "key": "Beheizte Fläche",
+                "value": "X m²"
+              },
+              {
+                "key": "Eigentümerschaft",
+                "value": "Stadt Winterthur"
+              },
+              {
+                "key": "Umsetzung",
+                "value": "RWPA Architekturagentur GmbH"
+              },
+              {
+                "key": "Ausgangslage",
+                "value": "unbeheiztes Ökonomiegebäude"
+              },
+              {
+                "key": "Realisierte Massnahmen",
+                "value": "2019: Umnutzung von Werkstatt und Lager zu Wohnen mit energetischen Fassadensanierung sowie Fensterersatz, Installation einer Photovoltaikanlage und einer Luft-Wasser-Wärmepumpe"
+              },
+              {
+                "key": "Einsparung Energieverbrauch/ -kosten",
+                "value": "X %"
+              },
+              {
+                "key": "Einsparung CO₂-Emissionen",
+                "value": "X %"
+              }
+            ],
+            "links": [
+              {
+                "src": "https://www.robauen.ch/customer/files/394/052-Referenzblatt-A3.pdf",
+                "label": "Referenzblatt"
+              }
+            ],
+            "text": {
+              "pre": "Im Jahr 1897 erstellten die Besitzer des Gasthauses Frohsinn im Zentrum von Wülflingen ein kleines Ökonomiegebäude. Die Stadt erwarb das Ökonomiegebäude 1962 und vermietete es an Gewerbetreibende. Im Rahmen der Neugestaltung des Frohsinnareals entschied die Stadt 2017, zwei Wohnungen zu realisieren: Eine Loftwohnung und eine Maisonettewohnung. Die äussere Erscheinung mit Fassaden aus Sichtbackstein und Kupferblech blieb weitgehend erhalten. Die Dämmung der Decke ist mit roh belassenen Fermacellplatten verkleidet, die Stahlkonstruktion der Tragstruktur ist sichtbar und auf den Böden liegt ein Industrie-Stabparkett.",
+              "quote": {
+                "phrase": "«Wohnen mit Industriecharme - Nach der Umnutzung und Sanierung bildet das ehemalige Gewerbegebäude jetzt zusammen mit den Liegenschaften auf dem benachbarten Frohsinnareal ein stimmiges Ensemble mit Industriecharme.»",
+                "author": "Stadt Winterthur"
+              },
+              "post": "Das Gebäude wird mit einer Luft-Wasser-Wärmepumpe beheizt. Diese Heizlösung arbeitet aufgrund der guten Dämmung des historischen Gebäudes energetisch, effizient. Weiterhin können die Energiekosten langfristig gesenkt und der Immobilienwert nachhaltig erhalten bleiben. Die Dämmung der Decke mit roh belassenen Fermacellplatten, die Stahlkonstruktion der Tragstruktur ist sichtbar."
+            }
+          }
+        },
+        {
+          "teaser": {
+            "title": "Erdsonden-Wärmepumpe mit Solaranlage",
+            "imageSrc": "case-studies/heating/2/images/1.jpg",
+            "imageAlt": "Mehrfamilienhaus in Stadtteil X",
+            "subtitle": "Mehrfamilienhaus in Stadtteil X",
+            "tag": "",
+            "facts": [
+              "Erdsonden-Wärmepumpe mit zwei Erdsonden",
+              "Photovoltaikanlage inkl. Dachbegrünung",
+              "Umfassende Gebäudesanierung"
+            ],
+            "buttonLabel": "Beispiel ansehen"
+          },
+          "detail": {
+            "title": "Erdsonden-Wärmepumpe mit Solaranlage",
+            "images": [
+              {
+                "src": "case-studies/heating/2/images/1.jpg",
+                "alt": "Mehrfamilienhaus in Stadtteil X - Aussenansicht",
+                "copyright": ""
+              }
+            ],
+            "facts": [
+              {
+                "key": "Standort",
+                "value": ""
+              },
+              {
+                "key": "Gebäudeart",
+                "value": ""
+              },
+              {
+                "key": "Baujahr",
+                "value": ""
+              },
+              {
+                "key": "Beheizte Fläche",
+                "value": " m²"
+              },
+              {
+                "key": "Eigentümerschaft",
+                "value": ""
+              },
+              {
+                "key": "Umsetzung",
+                "value": ""
+              },
+              {
+                "key": "Ausgangslage",
+                "value": ""
+              },
+              {
+                "key": "Realisierte Massnahmen",
+                "value": ""
+              },
+              {
+                "key": "Einsparung Energiekosten",
+                "value": ""
+              },
+              {
+                "key": "Einsparung CO₂-Emissionen",
+                "value": "X %"
+              }
+            ],
+            "links": [
+              {
+                "src": "",
+                "label": ""
+              }
+            ],
+            "text": {
+              "pre": "",
+              "quote": {
+                "phrase": "",
+                "author": ""
+              },
+              "post": ""
+            }
+          }
+        },
+        {
+          "teaser": {
+            "title": "Anschluss an die Fernwärme",
+            "imageSrc": "case-studies/heating/3/images/1.jpg",
+            "imageAlt": "",
+            "subtitle": "Reiheneinfamilienhäuser im Stadtteil X",
+            "tag": "",
+            "facts": [
+              "Gemeinsamer Anschluss an Fernwärme"
+            ],
+            "buttonLabel": "Beispiel ansehen"
+          },
+          "detail": {
+            "title": "Anschluss an die Fernwärme",
+            "images": [
+              {
+                "src": "case-studies/heating/3/images/1.jpg",
+                "alt": "",
+                "copyright": ""
+              },
+              {
+                "src": "case-studies/heating/3/images/2.jpg",
+                "alt": "",
+                "copyright": ""
+              }
+            ],
+            "facts": [
+              {
+                "key": "Standort",
+                "value": ""
+              },
+              {
+                "key": "Gebäudeart",
+                "value": ""
+              },
+              {
+                "key": "Baujahr",
+                "value": ""
+              },
+              {
+                "key": "Beheizte Fläche",
+                "value": " m²"
+              },
+              {
+                "key": "Eigentümerschaft",
+                "value": ""
+              },
+              {
+                "key": "Umsetzung",
+                "value": ""
+              },
+              {
+                "key": "Ausgangslage",
+                "value": ""
+              },
+              {
+                "key": "Realisierte Massnahmen",
+                "value": ""
+              },
+              {
+                "key": "Einsparung Energiekosten",
+                "value": ""
+              },
+              {
+                "key": "Einsparung CO₂-Emissionen",
+                "value": "X %"
+              }
+            ],
+            "links": [
+              {
+                "src": "",
+                "label": ""
+              }
+            ],
+            "text": {
+              "pre": "",
+              "quote": {
+                "phrase": "",
+                "author": ""
+              },
+              "post": ""
+            }
+          }
+        },
+        {
+          "teaser": {
+            "title": "Sanierung und Erdsonden-Wärmepumpe",
+            "imageSrc": "case-studies/heating/4/images/1.jpg",
+            "imageAlt": "",
+            "subtitle": "Einfamilienhaus im Stadtteil X",
+            "tag": "",
+            "facts": [
+              "Sanierung mit Anbau",
+              "Erdsonden-Wärmepumpe"
+            ],
+            "buttonLabel": "Beispiel ansehen"
+          },
+          "detail": {
+            "title": "Sanierung und Erdsonden-Wärmepumpe",
+            "images": [
+              {
+                "src": "case-studies/heating/4/images/1.jpg",
+                "alt": "",
+                "copyright": ""
+              }
+            ],
+            "facts": [
+              {
+                "key": "Standort",
+                "value": ""
+              },
+              {
+                "key": "Gebäudeart",
+                "value": ""
+              },
+              {
+                "key": "Baujahr",
+                "value": ""
+              },
+              {
+                "key": "Beheizte Fläche",
+                "value": " m²"
+              },
+              {
+                "key": "Eigentümerschaft",
+                "value": ""
+              },
+              {
+                "key": "Umsetzung",
+                "value": ""
+              },
+              {
+                "key": "Ausgangslage",
+                "value": ""
+              },
+              {
+                "key": "Realisierte Massnahmen",
+                "value": ""
+              },
+              {
+                "key": "Einsparung Energiekosten",
+                "value": ""
+              },
+              {
+                "key": "Einsparung CO₂-Emissionen",
+                "value": "X %"
+              }
+            ],
+            "links": [
+              {
+                "src": "",
+                "label": ""
+              }
+            ],
+            "text": {
+              "pre": "",
+              "quote": {
+                "phrase": "",
+                "author": ""
+              },
+              "post": ""
+            }
+          }
+        },
+        {
+          "teaser": {
+            "title": "Sanierung und Erdsonden-Wärmepumpe",
+            "imageSrc": "case-studies/heating/5/images/1.jpg",
+            "imageAlt": "",
+            "subtitle": "Einfamilienhaus im Stadtteil X",
+            "tag": "",
+            "facts": [
+              "Aufdach-Photovoltaikanlage",
+              "Ansteuerung Ladestation Elektroauto"
+            ],
+            "buttonLabel": "Beispiel ansehen"
+          },
+          "detail": {
+            "title": "Sanierung und Erdsonden-Wärmepumpe",
+            "images": [
+              {
+                "src": "case-studies/heating/5/images/1.jpg",
+                "alt": "",
+                "copyright": ""
+              }
+            ],
+            "facts": [
+              {
+                "key": "Standort",
+                "value": ""
+              },
+              {
+                "key": "Gebäudeart",
+                "value": ""
+              },
+              {
+                "key": "Baujahr",
+                "value": ""
+              },
+              {
+                "key": "Beheizte Fläche",
+                "value": " m²"
+              },
+              {
+                "key": "Eigentümerschaft",
+                "value": ""
+              },
+              {
+                "key": "Umsetzung",
+                "value": ""
+              },
+              {
+                "key": "Ausgangslage",
+                "value": ""
+              },
+              {
+                "key": "Realisierte Massnahmen",
+                "value": ""
+              },
+              {
+                "key": "Einsparung Energiekosten",
+                "value": ""
+              },
+              {
+                "key": "Einsparung CO₂-Emissionen",
+                "value": "X %"
+              }
+            ],
+            "links": [
+              {
+                "src": "",
+                "label": ""
+              }
+            ],
+            "text": {
+              "pre": "",
+              "quote": {
+                "phrase": "",
+                "author": ""
+              },
+              "post": ""
+            }
+          }
+        },
+        {
+          "teaser": {
+            "title": "Sanierung und Erdsonden-Wärmepumpe",
+            "imageSrc": "case-studies/heating/5/images/1.jpg",
+            "imageAlt": "",
+            "subtitle": "Einfamilienhaus im Stadtteil X",
+            "tag": "",
+            "facts": [
+              "Aufdach-Photovoltaikanlage",
+              "Ansteuerung Ladestation Elektroauto"
+            ],
+            "buttonLabel": "Beispiel ansehen"
+          },
+          "detail": {
+            "title": "Sanierung und Erdsonden-Wärmepumpe",
+            "images": [
+              {
+                "src": "case-studies/heating/5/images/1.jpg",
+                "alt": "",
+                "copyright": ""
+              }
+            ],
+            "facts": [
+              {
+                "key": "Standort",
+                "value": ""
+              },
+              {
+                "key": "Gebäudeart",
+                "value": ""
+              },
+              {
+                "key": "Baujahr",
+                "value": ""
+              },
+              {
+                "key": "Beheizte Fläche",
+                "value": " m²"
+              },
+              {
+                "key": "Eigentümerschaft",
+                "value": ""
+              },
+              {
+                "key": "Umsetzung",
+                "value": ""
+              },
+              {
+                "key": "Ausgangslage",
+                "value": ""
+              },
+              {
+                "key": "Realisierte Massnahmen",
+                "value": ""
+              },
+              {
+                "key": "Einsparung Energiekosten",
+                "value": ""
+              },
+              {
+                "key": "Einsparung CO₂-Emissionen",
+                "value": "X %"
+              }
+            ],
+            "links": [
+              {
+                "src": "",
+                "label": ""
+              }
+            ],
+            "text": {
+              "pre": "",
+              "quote": {
+                "phrase": "",
+                "author": ""
+              },
+              "post": ""
+            }
+          }
+        },
+        {
+          "teaser": {
+            "title": "Sanierung und Erdsonden-Wärmepumpe",
+            "imageSrc": "case-studies/heating/5/images/1.jpg",
+            "imageAlt": "",
+            "subtitle": "Einfamilienhaus im Stadtteil X",
+            "tag": "",
+            "facts": [
+              "Aufdach-Photovoltaikanlage",
+              "Ansteuerung Ladestation Elektroauto"
+            ],
+            "buttonLabel": "Beispiel ansehen"
+          },
+          "detail": {
+            "title": "Sanierung und Erdsonden-Wärmepumpe",
+            "images": [
+              {
+                "src": "case-studies/heating/5/images/1.jpg",
+                "alt": "",
+                "copyright": ""
+              }
+            ],
+            "facts": [
+              {
+                "key": "Standort",
+                "value": ""
+              },
+              {
+                "key": "Gebäudeart",
+                "value": ""
+              },
+              {
+                "key": "Baujahr",
+                "value": ""
+              },
+              {
+                "key": "Beheizte Fläche",
+                "value": " m²"
+              },
+              {
+                "key": "Eigentümerschaft",
+                "value": ""
+              },
+              {
+                "key": "Umsetzung",
+                "value": ""
+              },
+              {
+                "key": "Ausgangslage",
+                "value": ""
+              },
+              {
+                "key": "Realisierte Massnahmen",
+                "value": ""
+              },
+              {
+                "key": "Einsparung Energiekosten",
+                "value": ""
+              },
+              {
+                "key": "Einsparung CO₂-Emissionen",
+                "value": "X %"
+              }
+            ],
+            "links": [
+              {
+                "src": "",
+                "label": ""
+              }
+            ],
+            "text": {
+              "pre": "",
+              "quote": {
+                "phrase": "",
+                "author": ""
+              },
+              "post": ""
+            }
+          }
+        },
+        {
+          "teaser": {
+            "title": "Sanierung und Erdsonden-Wärmepumpe",
+            "imageSrc": "case-studies/heating/5/images/1.jpg",
+            "imageAlt": "",
+            "subtitle": "Einfamilienhaus im Stadtteil X",
+            "tag": "",
+            "facts": [
+              "Aufdach-Photovoltaikanlage",
+              "Ansteuerung Ladestation Elektroauto"
+            ],
+            "buttonLabel": "Beispiel ansehen"
+          },
+          "detail": {
+            "title": "Sanierung und Erdsonden-Wärmepumpe",
+            "images": [
+              {
+                "src": "case-studies/heating/5/images/1.jpg",
+                "alt": "",
+                "copyright": ""
+              }
+            ],
+            "facts": [
+              {
+                "key": "Standort",
+                "value": ""
+              },
+              {
+                "key": "Gebäudeart",
+                "value": ""
+              },
+              {
+                "key": "Baujahr",
+                "value": ""
+              },
+              {
+                "key": "Beheizte Fläche",
+                "value": " m²"
+              },
+              {
+                "key": "Eigentümerschaft",
+                "value": ""
+              },
+              {
+                "key": "Umsetzung",
+                "value": ""
+              },
+              {
+                "key": "Ausgangslage",
+                "value": ""
+              },
+              {
+                "key": "Realisierte Massnahmen",
+                "value": ""
+              },
+              {
+                "key": "Einsparung Energiekosten",
+                "value": ""
+              },
+              {
+                "key": "Einsparung CO₂-Emissionen",
+                "value": "X %"
+              }
+            ],
+            "links": [
+              {
+                "src": "",
+                "label": ""
+              }
+            ],
+            "text": {
+              "pre": "",
+              "quote": {
+                "phrase": "",
+                "author": ""
+              },
+              "post": ""
+            }
+          }
+        },
+        {
+          "teaser": {
+            "title": "Sanierung und Erdsonden-Wärmepumpe",
+            "imageSrc": "case-studies/heating/5/images/1.jpg",
+            "imageAlt": "",
+            "subtitle": "Einfamilienhaus im Stadtteil X",
+            "tag": "",
+            "facts": [
+              "Aufdach-Photovoltaikanlage",
+              "Ansteuerung Ladestation Elektroauto"
+            ],
+            "buttonLabel": "Beispiel ansehen"
+          },
+          "detail": {
+            "title": "Sanierung und Erdsonden-Wärmepumpe",
+            "images": [
+              {
+                "src": "case-studies/heating/5/images/1.jpg",
+                "alt": "",
+                "copyright": ""
+              }
+            ],
+            "facts": [
+              {
+                "key": "Standort",
+                "value": ""
+              },
+              {
+                "key": "Gebäudeart",
+                "value": ""
+              },
+              {
+                "key": "Baujahr",
+                "value": ""
+              },
+              {
+                "key": "Beheizte Fläche",
+                "value": " m²"
+              },
+              {
+                "key": "Eigentümerschaft",
+                "value": ""
+              },
+              {
+                "key": "Umsetzung",
+                "value": ""
+              },
+              {
+                "key": "Ausgangslage",
+                "value": ""
+              },
+              {
+                "key": "Realisierte Massnahmen",
+                "value": ""
+              },
+              {
+                "key": "Einsparung Energiekosten",
+                "value": ""
+              },
+              {
+                "key": "Einsparung CO₂-Emissionen",
+                "value": "X %"
+              }
+            ],
+            "links": [
+              {
+                "src": "",
+                "label": ""
+              }
+            ],
+            "text": {
+              "pre": "",
+              "quote": {
+                "phrase": "",
+                "author": ""
+              },
+              "post": ""
+            }
+          }
+        },
+        {
+          "teaser": {
+            "title": "Sanierung und Erdsonden-Wärmepumpe",
+            "imageSrc": "case-studies/heating/5/images/1.jpg",
+            "imageAlt": "",
+            "subtitle": "Einfamilienhaus im Stadtteil X",
+            "tag": "",
+            "facts": [
+              "Aufdach-Photovoltaikanlage",
+              "Ansteuerung Ladestation Elektroauto"
+            ],
+            "buttonLabel": "Beispiel ansehen"
+          },
+          "detail": {
+            "title": "Sanierung und Erdsonden-Wärmepumpe",
+            "images": [
+              {
+                "src": "case-studies/heating/5/images/1.jpg",
+                "alt": "",
+                "copyright": ""
+              }
+            ],
+            "facts": [
+              {
+                "key": "Standort",
+                "value": ""
+              },
+              {
+                "key": "Gebäudeart",
+                "value": ""
+              },
+              {
+                "key": "Baujahr",
+                "value": ""
+              },
+              {
+                "key": "Beheizte Fläche",
+                "value": " m²"
+              },
+              {
+                "key": "Eigentümerschaft",
+                "value": ""
+              },
+              {
+                "key": "Umsetzung",
+                "value": ""
+              },
+              {
+                "key": "Ausgangslage",
+                "value": ""
+              },
+              {
+                "key": "Realisierte Massnahmen",
+                "value": ""
+              },
+              {
+                "key": "Einsparung Energiekosten",
+                "value": ""
+              },
+              {
+                "key": "Einsparung CO₂-Emissionen",
+                "value": "X %"
+              }
+            ],
+            "links": [
+              {
+                "src": "",
+                "label": ""
+              }
+            ],
+            "text": {
+              "pre": "",
+              "quote": {
+                "phrase": "",
+                "author": ""
+              },
+              "post": ""
+            }
+          }
+        },
+        {
+          "teaser": {
+            "title": "Sanierung und Erdsonden-Wärmepumpe",
+            "imageSrc": "case-studies/heating/5/images/1.jpg",
+            "imageAlt": "",
+            "subtitle": "Einfamilienhaus im Stadtteil X",
+            "tag": "",
+            "facts": [
+              "Aufdach-Photovoltaikanlage",
+              "Ansteuerung Ladestation Elektroauto"
+            ],
+            "buttonLabel": "Beispiel ansehen"
+          },
+          "detail": {
+            "title": "Sanierung und Erdsonden-Wärmepumpe",
+            "images": [
+              {
+                "src": "case-studies/heating/5/images/1.jpg",
+                "alt": "",
+                "copyright": ""
+              }
+            ],
+            "facts": [
+              {
+                "key": "Standort",
+                "value": ""
+              },
+              {
+                "key": "Gebäudeart",
+                "value": ""
+              },
+              {
+                "key": "Baujahr",
+                "value": ""
+              },
+              {
+                "key": "Beheizte Fläche",
+                "value": " m²"
+              },
+              {
+                "key": "Eigentümerschaft",
+                "value": ""
+              },
+              {
+                "key": "Umsetzung",
+                "value": ""
+              },
+              {
+                "key": "Ausgangslage",
+                "value": ""
+              },
+              {
+                "key": "Realisierte Massnahmen",
+                "value": ""
+              },
+              {
+                "key": "Einsparung Energiekosten",
+                "value": ""
+              },
+              {
+                "key": "Einsparung CO₂-Emissionen",
+                "value": "X %"
+              }
+            ],
+            "links": [
+              {
+                "src": "",
+                "label": ""
+              }
+            ],
+            "text": {
+              "pre": "",
+              "quote": {
+                "phrase": "",
+                "author": ""
+              },
+              "post": ""
+            }
+          }
+        },
+        {
+          "teaser": {
+            "title": "Sanierung und Erdsonden-Wärmepumpe",
+            "imageSrc": "case-studies/heating/5/images/1.jpg",
+            "imageAlt": "",
+            "subtitle": "Einfamilienhaus im Stadtteil X",
+            "tag": "",
+            "facts": [
+              "Aufdach-Photovoltaikanlage",
+              "Ansteuerung Ladestation Elektroauto"
+            ],
+            "buttonLabel": "Beispiel ansehen"
+          },
+          "detail": {
+            "title": "Sanierung und Erdsonden-Wärmepumpe",
+            "images": [
+              {
+                "src": "case-studies/heating/5/images/1.jpg",
+                "alt": "",
+                "copyright": ""
+              }
+            ],
+            "facts": [
+              {
+                "key": "Standort",
+                "value": ""
+              },
+              {
+                "key": "Gebäudeart",
+                "value": ""
+              },
+              {
+                "key": "Baujahr",
+                "value": ""
+              },
+              {
+                "key": "Beheizte Fläche",
+                "value": " m²"
+              },
+              {
+                "key": "Eigentümerschaft",
+                "value": ""
+              },
+              {
+                "key": "Umsetzung",
+                "value": ""
+              },
+              {
+                "key": "Ausgangslage",
+                "value": ""
+              },
+              {
+                "key": "Realisierte Massnahmen",
+                "value": ""
+              },
+              {
+                "key": "Einsparung Energiekosten",
+                "value": ""
+              },
+              {
+                "key": "Einsparung CO₂-Emissionen",
+                "value": "X %"
+              }
+            ],
+            "links": [
+              {
+                "src": "",
+                "label": ""
+              }
+            ],
+            "text": {
+              "pre": "",
+              "quote": {
+                "phrase": "",
+                "author": ""
+              },
+              "post": ""
+            }
+          }
+        },
+        {
+          "teaser": {
+            "title": "Sanierung und Erdsonden-Wärmepumpe",
+            "imageSrc": "case-studies/heating/5/images/1.jpg",
+            "imageAlt": "",
+            "subtitle": "Einfamilienhaus im Stadtteil X",
+            "tag": "",
+            "facts": [
+              "Aufdach-Photovoltaikanlage",
+              "Ansteuerung Ladestation Elektroauto"
+            ],
+            "buttonLabel": "Beispiel ansehen"
+          },
+          "detail": {
+            "title": "Sanierung und Erdsonden-Wärmepumpe",
+            "images": [
+              {
+                "src": "case-studies/heating/5/images/1.jpg",
+                "alt": "",
+                "copyright": ""
+              }
+            ],
+            "facts": [
+              {
+                "key": "Standort",
+                "value": ""
+              },
+              {
+                "key": "Gebäudeart",
+                "value": ""
+              },
+              {
+                "key": "Baujahr",
+                "value": ""
+              },
+              {
+                "key": "Beheizte Fläche",
+                "value": " m²"
+              },
+              {
+                "key": "Eigentümerschaft",
+                "value": ""
+              },
+              {
+                "key": "Umsetzung",
+                "value": ""
+              },
+              {
+                "key": "Ausgangslage",
+                "value": ""
+              },
+              {
+                "key": "Realisierte Massnahmen",
+                "value": ""
+              },
+              {
+                "key": "Einsparung Energiekosten",
+                "value": ""
+              },
+              {
+                "key": "Einsparung CO₂-Emissionen",
+                "value": "X %"
+              }
+            ],
+            "links": [
+              {
+                "src": "",
+                "label": ""
+              }
+            ],
+            "text": {
+              "pre": "",
+              "quote": {
+                "phrase": "",
+                "author": ""
+              },
+              "post": ""
+            }
+          }
+        },
+        {
+          "teaser": {
+            "title": "Sanierung und Erdsonden-Wärmepumpe",
+            "imageSrc": "case-studies/heating/5/images/1.jpg",
+            "imageAlt": "",
+            "subtitle": "Einfamilienhaus im Stadtteil X",
+            "tag": "",
+            "facts": [
+              "Aufdach-Photovoltaikanlage",
+              "Ansteuerung Ladestation Elektroauto"
+            ],
+            "buttonLabel": "Beispiel ansehen"
+          },
+          "detail": {
+            "title": "Sanierung und Erdsonden-Wärmepumpe",
+            "images": [
+              {
+                "src": "case-studies/heating/5/images/1.jpg",
+                "alt": "",
+                "copyright": ""
+              }
+            ],
+            "facts": [
+              {
+                "key": "Standort",
+                "value": ""
+              },
+              {
+                "key": "Gebäudeart",
+                "value": ""
+              },
+              {
+                "key": "Baujahr",
+                "value": ""
+              },
+              {
+                "key": "Beheizte Fläche",
+                "value": " m²"
+              },
+              {
+                "key": "Eigentümerschaft",
+                "value": ""
+              },
+              {
+                "key": "Umsetzung",
+                "value": ""
+              },
+              {
+                "key": "Ausgangslage",
+                "value": ""
+              },
+              {
+                "key": "Realisierte Massnahmen",
+                "value": ""
+              },
+              {
+                "key": "Einsparung Energiekosten",
+                "value": ""
+              },
+              {
+                "key": "Einsparung CO₂-Emissionen",
+                "value": "X %"
+              }
+            ],
+            "links": [
+              {
+                "src": "",
+                "label": ""
+              }
+            ],
+            "text": {
+              "pre": "",
+              "quote": {
+                "phrase": "",
+                "author": ""
+              },
+              "post": ""
+            }
+          }
+        }
+      ]
+    },
+    "case_studies.solar": {
+      "title": "Beispiele zum Thema Solaranlagen",
+      "lead": "",
+      "items": [
+        {
+          "teaser": {
+            "title": "Solarziegeldach im Wildpark Bruderhaus",
+            "imageSrc": "case-studies/solar/1/images/1.jpg",
+            "imageAlt": "Gewerbegebäude im Heiligberg",
+            "subtitle": "Gewerbegebäude im Heiligberg",
+            "tag": "Pionierobjekt",
+            "facts": [
+              "Einsatz Solarziegeln",
+              "Komplettsanierung mit Anbau"
+            ],
+            "buttonLabel": "Beispiel ansehen"
+          },
+          "detail": {
+            "title": "Solarziegeldach im Wildpark Bruderhaus",
+            "images": [
+              {
+                "src": "case-studies/solar/1/images/1.jpg",
+                "alt": "Gewerbegebäude im Heiligberg - Aussenansicht",
+                "copyright": "Stadt Winterthur"
+              },
+              {
+                "src": "case-studies/solar/1/images/2.jpg",
+                "alt": "Gewerbegebäude im Heiligberg - Dachansicht",
+                "copyright": "Stadt Winterthur"
+              },
+              {
+                "src": "case-studies/solar/1/images/3.jpg",
+                "alt": "Gewerbegebäude im Heiligberg - Aussenansicht",
+                "copyright": "Stadt Winterthur"
+              }
+            ],
+            "facts": [
+              {
+                "key": "Standort",
+                "value": "Heiligberg"
+              },
+              {
+                "key": "Gebäudeart",
+                "value": "Gewerbegebäude"
+              },
+              {
+                "key": "Baujahr",
+                "value": "1863"
+              },
+              {
+                "key": "Beheizte Fläche",
+                "value": "X m²"
+              },
+              {
+                "key": "Eigentümerschaft",
+                "value": "Haldimann-Stiftung Aarau"
+              },
+              {
+                "key": "Umsetzung",
+                "value": "Architektur Büro Marazzi Reinhardt GmbH, Robauen GmbH"
+              },
+              {
+                "key": "Ausgangslage",
+                "value": "n.a."
+              },
+              {
+                "key": "Realisierte Massnahmen",
+                "value": "2019: (Indach-)Photovoltaikanlage mit Solarziegeln X kWp, Installation einer Erdsonden-Wärmepumpe, Umbau der Scheune zu Gewerberäume inkl. Anbau"
+              },
+              {
+                "key": "Jahresproduktion Strom",
+                "value": "X kWh"
+              },
+              {
+                "key": "Modulfläche",
+                "value": "X m²"
+              },
+              {
+                "key": "Modulfläche",
+                "value": "X m²"
+              },
+              {
+                "key": "Ausrichtung",
+                "value": "Süden"
+              }
+            ],
+            "links": [
+              {
+                "src": "https://www.stadt-zuerich.ch/energie/de/index/heizen-kuehlen/umsetzungen/vetterliweg.html",
+                "label": "Sanierung und Erdsonden-Wärmepumpe mit Solaranlage - Stadt Zürich (stadt-zuerich.ch)"
+              }
+            ],
+            "text": {
+              "pre": "Der Wildpark Bruderhaus wird durch ein Tier- und Naturschutz-Kompetenzzentrum ergänzt. Die bestehende Scheune wird saniert, ausgebaut und durch einen Anbau erweitert. Im Gebäude werden Büro-, Seminar-, Lager- und Werkstatträume untergebracht, sowie die öffentlichen Toiletten für die Besucher des Wildparks. Das Ensemble von Ökonomiegebäude und Restaurant bleibt erhalten, ebenso die zur Identifikation mit dem Ort wichtige Vertrautheit. Die baulichen Massnahmen orientieren sich an einer – zeitgemäss interpretierten – ländlichen Architektur. Insgesamt wird eine Geschossfläche von 1'150m² realisiert.",
+              "quote": {
+                "phrase": "«Die Reihe der Arbeiterhäuschen im Gartenquartier von Altstetten wurde 1943 als Backsteinhäuser ohne Fundament direkt in den Uetliberglehm gestellt. Die Herausforderung, das kleine Bijou 50 Jahre später energetisch zu erneuern, packten wir mit Freude an. Die Umsetzung ist gelungen und wir sind stolz auf unser «Nullwärme-Energiehaus.»",
+                "author": "Hauseigentümerin"
+              },
+              "post": ""
+            }
+          }
+        },
+        {
+          "teaser": {
+            "title": "Inndachsolaranlage auf ehemaligem Landwirtschaftsbetrieb",
+            "imageSrc": "case-studies/solar/2/images/1.jpg",
+            "imageAlt": "",
+            "subtitle": "Einfamilienhaus in Gotzenwil",
+            "tag": "",
+            "facts": [
+              "Solaranlage",
+              "Dachsanierung",
+              "Erdsonden-Wärmepumpe"
+            ],
+            "buttonLabel": "Beispiel ansehen"
+          },
+          "detail": {
+            "title": "Inndachsolaranlage auf ehemaligem Landwirtschaftsbetrieb",
+            "images": [
+              {
+                "src": "case-studies/solar/2/images/1.jpg",
+                "alt": "",
+                "copyright": ""
+              },
+              {
+                "src": "case-studies/solar/2/images/2.jpg",
+                "alt": "",
+                "copyright": ""
+              }
+            ],
+            "facts": [
+              {
+                "key": "Standort",
+                "value": ""
+              },
+              {
+                "key": "Gebäudeart",
+                "value": ""
+              },
+              {
+                "key": "Baujahr",
+                "value": ""
+              },
+              {
+                "key": "Beheizte Fläche",
+                "value": "X m²"
+              },
+              {
+                "key": "Eigentümerschaft",
+                "value": ""
+              },
+              {
+                "key": "Umsetzung",
+                "value": ""
+              },
+              {
+                "key": "Ausgangslage",
+                "value": ""
+              },
+              {
+                "key": "Realisierte Massnahmen",
+                "value": ""
+              },
+              {
+                "key": "Jahresproduktion Strom",
+                "value": "X kWh"
+              },
+              {
+                "key": "Modulfläche",
+                "value": "X m²"
+              },
+              {
+                "key": "Modulfläche",
+                "value": "X m²"
+              },
+              {
+                "key": "Ausrichtung",
+                "value": ""
+              }
+            ],
+            "links": [
+              {
+                "src": "",
+                "label": ""
+              }
+            ],
+            "text": {
+              "pre": "",
+              "quote": {
+                "phrase": "",
+                "author": ""
+              },
+              "post": ""
+            }
+          }
+        },
+        {
+          "teaser": {
+            "title": "Sanierung eines Objekts aus dem kommunalen Inventar",
+            "imageSrc": "case-studies/solar/3/images/1.jpg",
+            "imageAlt": "",
+            "subtitle": "Einfamilienhaus im Brühlberg",
+            "tag": "Inventarobjekt",
+            "facts": [
+              "Wärmedämmung, Fensterersatz und Erdsonden-Wärmepumpe",
+              "Inventarobjekt kommunal"
+            ],
+            "buttonLabel": "Beispiel ansehen"
+          },
+          "detail": {
+            "title": "Sanierung eines Objekts aus dem kommunalen Inventar",
+            "images": [
+              {
+                "src": "case-studies/solar/3/images/1.jpg",
+                "alt": "",
+                "copyright": ""
+              },
+              {
+                "src": "case-studies/solar/3/images/2.jpg",
+                "alt": "",
+                "copyright": ""
+              }
+            ],
+            "facts": [
+              {
+                "key": "Standort",
+                "value": ""
+              },
+              {
+                "key": "Gebäudeart",
+                "value": ""
+              },
+              {
+                "key": "Baujahr",
+                "value": ""
+              },
+              {
+                "key": "Beheizte Fläche",
+                "value": "X m²"
+              },
+              {
+                "key": "Eigentümerschaft",
+                "value": ""
+              },
+              {
+                "key": "Umsetzung",
+                "value": ""
+              },
+              {
+                "key": "Ausgangslage",
+                "value": ""
+              },
+              {
+                "key": "Realisierte Massnahmen",
+                "value": ""
+              },
+              {
+                "key": "Jahresproduktion Strom",
+                "value": "X kWh"
+              },
+              {
+                "key": "Modulfläche",
+                "value": "X m²"
+              },
+              {
+                "key": "Modulfläche",
+                "value": "X m²"
+              },
+              {
+                "key": "Ausrichtung",
+                "value": ""
+              }
+            ],
+            "links": [
+              {
+                "src": "",
+                "label": ""
+              }
+            ],
+            "text": {
+              "pre": "",
+              "quote": {
+                "phrase": "",
+                "author": ""
+              },
+              "post": ""
+            }
+          }
+        }
+      ]
+    },
+    "case_studies.refurbishment": {
+      "title": "Beispiele zum Thema energetische Sanierungen",
+      "lead": "",
+      "items": [
+        {
+          "teaser": {
+            "title": "Pilotprojekt mit wiederverwendeten Baumaterialien",
+            "imageSrc": "case-studies/refurbishment/1/images/1.jpg",
+            "imageAlt": "Gewerbegebäude im Tössfeld",
+            "subtitle": "Gewerbegebäude im Tössfeld",
+            "tag": "Pionierobjekt",
+            "facts": [
+              "Pionierobjekt Zirkuläres Bauen",
+              "Aufstockung und Sanierung",
+              "Photovoltaikanlage"
+            ],
+            "buttonLabel": "Beispiel ansehen"
+          },
+          "detail": {
+            "title": "Pilotprojekt mit wiederverwendeten Baumaterialien",
+            "images": [
+              {
+                "src": "case-studies/refurbishment/1/images/1.jpg",
+                "alt": "Gewerbegebäude im Tössfeld - Aussenansicht",
+                "copyright": "baubüro in situ"
+              },
+              {
+                "src": "case-studies/refurbishment/1/images/2.jpg",
+                "alt": "Gewerbegebäude im Tössfeld - Innenansicht",
+                "copyright": "baubüro in situ"
+              },
+              {
+                "src": "case-studies/refurbishment/1/images/3.jpg",
+                "alt": "Gewerbegebäude im Tössfeld - Aussenansicht",
+                "copyright": "baubüro in situ"
+              }
+            ],
+            "facts": [
+              {
+                "key": "Standort",
+                "value": "Tössfeld"
+              },
+              {
+                "key": "Gebäudeart",
+                "value": "Gewerbegebäude"
+              },
+              {
+                "key": "Baujahr",
+                "value": "1913"
+              },
+              {
+                "key": "Beheizte Fläche",
+                "value": "X m²"
+              },
+              {
+                "key": "Eigentümerschaft",
+                "value": "Stiftung Abendrot"
+              },
+              {
+                "key": "Umsetzung",
+                "value": "baubüro in situ"
+              },
+              {
+                "key": "Ausgangslage",
+                "value": "Aufstockung und Sanierung einer Modellwerkstatt"
+              },
+              {
+                "key": "Realisierte Massnahmen",
+                "value": "2018: Sanierung und Umnutzung der bestehenden Kopfbau Halle 118 und Aufstockung für Büro- und Ateliernutzung, Pilotprojekt mit wiederverwendeten Baumaterialien, Installation einer Photovoltaikanlage mit X kWh"
+              },
+              {
+                "key": "Einsparung Energieverbrauch/ -kosten",
+                "value": "X %"
+              },
+              {
+                "key": "Einsparung CO₂-Emissionen",
+                "value": "X %"
+              }
+            ],
+            "links": [
+              {
+                "src": "https://www.insitu.ch/",
+                "label": "baubüro in situ"
+              }
+            ],
+            "text": {
+              "pre": "Auf dem Lagerplatz Winterthur wurde eine bestehende Werkhalle aufgestockt. Mehr als die Hälfte der für die Erweiterung und Sanierung benötigten Bauteile rettete Baubüro in situ aus Abrissobjekten und baute sie vor Ort ein. Stützen, Träger, Fenster, Fassadenbleche und vieles mehr erhielten ein zweites Leben. Durch die Wiederverwendung von Bauteilen und ganzen Konstruktionen sowie deren geschickten Ergänzung mit neuen CO2-armen Materialien konnten die Treibhausgasemissionen im Vergleich zu einem konventionellen Neubau um 60% verringert werden – eine zukunftsfähige Strategie auf dem Weg zu Netto-Null.",
+              "quote": {
+                "phrase": "«…so wäre das ultimative Ziel wahrer zirkulärer Architektur ein Prozess, bei dem niemals Abfall produziert und somit auch keine graue Energie verschwendet wird.»",
+                "author": "baubüro in situ"
+              },
+              "post": ""
+            }
+          }
+        }
+      ]
+    },
     "contact.title": "Kontakt",
     "contact.subtitle_contact": "Kontakt",
     "contact.subtitle_contact_form": "Kontaktformular",
