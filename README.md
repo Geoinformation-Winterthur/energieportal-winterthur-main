@@ -13,7 +13,7 @@ Wenn sich die Struktur eines Texts ändert (z.B. weitere Links hinzukommen, an a
 Unter den keys "case_studies.heating", "case_studies.refurbishment" und "case_studies.solar" finden sich die jeweiligen Praxisbeispiele.
 
 Darin genestet befindet sich jeweile eine Liste "items", wo Beispiele angepasst oder neue ergänzt werden können.
-Ein "item" besteht aus einem "teaser", der Übersichtskachel, sowie einem detail, der Detailansicht.
+Ein "item" besteht aus einem "teaser", der Übersichtskachel, sowie einem "detail", der Detailansicht.
 
 Die zugehörigen Bilder und PDFs liegen im Ordner "public/case-studies/" in der jeweiligen Kategorie ab. Die Ordner (ausser "public") können nach Belieben (um)benannt werden - es müssen einfach die Bildpfade im "de.json" simultan angepasst werden.
 
