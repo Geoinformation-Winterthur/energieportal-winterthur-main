@@ -855,7 +855,7 @@
     "our_consulting_service.our-services.further_information_3": "finden Sie weitere Firmen oder selbstständige Fachpersonen, die Energieberatungen in Winterthur anbieten.",
     "case_studies.intro.title": "Praxisbeispiele",
     "case_studies.teaser_title": "Winterthur baut um.",
-    "case_studies.teaser_description": "Unser Team besteht aus erfahrenen Energieberaterinnen und Energieberatern der Energiefachstelle der Stadt Winterthur und Stadtwerk Winterthur. Wir kennen die gesetzlichen Grundlagen und sind informiert über den Ausbau von Wärmenetzen sowie über Förderbeiträge und beraten Sie von der ersten Projektidee bis zur Realisierung. Gerne vereinbaren wir einen Termin mit Ihnen und beraten wir Sie vor Ort oder in unseren Büros.",
+    "case_studies.teaser_description": "Im Energieportal der Stadt Winterthur finden Sie ab sofort anschauliche Beispiele – sowohl von städtischen als auch von privaten Projekten. Darunter sind innovative Pionierprojekte und typische Umsetzungen, die Sie inspirieren werden. Lassen Sie sich von erfolgreichen Massnahmen und realen Erfahrungen inspirieren und erfahren Sie, wie auch Sie Ihr Gebäude energieeffizienter gestalten können.",
     "case_studies.teaser_image": "altstadt_winterthur.jpg",
     "case_studies.teaser_image_credits": "Bildquelle: Maps Winterthur",
     "case_studies.teaser_subtitle": "Besitzen Sie ein spannendes Objekt?",
@@ -870,7 +870,7 @@
       "items": [
         {
           "teaser": {
-            "title": "Energetische Sanierung und Luft-WP -- Wohnen im ehemaligem Ökonomiegebäude",
+            "title": "Luft-Wasser-Wärmepumpe und Umnutzung",
             "imageSrc": "case-studies/heating/1/images/1.jpg",
             "imageAlt": "Wülflingerstrasse 255",
             "subtitle": "Mehrfamilienhaus am Lindenplatz",
