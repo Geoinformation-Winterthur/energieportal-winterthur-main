@@ -2115,7 +2115,7 @@
         },
         {
           "teaser": {
-            "title": "Inndachsolaranlage auf ehemaligem Landwirtschaftsbetrieb",
+            "title": "Indachsolaranlage auf ehemaligem Landwirtschaftsbetrieb",
             "imageSrc": "case-studies/solar/2/images/1.jpg",
             "imageAlt": "",
             "subtitle": "Einfamilienhaus in Gotzenwil",
@@ -2123,12 +2123,12 @@
             "facts": [
               "Solaranlage",
               "Dachsanierung",
-              "Erdsonden-Wärmepumpe"
+              "Luft-Wasser-Wärmepumpe"
             ],
             "buttonLabel": "Beispiel ansehen"
           },
           "detail": {
-            "title": "Inndachsolaranlage auf ehemaligem Landwirtschaftsbetrieb",
+            "title": "Indachsolaranlage auf ehemaligem Landwirtschaftsbetrieb",
             "images": [
               {
                 "src": "case-studies/solar/2/images/1.jpg",
@@ -2144,15 +2144,15 @@
             "facts": [
               {
                 "key": "Standort",
-                "value": ""
+                "value": "Gotzenwil"
               },
               {
                 "key": "Gebäudeart",
-                "value": ""
+                "value": "Einfamilienhaus"
               },
               {
                 "key": "Baujahr",
-                "value": ""
+                "value": "1869"
               },
               {
                 "key": "Beheizte Fläche",
@@ -2160,19 +2160,15 @@
               },
               {
                 "key": "Eigentümerschaft",
-                "value": ""
+                "value": "Stadt Winterthur"
               },
               {
-                "key": "Umsetzung",
-                "value": ""
+                "key": "Anlageart",
+                "value": "Indach-Photovoltaikanlage mit 8 kWp"
               },
               {
-                "key": "Ausgangslage",
-                "value": ""
-              },
-              {
-                "key": "Realisierte Massnahmen",
-                "value": ""
+                "key": "Weitere Massnahmen",
+                "value": "Dämmung des Dachgeschosses, Installation einer Luft-Wasser-Wärmepumpe"
               },
               {
                 "key": "Jahresproduktion Strom",
@@ -2183,12 +2179,8 @@
                 "value": "X m²"
               },
               {
-                "key": "Modulfläche",
-                "value": "X m²"
-              },
-              {
                 "key": "Ausrichtung",
-                "value": ""
+                "value": "Süden"
               }
             ],
             "links": [
@@ -2198,10 +2190,10 @@
               }
             ],
             "text": {
-              "pre": "",
+              "pre": "Der ehemalige städtische Landwirtschaftsbetrieb aus dem Jahr 1869 wurde sorgfältig saniert und in ein energieeffizientes Einfamilienhaus umgewandelt, das nun vermietet wird. Ein besonderes Augenmerk der Renovation lag auf der Integration einer modernen Inndach-Photovoltaikanlage, die mit einer Leistung von 8 kWp das Herzstück der energetischen Sanierung bildet. Diese Anlage fügt sich nahtlos in das historische Dachbild ein und gewährleistet eine umweltfreundliche Energieproduktion. Neben der Photovoltaikanlage wurde das Dach umfassend gedämmt, um den Energieverlust zu minimieren. Zusätzliche Massnahmen umfassten die Erneuerung der Nasszellen, den Einbau eines neuen Bodenbelags sowie das Streichen der Fassade. Das gesamte Gebäude wird über eine Luft-Wasser-Wärmepumpe beheizt.",
               "quote": {
-                "phrase": "",
-                "author": ""
+                "phrase": "Es war wichtig für uns, den Charakter des Bauernhauses zu bewahren, während wir gleichzeitig moderne und effiziente Lösungen integrieren. Besonders gelungen ist die Inndach-Photovoltaikanlage.",
+                "author": "Stadt Winterthur"
               },
               "post": ""
             }
