@@ -28,7 +28,7 @@
     "online_consulting.teaser_2_image_credits": "Bildquelle: Kommunaler Energieplan",
     "online_consulting.teaser_2_link": "Zum Energieplan",
     "online_consulting.teaser_2_link_target": "https://stadtplan.winterthur.ch/?topic=KommunalerEnergieplan",
-    "online_consulting.teaser_3_title": "Energielösungen in Winterthur",
+    "online_consulting.teaser_3_title": "Praxisbeispiele aus Winterthur",
     "online_consulting.teaser_3_description": "Im Energieportal der Stadt Winterthur finden Sie ab sofort anschauliche Praxisbeispiele.",
     "online_consulting.teaser_3_image": "altstadt_winterthur.jpg",
     "online_consulting.teaser_3_image_credits": "Bildquelle: Maps Winterthur",
@@ -883,7 +883,7 @@
             "buttonLabel": "Beispiel ansehen"
           },
           "detail": {
-            "title": "Energetische Sanierung und Luft-WP - Wohnen im ehemaligem Ökonomiegebäude",
+            "title": "Luft-Wasser-Wärmepumpe und Umnutzung",
             "images": [
               {
                 "src": "case-studies/heating/1/images/1.jpg",
@@ -920,44 +920,36 @@
                 "value": "1897"
               },
               {
-                "key": "Beheizte Fläche",
-                "value": "X m²"
-              },
-              {
                 "key": "Eigentümerschaft",
                 "value": "Stadt Winterthur"
               },
               {
-                "key": "Umsetzung",
-                "value": "RWPA Architekturagentur GmbH"
+                "key": "Beheizte Fläche",
+                "value": "X m²"
+              },
+              {
+                "key": "Heizlösung",
+                "value": "Luft-Wasser-Wärmepumpe"
               },
               {
                 "key": "Ausgangslage",
-                "value": "unbeheiztes Ökonomiegebäude"
+                "value": "unbeheiztes Ökonomiegebäude zu Mehrfamilienhaus"
               },
               {
                 "key": "Realisierte Massnahmen",
-                "value": "2019: Umnutzung von Werkstatt und Lager zu Wohnen mit energetischen Fassadensanierung sowie Fensterersatz, Installation einer Photovoltaikanlage und einer Luft-Wasser-Wärmepumpe"
-              },
-              {
-                "key": "Einsparung Energieverbrauch/ -kosten",
-                "value": "X %"
-              },
-              {
-                "key": "Einsparung CO₂-Emissionen",
-                "value": "X %"
+                "value": "Umnutzung von Werkstatt und Lager zu Wohnen mit energetischen Fassadensanierung sowie Fensterersatz, Installation einer Photovoltaikanlage"
               }
             ],
             "links": [
               {
                 "src": "https://www.robauen.ch/customer/files/394/052-Referenzblatt-A3.pdf",
-                "label": "Referenzblatt"
+                "label": "Referenzen"
               }
             ],
             "text": {
               "pre": "Im Jahr 1897 erstellten die Besitzer des Gasthauses Frohsinn im Zentrum von Wülflingen ein kleines Ökonomiegebäude. Die Stadt erwarb das Ökonomiegebäude 1962 und vermietete es an Gewerbetreibende. Im Rahmen der Neugestaltung des Frohsinnareals entschied die Stadt 2017, zwei Wohnungen zu realisieren: Eine Loftwohnung und eine Maisonettewohnung. Die äussere Erscheinung mit Fassaden aus Sichtbackstein und Kupferblech blieb weitgehend erhalten. Die Dämmung der Decke ist mit roh belassenen Fermacellplatten verkleidet, die Stahlkonstruktion der Tragstruktur ist sichtbar und auf den Böden liegt ein Industrie-Stabparkett.",
               "quote": {
-                "phrase": "«Wohnen mit Industriecharme - Nach der Umnutzung und Sanierung bildet das ehemalige Gewerbegebäude jetzt zusammen mit den Liegenschaften auf dem benachbarten Frohsinnareal ein stimmiges Ensemble mit Industriecharme.»",
+                "phrase": "«Nach der Umnutzung und Sanierung bildet das ehemalige Gewerbegebäude jetzt zusammen mit den Liegenschaften auf dem benachbarten Frohsinnareal ein stimmiges Ensemble mit Industriecharme.»",
                 "author": "Stadt Winterthur"
               },
               "post": "Das Gebäude wird mit einer Luft-Wasser-Wärmepumpe beheizt. Diese Heizlösung arbeitet aufgrund der guten Dämmung des historischen Gebäudes energetisch, effizient. Weiterhin können die Energiekosten langfristig gesenkt und der Immobilienwert nachhaltig erhalten bleiben. Die Dämmung der Decke mit roh belassenen Fermacellplatten, die Stahlkonstruktion der Tragstruktur ist sichtbar."
@@ -990,43 +982,35 @@
             "facts": [
               {
                 "key": "Standort",
-                "value": ""
+                "value": "X"
               },
               {
                 "key": "Gebäudeart",
-                "value": ""
+                "value": "Mehrfamilienhaus"
               },
               {
                 "key": "Baujahr",
-                "value": ""
-              },
-              {
-                "key": "Beheizte Fläche",
-                "value": " m²"
+                "value": "1963"
               },
               {
                 "key": "Eigentümerschaft",
-                "value": ""
+                "value": "Privat"
               },
               {
-                "key": "Umsetzung",
-                "value": ""
+                "key": "Beheizte Fläche",
+                "value": "1100 m²"
               },
               {
                 "key": "Ausgangslage",
-                "value": ""
+                "value": "Gasheizung, ungedämmte Gebäudehülle"
               },
               {
-                "key": "Realisierte Massnahmen",
-                "value": ""
+                "key": "Heizlösung",
+                "value": "Erdsonden-Wärmepumpe"
               },
               {
-                "key": "Einsparung Energiekosten",
-                "value": ""
-              },
-              {
-                "key": "Einsparung CO₂-Emissionen",
-                "value": "X %"
+                "key": "Weitere Massnahmen",
+                "value": "Dämmung Fassade, Dach und Kellerdecke, Ersatz der Fenster und Türen, Einbau von Abluftanlagen"
               }
             ],
             "links": [
@@ -1036,12 +1020,12 @@
               }
             ],
             "text": {
-              "pre": "",
+              "pre": "Nach 20 Jahren war die Gasheizung im Mehrfamilienhaus in Riesbach am Ende ihrer Lebensdauer angekommen. Das Gebäude aus den 1960er-Jahren wies einen überdurchschnittlich hohen Energiebedarf für Heizung und Warmwasser von jährlich 173 kWh/m² auf – wie viele Bauten aus dieser Zeit. Deshalb wollte die Eigentümerschaft nicht nur die Heizung ersetzen, sondern liessen ein umfassendes Konzept erarbeiten, um den Wärmebedarf des Gebäudes zu senken. Zwei Bedingungen galt es bei der Planung der Gesamtsanierung zu beachten: Das äussere Erscheinungsbild des Gebäudes sollte erhalten bleiben, und die Arbeiten mussten in bewohntem Zustand erfolgen, um Kündigungen zu vermeiden. So fanden die Sanierungsmassnahmen gestaffelt zwischen 2010 und 2012 statt.",
               "quote": {
-                "phrase": "",
-                "author": ""
+                "phrase": "Durch die umfassende Sanierung der Gebäudehülle wurde der Energiebedarf erheblich gesenkt. Das Gebäude ist heute Minergie-zertifiziert.» ",
+                "author": "Hauseigentümerschaft"
               },
-              "post": ""
+              "post": ". Die Fassade, das Dach und die Kellerdecke wurden gedämmt. Neue Fenster mit Dreifachisolierverglasung wurden eingebaut. Durch die Massnahmen konnte der Wärmebedarf um 75 % reduziert werden. Die Wärme liefert neu eine Erdsonden-Wärmepumpe. Wenn immer möglich wird sie mit dem eigenen Strom aus der 150 m² grossen Solaranlage auf dem Flachdach betrieben."
             }
           }
         },
@@ -1074,43 +1058,35 @@
             "facts": [
               {
                 "key": "Standort",
-                "value": ""
+                "value": "X"
               },
               {
                 "key": "Gebäudeart",
-                "value": ""
+                "value": "39 Reiheneinfamilienhäuser, 1 Kindergarten"
               },
               {
                 "key": "Baujahr",
-                "value": ""
+                "value": "1926"
               },
               {
                 "key": "Beheizte Fläche",
-                "value": " m²"
+                "value": "6000 m²"
               },
               {
                 "key": "Eigentümerschaft",
-                "value": ""
-              },
-              {
-                "key": "Umsetzung",
-                "value": ""
+                "value": "Privat"
               },
               {
                 "key": "Ausgangslage",
-                "value": ""
+                "value": "Gemeinsame Gasheizung"
               },
               {
-                "key": "Realisierte Massnahmen",
-                "value": ""
+                "key": "Heizlösung",
+                "value": "Anschluss an die Fernwärme"
               },
               {
-                "key": "Einsparung Energiekosten",
-                "value": ""
-              },
-              {
-                "key": "Einsparung CO₂-Emissionen",
-                "value": "X %"
+                "key": "Weitere Massnahmen",
+                "value": "Machbarkeitsstudie im Vorfeld"
               }
             ],
             "links": [
@@ -1120,12 +1096,12 @@
               }
             ],
             "text": {
-              "pre": "",
+              "pre": "Im Quartier Oberstrass beschlossen mehrere Eigentümer*innen, sich zu einem Energieverbund zusammenzuschliessen. Die Möglichkeiten waren jedoch begrenzt: Da sowohl die Gebäude als auch die Gärten unter Denkmalschutz stehen und die Gebäudereihe teilweise direkt über dem Milchbucktunnel liegt, waren Erdsondenbohrungen nicht möglich. Für Luft-Wasser-Wärmepumpen wären die Schallschutzmassnahmen nicht ausreichend umsetzbar gewesen. Die Lösung fand sich in Form eines Gemeinschaftsanschlusses an die Fernwärme.",
               "quote": {
-                "phrase": "",
-                "author": ""
+                "phrase": "«Um die vielen Eigentümer*innen zu einem Energieverbund zusammenzubringen, war die Bildung einer engagierten, gut vernetzten Kerngruppe zentral.»",
+                "author": "Hauseigentümerschaft"
               },
-              "post": ""
+              "post": "Von der ersten Informationsveranstaltung der Energieberatung der Stadt Zürich bis zur Inbetriebnahme der Heizzentrale vergingen rund fünf Jahre. Eine wichtige Voraussetzung für das Gelingen des Zusammenschlusses war, dass eine Kerngruppe der Eigentümer*innen gebildet wurde, die das Vorhaben aktiv vorantrieb. Sie kümmerte sich um Abklärungen mit den involvierten Stellen, koordinierte alle Anliegen, nahm die Ausschreibung für den Bau und Betrieb des Verbundes vor und hielt die übrigen Eigentümer*innen auf dem Laufenden. 2020 wurde der Energieverbund gebaut, 2021 erfolgte die Inbetriebnahme der Heizzentrale. Nach einer Übergangsphase, in welcher der Verbund mit Gas betrieben wurde, stellt der Verbund 2023 auf Fernwärme um."
             }
           }
         },
@@ -1137,8 +1113,8 @@
             "subtitle": "Einfamilienhaus im Stadtteil X",
             "tag": "",
             "facts": [
-              "Sanierung mit Anbau",
-              "Erdsonden-Wärmepumpe"
+              "Gemeinsamer Anschluss an die Fernwärme",
+              "Machbarkeitsstudie"
             ],
             "buttonLabel": "Beispiel ansehen"
           },
@@ -2353,6 +2329,10 @@
                 "value": "Stiftung Abendrot"
               },
               {
+                "key": "Heizlösung",
+                "value": "Fernwärme"
+              },
+              {
                 "key": "Umsetzung",
                 "value": "baubüro in situ"
               },
@@ -2362,15 +2342,7 @@
               },
               {
                 "key": "Realisierte Massnahmen",
-                "value": "2018: Sanierung und Umnutzung der bestehenden Kopfbau Halle 118 und Aufstockung für Büro- und Ateliernutzung, Pilotprojekt mit wiederverwendeten Baumaterialien, Installation einer Photovoltaikanlage mit X kWh"
-              },
-              {
-                "key": "Einsparung Energieverbrauch/ -kosten",
-                "value": "X %"
-              },
-              {
-                "key": "Einsparung CO₂-Emissionen",
-                "value": "X %"
+                "value": "Sanierung und Umnutzung der bestehenden Kopfbau Halle 118 und Aufstockung für Büro- und Ateliernutzung, Pilotprojekt mit wiederverwendeten Baumaterialien, Installation einer Photovoltaikanlage mit X kWh"
               }
             ],
             "links": [
