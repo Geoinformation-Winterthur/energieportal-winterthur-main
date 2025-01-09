@@ -1,13 +1,13 @@
-"use client";
-import { Slider } from "@/components/common/slider/slider";
-import { SliderSlide } from "@/components/common/slider/slider-slide";
-import { useWindowSize } from "@/hooks/useWindowSize";
-import { useTranslation } from "../../../../i18n";
-import { TeaserTile } from "./teaser-tile";
-import styles from "./teaser-tiles.module.scss";
-import { Button } from "@/components/common/button/button";
-import { useState } from "react";
-import { CaseStudy } from "@/types/case-study";
+'use client';
+import { Slider } from '@/components/common/slider/slider';
+import { SliderSlide } from '@/components/common/slider/slider-slide';
+import { useWindowSize } from '@/hooks/useWindowSize';
+import { useTranslation } from '../../../../i18n';
+import { TeaserTile } from './teaser-tile';
+import styles from './teaser-tiles.module.scss';
+import { Button } from '@/components/common/button/button';
+import { useState } from 'react';
+import { CaseStudy } from '@/types/case-study';
 
 interface TeaserTilesProps {
   type?: string;
@@ -26,12 +26,12 @@ export const TeaserTiles = ({ type }: TeaserTilesProps) => {
 
   return (
     Array.isArray(items) && (
-      <div className={styles["teaser-tiles"]}>
-        <div className={styles["teaser-tiles__header"]}>
-          <h3 className={styles["teaser-tiles__title"]}>
+      <div className={styles['teaser-tiles']}>
+        <div className={styles['teaser-tiles__header']}>
+          <h3 className={styles['teaser-tiles__title']}>
             {t(`case_studies.${type}.title`)}
           </h3>
-          <p className={styles["teaser-tiles__lead"]}>
+          <p className={styles['teaser-tiles__lead']}>
             {t(`case_studies.${type}.lead`)}
           </p>
         </div>
@@ -48,8 +48,8 @@ export const TeaserTiles = ({ type }: TeaserTilesProps) => {
             ))}
           </Slider>
         ) : (
-          <div className={styles["teaser-tiles__content"]}>
-            <div className={styles["teaser-tiles__grid"]}>
+          <div className={styles['teaser-tiles__content']}>
+            <div className={styles['teaser-tiles__grid']}>
               {displayItems?.map((item, index) => (
                 <TeaserTile
                   key={index}
@@ -59,10 +59,10 @@ export const TeaserTiles = ({ type }: TeaserTilesProps) => {
               ))}
             </div>
             {!showAll && items.length > 12 && (
-              <div className={styles["teaser-tiles__load-more-btn-container"]}>
-                <div className={styles["teaser-tiles__load-more-btn"]}>
+              <div className={styles['teaser-tiles__load-more-btn-container']}>
+                <div className={styles['teaser-tiles__load-more-btn']}>
                   <Button onClick={() => setShowAll(true)}>
-                    Alle {items.length} Praxisbeispiele anzeigen
+                    {t('case_studies.show_more_button')}
                   </Button>
                 </div>
               </div>
