@@ -19,7 +19,7 @@ export const TeaserTile = ({ teaser, detail }: TeaserTileProps) => {
     </Overlay>
   );
 
-  return (
+  return renderOverlay(
     <div className={styles['teaser-tile']}>
       <div className={styles['teaser-tile__content']}>
         <div className={styles['teaser-tile__header']}>
@@ -42,7 +42,8 @@ export const TeaserTile = ({ teaser, detail }: TeaserTileProps) => {
           ))}
         </ul>
       </div>
-      {renderOverlay(<Button>{teaser.buttonLabel}</Button>, teaser.title)}
-    </div>
+      <Button>{teaser.buttonLabel}</Button>
+    </div>,
+    teaser.title
   );
 };
