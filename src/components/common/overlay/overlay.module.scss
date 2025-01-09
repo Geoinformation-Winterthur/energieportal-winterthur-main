@@ -1,8 +1,10 @@
-@import "../../../styles/breakpoints.scss";
+@import '../../../styles/breakpoints.scss';
+@import '../../../styles/pulse-animation.scss';
 
 .overlay {
   display: block;
   position: fixed;
+  bottom: 0%;
   height: 100%;
   max-height: 100%;
   width: 100%;
@@ -10,13 +12,20 @@
   padding: 0;
   background: transparent;
   border: 0;
-  transition: 0.3s visibility;
   inset-block-start: 0px;
   inset-block-end: 0px;
+  transition: transform 0.5s ease-in-out;
 
   &.overlay--closed {
-    pointer-events: none;
-    visibility: hidden;
+    transform: translateY(100%);
+  }
+
+  &.overlay--is-animating {
+    transform: translateY(100%);
+  }
+
+  &.overlay--open {
+    transform: translateY(0);
   }
 
   &.overlay--open::before {
@@ -51,6 +60,8 @@
   }
 
   .overlay__close-button {
+    @include pulse-animation('pulse-animation');
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,6 +70,7 @@
     background: var(--color-brand-red);
     border-radius: 50%;
     cursor: pointer;
+    animation: pulse-animation 1.5s forwards 0.8s;
   }
 
   .overlay__content {

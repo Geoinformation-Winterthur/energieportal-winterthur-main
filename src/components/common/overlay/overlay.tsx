@@ -53,6 +53,7 @@ export default function Overlay({
 }: OverlayProps) {
   const overlayElem = useRef<HTMLDialogElement>(null);
   const [isOpen, setIsOpen] = useState(false);
+  const [isAnimating, setIsAnimating] = useState(false);
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
@@ -97,13 +98,17 @@ export default function Overlay({
     }
   };
   const closeOverlay = () => {
-    setIsOpen(false);
-    router.push(pathname + '?' + reduceQueryString('case'), {
-      scroll: false,
-    });
-    if (overlayElem) {
-      overlayElem.current?.close();
-    }
+    setIsAnimating(true);
+    setTimeout(() => {
+      setIsAnimating(false);
+      setIsOpen(false);
+      router.push(pathname + '?' + reduceQueryString('case'), {
+        scroll: false,
+      });
+      if (overlayElem) {
+        overlayElem.current?.close();
+      }
+    }, 500);
   };
 
   return (
@@ -113,7 +118,9 @@ export default function Overlay({
         ref={overlayElem}
         className={clsx(
           styles['overlay'],
-          isOpen ? styles['overlay--open'] : styles['overlay--closed']
+          isOpen && !isAnimating ? styles['overlay--open'] : '',
+          isAnimating ? styles['overlay--is-animating'] : '',
+          !isOpen ? styles['overlay--closed'] : ''
         )}
       >
         {isOpen && (
