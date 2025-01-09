@@ -1,127 +1,127 @@
-import { Accordion } from "@/components/common/accordion/accordion";
-import { Icon } from "@/components/common/icon/icon";
-import { AccordionDetails } from "@mui/material";
-import Link from "next/link";
-import { useTranslation } from "../../../../i18n";
-import styles from "../faq.module.scss";
+import { Accordion } from '@/components/common/accordion/accordion';
+import { Icon } from '@/components/common/icon/icon';
+import { AccordionDetails } from '@mui/material';
+import Link from 'next/link';
+import { useTranslation } from '../../../../i18n';
+import styles from '../faq.module.scss';
 
 export const Geothermal = () => {
   const { t } = useTranslation();
 
   return (
-    <div className={styles["faq"]}>
-      <h3 className={styles["faq__heating-title"]}>
-        {t("my_property.heating_recommendations.geothermal.title")}
+    <div className={styles['faq']}>
+      <h3 className={styles['faq__heating-title']}>
+        {t('my_property.heating_recommendations.geothermal.title')}
       </h3>
-      <div className={styles["faq__acc-wrapper"]}>
-        <h4 className={styles["faq__title"]}>
-          {t("my_property.heating_faq.functionality")}
+      <div className={styles['faq__acc-wrapper']}>
+        <h4 className={styles['faq__title']}>
+          {t('my_property.heating_faq.functionality')}
         </h4>
-        <Accordion summary={t("my_property.heating_faq.geothermal.summary_1")}>
+        <Accordion summary={t('my_property.heating_faq.geothermal.summary_1')}>
           <AccordionDetails>
-            {t("my_property.heating_faq.geothermal.detail_1")}
+            {t('my_property.heating_faq.geothermal.detail_1')}
           </AccordionDetails>
         </Accordion>
-        <Accordion summary={t("my_property.heating_faq.geothermal.summary_2")}>
+        <Accordion summary={t('my_property.heating_faq.geothermal.summary_2')}>
           <AccordionDetails>
-            {t("my_property.heating_faq.geothermal.detail_2")}
+            {t('my_property.heating_faq.geothermal.detail_2')}
           </AccordionDetails>
         </Accordion>
-        <Accordion summary={t("my_property.heating_faq.geothermal.summary_3")}>
+        <Accordion summary={t('my_property.heating_faq.geothermal.summary_3')}>
           <AccordionDetails>
-            {t("my_property.heating_faq.geothermal.detail_3")}
+            {t('my_property.heating_faq.geothermal.detail_3')}
           </AccordionDetails>
         </Accordion>
-        <Accordion summary={t("my_property.heating_faq.geothermal.summary_4")}>
+        <Accordion summary={t('my_property.heating_faq.geothermal.summary_4')}>
           <AccordionDetails>
-            {t("my_property.heating_faq.geothermal.detail_4_1")}{" "}
+            {t('my_property.heating_faq.geothermal.detail_4_1')}{' '}
             <a
               href={t(
-                "my_property.heating_faq.geothermal.detail_4_link_target"
+                'my_property.heating_faq.geothermal.detail_4_link_target'
               )}
               target="_blank"
             >
-              {t("my_property.heating_faq.geothermal.detail_4_link")}
-            </a>{" "}
-            {t("my_property.heating_faq.geothermal.detail_4_2")}
+              {t('my_property.heating_faq.geothermal.detail_4_link')}
+            </a>{' '}
+            {t('my_property.heating_faq.geothermal.detail_4_2')}
           </AccordionDetails>
         </Accordion>
-        <Accordion summary={t("my_property.heating_faq.geothermal.summary_5")}>
+        <Accordion summary={t('my_property.heating_faq.geothermal.summary_5')}>
           <AccordionDetails>
-            {t("my_property.heating_faq.geothermal.detail_5")}
+            {t('my_property.heating_faq.geothermal.detail_5')}
           </AccordionDetails>
         </Accordion>
-        <Accordion summary={t("my_property.heating_faq.geothermal.summary_6")}>
+        <Accordion summary={t('my_property.heating_faq.geothermal.summary_6')}>
           <AccordionDetails>
-            {t("my_property.heating_faq.geothermal.detail_6_1")}{" "}
+            {t('my_property.heating_faq.geothermal.detail_6_1')}{' '}
             <a
               href={t(
-                "my_property.heating_faq.geothermal.detail_6_link_target_1"
+                'my_property.heating_faq.geothermal.detail_6_link_target_1'
               )}
               target="_blank"
             >
-              {t("my_property.heating_faq.geothermal.detail_6_link_1")}
-            </a>{" "}
-            {t("my_property.heating_faq.geothermal.detail_6_2")}{" "}
+              {t('my_property.heating_faq.geothermal.detail_6_link_1')}
+            </a>{' '}
+            {t('my_property.heating_faq.geothermal.detail_6_2')}{' '}
             <a
               href={t(
-                "my_property.heating_faq.geothermal.detail_6_link_target_2"
+                'my_property.heating_faq.geothermal.detail_6_link_target_2'
               )}
               target="_blank"
             >
-              {t("my_property.heating_faq.geothermal.detail_6_link_2")}
-            </a>{" "}
-            {t("my_property.heating_faq.geothermal.detail_6_3")}{" "}
+              {t('my_property.heating_faq.geothermal.detail_6_link_2')}
+            </a>{' '}
+            {t('my_property.heating_faq.geothermal.detail_6_3')}{' '}
             <a
               href={t(
-                "my_property.heating_faq.geothermal.detail_6_link_target_3"
+                'my_property.heating_faq.geothermal.detail_6_link_target_3'
               )}
               target="_blank"
             >
-              {t("my_property.heating_faq.geothermal.detail_6_link_3")}
-            </a>{" "}
-            {t("my_property.heating_faq.geothermal.detail_6_4")}
+              {t('my_property.heating_faq.geothermal.detail_6_link_3')}
+            </a>{' '}
+            {t('my_property.heating_faq.geothermal.detail_6_4')}
           </AccordionDetails>
         </Accordion>
       </div>
-      <div className={styles["faq__acc-wrapper"]}>
-        <h4 className={styles["faq__title"]}>
-          {t("my_property.heating_faq.permit")}
+      <div className={styles['faq__acc-wrapper']}>
+        <h4 className={styles['faq__title']}>
+          {t('my_property.heating_faq.permit')}
         </h4>
-        <Accordion summary={t("my_property.heating_faq.geothermal.summary_7")}>
+        <Accordion summary={t('my_property.heating_faq.geothermal.summary_7')}>
           <AccordionDetails>
-            {t("my_property.heating_faq.geothermal.detail_7")}
+            {t('my_property.heating_faq.geothermal.detail_7')}
           </AccordionDetails>
         </Accordion>
-        <Accordion summary={t("my_property.heating_faq.geothermal.summary_8")}>
+        <Accordion summary={t('my_property.heating_faq.geothermal.summary_8')}>
           <AccordionDetails>
-            {t("my_property.heating_faq.geothermal.detail_8")}
+            {t('my_property.heating_faq.geothermal.detail_8')}
           </AccordionDetails>
         </Accordion>
-        <Accordion summary={t("my_property.heating_faq.geothermal.summary_9")}>
+        <Accordion summary={t('my_property.heating_faq.geothermal.summary_9')}>
           <AccordionDetails>
-            {t("my_property.heating_faq.geothermal.detail_9_1")}{" "}
+            {t('my_property.heating_faq.geothermal.detail_9_1')}{' '}
             <a
               href={t(
-                "my_property.heating_faq.geothermal.detail_9_link_target_1"
+                'my_property.heating_faq.geothermal.detail_9_link_target_1'
               )}
               target="_blank"
             >
-              {t("my_property.heating_faq.geothermal.detail_9_link_1")}
+              {t('my_property.heating_faq.geothermal.detail_9_link_1')}
             </a>
-            {t("my_property.heating_faq.geothermal.detail_9_2")}
+            {t('my_property.heating_faq.geothermal.detail_9_2')}
           </AccordionDetails>
         </Accordion>
       </div>
       <div>
-        <h4 className={styles["faq__title"]}>
-          {t("my_property.faq.case_studies.title")}
+        <h4 className={styles['faq__title']}>
+          {t('my_property.faq.case_studies.title')}
         </h4>
         <Link
-          href={t("my_property.faq.case_studies.link_target")}
+          href={t('my_property.faq.case_studies.link_target.heating')}
           className="has-icon"
         >
-          {t("my_property.faq.case_studies.link")}
+          {t('my_property.faq.case_studies.link')}
           <Icon icon="arrow-right" />
         </Link>
       </div>
