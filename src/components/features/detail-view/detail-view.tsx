@@ -66,7 +66,7 @@ export const DetailView = ({ detail }: DetailViewProps) => {
     <div className={styles['detail-view']}>
       <div className={styles['detail-view__inner']}>
         <h3 className={styles['detail-view__title']}>{detail.title}</h3>
-        <Slider slimPagination autoHeight>
+        <Slider slimPagination autoHeight nested>
           {detail.images.map((image, index) => (
             <SliderSlide key={index}>
               <div className={styles['detail-view__img-container']}>
