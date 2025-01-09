@@ -2065,10 +2065,6 @@
                 "value": "X m²"
               },
               {
-                "key": "Modulfläche",
-                "value": "X m²"
-              },
-              {
                 "key": "Ausrichtung",
                 "value": "Süden"
               }
@@ -2238,10 +2234,6 @@
               {
                 "key": "Jahresproduktion Strom",
                 "value": "X kWh"
-              },
-              {
-                "key": "Modulfläche",
-                "value": "X m²"
               },
               {
                 "key": "Modulfläche",
