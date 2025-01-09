@@ -31,13 +31,13 @@
 
   @include tablet-up {
     aspect-ratio: 16/9;
-    max-height: 500px;
+    max-height: 700px;
   }
 
   img {
     width: 100%;
     height: calc(100% - var(--spacing-5));
-    max-height: 600px;
+    max-height: 800px;
     object-fit: contain;
 
     @include tablet-up {
