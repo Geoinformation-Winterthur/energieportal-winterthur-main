@@ -183,7 +183,9 @@
     },
     "my_property.faq.case_studies.title": "Beispiele aus der Praxis",
     "my_property.faq.case_studies.link": "Zu den Praxisbeispielen",
-    "my_property.faq.case_studies.link_target": "/praxisbeispiele",
+    "my_property.faq.case_studies.link_target.heating": "/praxisbeispiele/?tab=0",
+    "my_property.faq.case_studies.link_target.solar": "/praxisbeispiele/?tab=1",
+    "my_property.faq.case_studies.link_target.refurbishment": "/praxisbeispiele/?tab=2",
     "my_property.heating_faq.districtheating_P1": {
       "title": "Verdichtung",
       "status_1": "Für mehr Informationen zum Anschluss an die Fernwärme wenden Sie sich an Stadtwerk Winterthur, Kundenberatung Wärme, unter",
@@ -864,7 +866,8 @@
     "case_studies.accordion_summary": "Was sind «Pionierobjekte» und «Inventarobjekte»?",
     "case_studies.accordion_detail": "Pionierobjekte sind innovative Bauprojekte, die neue Technologien oder Ansätze im Bereich Energieeffizienz und Nachhaltigkeit testen, vorantreiben und über die gesetzlichen Anforderungen hinaus. Inventarobjekte sind denkmalgeschützte Bauten von historischer Bedeutung. Die ausgewählten Beispiele zeigen, wie energetische Verbesserungen unter Berücksichtigung der Denkmalschutzbestimmungen erfolgreich umgesetzt werden können.",
     "case_studies.examples.title": "Finden Sie erfolgreiche Umsetzungen",
-    "case_studies.examples.lead": "Folgend finden Sie gezielte Beispiele indem Sie unten das Thema des Umbaues auswählen.",
+    "case_studies.examples.lead": "Folgend finden Sie gezielte Beispiele, indem Sie unten das Thema des Umbaues auswählen.",
+    "case_studies.show_more_button": "Alle Praxisbeispiele anzeigen",
     "case_studies.heating": {
       "title": "Beispiele zum Thema Heizung",
       "lead": "",
@@ -2065,10 +2068,6 @@
                 "value": "X m²"
               },
               {
-                "key": "Modulfläche",
-                "value": "X m²"
-              },
-              {
                 "key": "Ausrichtung",
                 "value": "Süden"
               }
@@ -2238,10 +2237,6 @@
               {
                 "key": "Jahresproduktion Strom",
                 "value": "X kWh"
-              },
-              {
-                "key": "Modulfläche",
-                "value": "X m²"
               },
               {
                 "key": "Modulfläche",
