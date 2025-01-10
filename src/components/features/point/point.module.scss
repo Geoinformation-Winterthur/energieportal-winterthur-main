@@ -1,16 +1,9 @@
-@import "../../../styles/breakpoints.scss";
-
-@keyframes pulse-animation {
-  0% {
-    box-shadow: 0 0 0 0px rgba(255, 25, 0, 0.5);
-  }
-
-  100% {
-    box-shadow: 0 0 0 20px rgba(255, 25, 0, 0);
-  }
-}
+@import '../../../styles/breakpoints.scss';
+@import '../../../styles/pulse-animation.scss';
 
 .point {
+  @include pulse-animation('pulse-animation');
+
   position: absolute;
   width: 32px;
   height: 32px;

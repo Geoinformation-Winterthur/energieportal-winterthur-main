@@ -8,12 +8,14 @@ interface SliderProps {
   children: React.ReactNode[];
   slimPagination?: boolean;
   autoHeight?: boolean;
+  nested?: boolean;
 }
 
 export const Slider = ({
   children,
   slimPagination,
   autoHeight = false,
+  nested = false,
 }: SliderProps) => {
   const swiperRef = useRef<any>(null);
   const prevRef = useRef<HTMLButtonElement>(null);
@@ -36,11 +38,12 @@ export const Slider = ({
         nextEl: nextRef.current,
         prevEl: prevRef.current,
       },
+      nested: nested,
     };
 
     Object.assign(swiperRef?.current, params);
     swiperRef?.current?.initialize();
-  }, []);
+  }, [autoHeight, nested]);
 
   return (
     <>
