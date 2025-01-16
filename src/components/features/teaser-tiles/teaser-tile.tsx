@@ -13,8 +13,12 @@ interface TeaserTileProps {
 export const TeaserTile = ({ teaser, detail }: TeaserTileProps) => {
   const imagePath = `${process.env.NEXT_PUBLIC_BASE_PATH}/`;
 
-  const renderOverlay = (trigger: React.ReactNode, title: string) => (
-    <Overlay trigger={trigger} title={title} isCaseStudy>
+  const renderOverlay = (
+    trigger: React.ReactNode,
+    title: string,
+    subtitle: string
+  ) => (
+    <Overlay trigger={trigger} title={title + ' ' + subtitle} isCaseStudy>
       <DetailView detail={detail} />
     </Overlay>
   );
@@ -44,6 +48,7 @@ export const TeaserTile = ({ teaser, detail }: TeaserTileProps) => {
       </div>
       <Button>{teaser.buttonLabel}</Button>
     </div>,
-    teaser.title
+    teaser.title,
+    teaser.subtitle
   );
 };
