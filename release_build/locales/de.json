@@ -178,7 +178,7 @@
       ],
       "status": {
         "label": "in Prüfung",
-        "description": "in Prüfung: Die technische und wirtschaftliche Machbarkeit des Wärmenetzes in Ihrem Quartier wird derzeit geprüft. Die Resultate der Machbarkeitsstudie liegen im 3. Quartal 2024 vor und das weitere Vorgehen wird geplant."
+        "description": "in Prüfung: Ihre Liegenschaft befindet sich in einem Gebiet, das gemäss den Masterplanstudien schrittweise durch städtische Wärmenetze erschlossen werden soll."
       }
     },
     "my_property.faq.case_studies.title": "Beispiele aus der Praxis",
@@ -292,7 +292,7 @@
     },
     "my_property.heating_faq.districtheating_V3": {
       "title": "In Prüfung",
-      "status_1": "Die technische und wirtschaftliche Umsetzbarkeit des Wärmenetzes in Ihrem Quartier wird derzeit geprüft. Die Resultate liegen bis Mitte 2025 vor. Bei Fragen wenden Sie sich an Stadtwerk Winterthur, Kundenberatung Wärme, unter",
+      "status_1": "Ihre Liegenschaft befindet sich in einem Gebiet, das gemäss den Masterplanstudien schrittweise durch städtische Wärmenetze erschlossen werden soll. Bei Fragen zu Wärmenetzen wenden Sie sich an Stadtwerk Winterthur, Kundenberatung Wärme, unter",
       "status_link_1": "052 267 16 29",
       "status_link_target_1": "tel:052 267 16 29",
       "status_2": "oder",
