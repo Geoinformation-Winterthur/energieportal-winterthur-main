@@ -322,7 +322,7 @@
     },
     "my_property.heating_faq.districtheating_V8": {
       "title": "In Prüfung",
-      "status_1": "Die technische und wirtschaftliche Machbarkeit für die Erstellung eines Wärmenetzes in Ihrem Quartier wird geprüft. Der Zeitpunkt einer Erschliessung Ihres Quartiers mit Wärme ist derzeit noch unbekannt. Für mehr Informationen zum Anschluss an das Wärmenetz wenden Sie sich an Stadtwerk Winterthur, Kundenberatung Wärme, unter",
+      "status_1": "Ihre Liegenschaft befindet sich in einem Gebiet, das gemäss den Masterplanstudien schrittweise durch städtische Wärmenetze  erschlossen werden soll. Der genaue Zeitpunkt der Erschliessung Ihres Quartiers mit Wärme ist derzeit noch unbekannt. Bei Fragen zu Wärmenetzen wenden Sie sich an Stadtwerk Winterthur, Kundenberatung Wärme, unter",
       "status_link_1": "052 267 16 29",
       "status_link_target_1": "tel:052 267 16 29",
       "status_2": "oder",
@@ -335,7 +335,7 @@
     },
     "my_property.heating_faq.districtheating_V10": {
       "title": "In Planung",
-      "status_1": "Die Planung eines Wärmenetzes in Ihrem Quartier dauert bis Ende 2025. Ist die Wirtschaftlichkeit für das Wärmenetz gegeben, wird Ihr Quartier voraussichtlich ab 2028 schrittweise erschlossen. Bei Fragen wenden Sie sich an Stadtwerk Winterthur, Kundenberatung Wärme, unter",
+      "status_1": "Ihre Liegenschaft befindet sich in einem Gebiet, das gemäss den Masterplanstudien schrittweise durch städtische Wärmenetze erschlossen werden soll.  Bei Fragen zu den Wärmenetzen und dem Erschliessungszeitpunkt wenden Sie sich bitte an Stadtwerk Winterthur, Kundenberatung Wärme, unter",
       "status_link_1": "052 267 16 29",
       "status_link_target_1": "tel:052 267 16 29",
       "status_2": "oder",
@@ -348,7 +348,7 @@
     },
     "my_property.heating_faq.districtheating_V11": {
       "title": "In Planung",
-      "status_1": "Die Planung des Wärmenetzes in Ihrem Quartier befindet sich zurzeit in der Phase der Kreditbewilligung und dauert bis Ende 2025. Die Erschliessung erfolgt voraussichtlich ab 2028. Bei Fragen wenden Sie sich an Stadtwerk Winterthur, Kundenberatung Wärme, unter",
+      "status_1": "Ihre Liegenschaft befindet sich in einem Gebiet, das gemäss den Masterplanstudien schrittweise durch städtische Wärmenetze erschlossen werden soll. Bei Fragen zu den Wärmenetzen und dem Erschliessungszeitpunkt wenden Sie sich bitte an Stadtwerk Winterthur, Kundenberatung Wärme, unter",
       "status_link_1": "052 267 16 29",
       "status_link_target_1": "tel:052 267 16 29",
       "status_2": "oder",
@@ -360,8 +360,8 @@
       "status_4": "."
     },
     "my_property.heating_faq.districtheating_V17": {
-      "title": "In Planung",
-      "status_1": "Die Planung dieses Wärmenetzes in Ihrem Quartier dauert bis Ende 2025. Ist die Wirtschaftlichkeit für das Wärmenetz gegeben, wird das Quartier voraussichtlich ab 2030 schrittweise erschlossen. Bei Fragen wenden Sie sich an Stadtwerk Winterthur, Kundenberatung Wärme, unter",
+      "title": "Bau, Betrieb, Planung",
+      "status_1": "In Teilgebieten Ihres Quartieres ist das Wärmenetz bereits in Betrieb. In anderen Teilgebieten ist das Wärmenetz bereits im Bau oder erst in Abklärung. Für mehr Informationen zum Anschluss an Stadtwerk Winterthur, Kundenberatung Wärme, unter",
       "status_link_1": "052 267 16 29",
       "status_link_target_1": "tel:052 267 16 29",
       "status_2": "oder",
