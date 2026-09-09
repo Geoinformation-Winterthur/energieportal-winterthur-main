@@ -30,10 +30,6 @@ export const Navigation = ({}) => {
       slug: "/unser-beratungsangebot/",
     },
     {
-      title: t("general.navigation.case_studies"),
-      slug: "/praxisbeispiele/",
-    },
-    {
       title: t("general.navigation.contact"),
       slug: "/kontakt/",
     },
