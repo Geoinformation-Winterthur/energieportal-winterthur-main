@@ -1,3 +1,4 @@
+import { showPraxisbeispiele } from "@/config/features";
 "use client";
 import clsx from "clsx";
 import Link from "next/link";
@@ -29,10 +30,9 @@ export const Navigation = ({}) => {
       title: t("general.navigation.our_consulting_service"),
       slug: "/unser-beratungsangebot/",
     },
-    {
-      title: t("general.navigation.case_studies"),
-      slug: "/praxisbeispiele/",
-    },
+    ...(showPraxisbeispiele
+      ? [{ title: t("general.navigation.case_studies"), slug: "/praxisbeispiele/" }]
+      : []),
     {
       title: t("general.navigation.contact"),
       slug: "/kontakt/",

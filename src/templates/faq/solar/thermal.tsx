@@ -1,3 +1,4 @@
+import { showPraxisbeispiele } from "@/config/features";
 import { Accordion } from '@/components/common/accordion/accordion';
 import { Icon } from '@/components/common/icon/icon';
 import { AccordionDetails } from '@mui/material';
@@ -83,6 +84,7 @@ export const SolarThermal = () => {
           </AccordionDetails>
         </Accordion>
       </div>
+      {showPraxisbeispiele && (
       <div>
         <h4 className={styles['faq__title']}>
           {t('my_property.faq.case_studies.title')}
@@ -95,6 +97,7 @@ export const SolarThermal = () => {
           <Icon icon="arrow-right" />
         </Link>
       </div>
+      )}
     </div>
   );
 };

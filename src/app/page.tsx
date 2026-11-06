@@ -1,3 +1,4 @@
+import { showPraxisbeispiele } from "@/config/features";
 "use client";
 import { Contact } from "@/components/common/contact/contact";
 import { Intro } from "@/components/common/intro/intro";
@@ -38,6 +39,7 @@ export default function OnlineConsulting() {
         link={t("online_consulting.teaser_2_link")}
         link_target={t("online_consulting.teaser_2_link_target")}
       />
+      {showPraxisbeispiele && (
       <Teaser
         title={t("online_consulting.teaser_3_title")}
         description={t("online_consulting.teaser_3_description")}
@@ -46,6 +48,7 @@ export default function OnlineConsulting() {
         link={t("online_consulting.teaser_3_link")}
         link_target={t("online_consulting.teaser_3_link_target")}
       />
+      )}
     </>
   );
   const LeftContent = () => (

@@ -1,3 +1,4 @@
+
 name: Deploy to GitHub Pages
 
 on:
@@ -25,6 +26,7 @@ jobs:
         env:
           NEXT_PUBLIC_API_ENDPOINT: "https://stadtplan.winterthur.ch/energieportal-service"
           NEXT_PUBLIC_BASE_PATH: "/energieportal-winterthur-main"
+          NEXT_PUBLIC_SHOW_PRAXISBEISPIELE: "true" # TEST
         run: npm run build
 
       - name: Copy build files for deployment
@@ -36,6 +38,7 @@ jobs:
         env:
           NEXT_PUBLIC_API_ENDPOINT: "https://stadtplan.winterthur.ch/energieportal-service"
           NEXT_PUBLIC_BASE_PATH: "/energieportal"
+          NEXT_PUBLIC_SHOW_PRAXISBEISPIELE: "false" # PROD
         run: npm run build
 
       - name: Copy custom base path build files to a visible directory
