@@ -1,7 +1,7 @@
 'use client';
 
-import { usePathname, useRouter, useSearchParams } from 'next/navigation';
-import { KeyboardEvent, ReactNode, useCallback, useState } from 'react';
+import { useSearchParams } from 'next/navigation';
+import { KeyboardEvent, ReactNode, useState } from 'react';
 import { TabVariant, TabsContext } from '../../../context/tabs-context';
 interface TabsProps {
   children: ReactNode;
@@ -18,19 +18,7 @@ export default function Tabs({
   variant = 'default',
   inOverlay = false,
 }: TabsProps) {
-  const router = useRouter();
-  const pathname = usePathname();
   const searchParams = useSearchParams();
-
-  const createQueryString = useCallback(
-    (name: string, value: string) => {
-      const params = new URLSearchParams(searchParams.toString());
-      params.delete('case');
-      params.set(name, value);
-      return params.toString();
-    },
-    [searchParams]
-  );
 
   const changeTabsValue = (value: string) => {
     setTabsValue({
@@ -42,10 +30,19 @@ export default function Tabs({
       handleKeyDown,
       handleBlur,
     });
-    !inOverlay &&
-      router.push(pathname + '?' + createQueryString('tab', value), {
-        scroll: false,
-      });
+    if (!inOverlay) {
+      // Read the current browser URL to preserve the most recently selected address.
+      const url = new URL(window.location.href);
+      url.searchParams.delete('case');
+      url.searchParams.set('tab', value);
+
+      // Update the tab in the URL without triggering a new Next.js navigation.
+      window.history.replaceState(
+        window.history.state,
+        '',
+        `${url.pathname}${url.search}${url.hash}`
+      );
+    }
   };
 
   const handleKeyDown = (event: KeyboardEvent) => {
