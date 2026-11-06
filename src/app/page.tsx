@@ -1,5 +1,6 @@
-import { showPraxisbeispiele } from "@/config/features";
 "use client";
+
+import { showPraxisbeispiele } from "@/config/features";
 import { Contact } from "@/components/common/contact/contact";
 import { Intro } from "@/components/common/intro/intro";
 import { OneCol } from "@/components/common/layout/one-col/one-col";

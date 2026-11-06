@@ -1,5 +1,6 @@
-import { showPraxisbeispiele } from "@/config/features";
 "use client";
+
+import { showPraxisbeispiele } from "@/config/features";
 import clsx from "clsx";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
